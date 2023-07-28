@@ -362,7 +362,7 @@
   },
   {
     "Nat": 79,
-    "Pokemon": "G. Slowpoke",
+    "Pokemon": "Galarian Slowpoke",
     "HP": 90,
     "Atk": 65,
     "Def": 65,
@@ -381,7 +381,7 @@
   },
   {
     "Nat": 80,
-    "Pokemon": "G. Slowbro",
+    "Pokemon": "Galarian Slowbro",
     "HP": 95,
     "Atk": 100,
     "Def": 95,
@@ -400,7 +400,7 @@
   },
   {
     "Nat": 83,
-    "Pokemon": "G. Farfetch'd",
+    "Pokemon": "Galarian Farfetch'd",
     "HP": 52,
     "Atk": 95,
     "Def": 55,
@@ -476,7 +476,7 @@
   },
   {
     "Nat": 101,
-    "Pokemon": "H. Electrode",
+    "Pokemon": "Hisuian Electrode",
     "HP": 60,
     "Atk": 50,
     "Def": 70,
@@ -495,7 +495,7 @@
   },
   {
     "Nat": 103,
-    "Pokemon": "A. Exeggutor",
+    "Pokemon": "Alolan Exeggutor",
     "HP": 95,
     "Atk": 105,
     "Def": 85,
@@ -514,7 +514,7 @@
   },
   {
     "Nat": 105,
-    "Pokemon": "A. Marowak",
+    "Pokemon": "Alolan Marowak",
     "HP": 60,
     "Atk": 80,
     "Def": 110,
@@ -533,7 +533,7 @@
   },
   {
     "Nat": 110,
-    "Pokemon": "G. Weezing",
+    "Pokemon": "Galarian Weezing",
     "HP": 65,
     "Atk": 90,
     "Def": 120,
@@ -552,7 +552,7 @@
   },
   {
     "Nat": 122,
-    "Pokemon": "G. Mr. Mime",
+    "Pokemon": "Galarian Mr. Mime",
     "HP": 50,
     "Atk": 65,
     "Def": 65,
@@ -571,7 +571,7 @@
   },
   {
     "Nat": 128,
-    "Pokemon": "P. Tauros",
+    "Pokemon": "Paldean Tauros",
     "HP": 75,
     "Atk": 110,
     "Def": 105,
@@ -590,7 +590,7 @@
   },
   {
     "Nat": 128,
-    "Pokemon": "P. Tauros F",
+    "Pokemon": "Paldean Tauros F",
     "HP": 75,
     "Atk": 110,
     "Def": 105,
@@ -609,7 +609,7 @@
   },
   {
     "Nat": 128,
-    "Pokemon": "P. Tauros W",
+    "Pokemon": "Paldean Tauros W",
     "HP": 75,
     "Atk": 110,
     "Def": 105,
@@ -628,7 +628,7 @@
   },
   {
     "Nat": 144,
-    "Pokemon": "G. Articuno",
+    "Pokemon": "Galarian Articuno",
     "HP": 90,
     "Atk": 85,
     "Def": 85,
@@ -647,7 +647,7 @@
   },
   {
     "Nat": 145,
-    "Pokemon": "G. Zapdos",
+    "Pokemon": "Galarian Zapdos",
     "HP": 90,
     "Atk": 125,
     "Def": 90,
@@ -666,7 +666,7 @@
   },
   {
     "Nat": 146,
-    "Pokemon": "G. Moltres",
+    "Pokemon": "Galarian Moltres",
     "HP": 90,
     "Atk": 85,
     "Def": 90,
@@ -685,7 +685,7 @@
   },
   {
     "Nat": 157,
-    "Pokemon": "H. Typhlosion",
+    "Pokemon": "Hisuian Typhlosion",
     "HP": 73,
     "Atk": 84,
     "Def": 78,
@@ -704,7 +704,7 @@
   },
   {
     "Nat": 194,
-    "Pokemon": "P. Wooper",
+    "Pokemon": "Paldean Wooper",
     "HP": 55,
     "Atk": 45,
     "Def": 45,
@@ -723,7 +723,7 @@
   },
   {
     "Nat": 199,
-    "Pokemon": "G. Slowking",
+    "Pokemon": "Galarian Slowking",
     "HP": 95,
     "Atk": 65,
     "Def": 80,
@@ -742,7 +742,7 @@
   },
   {
     "Nat": 211,
-    "Pokemon": "H. Qwilfish",
+    "Pokemon": "Hisuian Qwilfish",
     "HP": 65,
     "Atk": 95,
     "Def": 85,
@@ -761,7 +761,7 @@
   },
   {
     "Nat": 215,
-    "Pokemon": "H. Sneasel",
+    "Pokemon": "Hisuian Sneasel",
     "HP": 55,
     "Atk": 95,
     "Def": 55,
@@ -780,7 +780,7 @@
   },
   {
     "Nat": 263,
-    "Pokemon": "G. Zigzagoon",
+    "Pokemon": "Galarian Zigzagoon",
     "HP": 38,
     "Atk": 30,
     "Def": 41,
@@ -799,7 +799,7 @@
   },
   {
     "Nat": 264,
-    "Pokemon": "G. Linoone",
+    "Pokemon": "Galarian Linoone",
     "HP": 78,
     "Atk": 70,
     "Def": 61,
@@ -818,7 +818,7 @@
   },
   {
     "Nat": 503,
-    "Pokemon": "H. Samurott",
+    "Pokemon": "Hisuian Samurott",
     "HP": 90,
     "Atk": 108,
     "Def": 80,
@@ -837,7 +837,7 @@
   },
   {
     "Nat": 549,
-    "Pokemon": "H. Lilligant",
+    "Pokemon": "Hisuian Lilligant",
     "HP": 70,
     "Atk": 105,
     "Def": 75,
@@ -875,7 +875,7 @@
   },
   {
     "Nat": 554,
-    "Pokemon": "G. Darumaka",
+    "Pokemon": "Galarian Darumaka",
     "HP": 70,
     "Atk": 90,
     "Def": 45,
@@ -894,7 +894,7 @@
   },
   {
     "Nat": 555,
-    "Pokemon": "G. Darmanitan",
+    "Pokemon": "Galarian Darmanitan",
     "HP": 105,
     "Atk": 140,
     "Def": 55,
@@ -913,7 +913,7 @@
   },
   {
     "Nat": 555.1,
-    "Pokemon": "G. Darmanitan (Z)",
+    "Pokemon": "Galarian Darmanitan (Z)",
     "HP": 105,
     "Atk": 160,
     "Def": 55,
@@ -932,7 +932,7 @@
   },
   {
     "Nat": 562,
-    "Pokemon": "G. Yamask",
+    "Pokemon": "Galarian Yamask",
     "HP": 38,
     "Atk": 55,
     "Def": 85,
@@ -951,7 +951,7 @@
   },
   {
     "Nat": 570,
-    "Pokemon": "H. Zorua",
+    "Pokemon": "Hisuian Zorua",
     "HP": 35,
     "Atk": 60,
     "Def": 40,
@@ -970,7 +970,7 @@
   },
   {
     "Nat": 571,
-    "Pokemon": "H. Zoroark",
+    "Pokemon": "Hisuian Zoroark",
     "HP": 55,
     "Atk": 100,
     "Def": 60,
@@ -989,7 +989,7 @@
   },
   {
     "Nat": 618,
-    "Pokemon": "G. Stunfisk",
+    "Pokemon": "Galarian Stunfisk",
     "HP": 109,
     "Atk": 81,
     "Def": 99,
@@ -1008,7 +1008,7 @@
   },
   {
     "Nat": 628,
-    "Pokemon": "H. Braviary",
+    "Pokemon": "Hisuian Braviary",
     "HP": 110,
     "Atk": 83,
     "Def": 70,
@@ -1027,7 +1027,7 @@
   },
   {
     "Nat": 704,
-    "Pokemon": "H. Sliggoo",
+    "Pokemon": "Hisuian Sliggoo",
     "HP": 58,
     "Atk": 75,
     "Def": 83,
@@ -1046,7 +1046,7 @@
   },
   {
     "Nat": 704,
-    "Pokemon": "H. Goodra",
+    "Pokemon": "Hisuian Goodra",
     "HP": 80,
     "Atk": 100,
     "Def": 100,
@@ -1065,7 +1065,7 @@
   },
   {
     "Nat": 713,
-    "Pokemon": "H. Avalugg",
+    "Pokemon": "Hisuian Avalugg",
     "HP": 95,
     "Atk": 127,
     "Def": 184,
@@ -1084,7 +1084,7 @@
   },
   {
     "Nat": 724,
-    "Pokemon": "H. Decidueye",
+    "Pokemon": "Hisuian Decidueye",
     "HP": 88,
     "Atk": 112,
     "Def": 80,

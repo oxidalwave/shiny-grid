@@ -1,99 +1,152 @@
-import { type Pokemon } from "../data/dex";
+import { type Type, type Pokemon } from "../data/dex";
 import type Category from ".";
 import Image from "next/image";
 
+const isOfType = (p: Pokemon, t: Type) =>
+  p["Type I"] === t || p["Type II"] === t;
+
 export const WaterType: Category = {
   label: "Water Type",
-  icon: <Image alt="Water Type" src="/types/water.png" width={64} height={64} />,
-  test: (p: Pokemon) => p["Type I"] === "Water" || p["Type II"] === "Water",
+  icon: (
+    <Image alt="Water Type" src="/types/water.png" width={64} height={64} />
+  ),
+  test: (p: Pokemon) => isOfType(p, "Water"),
 };
 
 export const NormalType: Category = {
   label: "Normal Type",
-  icon: <Image alt="Normal Type" src="/types/normal.png" width={64} height={64} />,
-  test: (p: Pokemon) => p["Type I"] === "Normal" || p["Type II"] === "Normal",
+  icon: (
+    <Image alt="Normal Type" src="/types/normal.png" width={64} height={64} />
+  ),
+  test: (p: Pokemon) => isOfType(p, "Normal"),
 };
+
 export const FireType: Category = {
   label: "Fire Type",
   icon: <Image alt="Fire Type" src="/types/fire.png" width={64} height={64} />,
-  test: (p: Pokemon) => p["Type I"] === "Fire" || p["Type II"] === "Fire",
+  test: (p: Pokemon) => isOfType(p, "Fire"),
 };
+
 export const FightingType: Category = {
   label: "Fighting Type",
-  icon: <Image alt="Fighting Type" src="/types/fighting.png" width={64} height={64} />,
-  test: (p: Pokemon) =>
-    p["Type I"] === "Fighting" || p["Type II"] === "Fighting",
+  icon: (
+    <Image
+      alt="Fighting Type"
+      src="/types/fighting.png"
+      width={64}
+      height={64}
+    />
+  ),
+  test: (p: Pokemon) => isOfType(p, "Fighting"),
 };
+
 export const FlyingType: Category = {
   label: "Flying Type",
-  icon: <Image alt="Flying Type" src="/types/flying.png" width={64} height={64} />,
-  test: (p: Pokemon) => p["Type I"] === "Flying" || p["Type II"] === "Flying",
+  icon: (
+    <Image alt="Flying Type" src="/types/flying.png" width={64} height={64} />
+  ),
+  test: (p: Pokemon) => isOfType(p, "Flying"),
 };
+
 export const GrassType: Category = {
   label: "Grass Type",
-  icon: <Image alt="Grass Type" src="/types/grass.png" width={64} height={64} />,
-  test: (p: Pokemon) => p["Type I"] === "Grass" || p["Type II"] === "Grass",
+  icon: (
+    <Image alt="Grass Type" src="/types/grass.png" width={64} height={64} />
+  ),
+  test: (p: Pokemon) => isOfType(p, "Grass"),
 };
+
 export const PoisonType: Category = {
   label: "Poison Type",
-  icon: <Image alt="Poison Type" src="/types/poison.png" width={64} height={64} />,
-  test: (p: Pokemon) => p["Type I"] === "Poison" || p["Type II"] === "Poison",
+  icon: (
+    <Image alt="Poison Type" src="/types/poison.png" width={64} height={64} />
+  ),
+  test: (p: Pokemon) => isOfType(p, "Poison"),
 };
+
 export const ElectricType: Category = {
   label: "Electric Type",
-  icon: <Image alt="Electric Type" src="/types/electric.png" width={64} height={64} />,
-  test: (p: Pokemon) =>
-    p["Type I"] === "Electric" || p["Type II"] === "Electric",
+  icon: (
+    <Image
+      alt="Electric Type"
+      src="/types/electric.png"
+      width={64}
+      height={64}
+    />
+  ),
+  test: (p: Pokemon) => isOfType(p, "Electric"),
 };
+
 export const GroundType: Category = {
   label: "Ground Type",
-  icon: <Image alt="Ground Type" src="/types/ground.png" width={64} height={64} />,
-  test: (p: Pokemon) => p["Type I"] === "Ground" || p["Type II"] === "Ground",
+  icon: (
+    <Image alt="Ground Type" src="/types/ground.png" width={64} height={64} />
+  ),
+  test: (p: Pokemon) => isOfType(p, "Ground"),
 };
+
 export const PsychicType: Category = {
   label: "Psychic Type",
-  icon: <Image alt="Psychic Type" src="/types/psychic.png" width={64} height={64} />,
-  test: (p: Pokemon) => p["Type I"] === "Psychic" || p["Type II"] === "Psychic",
+  icon: (
+    <Image alt="Psychic Type" src="/types/psychic.png" width={64} height={64} />
+  ),
+  test: (p: Pokemon) => isOfType(p, "Psychic"),
 };
+
 export const RockType: Category = {
   label: "Rock Type",
   icon: <Image alt="Rock Type" src="/types/rock.png" width={64} height={64} />,
-  test: (p: Pokemon) => p["Type I"] === "Rock" || p["Type II"] === "Rock",
+  test: (p: Pokemon) => isOfType(p, "Rock"),
 };
+
 export const IceType: Category = {
   label: "Ice Type",
   icon: <Image alt="Ice Type" src="/types/ice.png" width={64} height={64} />,
-  test: (p: Pokemon) => p["Type I"] === "Ice" || p["Type II"] === "Ice",
+  test: (p: Pokemon) => isOfType(p, "Ice"),
 };
+
 export const BugType: Category = {
   label: "Bug Type",
   icon: <Image alt="Bug Type" src="/types/bug.png" width={64} height={64} />,
-  test: (p: Pokemon) => p["Type I"] === "Bug" || p["Type II"] === "Bug",
+  test: (p: Pokemon) => isOfType(p, "Bug"),
 };
+
 export const DragonType: Category = {
   label: "Dragon Type",
-  icon: <Image alt="Dragon Type" src="/types/dragon.png" width={64} height={64} />,
-  test: (p: Pokemon) => p["Type I"] === "Dragon" || p["Type II"] === "Dragon",
+  icon: (
+    <Image alt="Dragon Type" src="/types/dragon.png" width={64} height={64} />
+  ),
+  test: (p: Pokemon) => isOfType(p, "Dragon"),
 };
+
 export const GhostType: Category = {
   label: "Ghost Type",
-  icon: <Image alt="Ghost Type" src="/types/ghost.png" width={64} height={64} />,
-  test: (p: Pokemon) => p["Type I"] === "Ghost" || p["Type II"] === "Ghost",
+  icon: (
+    <Image alt="Ghost Type" src="/types/ghost.png" width={64} height={64} />
+  ),
+  test: (p: Pokemon) => isOfType(p, "Ghost"),
 };
+
 export const DarkType: Category = {
   label: "Dark Type",
   icon: <Image alt="Dark Type" src="/types/dark.png" width={64} height={64} />,
-  test: (p: Pokemon) => p["Type I"] === "Dark" || p["Type II"] === "Dark",
+  test: (p: Pokemon) => isOfType(p, "Dark"),
 };
+
 export const SteelType: Category = {
   label: "Steel Type",
-  icon: <Image alt="Steel Type" src="/types/steel.png" width={64} height={64} />,
-  test: (p: Pokemon) => p["Type I"] === "Steel" || p["Type II"] === "Steel",
+  icon: (
+    <Image alt="Steel Type" src="/types/steel.png" width={64} height={64} />
+  ),
+  test: (p: Pokemon) => isOfType(p, "Steel"),
 };
+
 export const FairyType: Category = {
   label: "Fairy Type",
-  icon: <Image alt="Fairy Type" src="/types/fairy.png" width={64} height={64} />,
-  test: (p: Pokemon) => p["Type I"] === "Fairy" || p["Type II"] === "Fairy",
+  icon: (
+    <Image alt="Fairy Type" src="/types/fairy.png" width={64} height={64} />
+  ),
+  test: (p: Pokemon) => isOfType(p, "Fairy"),
 };
 
 export const Types = [

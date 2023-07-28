@@ -37,67 +37,20 @@ export interface Pokemon {
   "Type I": Type;
   "Type II": Type;
   "Ability I": string;
-  "Ability II": string;
-  "Hidden Ability": string;
-  "EV Worth": string;
-  Gender: string;
-  "Egg Group I": string;
-  "Egg Group II": string;
-  Catch: number;
-  Evolve: string;
-  imageUrl: string;
-  forms: {
-    Nat: number;
-    Pokemon: string;
-    HP: number;
-    Atk: number;
-    Def: number;
-    SpA: number;
-    SpD: number;
-    Spe: number;
-    Total: number;
-    "Type I": Type;
-    "Type II": Type;
-    "Ability I": string;
-    "Ability II": string;
-    "Hidden Ability": string;
-    "EV Worth": string;
-    Gender: string;
-    Evolve: string;
-  }[];
-  megas: {
-    Nat: number;
-    Pokemon: string;
-    HP: number;
-    Atk: number;
-    Def: number;
-    SpA: number;
-    SpD: number;
-    Spe: number;
-    Total: number;
-    "Type I": Type;
-    "Type II": Type;
-    "Ability I": string;
-  }[];
-  regionals: {
-    Nat: number;
-    Pokemon: string;
-    HP: number;
-    Atk: number;
-    Def: number;
-    SpA: number;
-    SpD: number;
-    Spe: number;
-    Total: number;
-    "Type I": Type;
-    "Type II": Type;
-    "Ability I": string;
-    "Ability II": string;
-    "Hidden Ability": string;
-    "EV Worth": string;
-    Gender: string;
-    Evolve: string;
-  }[];
+
+  "Ability II"?: string;
+  "Hidden Ability"?: string;
+  "EV Worth"?: string;
+  Gender?: string;
+  Evolve?: string;
+
+  "Egg Group I"?: string;
+  "Egg Group II"?: string;
+  Catch?: number;
+  imageUrl?: string;
+  forms?: Pokemon[];
+  megas?: Pokemon[];
+  regionals?: Pokemon[];
 }
 
 const getImageUrl = (name: string) =>

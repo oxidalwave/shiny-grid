@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { type Dispatch, type SetStateAction, useState } from "react";
-import { type Pokemon } from "~/lib/data/dex";
+import { PokemonBaseExpanded, type Pokemon } from "~/lib/data/dex";
 
 export interface SelectPokemonDialogProps {
   label: string;
@@ -21,10 +21,11 @@ export default function SelectPokemonDialog({
     handleGuess(pokemon);
   }
 
-  const filteredPokedex =
+  const filteredPokedex: Pokemon[] =
     name === ""
       ? []
       : pokedex
+          .flatMap((p) => [p, ...(p.regionals ?? [])])
           .filter((p) => p.Pokemon.toLowerCase().startsWith(name.toLowerCase()))
           .slice(0, 10);
 
@@ -45,7 +46,7 @@ export default function SelectPokemonDialog({
               <Image
                 loading="lazy"
                 alt={p.Pokemon}
-                src={p.imageUrl}
+                src={p.imageUrl ?? ""}
                 width={28}
                 height={21}
               />
