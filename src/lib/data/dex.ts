@@ -105,6 +105,6 @@ const dex: Pokemon[] = dexdata.map(({ Nat, ...d }) => ({
   forms: forms.filter((f) => f.Nat === Nat),
   megas: mega.filter((m) => m.Nat === Nat),
   regionals: regional.filter((r) => r.Nat === Nat),
-}));
+})) as Pokemon[];
 
 export default dex;
