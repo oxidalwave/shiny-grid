@@ -7,5 +7,9 @@ export default function HomePage() {
     `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`
   ).getTime();
 
-  return <Grid dex={dex} seed={seed} />;
+  return (
+    <div className="p-2">
+      <Grid dex={dex} seed={seed} />
+    </div>
+  );
 }

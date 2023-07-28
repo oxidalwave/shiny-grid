@@ -38,11 +38,19 @@ export default function Grid({ dex, seed }: GridProps) {
   return (
     <div>
       <div className="grid grid-cols-4 divide-x divide-y">
-        <div className="h-12" />
-        <div>{categories[0]?.label}</div>
-        <div>{categories[1]?.label}</div>
-        <div>{categories[2]?.label}</div>
-        <div className="h-12">{categories[3]?.label}</div>
+        <div className="" />
+        <div className="flex justify-center items-center p-2">
+          {categories[0]?.icon ?? categories[0]?.label}
+        </div>
+        <div className="flex justify-center items-center p-2">
+          {categories[1]?.icon ?? categories[1]?.label}
+        </div>
+        <div className="flex justify-center items-center p-2">
+          {categories[2]?.icon ?? categories[2]?.label}
+        </div>
+        <div className="flex justify-center items-center p-2">
+          {categories[3]?.icon ?? categories[3]?.label}
+        </div>
         <Cell
           index={0}
           categories={[categories[0]!, categories[3]!]}
@@ -64,7 +72,9 @@ export default function Grid({ dex, seed }: GridProps) {
           guesses={guesses}
           setGuesses={setGuesses}
         />
-        <div className="h-12">{categories[4]?.label}</div>
+        <div className="flex justify-center items-center p-2">
+          {categories[4]?.icon ?? categories[4]?.label}
+        </div>
         <Cell
           index={3}
           categories={[categories[0]!, categories[4]!]}
@@ -86,7 +96,9 @@ export default function Grid({ dex, seed }: GridProps) {
           guesses={guesses}
           setGuesses={setGuesses}
         />
-        <div className="h-12">{categories[5]?.label}</div>
+        <div className="flex justify-center items-center p-2">
+          {categories[5]?.icon ?? categories[5]?.label}
+        </div>
         <Cell
           index={6}
           categories={[categories[0]!, categories[5]!]}
