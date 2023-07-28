@@ -1,5 +1,5 @@
-import type { Pokemon } from '$lib/data/dex';
 import type Category from '.';
+import { type Pokemon } from '../data/dex';
 
 export const Generation1: Category = {
 	label: 'Generation 1',

@@ -1,4 +1,4 @@
-import type { Pokemon } from '$lib/data/dex';
+import { type Pokemon } from '../data/dex';
 
 export default interface Category {
 	label: string;

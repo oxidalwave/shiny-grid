@@ -1,4 +1,4 @@
-import type { Pokemon } from '$lib/data/dex';
+import { type Pokemon } from '../data/dex';
 import type Category from '.';
 
 export const LowHp: Category = {
