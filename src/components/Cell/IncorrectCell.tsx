@@ -7,7 +7,7 @@ export interface IncorrectCellProps {
 
 export default function IncorrectCell({ guess }: IncorrectCellProps) {
   return (
-    <div className="flex justify-center items-center bg-red-700">
+    <div className="h-full flex justify-center items-center bg-error-content">
       <Image
         alt={guess.Pokemon}
         src={guess.imageUrl ?? ""}

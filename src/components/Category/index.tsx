@@ -6,7 +6,7 @@ interface CategoryProps {
 
 export default function Category({ category }: CategoryProps) {
   return (
-    <div className="flex justify-center items-center p-2">
+    <div className="h-full flex justify-center items-center p-2">
       {category?.icon ?? category?.label}
     </div>
   );

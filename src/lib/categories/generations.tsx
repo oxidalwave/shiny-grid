@@ -6,8 +6,8 @@ export const Generation1: Category = {
   label: "Generation 1",
   icon: (
     <div className="flex flex-col">
-      <div className="">Introduced in...</div>
-      <div className="flex">
+      <div>Introduced in...</div>
+      <div className="stack">
         <Image alt="red" src="/boxart/red.webp" width={64} height={64} />
         <Image alt="blue" src="/boxart/blue.png" width={64} height={64} />
         <Image alt="yellow" src="/boxart/yellow.jpeg" width={64} height={64} />
@@ -22,7 +22,7 @@ export const Generation2: Category = {
   icon: (
     <div className="flex flex-col">
       <div>Introduced in...</div>
-      <div className="flex">
+      <div className="stack">
         <Image alt="gold" src="/boxart/gold.jpeg" width={64} height={64} />
         <Image alt="silver" src="/boxart/silver.png" width={64} height={64} />
         <Image

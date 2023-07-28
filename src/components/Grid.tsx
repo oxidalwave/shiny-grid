@@ -42,12 +42,14 @@ export default function Grid({ dex, seed }: GridProps) {
 
   return (
     <div className="">
-      <div className="grid grid-cols-4 divide-x divide-y">
-        <div className="" />
+      <div className="grid grid-cols-4">
+        <div className="h-12" />
         <Category category={categories[0]!} />
         <Category category={categories[1]!} />
         <Category category={categories[2]!} />
-        <Category category={categories[3]!} />
+        <div className="h-20">
+          <Category category={categories[3]!} />
+        </div>
         <Cell
           index={0}
           categories={[categories[0]!, categories[3]!]}
@@ -69,7 +71,9 @@ export default function Grid({ dex, seed }: GridProps) {
           guesses={guesses}
           setGuesses={setGuesses}
         />
-        <Category category={categories[4]!} />
+        <div className="h-20">
+          <Category category={categories[4]!} />{" "}
+        </div>
         <Cell
           index={3}
           categories={[categories[0]!, categories[4]!]}
@@ -91,7 +95,9 @@ export default function Grid({ dex, seed }: GridProps) {
           guesses={guesses}
           setGuesses={setGuesses}
         />
-        <Category category={categories[5]!} />
+        <div className="h-20">
+          <Category category={categories[5]!} />
+        </div>
         <Cell
           index={6}
           categories={[categories[0]!, categories[5]!]}

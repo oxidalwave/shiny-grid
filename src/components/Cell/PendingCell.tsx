@@ -43,7 +43,10 @@ export default function PendingCell({
           />
         )}
       </dialog>
-      <button className="hover:bg-slate-300" onClick={() => setOpened(true)} />
+      <button
+        className="h-full bg-info-content hover:bg-info"
+        onClick={() => setOpened(true)}
+      />
     </>
   );
 }

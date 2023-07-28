@@ -25,24 +25,29 @@ export default function SelectPokemonDialog({
     name === ""
       ? []
       : pokedex
-          .flatMap((p) => [p, ...(p.regionals ?? [])])
           .filter((p) => p.Pokemon.toLowerCase().includes(name.toLowerCase()))
+          .flatMap((p) => [p, ...(p.regionals ?? [])])
           .slice(0, 10);
 
   return (
-    <div className="border-2">
-      <button onClick={() => setOpened(false)}>Cancel</button>
-      <div>{label}</div>
-      <input
-        autoFocus
-        className="border-2"
-        value={name}
-        onChange={(e) => setName(e.currentTarget.value)}
-      />
-      <div className="flex flex-col max-h-60 overflow-y-auto">
-        {filteredPokedex.map((p: Pokemon) => (
-          <button key={p.Nat} onClick={() => handleSubmit(p)}>
-            <div className="flex">
+    <div className="card w-80">
+      <div className="card-body">
+        <button onClick={() => setOpened(false)}>Cancel</button>
+        <div>{label}</div>
+        <input
+          autoFocus
+          type="text"
+          className="input input-bordered"
+          value={name}
+          onChange={(e) => setName(e.currentTarget.value)}
+        />
+        <div className="flex flex-col gap-2 overflow-y-auto">
+          {filteredPokedex.map((p: Pokemon) => (
+            <button
+              className="btn btn-wide"
+              key={p.Nat}
+              onClick={() => handleSubmit(p)}
+            >
               <Image
                 loading="lazy"
                 alt={p.Pokemon}
@@ -51,9 +56,9 @@ export default function SelectPokemonDialog({
                 height={21}
               />
               <div>{p.Pokemon}</div>
-            </div>
-          </button>
-        ))}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );
