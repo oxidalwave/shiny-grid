@@ -1,18 +1,17 @@
-import Image from "next/image";
-import { Dispatch, SetStateAction, useState } from "react";
+import { type Dispatch, type SetStateAction, useState } from "react";
 import { type Pokemon } from "~/lib/data/dex";
 
 export interface SelectPokemonDialogProps {
   label: string;
   pokedex: Pokemon[];
   handleGuess: (p: Pokemon) => void;
-  cancel: Dispatch<SetStateAction<boolean>>;
+  setOpened: Dispatch<SetStateAction<boolean>>;
 }
 
 export default function SelectPokemonDialog({
   label,
   pokedex,
-  cancel,
+  setOpened,
   handleGuess,
 }: SelectPokemonDialogProps) {
   const [name, setName] = useState<string>("");
@@ -27,7 +26,7 @@ export default function SelectPokemonDialog({
 
   return (
     <div className="border-2">
-      <button onClick={cancel}>Cancel</button>
+      <button onClick={() => setOpened(false)}>Cancel</button>
       <div>{label}</div>
       <input
         className="border-2"

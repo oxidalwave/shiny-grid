@@ -22,14 +22,6 @@ export default function Cell({
   const [guess, setGuess] = useState<Pokemon | undefined>(undefined);
   const [opened, setOpened] = useState(false);
 
-  function open() {
-    setOpened(true);
-  }
-
-  function close() {
-    setOpened(false);
-  }
-
   function handleGuess(p: Pokemon) {
     setGuess(p);
     const guessesClone = [...guesses];
@@ -40,15 +32,18 @@ export default function Cell({
   if (!guess) {
     return (
       <>
-        <dialog open={opened} onClose={close}>
+        <dialog open={opened} onClose={() => setOpened(false)}>
           <SelectPokemonDialog
-            cancel={close}
+            setOpened={setOpened}
             label={categories.map((c) => c.label).join(" and ")}
             pokedex={pokedex}
             handleGuess={handleGuess}
           />
         </dialog>
-        <button className="hover:bg-slate-300" onClick={open} />
+        <button
+          className="hover:bg-slate-300"
+          onClick={() => setOpened(true)}
+        />
       </>
     );
   }
