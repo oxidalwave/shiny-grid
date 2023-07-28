@@ -45,7 +45,7 @@ export default function SelectPokemonDialog({
           {filteredPokedex.map((p: Pokemon) => (
             <button
               className="btn btn-wide"
-              key={p.Nat}
+              key={p.Pokemon}
               onClick={() => handleSubmit(p)}
             >
               <Image
