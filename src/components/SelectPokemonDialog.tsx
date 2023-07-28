@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { type Dispatch, type SetStateAction, useState } from "react";
 import { type Pokemon } from "~/lib/data/dex";
 
@@ -20,23 +21,36 @@ export default function SelectPokemonDialog({
     handleGuess(pokemon);
   }
 
-  const filteredPokedex = pokedex.filter((p) =>
-    p.Pokemon.toLowerCase().startsWith(name.toLowerCase())
-  );
+  const filteredPokedex =
+    name === ""
+      ? []
+      : pokedex
+          .filter((p) => p.Pokemon.toLowerCase().startsWith(name.toLowerCase()))
+          .slice(0, 10);
 
   return (
     <div className="border-2">
       <button onClick={() => setOpened(false)}>Cancel</button>
       <div>{label}</div>
       <input
+        autoFocus
         className="border-2"
         value={name}
         onChange={(e) => setName(e.currentTarget.value)}
       />
-      <div className="flex flex-col h-80 overflow-y-auto">
+      <div className="flex flex-col max-h-60 overflow-y-auto">
         {filteredPokedex.map((p: Pokemon) => (
           <button key={p.Nat} onClick={() => handleSubmit(p)}>
-            {p.Pokemon}
+            <div className="flex">
+              <Image
+                loading="lazy"
+                alt={p.Pokemon}
+                src={p.imageUrl}
+                width={28}
+                height={21}
+              />
+              <div>{p.Pokemon}</div>
+            </div>
           </button>
         ))}
       </div>

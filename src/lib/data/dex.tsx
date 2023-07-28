@@ -45,6 +45,7 @@ export interface Pokemon {
   "Egg Group II": string;
   Catch: number;
   Evolve: string;
+  imageUrl: string;
   forms: {
     Nat: number;
     Pokemon: string;
@@ -99,9 +100,17 @@ export interface Pokemon {
   }[];
 }
 
+const getImageUrl = (name: string) =>
+  `/sprites/${name
+    .toLowerCase()
+    .replaceAll(" ", "-")
+    .replaceAll("♀", "f")
+    .replaceAll("♂", "m")}.png`;
+
 const dex: Pokemon[] = dexdata.map(({ Nat, ...d }) => ({
   Nat,
   ...d,
+  imageUrl: getImageUrl(d.Pokemon),
   forms: forms.filter((f) => f.Nat === Nat),
   megas: mega.filter((m) => m.Nat === Nat),
   regionals: regional.filter((r) => r.Nat === Nat),

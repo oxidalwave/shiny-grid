@@ -33,12 +33,14 @@ export default function Cell({
     return (
       <>
         <dialog open={opened} onClose={() => setOpened(false)}>
-          <SelectPokemonDialog
-            setOpened={setOpened}
-            label={categories.map((c) => c.label).join(" and ")}
-            pokedex={pokedex}
-            handleGuess={handleGuess}
-          />
+          {opened && (
+            <SelectPokemonDialog
+              setOpened={setOpened}
+              label={categories.map((c) => c.label).join(" and ")}
+              pokedex={pokedex}
+              handleGuess={handleGuess}
+            />
+          )}
         </dialog>
         <button
           className="hover:bg-slate-300"
@@ -53,7 +55,7 @@ export default function Cell({
       <div className="w-full flex justify-center items-center">
         <Image
           alt={guess.Pokemon}
-          src={`/sprites/${guess.Pokemon.toLowerCase()}.png`}
+          src={guess.imageUrl}
           width={56}
           height={42}
         />
@@ -62,12 +64,7 @@ export default function Cell({
   }
   return (
     <div className="w-full flex justify-center items-center bg-red-700">
-      <Image
-        alt={guess.Pokemon}
-        src={`/sprites/${guess.Pokemon.toLowerCase()}.png`}
-        width={56}
-        height={42}
-      />
+      <Image alt={guess.Pokemon} src={guess.imageUrl} width={56} height={42} />
     </div>
   );
 }
