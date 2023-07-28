@@ -1,13 +1,39 @@
+import Image from "next/image";
 import type Category from ".";
 import { type Pokemon } from "../data/dex";
 
 export const Generation1: Category = {
   label: "Generation 1",
+  icon: (
+    <div className="flex flex-col">
+      <div className="">Introduced in...</div>
+      <div className="flex">
+        <Image alt="red" src="/boxart/red.webp" width={64} height={64} />
+        <Image alt="blue" src="/boxart/blue.png" width={64} height={64} />
+        <Image alt="yellow" src="/boxart/yellow.jpeg" width={64} height={64} />
+      </div>
+    </div>
+  ),
   test: (p: Pokemon) => p.Nat >= 1 && p.Nat < 152,
 };
 
 export const Generation2: Category = {
   label: "Generation 2",
+  icon: (
+    <div className="flex flex-col">
+      <div>Introduced in...</div>
+      <div className="flex">
+        <Image alt="gold" src="/boxart/gold.jpeg" width={64} height={64} />
+        <Image alt="silver" src="/boxart/silver.png" width={64} height={64} />
+        <Image
+          alt="crystal"
+          src="/boxart/crystal.webp"
+          width={64}
+          height={64}
+        />
+      </div>
+    </div>
+  ),
   test: (p: Pokemon) => p.Nat >= 152 && p.Nat <= 251,
 };
 
