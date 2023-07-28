@@ -8,18 +8,22 @@ import { Types } from "~/lib/categories/types";
 import { type Pokemon } from "~/lib/data/dex";
 import Export from "./Export";
 
+import gen from "random-seed";
+
 export interface GridProps {
   dex: Pokemon[];
   seed: number;
 }
 
 export default function Grid({ dex, seed }: GridProps) {
-  const type1 = Types[seed % Types.length]!;
-  const type2 = Types[(seed % Types.length) + 1]!;
-  const type3 = Types[(seed % Types.length) + 2]!;
-  const type4 = Types[(seed % Types.length) + 3]!;
-  const generation = Generations[seed % Generations.length]!;
-  const stats = Stats[seed % Stats.length]!;
+  const rand = gen.create(seed.toString());
+
+  const type1 = Types[rand(Types.length)]!;
+  const type2 = Types[rand(Types.length)]!;
+  const type3 = Types[rand(Types.length)]!;
+  const type4 = Types[rand(Types.length)]!;
+  const generation = Generations[rand(Generations.length)]!;
+  const stats = Stats[rand(Stats.length)]!;
 
   const categories = [type1, type2, generation, type3, type4, stats];
 

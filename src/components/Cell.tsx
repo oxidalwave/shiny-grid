@@ -50,7 +50,7 @@ export default function Cell({
 
   if (categories[0]?.test(guess) && categories[1]?.test(guess)) {
     return (
-      <div className="w-full content-center">
+      <div className="w-full flex justify-center items-center">
         <Image
           alt={guess.Pokemon}
           src={`/sprites/${guess.Pokemon.toLowerCase()}.png`}
@@ -61,7 +61,7 @@ export default function Cell({
     );
   }
   return (
-    <div className="w-full content-center bg-red-700">
+    <div className="w-full flex justify-center items-center bg-red-700">
       <Image
         alt={guess.Pokemon}
         src={`/sprites/${guess.Pokemon.toLowerCase()}.png`}

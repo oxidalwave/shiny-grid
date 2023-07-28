@@ -19,11 +19,13 @@
     "@trpc/next": "^10.26.0",
     "@trpc/react-query": "^10.26.0",
     "@trpc/server": "^10.26.0",
+    "@types/random-seed": "^0.3.3",
     "next": "^13.4.2",
     "next-auth": "^4.22.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "superjson": "1.12.2",
+    "uninstall": "^0.0.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {
@@ -38,6 +40,7 @@
     "eslint-config-next": "^13.4.2",
     "postcss": "^8.4.27",
     "prisma": "^5.0.0",
+    "random-seed": "^0.3.0",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.4"
   },
