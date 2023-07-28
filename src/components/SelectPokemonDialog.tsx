@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { type Dispatch, type SetStateAction, useState } from "react";
-import { PokemonBaseExpanded, type Pokemon } from "~/lib/data/dex";
+import { type Pokemon } from "~/lib/data/dex";
 
 export interface SelectPokemonDialogProps {
   label: string;
