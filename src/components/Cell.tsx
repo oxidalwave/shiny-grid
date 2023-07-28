@@ -1,5 +1,3 @@
-import { Button, Center, Modal } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
 import Image from "next/image";
 import { type Dispatch, type SetStateAction, useState } from "react";
 import type Category from "~/lib/categories";
@@ -7,56 +5,74 @@ import { type Pokemon } from "~/lib/data/dex";
 import SelectPokemonDialog from "./SelectPokemonDialog";
 
 export interface CellProps {
+  index: number;
   pokedex: Pokemon[];
-  guesses: Pokemon[];
-  setGuesses: Dispatch<SetStateAction<Pokemon[]>>;
+  guesses: (Pokemon | undefined)[];
+  setGuesses: Dispatch<SetStateAction<(Pokemon | undefined)[]>>;
   categories: Category[];
 }
 
 export default function Cell({
+  index,
   pokedex,
   guesses,
   setGuesses,
   categories,
 }: CellProps) {
   const [guess, setGuess] = useState<Pokemon | undefined>(undefined);
-  const [opened, { open, close }] = useDisclosure(false);
+  const [opened, setOpened] = useState(false);
 
-  function handleOpenSelect() {
-    open();
+  function open() {
+    setOpened(true);
+  }
+
+  function close() {
+    setOpened(false);
+  }
+
+  function handleGuess(p: Pokemon) {
+    setGuess(p);
+    const guessesClone = [...guesses];
+    guessesClone[index] = p;
+    setGuesses(guessesClone);
   }
 
   if (!guess) {
     return (
       <>
-        <Modal opened={opened} onClose={close}>
-          <SelectPokemonDialog pokedex={pokedex} setGuess={setGuess} />
-        </Modal>
-        <Button onClick={handleOpenSelect}>Guess</Button>
+        <dialog open={opened} onClose={close}>
+          <SelectPokemonDialog
+            cancel={close}
+            label={categories.map((c) => c.label).join(" and ")}
+            pokedex={pokedex}
+            handleGuess={handleGuess}
+          />
+        </dialog>
+        <button className="hover:bg-slate-300" onClick={open} />
       </>
     );
   }
 
   if (categories[0]?.test(guess) && categories[1]?.test(guess)) {
     return (
-      <Center>
+      <div className="w-full content-center">
         <Image
           alt={guess.Pokemon}
           src={`/sprites/${guess.Pokemon.toLowerCase()}.png`}
           width={56}
           height={42}
         />
-      </Center>
+      </div>
     );
   }
   return (
-    <Center bg="red">
+    <div className="w-full content-center bg-red-700">
       <Image
         alt={guess.Pokemon}
         src={`/sprites/${guess.Pokemon.toLowerCase()}.png`}
         width={56}
         height={42}
       />
-    </Center>
+    </div>
   );
 }

@@ -1,12 +1,12 @@
 "use client";
 
-import { SimpleGrid, Text } from "@mantine/core";
 import { useState } from "react";
 import Cell from "~/components/Cell";
 import { Generations } from "~/lib/categories/generations";
 import { Stats } from "~/lib/categories/stats";
 import { Types } from "~/lib/categories/types";
 import { type Pokemon } from "~/lib/data/dex";
+import Export from "./Export";
 
 export interface GridProps {
   dex: Pokemon[];
@@ -23,71 +23,93 @@ export default function Grid({ dex, seed }: GridProps) {
 
   const categories = [type1, type2, generation, type3, type4, stats];
 
-  const [guesses, setGuesses] = useState<Pokemon[]>([]);
+  const [guesses, setGuesses] = useState<(Pokemon | undefined)[]>([
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+    undefined,
+  ]);
 
   return (
-    <SimpleGrid cols={4}>
-      <div />
-      <Text fz="xl">{categories[0]?.label}</Text>
-      <Text fz="xl">{categories[1]?.label}</Text>
-      <Text fz="xl">{categories[2]?.label}</Text>
-      <Text fz="xl">{categories[3]?.label}</Text>
-      <Cell
-        categories={[categories[0]!, categories[3]!]}
-        pokedex={dex}
-        guesses={guesses}
-        setGuesses={setGuesses}
-      />
-      <Cell
-        categories={[categories[1]!, categories[3]!]}
-        pokedex={dex}
-        guesses={guesses}
-        setGuesses={setGuesses}
-      />
-      <Cell
-        categories={[categories[2]!, categories[3]!]}
-        pokedex={dex}
-        guesses={guesses}
-        setGuesses={setGuesses}
-      />
-      <Text fz="xl">{categories[4]?.label}</Text>
-      <Cell
-        categories={[categories[0]!, categories[4]!]}
-        pokedex={dex}
-        guesses={guesses}
-        setGuesses={setGuesses}
-      />
-      <Cell
-        categories={[categories[1]!, categories[4]!]}
-        pokedex={dex}
-        guesses={guesses}
-        setGuesses={setGuesses}
-      />
-      <Cell
-        categories={[categories[2]!, categories[4]!]}
-        pokedex={dex}
-        guesses={guesses}
-        setGuesses={setGuesses}
-      />
-      <Text fz="xl">{categories[5]?.label}</Text>
-      <Cell
-        categories={[categories[0]!, categories[5]!]}
-        pokedex={dex}
-        guesses={guesses}
-        setGuesses={setGuesses}
-      />
-      <Cell
-        categories={[categories[1]!, categories[5]!]}
-        pokedex={dex}
-        guesses={guesses}
-        setGuesses={setGuesses}
-      />
-      <Cell
-        categories={[categories[2]!, categories[5]!]}
-        pokedex={dex}
-        guesses={guesses}
-        setGuesses={setGuesses}
-      />
-    </SimpleGrid>
+    <div>
+      <div className="grid grid-cols-4 divide-x divide-y">
+        <div className="h-12" />
+        <div>{categories[0]?.label}</div>
+        <div>{categories[1]?.label}</div>
+        <div>{categories[2]?.label}</div>
+        <div className="h-12">{categories[3]?.label}</div>
+        <Cell
+          index={0}
+          categories={[categories[0]!, categories[3]!]}
+          pokedex={dex}
+          guesses={guesses}
+          setGuesses={setGuesses}
+        />
+        <Cell
+          index={1}
+          categories={[categories[1]!, categories[3]!]}
+          pokedex={dex}
+          guesses={guesses}
+          setGuesses={setGuesses}
+        />
+        <Cell
+          index={2}
+          categories={[categories[2]!, categories[3]!]}
+          pokedex={dex}
+          guesses={guesses}
+          setGuesses={setGuesses}
+        />
+        <div className="h-12">{categories[4]?.label}</div>
+        <Cell
+          index={3}
+          categories={[categories[0]!, categories[4]!]}
+          pokedex={dex}
+          guesses={guesses}
+          setGuesses={setGuesses}
+        />
+        <Cell
+          index={4}
+          categories={[categories[1]!, categories[4]!]}
+          pokedex={dex}
+          guesses={guesses}
+          setGuesses={setGuesses}
+        />
+        <Cell
+          index={5}
+          categories={[categories[2]!, categories[4]!]}
+          pokedex={dex}
+          guesses={guesses}
+          setGuesses={setGuesses}
+        />
+        <div className="h-12">{categories[5]?.label}</div>
+        <Cell
+          index={6}
+          categories={[categories[0]!, categories[5]!]}
+          pokedex={dex}
+          guesses={guesses}
+          setGuesses={setGuesses}
+        />
+        <Cell
+          index={7}
+          categories={[categories[1]!, categories[5]!]}
+          pokedex={dex}
+          guesses={guesses}
+          setGuesses={setGuesses}
+        />
+        <Cell
+          index={8}
+          categories={[categories[2]!, categories[5]!]}
+          pokedex={dex}
+          guesses={guesses}
+          setGuesses={setGuesses}
+        />
+      </div>
+      <Export categories={categories} guesses={guesses} />
+    </div>
   );
 }
