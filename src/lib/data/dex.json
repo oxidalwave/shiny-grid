@@ -2785,7 +2785,7 @@
   {
     "Nat": 122,
     "Pokemon": "Mr. Mime",
-    "imageUrl": "/sprites/mr. mime.png",
+    "imageUrl": "/sprites/mr-mime.png",
     "HP": 40,
     "Atk": 45,
     "Def": 65,
@@ -19897,7 +19897,7 @@
   {
     "Nat": 866,
     "Pokemon": "Mr. Rime",
-    "imageUrl": "/sprites/mr. rime.png",
+    "imageUrl": "/sprites/mr-rime.png",
     "HP": 80,
     "Atk": 85,
     "Def": 75,
