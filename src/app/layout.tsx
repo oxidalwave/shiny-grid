@@ -1,10 +1,19 @@
 import "~/styles/globals.css";
 import { type ReactNode } from "react";
+import Account from "~/components/auth/Account";
+import Providers from "~/components/Providers";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html>
-      <body className="font-pokemon bg-slate-900 text-white">{children}</body>
+      <body className="bg-slate-900 font-pokemon text-white">
+        <nav className="h-8 bg-slate-800">
+          <Providers>
+            <Account />
+          </Providers>
+        </nav>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { type Dispatch, type SetStateAction, useState } from "react";
+import { useState } from "react";
 import type Category from "~/lib/categories";
 import { type Pokemon } from "~/lib/data/dex";
 import PendingCell from "./PendingCell";
@@ -13,7 +13,7 @@ export interface CellProps {
     pokemon: Pokemon;
     categories: Category[];
   }[];
-  onGuess: (p: Pokemon, cs: Category[]) => void;
+  onGuess: (pokemon: Pokemon, categories: Category[]) => void;
   categories: Category[];
 }
 

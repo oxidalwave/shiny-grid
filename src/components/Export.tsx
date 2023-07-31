@@ -30,6 +30,7 @@ export default function Export({ seed, guesses }: ExportProps) {
     <>
       <button onClick={handleOpen}>Export</button>
       <dialog className="p-2 rounded w-80 bg-slate-700 text-white" ref={modalRef}>
+      <button className="bg-slate-900 w-full p-2 rounded" onClick={() => modalRef.current?.close()}>Close</button>
         <div>The below has been copied to the clipboard.</div>
         <div>Seed: {seed}</div>
         <div className="flex flex-col">

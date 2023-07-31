@@ -1,4 +1,4 @@
-import Grid from "~/components/Grid";
+import App from "~/components/App";
 import dex from "~/lib/data/dex";
 
 function defaultSeed() {
@@ -22,7 +22,7 @@ export default function HomePage({
 
   return (
     <div className="p-2">
-      <Grid dex={dex} seed={seed} />
+      <App dex={dex} seed={seed} />
     </div>
   );
 }
