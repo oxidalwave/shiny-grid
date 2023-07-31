@@ -16,7 +16,7 @@ export default function SignOut() {
         <dialog className="bg-slate-700 rounded p-2 text-white flex flex-col gap-2">
           <button
             className="bg-slate-900 rounded p-2"
-            onClick={() => signOut()}
+            onClick={() => void signOut()}
           >
             Sign Out
           </button>
