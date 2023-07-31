@@ -5,12 +5,12 @@ import { type Pokemon } from "~/lib/data/dex";
 import Export from "./Export";
 
 import { getCategories } from "~/lib/getCategories";
-import type Categor from "~/lib/categories";
+import type Category from "~/lib/categories";
 import Grid from "./Grid";
 
 interface Guess {
   pokemon: Pokemon;
-  categories: Categor[];
+  categories: Category[];
 }
 
 export interface GridProps {
@@ -23,7 +23,7 @@ export default function App({ dex, seed }: GridProps) {
 
   const [guesses, setGuesses] = useState<Guess[]>([]);
 
-  function handleGuess(pokemon: Pokemon, categories: Categor[]) {
+  function handleGuess(pokemon: Pokemon, categories: Category[]) {
     setGuesses([...guesses, { pokemon, categories }]);
   }
 

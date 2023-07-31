@@ -11,14 +11,9 @@ function defaultSeed() {
 export default function HomePage({
   searchParams,
 }: {
-  searchParams: { seed: string | undefined };
+  searchParams: Record<string, never>;
 }) {
-  let seed: number;
-  if (searchParams.seed && !isNaN(Number(searchParams.seed))) {
-    seed = Number(searchParams.seed);
-  } else {
-    seed = defaultSeed();
-  }
+  const seed = defaultSeed();
 
   return (
     <div className="p-2">
