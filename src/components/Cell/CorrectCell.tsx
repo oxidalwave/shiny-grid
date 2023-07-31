@@ -7,7 +7,7 @@ export interface CorrectCellProps {
 
 export default function CorrectCell({ guess }: CorrectCellProps) {
   return (
-    <div className="h-full flex justify-center items-center bg-success-content">
+    <div className="h-full flex justify-center items-center bg-green-500">
       <Image
         alt={guess.Pokemon}
         src={guess.imageUrl ?? ""}

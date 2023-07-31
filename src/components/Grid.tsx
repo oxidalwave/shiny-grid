@@ -42,7 +42,7 @@ export default function Grid({ dex, seed }: GridProps) {
 
   return (
     <div className="">
-      <div className="grid grid-cols-4">
+      <div className="grid grid-cols-4 divide-y divide-x divide-slate-500 border-b border-b-slate-500 border-r border-r-slate-500">
         <div className="h-12" />
         <Category category={categories[0]!} />
         <Category category={categories[1]!} />

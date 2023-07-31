@@ -44,7 +44,7 @@ export default function PendingCell({
         )}
       </dialog>
       <button
-        className="h-full hover:bg-info-content"
+        className="h-full bg-slate-500 hover:bg-slate-700"
         onClick={() => setOpened(true)}
       />
     </>

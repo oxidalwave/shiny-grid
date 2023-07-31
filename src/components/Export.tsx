@@ -49,7 +49,7 @@ export default function Export({ categories, guesses }: ExportProps) {
   return (
     <>
       <button onClick={handleOpen}>Export</button>
-      <dialog open={open}>
+      <dialog className="bg-transparent" open={open}>
         <button onClick={() => setOpen(false)}>Close</button>
         <div>The below has been copied to the clipboard.</div>
         <div className="flex flex-col">
