@@ -3,11 +3,12 @@ import type Category from "~/lib/categories";
 import { type Pokemon } from "~/lib/data/dex";
 
 export interface ExportProps {
+  seed: number;
   categories: Category[];
   guesses: (Pokemon | undefined)[];
 }
 
-export default function Export({ categories, guesses }: ExportProps) {
+export default function Export({ seed, categories, guesses }: ExportProps) {
   const [open, setOpen] = useState(false);
 
   const exportGuesses = [
@@ -43,7 +44,9 @@ export default function Export({ categories, guesses }: ExportProps) {
 
   function handleOpen() {
     setOpen(true);
-    void navigator.clipboard.writeText(exportGuesses.join("\n"));
+    void navigator.clipboard.writeText(
+      `Seed: ${seed}\n` + exportGuesses.join("\n")
+    );
   }
 
   return (
@@ -52,6 +55,7 @@ export default function Export({ categories, guesses }: ExportProps) {
       <dialog className="bg-transparent" open={open}>
         <button onClick={() => setOpen(false)}>Close</button>
         <div>The below has been copied to the clipboard.</div>
+        <div>Seed: {seed}</div>
         <div className="flex flex-col">
           {exportGuesses.map((g, i) => (
             <div key={i}>{g}</div>

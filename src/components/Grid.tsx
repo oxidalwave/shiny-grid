@@ -120,7 +120,7 @@ export default function Grid({ dex, seed }: GridProps) {
           setGuesses={setGuesses}
         />
       </div>
-      <Export categories={categories} guesses={guesses} />
+      <Export seed={seed} categories={categories} guesses={guesses} />
     </div>
   );
 }
