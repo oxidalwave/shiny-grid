@@ -6,13 +6,11 @@ export interface SelectPokemonDialogProps {
   label: string;
   pokedex: Pokemon[];
   handleGuess: (p: Pokemon) => void;
-  setOpened: Dispatch<SetStateAction<boolean>>;
 }
 
 export default function SelectPokemonDialog({
   label,
   pokedex,
-  setOpened,
   handleGuess,
 }: SelectPokemonDialogProps) {
   const [name, setName] = useState<string>("");
@@ -29,13 +27,7 @@ export default function SelectPokemonDialog({
           .slice(0, 10);
 
   return (
-    <div className="p-2 w-80 bg-slate-700 text-white">
-      <button
-        className="bg-slate-900 w-full p-2 rounded"
-        onClick={() => setOpened(false)}
-      >
-        Cancel
-      </button>
+    <div>
       <div className="w-full py-4 flex justify-center text-xl">{label}</div>
       <input
         autoFocus

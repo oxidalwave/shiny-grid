@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import type Category from "~/lib/categories";
 import { type Pokemon } from "~/lib/data/dex";
 
@@ -11,7 +11,7 @@ export interface ExportProps {
 }
 
 export default function Export({ seed, guesses }: ExportProps) {
-  const [open, setOpen] = useState(false);
+  const modalRef = useRef<HTMLDialogElement>(null);
 
   const exportGuesses = guesses.map((g) => {
     const cats = g.categories.map((c) => c.label).join(" and ");
@@ -20,7 +20,7 @@ export default function Export({ seed, guesses }: ExportProps) {
   });
 
   function handleOpen() {
-    setOpen(true);
+    modalRef.current?.showModal();
     void navigator.clipboard.writeText(
       `Seed: ${seed}\n` + exportGuesses.join("\n")
     );
@@ -29,8 +29,7 @@ export default function Export({ seed, guesses }: ExportProps) {
   return (
     <>
       <button onClick={handleOpen}>Export</button>
-      <dialog className="bg-transparent text-white" open={open}>
-        <button onClick={() => setOpen(false)}>Close</button>
+      <dialog className="p-2 rounded w-80 bg-slate-700 text-white" ref={modalRef}>
         <div>The below has been copied to the clipboard.</div>
         <div>Seed: {seed}</div>
         <div className="flex flex-col">
