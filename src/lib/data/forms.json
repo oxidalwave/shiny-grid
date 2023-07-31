@@ -1,6 +1,6 @@
 [
   {
-    "Nat": 25,
+    "Nat": 25.1,
     "Pokemon": "Partner Pikachu",
     "HP": 45,
     "Atk": 80,
@@ -19,7 +19,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 133,
+    "Nat": 133.1,
     "Pokemon": "Partner Eevee",
     "HP": 65,
     "Atk": 75,
@@ -38,7 +38,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 351,
+    "Nat": 351.1,
     "Pokemon": "Sun Castform",
     "HP": 70,
     "Atk": 70,
@@ -57,7 +57,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 351,
+    "Nat": 351.2,
     "Pokemon": "Rain Castform",
     "HP": 70,
     "Atk": 70,
@@ -76,7 +76,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 351,
+    "Nat": 351.3,
     "Pokemon": "Hail Castform",
     "HP": 70,
     "Atk": 70,
@@ -95,7 +95,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 382,
+    "Nat": 382.1,
     "Pokemon": "Primal Kyogre",
     "HP": 100,
     "Atk": 150,
@@ -114,7 +114,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 383,
+    "Nat": 383.1,
     "Pokemon": "Primal Groudon",
     "HP": 100,
     "Atk": 180,
@@ -323,7 +323,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 483,
+    "Nat": 483.1,
     "Pokemon": "Origin Dialga",
     "HP": 100,
     "Atk": 100,
@@ -342,7 +342,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 484,
+    "Nat": 484.1,
     "Pokemon": "Origin Palkia",
     "HP": 90,
     "Atk": 100,
@@ -399,7 +399,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 550,
+    "Nat": 550.1,
     "Pokemon": "Blue Basculin",
     "HP": 70,
     "Atk": 92,
@@ -437,7 +437,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 641,
+    "Nat": 641.1,
     "Pokemon": "Therian Tornadus",
     "HP": 79,
     "Atk": 100,
@@ -456,7 +456,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 642,
+    "Nat": 642.1,
     "Pokemon": "Therian Thundurus",
     "HP": 79,
     "Atk": 105,
@@ -475,7 +475,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 645,
+    "Nat": 645.1,
     "Pokemon": "Therian Landorus",
     "HP": 89,
     "Atk": 145,
@@ -494,7 +494,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 646,
+    "Nat": 646.1,
     "Pokemon": "Black Kyurem",
     "HP": 125,
     "Atk": 170,
@@ -513,7 +513,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 646,
+    "Nat": 646.2,
     "Pokemon": "White Kyurem",
     "HP": 125,
     "Atk": 120,
@@ -551,7 +551,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 658,
+    "Nat": 658.1,
     "Pokemon": "BB Greninja",
     "HP": 72,
     "Atk": 95,
@@ -570,7 +570,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 658,
+    "Nat": 658.2,
     "Pokemon": "Ash Greninja",
     "HP": 72,
     "Atk": 145,
@@ -589,7 +589,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 670,
+    "Nat": 670.1,
     "Pokemon": "Eternal Floette",
     "HP": 74,
     "Atk": 65,
@@ -608,8 +608,8 @@
     "Evolve": "N"
   },
   {
-    "Nat": 678,
-    "Pokemon": "F Meowstic",
+    "Nat": 678.1,
+    "Pokemon": "Female Meowstic",
     "HP": 74,
     "Atk": 48,
     "Def": 76,
@@ -627,7 +627,7 @@
     "Evolve": "Level 25 Female"
   },
   {
-    "Nat": 681,
+    "Nat": 681.1,
     "Pokemon": "B Aegislash",
     "HP": 60,
     "Atk": 140,
@@ -646,8 +646,8 @@
     "Evolve": "N"
   },
   {
-    "Nat": 710,
-    "Pokemon": "A Pumpkaboo",
+    "Nat": 710.1,
+    "Pokemon": "Average Pumpkaboo",
     "HP": 49,
     "Atk": 66,
     "Def": 70,
@@ -665,8 +665,8 @@
     "Evolve": ""
   },
   {
-    "Nat": 710,
-    "Pokemon": "L Pumpkaboo",
+    "Nat": 710.2,
+    "Pokemon": "Large Pumpkaboo",
     "HP": 54,
     "Atk": 66,
     "Def": 70,
@@ -684,8 +684,8 @@
     "Evolve": ""
   },
   {
-    "Nat": 710,
-    "Pokemon": "SS Pumpkaboo",
+    "Nat": 710.3,
+    "Pokemon": "Super Size Pumpkaboo",
     "HP": 59,
     "Atk": 66,
     "Def": 70,
@@ -703,8 +703,8 @@
     "Evolve": ""
   },
   {
-    "Nat": 711,
-    "Pokemon": "A Gourgeist",
+    "Nat": 711.1,
+    "Pokemon": "Average Gourgeist",
     "HP": 65,
     "Atk": 90,
     "Def": 122,
@@ -722,8 +722,8 @@
     "Evolve": "Trade"
   },
   {
-    "Nat": 711,
-    "Pokemon": "L Gourgeist",
+    "Nat": 711.2,
+    "Pokemon": "Large Gourgeist",
     "HP": 75,
     "Atk": 95,
     "Def": 122,
@@ -741,8 +741,8 @@
     "Evolve": "Trade"
   },
   {
-    "Nat": 711,
-    "Pokemon": "SS Gourgeist",
+    "Nat": 711.3,
+    "Pokemon": "Super Size Gourgeist",
     "HP": 85,
     "Atk": 100,
     "Def": 122,
@@ -760,7 +760,7 @@
     "Evolve": "Trade"
   },
   {
-    "Nat": 718,
+    "Nat": 718.1,
     "Pokemon": "Zygarde 10%",
     "HP": 54,
     "Atk": 100,
@@ -779,7 +779,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 718,
+    "Nat": 718.2,
     "Pokemon": "Zygarde 100%",
     "HP": 216,
     "Atk": 100,
@@ -798,7 +798,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 720,
+    "Nat": 720.1,
     "Pokemon": "Hoopa (U)",
     "HP": 80,
     "Atk": 160,
@@ -817,7 +817,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 741,
+    "Nat": 741.1,
     "Pokemon": "Baile Oricorio",
     "HP": 75,
     "Atk": 70,
@@ -836,7 +836,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 741,
+    "Nat": 741.2,
     "Pokemon": "Pa'u Oricorio",
     "HP": 75,
     "Atk": 70,
@@ -855,7 +855,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 741,
+    "Nat": 741.3,
     "Pokemon": "Sen. Oricorio",
     "HP": 75,
     "Atk": 70,
@@ -874,7 +874,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 744,
+    "Nat": 744.1,
     "Pokemon": "Dusk Rockruff",
     "HP": 45,
     "Atk": 65,
@@ -893,7 +893,7 @@
     "Evolve": ""
   },
   {
-    "Nat": 745,
+    "Nat": 745.1,
     "Pokemon": "Midnight Lycanroc",
     "HP": 85,
     "Atk": 115,
@@ -912,7 +912,7 @@
     "Evolve": "Level 25 Night"
   },
   {
-    "Nat": 745,
+    "Nat": 745.2,
     "Pokemon": "Dusk Lycanroc",
     "HP": 75,
     "Atk": 117,
@@ -931,7 +931,7 @@
     "Evolve": "Own Tempo Level 25, 7-7:59pm"
   },
   {
-    "Nat": 746,
+    "Nat": 746.1,
     "Pokemon": "S Wishiwashi",
     "HP": 45,
     "Atk": 140,
@@ -950,7 +950,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 774,
+    "Nat": 774.1,
     "Pokemon": "Minior Core",
     "HP": 60,
     "Atk": 100,
@@ -969,7 +969,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 800,
+    "Nat": 800.1,
     "Pokemon": "DM Necrozma",
     "HP": 97,
     "Atk": 157,
@@ -988,7 +988,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 800,
+    "Nat": 800.2,
     "Pokemon": "DW Necrozma",
     "HP": 97,
     "Atk": 113,
@@ -1007,7 +1007,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 800,
+    "Nat": 800.3,
     "Pokemon": "U Necrozma",
     "HP": 97,
     "Atk": 167,
@@ -1026,7 +1026,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 849,
+    "Nat": 849.1,
     "Pokemon": "Toxtricity Low",
     "HP": 75,
     "Atk": 98,
@@ -1045,7 +1045,7 @@
     "Evolve": "Level 30, Lonely, Bold, Relaxed, Timid, Serious, Modest, Mild, Quiet, Bashful, Calm, Gentle, or Careful."
   },
   {
-    "Nat": 875,
+    "Nat": 875.1,
     "Pokemon": "Eiscue No Ice",
     "HP": 75,
     "Atk": 80,
@@ -1064,8 +1064,8 @@
     "Evolve": "N"
   },
   {
-    "Nat": 876,
-    "Pokemon": "F Indeedee",
+    "Nat": 876.1,
+    "Pokemon": "Female Indeedee",
     "HP": 70,
     "Atk": 55,
     "Def": 65,
@@ -1083,7 +1083,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 888,
+    "Nat": 888.1,
     "Pokemon": "Zacian Crowned",
     "HP": 92,
     "Atk": 150,
@@ -1102,7 +1102,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 889,
+    "Nat": 889.1,
     "Pokemon": "Zamazenta Crowned",
     "HP": 92,
     "Atk": 120,
@@ -1121,7 +1121,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 890,
+    "Nat": 890.1,
     "Pokemon": "Eternamax",
     "HP": 255,
     "Atk": 115,
@@ -1140,7 +1140,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 892,
+    "Nat": 892.1,
     "Pokemon": "RS Urshifu",
     "HP": 100,
     "Atk": 130,
@@ -1159,7 +1159,7 @@
     "Evolve": "Level 30, Water Scroll"
   },
   {
-    "Nat": 898,
+    "Nat": 898.1,
     "Pokemon": "SR Calyrex",
     "HP": 100,
     "Atk": 85,
@@ -1178,7 +1178,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 898,
+    "Nat": 898.2,
     "Pokemon": "IR Calyrex",
     "HP": 100,
     "Atk": 165,
@@ -1197,7 +1197,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 902,
+    "Nat": 902.1,
     "Pokemon": "FBasculegion",
     "HP": 120,
     "Atk": 92,
@@ -1216,7 +1216,7 @@
     "Evolve": "F, Recoil 294 HP w/out Faint"
   },
   {
-    "Nat": 905,
+    "Nat": 905.1,
     "Pokemon": "T Enamorous",
     "HP": 74,
     "Atk": 115,
@@ -1235,7 +1235,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 916,
+    "Nat": 916.1,
     "Pokemon": "Oinkologne-F",
     "HP": 115,
     "Atk": 90,
@@ -1254,7 +1254,7 @@
     "Evolve": "Level 18, Female"
   },
   {
-    "Nat": 934,
+    "Nat": 934.1,
     "Pokemon": "Palafin - Hero",
     "HP": 100,
     "Atk": 160,
@@ -1273,7 +1273,7 @@
     "Evolve": "Multiplayer, Following, level out while other player has Finizen out."
   },
   {
-    "Nat": "",
+    "Nat": 931.1,
     "Pokemon": "Squawkabilly",
     "HP": 82,
     "Atk": 96,
@@ -1292,7 +1292,7 @@
     "Evolve": "N"
   },
   {
-    "Nat": 977,
+    "Nat": 977.1,
     "Pokemon": "Gimmighoul - Roaming",
     "HP": 45,
     "Atk": 30,

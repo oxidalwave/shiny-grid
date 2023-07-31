@@ -26,7 +26,6 @@ export default function SelectPokemonDialog({
       ? []
       : pokedex
           .filter((p) => p.Pokemon.toLowerCase().includes(name.toLowerCase()))
-          .flatMap((p) => [p, ...(p.regionals ?? [])])
           .slice(0, 10);
 
   return (

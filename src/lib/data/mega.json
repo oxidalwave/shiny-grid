@@ -1,7 +1,7 @@
 [
   {
-    "Nat": 3,
-    "Pokemon": "Venusaur",
+    "Nat": 3.1,
+    "Pokemon": "Mega Venusaur",
     "HP": 80,
     "Atk": 100,
     "Def": 123,
@@ -14,8 +14,8 @@
     "Ability I": "Thick Fat"
   },
   {
-    "Nat": 6,
-    "Pokemon": "Charizard X",
+    "Nat": 6.1,
+    "Pokemon": "Mega Charizard X",
     "HP": 78,
     "Atk": 130,
     "Def": 111,
@@ -28,8 +28,8 @@
     "Ability I": "Tough Claws"
   },
   {
-    "Nat": 6,
-    "Pokemon": "Charizard Y",
+    "Nat": 6.2,
+    "Pokemon": "Mega Charizard Y",
     "HP": 78,
     "Atk": 104,
     "Def": 78,
@@ -42,8 +42,8 @@
     "Ability I": "Drought"
   },
   {
-    "Nat": 9,
-    "Pokemon": "Blastoise",
+    "Nat": 9.1,
+    "Pokemon": "Mega Blastoise",
     "HP": 79,
     "Atk": 103,
     "Def": 120,
@@ -56,8 +56,8 @@
     "Ability I": "Mega Launcher"
   },
   {
-    "Nat": 15,
-    "Pokemon": "Beedrill",
+    "Nat": 15.1,
+    "Pokemon": "Mega Beedrill",
     "HP": 65,
     "Atk": 150,
     "Def": 40,
@@ -70,8 +70,8 @@
     "Ability I": "Adaptability"
   },
   {
-    "Nat": 18,
-    "Pokemon": "Pidgeot",
+    "Nat": 18.1,
+    "Pokemon": "Mega Pidgeot",
     "HP": 83,
     "Atk": 80,
     "Def": 80,
@@ -84,8 +84,8 @@
     "Ability I": "No Guard"
   },
   {
-    "Nat": 65,
-    "Pokemon": "Alakazam",
+    "Nat": 65.1,
+    "Pokemon": "Mega Alakazam",
     "HP": 55,
     "Atk": 50,
     "Def": 65,
@@ -98,8 +98,8 @@
     "Ability I": "Trace"
   },
   {
-    "Nat": 80,
-    "Pokemon": "Slowbro",
+    "Nat": 80.1,
+    "Pokemon": "Mega Slowbro",
     "HP": 95,
     "Atk": 75,
     "Def": 180,
@@ -112,8 +112,8 @@
     "Ability I": "Shell Armor"
   },
   {
-    "Nat": 94,
-    "Pokemon": "Gengar",
+    "Nat": 94.1,
+    "Pokemon": "Mega Gengar",
     "HP": 60,
     "Atk": 65,
     "Def": 80,
@@ -126,8 +126,8 @@
     "Ability I": "Shadow Tag"
   },
   {
-    "Nat": 115,
-    "Pokemon": "Kangaskhan",
+    "Nat": 115.1,
+    "Pokemon": "Mega Kangaskhan",
     "HP": 105,
     "Atk": 125,
     "Def": 100,
@@ -140,8 +140,8 @@
     "Ability I": "Parental Bond"
   },
   {
-    "Nat": 127,
-    "Pokemon": "Pinsir",
+    "Nat": 127.1,
+    "Pokemon": "Mega Pinsir",
     "HP": 65,
     "Atk": 155,
     "Def": 120,
@@ -154,8 +154,8 @@
     "Ability I": "Aerilate"
   },
   {
-    "Nat": 130,
-    "Pokemon": "Gyarados",
+    "Nat": 130.1,
+    "Pokemon": "Mega Gyarados",
     "HP": 95,
     "Atk": 155,
     "Def": 109,
@@ -168,8 +168,8 @@
     "Ability I": "Mold Breaker"
   },
   {
-    "Nat": 142,
-    "Pokemon": "Aerodactyl",
+    "Nat": 142.1,
+    "Pokemon": "Mega Aerodactyl",
     "HP": 80,
     "Atk": 135,
     "Def": 85,
@@ -182,8 +182,8 @@
     "Ability I": "Tough Claws"
   },
   {
-    "Nat": 150,
-    "Pokemon": "Mewtwo X",
+    "Nat": 150.1,
+    "Pokemon": "Mega Mewtwo X",
     "HP": 106,
     "Atk": 190,
     "Def": 100,
@@ -196,8 +196,8 @@
     "Ability I": "Steadfast"
   },
   {
-    "Nat": 150,
-    "Pokemon": "Mewtwo Y",
+    "Nat": 150.2,
+    "Pokemon": "Mega Mewtwo Y",
     "HP": 106,
     "Atk": 150,
     "Def": 70,
@@ -210,8 +210,8 @@
     "Ability I": "Insomnia"
   },
   {
-    "Nat": 181,
-    "Pokemon": "Ampharos",
+    "Nat": 181.1,
+    "Pokemon": "Mega Ampharos",
     "HP": 90,
     "Atk": 95,
     "Def": 105,
@@ -224,8 +224,8 @@
     "Ability I": "Mold Breaker"
   },
   {
-    "Nat": 208,
-    "Pokemon": "Steelix",
+    "Nat": 208.1,
+    "Pokemon": "Mega Steelix",
     "HP": 75,
     "Atk": 125,
     "Def": 230,
@@ -238,8 +238,8 @@
     "Ability I": "Sand Force"
   },
   {
-    "Nat": 212,
-    "Pokemon": "Scizor",
+    "Nat": 212.1,
+    "Pokemon": "Mega Scizor",
     "HP": 70,
     "Atk": 150,
     "Def": 140,
@@ -252,8 +252,8 @@
     "Ability I": "Technician"
   },
   {
-    "Nat": 214,
-    "Pokemon": "Heracross",
+    "Nat": 214.1,
+    "Pokemon": "Mega Heracross",
     "HP": 80,
     "Atk": 185,
     "Def": 115,
@@ -266,8 +266,8 @@
     "Ability I": "Skill Link"
   },
   {
-    "Nat": 229,
-    "Pokemon": "Houndoom",
+    "Nat": 229.1,
+    "Pokemon": "Mega Houndoom",
     "HP": 75,
     "Atk": 90,
     "Def": 90,
@@ -280,8 +280,8 @@
     "Ability I": "Solar Power"
   },
   {
-    "Nat": 248,
-    "Pokemon": "Tyranitar",
+    "Nat": 248.1,
+    "Pokemon": "Mega Tyranitar",
     "HP": 100,
     "Atk": 164,
     "Def": 150,
@@ -294,8 +294,8 @@
     "Ability I": "Sand Stream"
   },
   {
-    "Nat": 254,
-    "Pokemon": "Sceptile",
+    "Nat": 254.1,
+    "Pokemon": "Mega Sceptile",
     "HP": 70,
     "Atk": 110,
     "Def": 75,
@@ -308,8 +308,8 @@
     "Ability I": "Lightning Rod"
   },
   {
-    "Nat": 257,
-    "Pokemon": "Blaziken",
+    "Nat": 257.1,
+    "Pokemon": "Mega Blaziken",
     "HP": 80,
     "Atk": 160,
     "Def": 80,
@@ -322,8 +322,8 @@
     "Ability I": "Speed Boost"
   },
   {
-    "Nat": 260,
-    "Pokemon": "Swampert",
+    "Nat": 260.1,
+    "Pokemon": "Mega Swampert",
     "HP": 100,
     "Atk": 150,
     "Def": 110,
@@ -336,8 +336,8 @@
     "Ability I": "Swift Swim"
   },
   {
-    "Nat": 282,
-    "Pokemon": "Gardevoir",
+    "Nat": 282.1,
+    "Pokemon": "Mega Gardevoir",
     "HP": 68,
     "Atk": 85,
     "Def": 65,
@@ -350,8 +350,8 @@
     "Ability I": "Pixilate"
   },
   {
-    "Nat": 302,
-    "Pokemon": "Sableye",
+    "Nat": 302.1,
+    "Pokemon": "Mega Sableye",
     "HP": 50,
     "Atk": 85,
     "Def": 125,
@@ -364,8 +364,8 @@
     "Ability I": "Magic Bounce"
   },
   {
-    "Nat": 303,
-    "Pokemon": "Mawile",
+    "Nat": 303.1,
+    "Pokemon": "Mega Mawile",
     "HP": 50,
     "Atk": 105,
     "Def": 125,
@@ -378,8 +378,8 @@
     "Ability I": "Huge Power"
   },
   {
-    "Nat": 306,
-    "Pokemon": "Aggron",
+    "Nat": 306.1,
+    "Pokemon": "Mega Aggron",
     "HP": 70,
     "Atk": 140,
     "Def": 230,
@@ -392,8 +392,8 @@
     "Ability I": "Filter"
   },
   {
-    "Nat": 308,
-    "Pokemon": "Medicham",
+    "Nat": 308.1,
+    "Pokemon": "Mega Medicham",
     "HP": 60,
     "Atk": 100,
     "Def": 85,
@@ -406,8 +406,8 @@
     "Ability I": "Pure Power"
   },
   {
-    "Nat": 310,
-    "Pokemon": "Manectric",
+    "Nat": 310.1,
+    "Pokemon": "Mega Manectric",
     "HP": 70,
     "Atk": 75,
     "Def": 80,
@@ -420,8 +420,8 @@
     "Ability I": "Intimidate"
   },
   {
-    "Nat": 319,
-    "Pokemon": "Sharpedo",
+    "Nat": 319.1,
+    "Pokemon": "Mega Sharpedo",
     "HP": 70,
     "Atk": 140,
     "Def": 70,
@@ -434,8 +434,8 @@
     "Ability I": "Strong Jaw"
   },
   {
-    "Nat": 323,
-    "Pokemon": "Camerupt",
+    "Nat": 323.1,
+    "Pokemon": "Mega Camerupt",
     "HP": 70,
     "Atk": 120,
     "Def": 100,
@@ -448,8 +448,8 @@
     "Ability I": "Sheer Force"
   },
   {
-    "Nat": 334,
-    "Pokemon": "Altaria",
+    "Nat": 334.1,
+    "Pokemon": "Mega Altaria",
     "HP": 75,
     "Atk": 110,
     "Def": 110,
@@ -462,8 +462,8 @@
     "Ability I": "Pixilate"
   },
   {
-    "Nat": 354,
-    "Pokemon": "Banette",
+    "Nat": 354.1,
+    "Pokemon": "Mega Banette",
     "HP": 64,
     "Atk": 165,
     "Def": 75,
@@ -476,8 +476,8 @@
     "Ability I": "Prankster"
   },
   {
-    "Nat": 359,
-    "Pokemon": "Absol",
+    "Nat": 359.1,
+    "Pokemon": "Mega Absol",
     "HP": 65,
     "Atk": 150,
     "Def": 60,
@@ -490,8 +490,8 @@
     "Ability I": "Magic Bounce"
   },
   {
-    "Nat": 362,
-    "Pokemon": "Glalie",
+    "Nat": 362.1,
+    "Pokemon": "Mega Glalie",
     "HP": 80,
     "Atk": 120,
     "Def": 80,
@@ -504,8 +504,8 @@
     "Ability I": "Refrigerate"
   },
   {
-    "Nat": 373,
-    "Pokemon": "Salamence",
+    "Nat": 373.1,
+    "Pokemon": "Mega Salamence",
     "HP": 95,
     "Atk": 145,
     "Def": 130,
@@ -518,8 +518,8 @@
     "Ability I": "Aerilate"
   },
   {
-    "Nat": 376,
-    "Pokemon": "Metagross",
+    "Nat": 376.1,
+    "Pokemon": "Mega Metagross",
     "HP": 80,
     "Atk": 145,
     "Def": 150,
@@ -532,8 +532,8 @@
     "Ability I": "Tough Claws"
   },
   {
-    "Nat": 380,
-    "Pokemon": "Latias",
+    "Nat": 380.1,
+    "Pokemon": "Mega Latias",
     "HP": 80,
     "Atk": 100,
     "Def": 120,
@@ -546,8 +546,8 @@
     "Ability I": "Levitate"
   },
   {
-    "Nat": 381,
-    "Pokemon": "Latios",
+    "Nat": 381.1,
+    "Pokemon": "Mega Latios",
     "HP": 80,
     "Atk": 130,
     "Def": 100,
@@ -560,8 +560,8 @@
     "Ability I": "Levitate"
   },
   {
-    "Nat": 384,
-    "Pokemon": "Rayquaza",
+    "Nat": 384.1,
+    "Pokemon": "Mega Rayquaza",
     "HP": 105,
     "Atk": 180,
     "Def": 100,
@@ -574,8 +574,8 @@
     "Ability I": "Delta Stream"
   },
   {
-    "Nat": 428,
-    "Pokemon": "Lopunny",
+    "Nat": 428.1,
+    "Pokemon": "Mega Lopunny",
     "HP": 65,
     "Atk": 136,
     "Def": 94,
@@ -588,8 +588,8 @@
     "Ability I": "Scrappy"
   },
   {
-    "Nat": 445,
-    "Pokemon": "Garchomp",
+    "Nat": 445.1,
+    "Pokemon": "Mega Garchomp",
     "HP": 108,
     "Atk": 170,
     "Def": 115,
@@ -602,8 +602,8 @@
     "Ability I": "Sand Force"
   },
   {
-    "Nat": 448,
-    "Pokemon": "Lucario",
+    "Nat": 448.1,
+    "Pokemon": "Mega Lucario",
     "HP": 70,
     "Atk": 145,
     "Def": 88,
@@ -616,8 +616,8 @@
     "Ability I": "Adaptability"
   },
   {
-    "Nat": 460,
-    "Pokemon": "Abomasnow",
+    "Nat": 460.1,
+    "Pokemon": "Mega Abomasnow",
     "HP": 90,
     "Atk": 132,
     "Def": 105,
@@ -630,8 +630,8 @@
     "Ability I": "Snow Warning"
   },
   {
-    "Nat": 475,
-    "Pokemon": "Gallade",
+    "Nat": 475.1,
+    "Pokemon": "Mega Gallade",
     "HP": 68,
     "Atk": 165,
     "Def": 95,
@@ -644,8 +644,8 @@
     "Ability I": "Inner Focus"
   },
   {
-    "Nat": 531,
-    "Pokemon": "Audino",
+    "Nat": 531.1,
+    "Pokemon": "Mega Audino",
     "HP": 103,
     "Atk": 60,
     "Def": 126,
@@ -658,8 +658,8 @@
     "Ability I": "Healer"
   },
   {
-    "Nat": 719,
-    "Pokemon": "Diance",
+    "Nat": 719.1,
+    "Pokemon": "Mega Diance",
     "HP": 50,
     "Atk": 160,
     "Def": 110,

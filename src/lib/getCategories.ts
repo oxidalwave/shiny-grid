@@ -4,6 +4,7 @@ import { Generations } from "./categories/generations";
 import { Stats } from "./categories/stats";
 import { Types } from "./categories/types";
 
+// TODO: Reroll duplicates
 export function getCategories(seed: number) {
   const rand = gen.create(seed.toString());
 

@@ -22,7 +22,8 @@ export type Type =
   | "Dark"
   | "Steel"
   | "Fairy"
-  | "???";
+  | "???"
+  | "";
 
 export interface Pokemon {
   Nat: number;
@@ -53,12 +54,11 @@ export interface Pokemon {
   regionals?: Pokemon[];
 }
 
-const dex: Pokemon[] = dexdata.map(({ Nat, ...d }) => ({
-  Nat,
-  ...d,
-  forms: forms.filter((f) => f.Nat === Nat),
-  megas: mega.filter((m) => m.Nat === Nat),
-  regionals: regional.filter((r) => r.Nat === Nat),
-})) as Pokemon[];
+const dex: Pokemon[] = [
+  ...dexdata,
+  ...mega,
+  ...forms,
+  ...regional,
+] as Pokemon[];
 
 export default dex;
