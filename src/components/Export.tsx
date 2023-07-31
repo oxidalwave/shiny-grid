@@ -4,43 +4,20 @@ import { type Pokemon } from "~/lib/data/dex";
 
 export interface ExportProps {
   seed: number;
-  categories: Category[];
-  guesses: (Pokemon | undefined)[];
+  guesses: {
+    pokemon: Pokemon;
+    categories: Category[];
+  }[];
 }
 
-export default function Export({ seed, categories, guesses }: ExportProps) {
+export default function Export({ seed, guesses }: ExportProps) {
   const [open, setOpen] = useState(false);
 
-  const exportGuesses = [
-    ,
-    `${categories[0]?.label ?? ""} and ${categories[4]?.label ?? ""}: ${
-      guesses[0]?.Nat ?? "No answer"
-    }`,
-    `${categories[0]?.label ?? ""} and ${categories[5]?.label ?? ""}: ${
-      guesses[1]?.Nat ?? "No answer"
-    }`,
-    `${categories[0]?.label ?? ""} and ${categories[6]?.label ?? ""}: ${
-      guesses[2]?.Nat ?? "No answer"
-    }`,
-    `${categories[1]?.label ?? ""} and ${categories[4]?.label ?? ""}: ${
-      guesses[3]?.Nat ?? "No answer"
-    }`,
-    `${categories[1]?.label ?? ""} and ${categories[5]?.label ?? ""}: ${
-      guesses[4]?.Nat ?? "No answer"
-    }`,
-    `${categories[1]?.label ?? ""} and ${categories[6]?.label ?? ""}: ${
-      guesses[5]?.Nat ?? "No answer"
-    }`,
-    `${categories[2]?.label ?? ""} and ${categories[4]?.label ?? ""}: ${
-      guesses[6]?.Nat ?? "No answer"
-    }`,
-    `${categories[2]?.label ?? ""} and ${categories[5]?.label ?? ""}: ${
-      guesses[7]?.Nat ?? "No answer"
-    }`,
-    `${categories[2]?.label ?? ""} and ${categories[6]?.label ?? ""}: ${
-      guesses[8]?.Nat ?? "No answer"
-    }`,
-  ];
+  const exportGuesses = guesses.map((g) => {
+    const cats = g.categories.map((c) => c.label).join(" and ");
+    const correct = g.categories.every((c) => c.test(g.pokemon));
+    return correct ?  `${cats} ✅: ${g.pokemon.Pokemon}` : `${cats} ❌: ${g.pokemon.Pokemon}`;
+  });
 
   function handleOpen() {
     setOpen(true);
@@ -52,7 +29,7 @@ export default function Export({ seed, categories, guesses }: ExportProps) {
   return (
     <>
       <button onClick={handleOpen}>Export</button>
-      <dialog className="bg-transparent" open={open}>
+      <dialog className="bg-transparent text-white" open={open}>
         <button onClick={() => setOpen(false)}>Close</button>
         <div>The below has been copied to the clipboard.</div>
         <div>Seed: {seed}</div>
