@@ -1,8 +1,16 @@
-export const dynamic = 'force-dynamic'
+export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 
 import { use } from "react";
 import { prisma } from "~/server/db";
-import HomePageContent from "./content";
+import App from "~/components/App";
+
+function defaultSeed() {
+  const date = new Date();
+  return new Date(
+    `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`
+  ).getTime();
+}
 
 export default function HomePage() {
   const pokemon = use(
@@ -80,5 +88,11 @@ export default function HomePage() {
     })),
   ]);
 
-  return <HomePageContent dex={dex} />;
+  const seed = defaultSeed();
+
+  return (
+    <div className="p-2">
+      <App dex={dex} seed={seed} />
+    </div>
+  );
 }
