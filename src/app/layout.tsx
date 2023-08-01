@@ -6,14 +6,14 @@ import Providers from "~/components/Providers";
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html>
-      <body className="bg-slate-900 font-pokemon text-white">
-        <nav className="h-8 bg-slate-800">
-          <Providers>
+      <Providers>
+        <body className="bg-slate-900 font-pokemon text-white">
+          <nav className="h-8 bg-slate-800">
             <Account />
-          </Providers>
-        </nav>
-        <main>{children}</main>
-      </body>
+          </nav>
+          <main>{children}</main>
+        </body>
+      </Providers>
     </html>
   );
 }

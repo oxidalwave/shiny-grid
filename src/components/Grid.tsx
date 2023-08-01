@@ -13,10 +13,14 @@ export interface GridProps {
   guesses: Guess[];
   dex: Pokemon[];
   categories: Category[];
-  onGuess: (pokemon: Pokemon, categories: Category[]) => void;
+  onGuess: (
+    pokemon: Pokemon,
+    categories: Category[],
+    categoryIndex: number
+  ) => void;
 }
 
-export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {  
+export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
   return (
     <div className="grid grid-cols-4 divide-y divide-x divide-slate-500 border-b border-b-slate-500 border-r border-r-slate-500">
       <div className="h-12" />
@@ -27,18 +31,21 @@ export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
         <CategoryLabel category={categories[3]!} />
       </div>
       <Cell
+        index={0}
         categories={[categories[0]!, categories[3]!]}
         pokedex={dex}
         guesses={guesses}
         onGuess={onGuess}
       />
       <Cell
+        index={1}
         categories={[categories[1]!, categories[3]!]}
         pokedex={dex}
         guesses={guesses}
         onGuess={onGuess}
       />
       <Cell
+        index={2}
         categories={[categories[2]!, categories[3]!]}
         pokedex={dex}
         guesses={guesses}
@@ -48,18 +55,21 @@ export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
         <CategoryLabel category={categories[4]!} />
       </div>
       <Cell
+        index={3}
         categories={[categories[0]!, categories[4]!]}
         pokedex={dex}
         guesses={guesses}
         onGuess={onGuess}
       />
       <Cell
+        index={4}
         categories={[categories[1]!, categories[4]!]}
         pokedex={dex}
         guesses={guesses}
         onGuess={onGuess}
       />
       <Cell
+        index={5}
         categories={[categories[2]!, categories[4]!]}
         pokedex={dex}
         guesses={guesses}
@@ -69,18 +79,21 @@ export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
         <CategoryLabel category={categories[5]!} />
       </div>
       <Cell
+        index={6}
         categories={[categories[0]!, categories[5]!]}
         pokedex={dex}
         guesses={guesses}
         onGuess={onGuess}
       />
       <Cell
+        index={7}
         categories={[categories[1]!, categories[5]!]}
         pokedex={dex}
         guesses={guesses}
         onGuess={onGuess}
       />
       <Cell
+        index={8}
         categories={[categories[2]!, categories[5]!]}
         pokedex={dex}
         guesses={guesses}

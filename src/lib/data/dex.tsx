@@ -1,4 +1,5 @@
 export interface Pokemon {
+  id: string;
   nationalDexId: number;
   name: string;
   hp: number;
