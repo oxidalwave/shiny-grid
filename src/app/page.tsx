@@ -7,6 +7,7 @@ import App from "~/components/App";
 import { defaultSeed } from "~/lib/defaultSeed";
 import { z } from "zod";
 import { authOptions } from "~/server/auth";
+import { env } from "~/env.mjs";
 
 export default function HomePage() {
   const seed = defaultSeed();
@@ -17,7 +18,7 @@ export default function HomePage() {
 
   const initialAnswers = session
     ? use(
-        fetch(`${process.env.URL}/api/${seed}/${session.user.name}`)
+        fetch(`${env.URL}/api/${seed}/${session.user.name}`)
           .then((r) => r.json())
           .then((j) =>
             z
