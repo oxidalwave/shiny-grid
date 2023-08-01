@@ -4,7 +4,7 @@ import { prisma } from "~/server/db";
 
 interface SeededPageProps {
   params: {
-    seed: number;
+    seed: string;
   };
 }
 

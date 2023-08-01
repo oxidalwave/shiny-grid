@@ -5,14 +5,14 @@ import { use } from "react";
 import { prisma } from "~/server/db";
 import App from "~/components/App";
 
-function defaultSeed() {
-  const date = new Date();
-  return new Date(
-    `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`
-  ).getTime();
-}
-
 export default function HomePage() {
+  function defaultSeed() {
+    const date = new Date();
+    return new Date(
+      `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`
+    ).getTime().toString();
+  }
+
   const pokemon = use(
     prisma.pokemon.findMany({
       include: {

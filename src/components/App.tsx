@@ -15,7 +15,7 @@ interface Guess {
 
 export interface GridProps {
   dex: Pokemon[];
-  seed: number;
+  seed: string;
 }
 
 export default function App({ dex, seed }: GridProps) {

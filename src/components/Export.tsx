@@ -3,7 +3,7 @@ import type Category from "~/lib/categories";
 import { type Pokemon } from "~/lib/data/dex";
 
 export interface ExportProps {
-  seed: number;
+  seed: string;
   guesses: {
     pokemon: Pokemon;
     categories: Category[];

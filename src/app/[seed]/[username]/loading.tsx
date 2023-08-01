@@ -3,7 +3,7 @@ import { getCategories } from "~/lib/getCategories";
 
 interface SeededPageProps {
   params: {
-    seed: number;
+    seed: string;
     username: string;
   };
 }
