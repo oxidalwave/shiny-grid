@@ -72,175 +72,175 @@ async function main() {
   });
 
   for (const p of dex) {
-    const db = await prisma.pokemon.create({
-      data: {
-        nationalDexId: p.Nat,
-        name: p.Pokemon,
-        hp: p.HP,
-        attack: p.Atk,
-        defense: p.Def,
-        specialAttack: p.SpA,
-        specialDefense: p.SpD,
-        speed: p.Spe,
+    await prisma.pokemon
+      .create({
+        data: {
+          nationalDexId: p.Nat,
+          name: p.Pokemon,
+          hp: p.HP,
+          attack: p.Atk,
+          defense: p.Def,
+          specialAttack: p.SpA,
+          specialDefense: p.SpD,
+          speed: p.Spe,
 
-        evWorth: p["EV Worth"],
-        gender: p.Gender,
-        evolve: p.Evolve,
-        catchRate: p.Catch,
-        imageUrl: p.imageUrl,
+          evWorth: p["EV Worth"],
+          gender: p.Gender,
+          evolve: p.Evolve,
+          catchRate: p.Catch,
+          imageUrl: p.imageUrl,
 
-        forms: {
-          create: forms
-            .filter((f) => f.Nat === p.Nat)
-            .map((f) => ({
-              hp: f.HP,
-              name: f.Pokemon,
-              attack: f.Atk,
-              defense: f.Def,
-              specialAttack: f.SpA,
-              specialDefense: f.SpD,
-              speed: f.Spe,
-              types: {
-                create: f.types.map((t) => ({
-                  type: {
-                    connectOrCreate: {
-                      where: { name: t },
-                      create: { name: t, generationIntroduced: 1 },
+          forms: {
+            create: forms
+              .filter((f) => Math.floor(f.Nat) === p.Nat)
+              .map((f) => ({
+                hp: f.HP,
+                name: f.Pokemon,
+                attack: f.Atk,
+                defense: f.Def,
+                specialAttack: f.SpA,
+                specialDefense: f.SpD,
+                speed: f.Spe,
+                types: {
+                  create: f.types.map((t) => ({
+                    type: {
+                      connectOrCreate: {
+                        where: { name: t },
+                        create: { name: t, generationIntroduced: 1 },
+                      },
                     },
-                  },
-                })),
-              },
-              abilities: {
-                create: f.abilities.map((t) => ({
-                  ability: {
-                    connectOrCreate: {
-                      where: { name: t },
-                      create: { name: t },
+                  })),
+                },
+                abilities: {
+                  create: f.abilities.map((t) => ({
+                    ability: {
+                      connectOrCreate: {
+                        where: { name: t },
+                        create: { name: t },
+                      },
                     },
-                  },
-                })),
+                  })),
+                },
+                evWorth: f["EV Worth"],
+                gender: f.Gender,
+                evolve: f.Evolve,
+              })),
+          },
+
+          regionalForms: {
+            create: regional
+              .filter((f) => f.Nat === p.Nat)
+              .map((f) => ({
+                hp: f.HP,
+                name: f.Pokemon,
+                attack: f.Atk,
+                defense: f.Def,
+                specialAttack: f.SpA,
+                specialDefense: f.SpD,
+                speed: f.Spe,
+                types: {
+                  create: f.types.map((t) => ({
+                    type: {
+                      connectOrCreate: {
+                        where: { name: t },
+                        create: { name: t, generationIntroduced: 1 },
+                      },
+                    },
+                  })),
+                },
+                abilities: {
+                  create: f.abilities.map((t) => ({
+                    ability: {
+                      connectOrCreate: {
+                        where: { name: t },
+                        create: { name: t },
+                      },
+                    },
+                  })),
+                },
+                evWorth: f["EV Worth"],
+                gender: f.Gender,
+                evolve: f.Evolve,
+              })),
+          },
+
+          megas: {
+            create: mega
+              .filter((f) => Math.floor(f.Nat) === p.Nat)
+              .map((f) => ({
+                hp: f.HP,
+                name: f.Pokemon,
+                attack: f.Atk,
+                defense: f.Def,
+                specialAttack: f.SpA,
+                specialDefense: f.SpD,
+                speed: f.Spe,
+                types: {
+                  create: f.types.map((t) => ({
+                    type: {
+                      connectOrCreate: {
+                        where: { name: t },
+                        create: { name: t, generationIntroduced: 1 },
+                      },
+                    },
+                  })),
+                },
+                abilities: {
+                  create: f.abilities.map((t) => ({
+                    ability: {
+                      connectOrCreate: {
+                        where: { name: t },
+                        create: { name: t },
+                      },
+                    },
+                  })),
+                },
+              })),
+          },
+
+          types: {
+            create: p.types.map((t) => ({
+              type: {
+                connectOrCreate: {
+                  where: { name: t },
+                  create: { name: t, generationIntroduced: 1 },
+                },
               },
-              evWorth: f["EV Worth"],
-              gender: f.Gender,
-              evolve: f.Evolve,
             })),
-        },
+          },
 
-        regionalForms: {
-          create: regional
-            .filter((f) => f.Nat === p.Nat)
-            .map((f) => ({
-              hp: f.HP,
-              name: f.Pokemon,
-              attack: f.Atk,
-              defense: f.Def,
-              specialAttack: f.SpA,
-              specialDefense: f.SpD,
-              speed: f.Spe,
-              types: {
-                create: f.types.map((t) => ({
-                  type: {
-                    connectOrCreate: {
-                      where: { name: t },
-                      create: { name: t, generationIntroduced: 1 },
-                    },
-                  },
-                })),
-              },
-              abilities: {
-                create: f.abilities.map((t) => ({
-                  ability: {
-                    connectOrCreate: {
-                      where: { name: t },
-                      create: { name: t },
-                    },
-                  },
-                })),
-              },
-              evWorth: f["EV Worth"],
-              gender: f.Gender,
-              evolve: f.Evolve,
-            })),
-        },
-
-        megas: {
-          create: mega
-            .filter((f) => f.Nat === p.Nat)
-            .map((f) => ({
-              hp: f.HP,
-              name: f.Pokemon,
-              attack: f.Atk,
-              defense: f.Def,
-              specialAttack: f.SpA,
-              specialDefense: f.SpD,
-              speed: f.Spe,
-              types: {
-                create: f.types.map((t) => ({
-                  type: {
-                    connectOrCreate: {
-                      where: { name: t },
-                      create: { name: t, generationIntroduced: 1 },
-                    },
-                  },
-                })),
-              },
-              abilities: {
-                create: f.abilities.map((t) => ({
-                  ability: {
-                    connectOrCreate: {
-                      where: { name: t },
-                      create: { name: t },
-                    },
-                  },
-                })),
+          abilities: {
+            create: p.abilities.map((t) => ({
+              ability: {
+                connectOrCreate: {
+                  where: { name: t },
+                  create: { name: t },
+                },
               },
             })),
-        },
+          },
 
-        types: {
-          create: p.types.map((t) => ({
-            type: {
-              connectOrCreate: {
-                where: { name: t },
-                create: { name: t, generationIntroduced: 1 },
+          eggGroups: {
+            create: p.eggGroups.map((t) => ({
+              eggGroup: {
+                connectOrCreate: {
+                  where: { name: t },
+                  create: { name: t },
+                },
               },
-            },
-          })),
+            })),
+          },
         },
-
-        abilities: {
-          create: p.abilities.map((t) => ({
-            ability: {
-              connectOrCreate: {
-                where: { name: t },
-                create: { name: t },
-              },
-            },
-          })),
+        include: {
+          forms: true,
+          regionalForms: true,
+          megas: true,
+          types: true,
+          abilities: true,
+          eggGroups: true,
         },
-
-        eggGroups: {
-          create: p.eggGroups.map((t) => ({
-            eggGroup: {
-              connectOrCreate: {
-                where: { name: t },
-                create: { name: t },
-              },
-            },
-          })),
-        },
-      },
-      include: {
-        forms: true,
-        regionalForms: true,
-        megas: true,
-        types: true,
-        abilities: true,
-        eggGroups: true,
-      },
-    });
-
-    console.log(db.id);
+      })
+      .then(({ id }) => console.log(id));
   }
 }
 
