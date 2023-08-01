@@ -9,7 +9,7 @@ export default function SharedPage({
   params,
 }: {
   params: { seed: string; username: string };
-}) {
+}) {  
   const dex = use(getPokedex());
 
   const initialAnswers = use(
@@ -29,7 +29,12 @@ export default function SharedPage({
 
   return (
     <div className="p-2">
-      <App dex={dex} seed={params.seed} initialAnswers={initialAnswers} />
+      <App
+        username={params.username}
+        dex={dex}
+        seed={params.seed}
+        initialAnswers={initialAnswers}
+      />
     </div>
   );
 }

@@ -34,7 +34,7 @@ export default function HomePage() {
 
   return (
     <div className="p-2">
-      <App dex={dex} seed={seed} initialAnswers={initialAnswers} />
+      <App username={session?.user?.name ?? undefined} dex={dex} seed={seed} initialAnswers={initialAnswers} />
     </div>
   );
 }

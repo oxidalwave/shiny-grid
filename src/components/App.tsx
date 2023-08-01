@@ -8,23 +8,24 @@ import { getCategories } from "~/lib/getCategories";
 import type Category from "~/lib/categories";
 import Grid from "./Grid";
 import { useSession } from "next-auth/react";
-
-interface Guess {
-  pokemon: Pokemon;
-  categories: Category[];
-  categoryIndex: number;
-}
+import Link from "next/link";
 
 export interface GridProps {
   dex: Pokemon[];
   seed: string;
+  username?: string;
   initialAnswers: {
     categoryIndex: number;
     pokemonId: string;
   }[];
 }
 
-export default function App({ dex, seed, initialAnswers }: GridProps) {
+export default function App({
+  dex,
+  seed,
+  username,
+  initialAnswers,
+}: GridProps) {
   const categories = getCategories(seed);
   const session = useSession();
 
@@ -74,7 +75,11 @@ export default function App({ dex, seed, initialAnswers }: GridProps) {
         guesses={guesses}
         onGuess={handleGuess}
       />
-      <Export seed={seed} guesses={guesses} dex={dex} />
+      {username ? (
+        <Link href={`/${seed}/${username}`}>Export</Link>
+      ) : (
+        <div>Log In to share your grid</div>
+      )}
     </div>
   );
 }

@@ -5,7 +5,8 @@ import regional from "./regional.json";
 
 import { PrismaClient } from "@prisma/client";
 
-const prisma = new PrismaClient();
+const prisma = new PrismaClient({  log: [],
+});
 
 async function main() {
   await prisma.pokemonMegaAbility.deleteMany();

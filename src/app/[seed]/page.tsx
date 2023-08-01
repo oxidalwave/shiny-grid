@@ -31,7 +31,12 @@ export default function SeedPage({ params }: { params: { seed: string } }) {
 
   return (
     <div className="p-2">
-      <App dex={dex} seed={params.seed} initialAnswers={initialAnswers} />
+      <App
+        username={session?.user?.name ?? undefined}
+        dex={dex}
+        seed={params.seed}
+        initialAnswers={initialAnswers}
+      />
     </div>
   );
 }
