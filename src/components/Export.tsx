@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import type Category from "~/lib/categories";
 import { type Pokemon } from "~/lib/data/dex";
 
@@ -16,7 +16,9 @@ export default function Export({ seed, guesses }: ExportProps) {
   const exportGuesses = guesses.map((g) => {
     const cats = g.categories.map((c) => c.label).join(" and ");
     const correct = g.categories.every((c) => c.test(g.pokemon));
-    return correct ?  `${cats} ✅: ${g.pokemon.Pokemon}` : `${cats} ❌: ${g.pokemon.Pokemon}`;
+    return correct
+      ? `${cats} ✅: ${g.pokemon.name}`
+      : `${cats} ❌: ${g.pokemon.name}`;
   });
 
   function handleOpen() {
@@ -29,8 +31,16 @@ export default function Export({ seed, guesses }: ExportProps) {
   return (
     <>
       <button onClick={handleOpen}>Export</button>
-      <dialog className="p-2 rounded w-80 bg-slate-700 text-white" ref={modalRef}>
-      <button className="bg-slate-900 w-full p-2 rounded" onClick={() => modalRef.current?.close()}>Close</button>
+      <dialog
+        className="p-2 rounded w-80 bg-slate-700 text-white"
+        ref={modalRef}
+      >
+        <button
+          className="bg-slate-900 w-full p-2 rounded"
+          onClick={() => modalRef.current?.close()}
+        >
+          Close
+        </button>
         <div>The below has been copied to the clipboard.</div>
         <div>Seed: {seed}</div>
         <div className="flex flex-col">

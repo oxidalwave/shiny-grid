@@ -1,8 +1,4 @@
-import { use } from "react";
 import App from "~/components/App";
-import Grid from "~/components/Grid";
-import type Category from "~/lib/categories";
-import dex, { type Pokemon } from "~/lib/data/dex";
 import { getCategories } from "~/lib/getCategories";
 
 interface SeededPageProps {
@@ -19,7 +15,7 @@ export default function UserAnswersPage({ params }: SeededPageProps) {
 
   return (
     <div className="p-2">
-      <App dex={dex} seed={params.seed} />
+      <App dex={[]} seed={params.seed} />
     </div>
   );
 }

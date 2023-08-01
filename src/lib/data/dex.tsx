@@ -25,7 +25,7 @@ export interface Pokemon {
 
   forms: unknown[];
   megas: unknown[];
-  regionals: unknown[];
+  regionalForms: unknown[];
 
   //"EV Worth"?: string;
   //Gender?: string;

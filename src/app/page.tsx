@@ -22,11 +22,17 @@ export default function HomePage({
             type: true,
           },
         },
+        abilities: {
+          include: {
+            ability: true,
+          },
+        },
+        forms: true,
+        regionalForms: true,
+        megas: true,
       },
     })
   );
-
-  console.log(dex);
 
   const seed = defaultSeed();
 
