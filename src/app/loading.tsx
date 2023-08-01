@@ -1,9 +1,7 @@
+const dynamic = 'force-dynamic'
+
 import HomePageContent from "./content";
 
-export default function HomePageLoading({
-  searchParams,
-}: {
-  searchParams: Record<string, never>;
-}) {
+export default function HomePageLoading() {
   return <HomePageContent dex={[]} />;
 }

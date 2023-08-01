@@ -1,12 +1,10 @@
+const dynamic = 'force-dynamic'
+
 import { use } from "react";
 import { prisma } from "~/server/db";
 import HomePageContent from "./content";
 
-export default function HomePage({
-  searchParams,
-}: {
-  searchParams: Record<string, never>;
-}) {
+export default function HomePage() {
   const pokemon = use(
     prisma.pokemon.findMany({
       include: {
