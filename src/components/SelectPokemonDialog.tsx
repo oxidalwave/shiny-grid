@@ -19,11 +19,12 @@ export default function SelectPokemonDialog({
     handleGuess(pokemon);
   }
 
-  const filteredPokedex: Pokemon[] =
+  const filteredPokedex =
     name === ""
       ? []
       : pokedex
           .filter((p) => p.name.toLowerCase().includes(name.toLowerCase()))
+          .flatMap((p) => [p, ...p.forms, ...p.megas, ...p.regionalForms])
           .slice(0, 10);
 
   return (
@@ -37,7 +38,7 @@ export default function SelectPokemonDialog({
         onChange={(e) => setName(e.currentTarget.value)}
       />
       <div className="flex flex-col gap-2 overflow-y-auto pt-2">
-        {filteredPokedex.map((p: Pokemon) => (
+        {filteredPokedex.map((p) => (
           <button
             className="rounded bg-slate-900 flex p-2"
             key={p.name}

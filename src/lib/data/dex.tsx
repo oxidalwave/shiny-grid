@@ -23,9 +23,36 @@ export interface Pokemon {
   evWorth: string;
   imageUrl: string;
 
-  forms: unknown[];
-  megas: unknown[];
-  regionalForms: unknown[];
+  forms: {
+    name: string;
+    hp: number;
+    attack: number;
+    defense: number;
+    specialAttack: number;
+    specialDefense: number;
+    speed: number;
+    imageUrl?: string;
+  }[];
+  megas: {
+    name: string;
+    hp: number;
+    attack: number;
+    defense: number;
+    specialAttack: number;
+    specialDefense: number;
+    speed: number;
+    imageUrl?: string;
+  }[];
+  regionalForms: {
+    name: string;
+    hp: number;
+    attack: number;
+    defense: number;
+    specialAttack: number;
+    specialDefense: number;
+    speed: number;
+    imageUrl?: string;
+  }[];
 
   //"EV Worth"?: string;
   //Gender?: string;
