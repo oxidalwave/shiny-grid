@@ -1,4 +1,4 @@
-const dynamic = 'force-dynamic'
+export const dynamic = 'force-dynamic'
 
 import { use } from "react";
 import { prisma } from "~/server/db";
