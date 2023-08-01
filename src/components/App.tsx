@@ -73,8 +73,8 @@ export default function App({
           </Link>
         ) : (
           <button
-            className="w-full rounded p-2 bg-slate-700 hover:scale-110 z-10 hover:z-20 transition ease-in-out"
-            onClick={() => void signIn("DISCORD")}
+            className="w-full rounded p-2 m-2 bg-slate-700 hover:scale-110 z-10 hover:z-20 transition ease-in-out"
+            onClick={() => void signIn()}
           >
             Log In to share your grid
           </button>
