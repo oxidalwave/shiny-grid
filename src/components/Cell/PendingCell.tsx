@@ -3,7 +3,6 @@
 import { useRef, useState } from "react";
 import type Category from "~/lib/categories";
 import { type Pokemon } from "~/lib/data/dex";
-import SelectPokemonDialog from "../SelectPokemonDialog";
 import Image from "next/image";
 
 export interface CellProps {
