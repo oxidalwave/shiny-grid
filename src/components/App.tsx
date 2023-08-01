@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { type Pokemon } from "~/lib/data/dex";
 import Export from "./Export";
 
@@ -12,18 +12,31 @@ import { useSession } from "next-auth/react";
 interface Guess {
   pokemon: Pokemon;
   categories: Category[];
+  categoryIndex: number;
 }
 
 export interface GridProps {
   dex: Pokemon[];
   seed: string;
+  initialAnswers: {
+    categoryIndex: number;
+    pokemonId: string;
+  }[];
 }
 
-export default function App({ dex, seed }: GridProps) {
+export default function App({ dex, seed, initialAnswers }: GridProps) {
   const categories = getCategories(seed);
   const session = useSession();
 
-  const [guesses, setGuesses] = useState<Guess[]>([]);
+  const [guesses, setGuesses] = useState<string[]>([]);
+
+  useEffect(() => {
+    const temp = [...guesses];
+    for (const { categoryIndex, pokemonId } of initialAnswers) {
+      temp[categoryIndex] = pokemonId;
+    }
+    setGuesses(temp);
+  }, []);
 
   function handleGuess(
     pokemon: Pokemon,
@@ -35,13 +48,21 @@ export default function App({ dex, seed }: GridProps) {
         body: JSON.stringify({ id: pokemon.id }),
         method: "POST",
       })
-        .then(() => setGuesses([...guesses, { pokemon, categories }]))
+        .then(() => {
+          const temp = [...guesses];
+          temp[categoryIndex] = pokemon.id;
+          setGuesses(temp);
+        })
         .catch((e) => {
           console.log(e);
-          setGuesses([...guesses, { pokemon, categories }]);
+          const temp = [...guesses];
+          temp[categoryIndex] = pokemon.id;
+          setGuesses(temp);
         });
     } else {
-      setGuesses([...guesses, { pokemon, categories }]);
+      const temp = [...guesses];
+      temp[categoryIndex] = pokemon.id;
+      setGuesses(temp);
     }
   }
 
@@ -53,7 +74,7 @@ export default function App({ dex, seed }: GridProps) {
         guesses={guesses}
         onGuess={handleGuess}
       />
-      <Export seed={seed} guesses={guesses} />
+      <Export seed={seed} guesses={guesses} dex={dex} />
     </div>
   );
 }

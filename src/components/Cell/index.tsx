@@ -10,10 +10,8 @@ import CorrectCell from "./CorrectCell";
 export interface CellProps {
   index: number;
   pokedex: Pokemon[];
-  guesses: {
-    pokemon: Pokemon;
-    categories: Category[];
-  }[];
+  initialGuess?: string;
+  guesses: string[];
   onGuess: (
     pokemon: Pokemon,
     categories: Category[],
@@ -25,42 +23,39 @@ export interface CellProps {
 export default function Cell({
   index,
   pokedex,
+  initialGuess,
   guesses,
   onGuess,
   categories,
 }: CellProps) {
-  const [guess, setGuess] = useState<Pokemon | undefined>(undefined);
+  const [guess, setGuess] = useState<string | undefined>(initialGuess);
+  const pokemon = pokedex.find((p) => initialGuess === p.id);
 
   function handleGuess(p: Pokemon) {
-    setGuess(p);
+    setGuess(p.id);
     onGuess(p, categories, index);
   }
 
-  if (!guess) {
+  if (!pokemon) {
     return (
       <PendingCell
-        pokedex={pokedex.filter(
-          (p) =>
-            !guesses
-              .map(({ pokemon }) => pokemon.nationalDexId)
-              .includes(p.nationalDexId)
-        )}
+        pokedex={pokedex.filter((p) => !guesses.includes(p.id))}
         onGuess={handleGuess}
         categories={categories}
       />
     );
   }
 
-  if (categories.every((c) => c.test(guess))) {
+  if (categories.every((c) => c.test(pokemon))) {
     return (
       <div className="w-full">
-        <CorrectCell guess={guess} />
+        <CorrectCell guess={pokemon} />
       </div>
     );
   }
   return (
     <div className="w-full">
-      <IncorrectCell guess={guess} />
+      <IncorrectCell guess={pokemon} />
     </div>
   );
 }

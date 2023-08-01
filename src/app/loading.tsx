@@ -1,9 +1,14 @@
-export const dynamic = 'force-dynamic'
+export const dynamic = "force-dynamic";
 
-import HomePageContent from "./content";
+import { defaultSeed } from "~/lib/defaultSeed";
+import App from "~/components/App";
 
 export default function HomePageLoading() {
+  const seed = defaultSeed();
+
   return (
-    <HomePageContent dex={[]} />
+    <div className="p-2">
+      <App dex={[]} seed={seed} initialAnswers={[]} />
+    </div>
   );
 }

@@ -1,12 +1,12 @@
 import App from "~/components/App";
-interface SeededPageProps {
+
+interface SeedPageProps {
   params: {
     seed: string;
-    username: string;
   };
 }
 
-export default function SharedPageLoading({ params }: SeededPageProps) {
+export default function SeedPageLoading({ params }: SeedPageProps) {
   return (
     <div className="p-2">
       <App dex={[]} seed={params.seed} initialAnswers={[]} />

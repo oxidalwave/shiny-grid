@@ -3,7 +3,7 @@ import type Category from ".";
 import Image from "next/image";
 
 const isOfType = (p: Pokemon, t: string) =>
-  p.types.map((t) => t.type.name).includes(t);
+  p?.types?.map((t) => t.type.name)?.includes(t);
 
 export const WaterType: Category = {
   label: "Water Type",

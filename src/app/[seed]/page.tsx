@@ -1,37 +1,37 @@
+export const dynamic = "force-dynamic";
+
 import { use } from "react";
+import { getPokedex } from "~/lib/data/pokemon";
+import { getServerSession } from "next-auth";
 import App from "~/components/App";
-import { prisma } from "~/server/db";
+import { z } from "zod";
+import { authOptions } from "~/server/auth";
 
-interface SeededPageProps {
-  params: {
-    seed: string;
-  };
-}
+export default function SeedPage({ params }: { params: { seed: string } }) {
+  const dex = use(getPokedex());
 
-export default function HomePage({ params }: SeededPageProps) {
-  const dex = use(
-    prisma.pokemon.findMany({
-      include: {
-        types: {
-          include: {
-            type: true,
-          },
-        },
-        abilities: {
-          include: {
-            ability: true,
-          },
-        },
-        forms: true,
-        regionalForms: true,
-        megas: true,
-      },
-    })
-  );
+  const session = use(getServerSession(authOptions));
+
+  const initialAnswers = session
+    ? use(
+        fetch(`${process.env.URL}/api/${params.seed}/${session.user.name}`)
+          .then((r) => r.json())
+          .then((j) =>
+            z
+              .array(
+                z.object({
+                  pokemonId: z.string(),
+                  categoryIndex: z.number(),
+                })
+              )
+              .parse(j)
+          )
+      )
+    : [];
 
   return (
     <div className="p-2">
-      <App dex={dex} seed={params.seed} />
+      <App dex={dex} seed={params.seed} initialAnswers={initialAnswers} />
     </div>
   );
 }

@@ -1,30 +1,60 @@
 import { useRef } from "react";
 import type Category from "~/lib/categories";
 import { type Pokemon } from "~/lib/data/dex";
+import { getCategories } from "~/lib/getCategories";
 
 export interface ExportProps {
   seed: string;
-  guesses: {
-    pokemon: Pokemon;
-    categories: Category[];
-  }[];
+  dex: Pokemon[];
+  guesses: string[];
 }
 
-export default function Export({ seed, guesses }: ExportProps) {
-  const modalRef = useRef<HTMLDialogElement>(null);
+function test(p: Pokemon, allCategories: Category[], i: number) {
+  return (
+    i === 0
+      ? [allCategories[0], allCategories[3]]
+      : i === 1
+      ? [allCategories[0], allCategories[4]]
+      : i === 2
+      ? [allCategories[0], allCategories[5]]
+      : i === 3
+      ? [allCategories[2], allCategories[3]]
+      : i === 4
+      ? [allCategories[2], allCategories[4]]
+      : i === 5
+      ? [allCategories[1], allCategories[5]]
+      : i === 6
+      ? [allCategories[2], allCategories[3]]
+      : i === 7
+      ? [allCategories[2], allCategories[4]]
+      : i === 8
+      ? [allCategories[2], allCategories[5]]
+      : []
+  ).every((c) => c?.test(p));
+}
 
-  const exportGuesses = guesses.map((g) => {
-    const cats = g.categories.map((c) => c.label).join(" and ");
-    const correct = g.categories.every((c) => c.test(g.pokemon));
-    return correct
-      ? `${cats} ✅: ${g.pokemon.name}`
-      : `${cats} ❌: ${g.pokemon.name}`;
+export default function Export({ seed, dex, guesses }: ExportProps) {
+  const modalRef = useRef<HTMLDialogElement>(null);
+  const categories = getCategories(seed);
+
+  const exportGuesses = guesses.map((g, i) => {
+    const cats = categories.map((c) => c.label).join(" and ");
+    const pokemon = dex.find((p) => p.id === g);
+    if (pokemon) {
+      const correct = test(pokemon, categories, i);
+      return correct
+        ? `${cats} ✅: ${pokemon.name}`
+        : `${cats} ❌: ${pokemon.name}`;
+    }
+    {
+      return undefined;
+    }
   });
 
   function handleOpen() {
     modalRef.current?.showModal();
     void navigator.clipboard.writeText(
-      `Seed: ${seed}\n` + exportGuesses.join("\n")
+      `Seed: ${seed}\n` + exportGuesses.filter((g) => !!g).join("\n")
     );
   }
 
