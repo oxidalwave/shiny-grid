@@ -4,6 +4,7 @@ import { use } from "react";
 import { getPokedex } from "~/lib/data/pokemon";
 import App from "~/components/App";
 import { z } from "zod";
+import { env } from "~/env.mjs";
 
 export default function SharedPage({
   params,
@@ -13,7 +14,7 @@ export default function SharedPage({
   const dex = use(getPokedex());
 
   const initialAnswers = use(
-    fetch(`${process.env.URL}/api/${params.seed}/${params.username}`)
+    fetch(`${env.URL}/api/${params.seed}/${params.username}`)
       .then((r) => r.json())
       .then((j) =>
         z

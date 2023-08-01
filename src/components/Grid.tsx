@@ -4,12 +4,6 @@ import { type Pokemon } from "~/lib/data/dex";
 import CategoryLabel from "./CategoryLabel";
 import type Category from "~/lib/categories";
 
-interface Guess {
-  pokemon: Pokemon;
-  categories: Category[];
-  categoryIndex: number;
-}
-
 export interface GridProps {
   guesses: string[];
   dex: Pokemon[];

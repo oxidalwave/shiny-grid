@@ -6,6 +6,7 @@ import { getServerSession } from "next-auth";
 import App from "~/components/App";
 import { z } from "zod";
 import { authOptions } from "~/server/auth";
+import { env } from "~/env.mjs";
 
 export default function SeedPage({ params }: { params: { seed: string } }) {
   const dex = use(getPokedex());
@@ -14,7 +15,7 @@ export default function SeedPage({ params }: { params: { seed: string } }) {
 
   const initialAnswers = session
     ? use(
-        fetch(`${process.env.URL}/api/${params.seed}/${session.user.name}`)
+        fetch(`${env.URL}/api/${params.seed}/${session.user.name}`)
           .then((r) => r.json())
           .then((j) =>
             z

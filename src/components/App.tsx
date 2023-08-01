@@ -2,12 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { type Pokemon } from "~/lib/data/dex";
-import Export from "./Export";
 
 import { getCategories } from "~/lib/getCategories";
 import type Category from "~/lib/categories";
 import Grid from "./Grid";
-import { useSession } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import Link from "next/link";
 
 export interface GridProps {
@@ -44,23 +43,18 @@ export default function App({
     categories: Category[],
     categoryIndex: number
   ) {
-    if (session) {
+    if (session && session.data?.user.name === username) {
+      const temp = [...guesses];
+      temp[categoryIndex] = pokemon.id;
+      setGuesses(temp);
+
       fetch(`/api/${seed}/${session.data?.user.name}/${categoryIndex}`, {
         body: JSON.stringify({ id: pokemon.id }),
         method: "POST",
-      })
-        .then(() => {
-          const temp = [...guesses];
-          temp[categoryIndex] = pokemon.id;
-          setGuesses(temp);
-        })
-        .catch((e) => {
-          console.log(e);
-          const temp = [...guesses];
-          temp[categoryIndex] = pokemon.id;
-          setGuesses(temp);
-        });
-    } else {
+      }).catch((e) => {
+        console.log(e);
+      });
+    } else if (!session) {
       const temp = [...guesses];
       temp[categoryIndex] = pokemon.id;
       setGuesses(temp);
@@ -68,17 +62,27 @@ export default function App({
   }
 
   return (
-    <div className="">
+    <div className="flex flex-col h-full justify-center">
       <Grid
         categories={categories}
         dex={dex}
         guesses={guesses}
         onGuess={handleGuess}
       />
-      {username ? (
-        <Link href={`/${seed}/${username}`}>Export</Link>
+      {session.data ? (
+        <Link
+          href={`/${seed}/${session.data.user.name}`}
+          className="w-1/3 rounded p-2 m-2 bg-slate-700 hover:scale-110 z-10 hover:z-20 transition ease-in-out"
+        >
+          Share your grid
+        </Link>
       ) : (
-        <div>Log In to share your grid</div>
+        <button
+          className="w-1/3 rounded p-2 bg-slate-700 hover:scale-110 z-10 hover:z-20 transition ease-in-out"
+          onClick={() => void signIn("DISCORD")}
+        >
+          Log In to share your grid
+        </button>
       )}
     </div>
   );
