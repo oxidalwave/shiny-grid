@@ -9,9 +9,8 @@
     "SpD": 120,
     "Spe": 80,
     "Total": 625,
-    "Type I": "Grass",
-    "Type II": "Poison",
-    "Ability I": "Thick Fat"
+    "types": ["Grass", "Poison"],
+    "abilities": ["Thick Fat"]
   },
   {
     "Nat": 6.1,
@@ -23,9 +22,8 @@
     "SpD": 85,
     "Spe": 100,
     "Total": 634,
-    "Type I": "Fire",
-    "Type II": "Dragon",
-    "Ability I": "Tough Claws"
+    "types": ["Fire", "Dragon"],
+    "abilities": ["Tough Claws"]
   },
   {
     "Nat": 6.2,
@@ -37,9 +35,8 @@
     "SpD": 115,
     "Spe": 100,
     "Total": 634,
-    "Type I": "Fire",
-    "Type II": "Flying",
-    "Ability I": "Drought"
+    "types": ["Fire", "Flying"],
+    "abilities": ["Drought"]
   },
   {
     "Nat": 9.1,
@@ -51,9 +48,8 @@
     "SpD": 115,
     "Spe": 78,
     "Total": 630,
-    "Type I": "Water",
-    "Type II": "",
-    "Ability I": "Mega Launcher"
+    "types": ["Water"],
+    "abilities": ["Mega Launcher"]
   },
   {
     "Nat": 15.1,
@@ -65,9 +61,8 @@
     "SpD": 80,
     "Spe": 145,
     "Total": 495,
-    "Type I": "Bug",
-    "Type II": "Poison",
-    "Ability I": "Adaptability"
+    "types": ["Bug", "Poison"],
+    "abilities": ["Adaptability"]
   },
   {
     "Nat": 18.1,
@@ -79,9 +74,8 @@
     "SpD": 80,
     "Spe": 121,
     "Total": 579,
-    "Type I": "Normal",
-    "Type II": "Flying",
-    "Ability I": "No Guard"
+    "types": ["Normal", "Flying"],
+    "abilities": ["No Guard"]
   },
   {
     "Nat": 65.1,
@@ -93,9 +87,8 @@
     "SpD": 105,
     "Spe": 150,
     "Total": 600,
-    "Type I": "Psychic",
-    "Type II": "",
-    "Ability I": "Trace"
+    "types": ["Psychic"],
+    "abilities": ["Trace"]
   },
   {
     "Nat": 80.1,
@@ -107,9 +100,8 @@
     "SpD": 80,
     "Spe": 30,
     "Total": 590,
-    "Type I": "Water",
-    "Type II": "Psychic",
-    "Ability I": "Shell Armor"
+    "types": ["Water", "Psychic"],
+    "abilities": ["Shell Armor"]
   },
   {
     "Nat": 94.1,
@@ -121,9 +113,8 @@
     "SpD": 95,
     "Spe": 130,
     "Total": 600,
-    "Type I": "Ghost",
-    "Type II": "Poison",
-    "Ability I": "Shadow Tag"
+    "types": ["Ghost", "Poison"],
+    "abilities": ["Shadow Tag"]
   },
   {
     "Nat": 115.1,
@@ -135,9 +126,8 @@
     "SpD": 100,
     "Spe": 100,
     "Total": 590,
-    "Type I": "Normal",
-    "Type II": "",
-    "Ability I": "Parental Bond"
+    "types": ["Normal"],
+    "abilities": ["Parental Bond"]
   },
   {
     "Nat": 127.1,
@@ -149,9 +139,8 @@
     "SpD": 90,
     "Spe": 105,
     "Total": 600,
-    "Type I": "Bug",
-    "Type II": "Flying",
-    "Ability I": "Aerilate"
+    "types": ["Bug", "Flying"],
+    "abilities": ["Aerilate"]
   },
   {
     "Nat": 130.1,
@@ -163,9 +152,8 @@
     "SpD": 130,
     "Spe": 81,
     "Total": 640,
-    "Type I": "Water",
-    "Type II": "Dark",
-    "Ability I": "Mold Breaker"
+    "types": ["Water", "Dark"],
+    "abilities": ["Mold Breaker"]
   },
   {
     "Nat": 142.1,
@@ -177,9 +165,8 @@
     "SpD": 95,
     "Spe": 150,
     "Total": 615,
-    "Type I": "Rock",
-    "Type II": "Flying",
-    "Ability I": "Tough Claws"
+    "types": ["Rock", "Flying"],
+    "abilities": ["Tough Claws"]
   },
   {
     "Nat": 150.1,
@@ -191,9 +178,8 @@
     "SpD": 100,
     "Spe": 130,
     "Total": 780,
-    "Type I": "Psychic",
-    "Type II": "Fighting",
-    "Ability I": "Steadfast"
+    "types": ["Psychic", "Fighting"],
+    "abilities": ["Steadfast"]
   },
   {
     "Nat": 150.2,
@@ -205,9 +191,8 @@
     "SpD": 120,
     "Spe": 140,
     "Total": 780,
-    "Type I": "Psychic",
-    "Type II": "",
-    "Ability I": "Insomnia"
+    "types": ["Psychic"],
+    "abilities": ["Insomnia"]
   },
   {
     "Nat": 181.1,
@@ -219,9 +204,8 @@
     "SpD": 110,
     "Spe": 45,
     "Total": 610,
-    "Type I": "Electric",
-    "Type II": "Dragon",
-    "Ability I": "Mold Breaker"
+    "types": ["Electric", "Dragon"],
+    "abilities": ["Mold Breaker"]
   },
   {
     "Nat": 208.1,
@@ -233,9 +217,8 @@
     "SpD": 95,
     "Spe": 30,
     "Total": 610,
-    "Type I": "Steel",
-    "Type II": "Ground",
-    "Ability I": "Sand Force"
+    "types": ["Steel", "Ground"],
+    "abilities": ["Sand Force"]
   },
   {
     "Nat": 212.1,
@@ -247,9 +230,8 @@
     "SpD": 100,
     "Spe": 75,
     "Total": 600,
-    "Type I": "Bug",
-    "Type II": "Steel",
-    "Ability I": "Technician"
+    "types": ["Bug", "Steel"],
+    "abilities": ["Technician"]
   },
   {
     "Nat": 214.1,
@@ -261,9 +243,8 @@
     "SpD": 105,
     "Spe": 75,
     "Total": 600,
-    "Type I": "Bug",
-    "Type II": "Fighting",
-    "Ability I": "Skill Link"
+    "types": ["Bug", "Fighting"],
+    "abilities": ["Skill Link"]
   },
   {
     "Nat": 229.1,
@@ -275,9 +256,8 @@
     "SpD": 90,
     "Spe": 115,
     "Total": 600,
-    "Type I": "Dark",
-    "Type II": "Fire",
-    "Ability I": "Solar Power"
+    "types": ["Dark", "Fire"],
+    "abilities": ["Solar Power"]
   },
   {
     "Nat": 248.1,
@@ -289,9 +269,8 @@
     "SpD": 120,
     "Spe": 71,
     "Total": 700,
-    "Type I": "Rock",
-    "Type II": "Dark",
-    "Ability I": "Sand Stream"
+    "types": ["Rock", "Dark"],
+    "abilities": ["Sand Stream"]
   },
   {
     "Nat": 254.1,
@@ -303,9 +282,8 @@
     "SpD": 85,
     "Spe": 145,
     "Total": 630,
-    "Type I": "Grass",
-    "Type II": "Dragon",
-    "Ability I": "Lightning Rod"
+    "types": ["Grass", "Dragon"],
+    "abilities": ["Lightning Rod"]
   },
   {
     "Nat": 257.1,
@@ -317,9 +295,8 @@
     "SpD": 80,
     "Spe": 100,
     "Total": 630,
-    "Type I": "Fire",
-    "Type II": "Fighting",
-    "Ability I": "Speed Boost"
+    "types": ["Fire", "Fighting"],
+    "abilities": ["Speed Boost"]
   },
   {
     "Nat": 260.1,
@@ -331,9 +308,8 @@
     "SpD": 110,
     "Spe": 70,
     "Total": 635,
-    "Type I": "Water",
-    "Type II": "Ground",
-    "Ability I": "Swift Swim"
+    "types": ["Water", "Ground"],
+    "abilities": ["Swift Swim"]
   },
   {
     "Nat": 282.1,
@@ -345,9 +321,8 @@
     "SpD": 135,
     "Spe": 100,
     "Total": 618,
-    "Type I": "Psychic",
-    "Type II": "Fairy",
-    "Ability I": "Pixilate"
+    "types": ["Psychic", "Fairy"],
+    "abilities": ["Pixilate"]
   },
   {
     "Nat": 302.1,
@@ -359,9 +334,8 @@
     "SpD": 115,
     "Spe": 20,
     "Total": 480,
-    "Type I": "Dark",
-    "Type II": "Ghost",
-    "Ability I": "Magic Bounce"
+    "types": ["Dark", "Ghost"],
+    "abilities": ["Magic Bounce"]
   },
   {
     "Nat": 303.1,
@@ -373,9 +347,8 @@
     "SpD": 95,
     "Spe": 50,
     "Total": 480,
-    "Type I": "Steel",
-    "Type II": "Fairy",
-    "Ability I": "Huge Power"
+    "types": ["Steel", "Fairy"],
+    "abilities": ["Huge Power"]
   },
   {
     "Nat": 306.1,
@@ -387,9 +360,8 @@
     "SpD": 80,
     "Spe": 50,
     "Total": 630,
-    "Type I": "Steel",
-    "Type II": "",
-    "Ability I": "Filter"
+    "types": ["Steel"],
+    "abilities": ["Filter"]
   },
   {
     "Nat": 308.1,
@@ -401,9 +373,8 @@
     "SpD": 85,
     "Spe": 100,
     "Total": 510,
-    "Type I": "Fighting",
-    "Type II": "Psychic",
-    "Ability I": "Pure Power"
+    "types": ["Fighting", "Psychic"],
+    "abilities": ["Pure Power"]
   },
   {
     "Nat": 310.1,
@@ -415,9 +386,8 @@
     "SpD": 80,
     "Spe": 135,
     "Total": 575,
-    "Type I": "Electric",
-    "Type II": "",
-    "Ability I": "Intimidate"
+    "types": ["Electric"],
+    "abilities": ["Intimidate"]
   },
   {
     "Nat": 319.1,
@@ -429,9 +399,8 @@
     "SpD": 65,
     "Spe": 105,
     "Total": 560,
-    "Type I": "Water",
-    "Type II": "Dark",
-    "Ability I": "Strong Jaw"
+    "types": ["Water", "Dark"],
+    "abilities": ["Strong Jaw"]
   },
   {
     "Nat": 323.1,
@@ -443,9 +412,8 @@
     "SpD": 105,
     "Spe": 20,
     "Total": 560,
-    "Type I": "Fire",
-    "Type II": "Ground",
-    "Ability I": "Sheer Force"
+    "types": ["Fire", "Ground"],
+    "abilities": ["Sheer Force"]
   },
   {
     "Nat": 334.1,
@@ -457,9 +425,8 @@
     "SpD": 105,
     "Spe": 80,
     "Total": 590,
-    "Type I": "Dragon",
-    "Type II": "Fairy",
-    "Ability I": "Pixilate"
+    "types": ["Dragon", "Fairy"],
+    "abilities": ["Pixilate"]
   },
   {
     "Nat": 354.1,
@@ -471,9 +438,8 @@
     "SpD": 83,
     "Spe": 75,
     "Total": 555,
-    "Type I": "Ghost",
-    "Type II": "",
-    "Ability I": "Prankster"
+    "types": ["Ghost"],
+    "abilities": ["Prankster"]
   },
   {
     "Nat": 359.1,
@@ -485,9 +451,8 @@
     "SpD": 60,
     "Spe": 115,
     "Total": 565,
-    "Type I": "Dark",
-    "Type II": "",
-    "Ability I": "Magic Bounce"
+    "types": ["Dark"],
+    "abilities": ["Magic Bounce"]
   },
   {
     "Nat": 362.1,
@@ -499,9 +464,8 @@
     "SpD": 80,
     "Spe": 100,
     "Total": 580,
-    "Type I": "Ice",
-    "Type II": "",
-    "Ability I": "Refrigerate"
+    "types": ["Ice"],
+    "abilities": ["Refrigerate"]
   },
   {
     "Nat": 373.1,
@@ -513,9 +477,8 @@
     "SpD": 90,
     "Spe": 120,
     "Total": 700,
-    "Type I": "Dragon",
-    "Type II": "Flying",
-    "Ability I": "Aerilate"
+    "types": ["Dragon", "Flying"],
+    "abilities": ["Aerilate"]
   },
   {
     "Nat": 376.1,
@@ -527,9 +490,8 @@
     "SpD": 110,
     "Spe": 110,
     "Total": 700,
-    "Type I": "Steel",
-    "Type II": "Psychic",
-    "Ability I": "Tough Claws"
+    "types": ["Steel", "Psychic"],
+    "abilities": ["Tough Claws"]
   },
   {
     "Nat": 380.1,
@@ -541,9 +503,8 @@
     "SpD": 150,
     "Spe": 110,
     "Total": 700,
-    "Type I": "Dragon",
-    "Type II": "Psychic",
-    "Ability I": "Levitate"
+    "types": ["Dragon", "Psychic"],
+    "abilities": ["Levitate"]
   },
   {
     "Nat": 381.1,
@@ -555,9 +516,8 @@
     "SpD": 120,
     "Spe": 110,
     "Total": 700,
-    "Type I": "Dragon",
-    "Type II": "Psychic",
-    "Ability I": "Levitate"
+    "types": ["Dragon", "Psychic"],
+    "abilities": ["Levitate"]
   },
   {
     "Nat": 384.1,
@@ -569,9 +529,8 @@
     "SpD": 100,
     "Spe": 115,
     "Total": 780,
-    "Type I": "Dragon",
-    "Type II": "Flying",
-    "Ability I": "Delta Stream"
+    "types": ["Dragon", "Flying"],
+    "abilities": ["Delta Stream"]
   },
   {
     "Nat": 428.1,
@@ -583,9 +542,8 @@
     "SpD": 96,
     "Spe": 135,
     "Total": 580,
-    "Type I": "Normal",
-    "Type II": "Fighting",
-    "Ability I": "Scrappy"
+    "types": ["Normal", "Fighting"],
+    "abilities": ["Scrappy"]
   },
   {
     "Nat": 445.1,
@@ -597,9 +555,8 @@
     "SpD": 95,
     "Spe": 92,
     "Total": 700,
-    "Type I": "Dragon",
-    "Type II": "Ground",
-    "Ability I": "Sand Force"
+    "types": ["Dragon", "Ground"],
+    "abilities": ["Sand Force"]
   },
   {
     "Nat": 448.1,
@@ -611,9 +568,8 @@
     "SpD": 70,
     "Spe": 112,
     "Total": 625,
-    "Type I": "Fighting",
-    "Type II": "Steel",
-    "Ability I": "Adaptability"
+    "types": ["Fighting", "Steel"],
+    "abilities": ["Adaptability"]
   },
   {
     "Nat": 460.1,
@@ -625,9 +581,8 @@
     "SpD": 105,
     "Spe": 30,
     "Total": 594,
-    "Type I": "Ice",
-    "Type II": "Grass",
-    "Ability I": "Snow Warning"
+    "types": ["Ice", "Grass"],
+    "abilities": ["Snow Warning"]
   },
   {
     "Nat": 475.1,
@@ -639,9 +594,8 @@
     "SpD": 115,
     "Spe": 110,
     "Total": 618,
-    "Type I": "Psychic",
-    "Type II": "Fighting",
-    "Ability I": "Inner Focus"
+    "types": ["Psychic", "Fighting"],
+    "abilities": ["Inner Focus"]
   },
   {
     "Nat": 531.1,
@@ -653,9 +607,8 @@
     "SpD": 126,
     "Spe": 50,
     "Total": 545,
-    "Type I": "Normal",
-    "Type II": "Fairy",
-    "Ability I": "Healer"
+    "types": ["Normal", "Fairy"],
+    "abilities": ["Healer"]
   },
   {
     "Nat": 719.1,
@@ -667,8 +620,7 @@
     "SpD": 110,
     "Spe": 110,
     "Total": 700,
-    "Type I": "Rock",
-    "Type II": "Fairy",
-    "Ability I": "Magic Bounce"
+    "types": ["Rock", "Fairy"],
+    "abilities": ["Magic Bounce"]
   }
 ]

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { type Dispatch, type SetStateAction, useState } from "react";
+import { useState } from "react";
 import { type Pokemon } from "~/lib/data/dex";
 
 export interface SelectPokemonDialogProps {
@@ -23,7 +23,7 @@ export default function SelectPokemonDialog({
     name === ""
       ? []
       : pokedex
-          .filter((p) => p.Pokemon.toLowerCase().includes(name.toLowerCase()))
+          .filter((p) => p.name.toLowerCase().includes(name.toLowerCase()))
           .slice(0, 10);
 
   return (
@@ -40,17 +40,17 @@ export default function SelectPokemonDialog({
         {filteredPokedex.map((p: Pokemon) => (
           <button
             className="rounded bg-slate-900 flex p-2"
-            key={p.Pokemon}
+            key={p.name}
             onClick={() => handleSubmit(p)}
           >
             <Image
               loading="lazy"
-              alt={p.Pokemon}
+              alt={p.name}
               src={p.imageUrl ?? ""}
               width={28}
               height={21}
             />
-            <div>{p.Pokemon}</div>
+            <div>{p.name}</div>
           </button>
         ))}
       </div>

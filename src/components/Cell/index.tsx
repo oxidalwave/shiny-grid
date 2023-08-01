@@ -34,7 +34,7 @@ export default function Cell({
     return (
       <PendingCell
         pokedex={pokedex.filter(
-          (p) => !guesses.map(({ pokemon }) => pokemon.Nat).includes(p.Nat)
+          (p) => !guesses.map(({ pokemon }) => pokemon.nationalDexId).includes(p.nationalDexId)
         )}
         onGuess={handleGuess}
         categories={categories}

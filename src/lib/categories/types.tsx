@@ -1,9 +1,9 @@
-import { type Type, type Pokemon } from "../data/dex";
+import { type Pokemon } from "../data/dex";
 import type Category from ".";
 import Image from "next/image";
 
-const isOfType = (p: Pokemon, t: Type) =>
-  p["Type I"] === t || p["Type II"] === t;
+const isOfType = (p: Pokemon, t: string) =>
+  p.types.map((t) => t.type.name).includes(t);
 
 export const WaterType: Category = {
   label: "Water Type",

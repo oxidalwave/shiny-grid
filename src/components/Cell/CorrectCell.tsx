@@ -9,7 +9,7 @@ export default function CorrectCell({ guess }: CorrectCellProps) {
   return (
     <div className="h-full flex justify-center items-center bg-green-500">
       <Image
-        alt={guess.Pokemon}
+        alt={guess.name}
         src={guess.imageUrl ?? ""}
         width={56}
         height={42}

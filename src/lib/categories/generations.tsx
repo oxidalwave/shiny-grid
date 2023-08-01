@@ -14,7 +14,7 @@ export const Generation1: Category = {
       </div>
     </div>
   ),
-  test: (p: Pokemon) => p.Nat >= 1 && p.Nat < 152,
+  test: (p: Pokemon) => p.nationalDexId >= 1 && p.nationalDexId < 152,
 };
 
 export const Generation2: Category = {
@@ -34,42 +34,42 @@ export const Generation2: Category = {
       </div>
     </div>
   ),
-  test: (p: Pokemon) => p.Nat >= 152 && p.Nat <= 251,
+  test: (p: Pokemon) => p.nationalDexId >= 152 && p.nationalDexId <= 251,
 };
 
 export const Generation3: Category = {
   label: "Generation 3",
-  test: (p: Pokemon) => p.Nat >= 252 && p.Nat < 387,
+  test: (p: Pokemon) => p.nationalDexId >= 252 && p.nationalDexId < 387,
 };
 
 export const Generation4: Category = {
   label: "Generation 4",
-  test: (p: Pokemon) => p.Nat >= 387 && p.Nat < 494,
+  test: (p: Pokemon) => p.nationalDexId >= 387 && p.nationalDexId < 494,
 };
 
 export const Generation5: Category = {
   label: "Generation 5",
-  test: (p: Pokemon) => p.Nat >= 494 && p.Nat < 650,
+  test: (p: Pokemon) => p.nationalDexId >= 494 && p.nationalDexId < 650,
 };
 
 export const Generation6: Category = {
   label: "Generation 6",
-  test: (p: Pokemon) => p.Nat >= 650 && p.Nat < 722,
+  test: (p: Pokemon) => p.nationalDexId >= 650 && p.nationalDexId < 722,
 };
 
 export const Generation7: Category = {
   label: "Generation 7",
-  test: (p: Pokemon) => p.Nat >= 722 && p.Nat < 810,
+  test: (p: Pokemon) => p.nationalDexId >= 722 && p.nationalDexId < 810,
 };
 
 export const Generation8: Category = {
   label: "Generation 8",
-  test: (p: Pokemon) => p.Nat >= 810 && p.Nat < 906,
+  test: (p: Pokemon) => p.nationalDexId >= 810 && p.nationalDexId < 906,
 };
 
 export const Generation9: Category = {
   label: "Generation 9",
-  test: (p: Pokemon) => p.Nat >= 906 && p.Nat < 1011,
+  test: (p: Pokemon) => p.nationalDexId >= 906 && p.nationalDexId < 1011,
 };
 
 export const Generations = [
