@@ -1,6 +1,3 @@
-export function defaultSeed() {
-  const date = new Date();
-  return new Date(`${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`)
-    .getTime()
-    .toString();
-}
+import { DateTime } from "luxon";
+
+export const defaultSeed = () => DateTime.now().toISODate()!;
