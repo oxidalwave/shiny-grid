@@ -1,13 +1,6 @@
 import { use } from "react";
-import App from "~/components/App";
 import { prisma } from "~/server/db";
-
-function defaultSeed() {
-  const date = new Date();
-  return new Date(
-    `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`
-  ).getTime();
-}
+import HomePageContent from "./content";
 
 export default function HomePage({
   searchParams,
@@ -77,23 +70,17 @@ export default function HomePage({
     p,
     ...p.forms.map((f, i) => ({
       ...f,
-      nationalDexId: p.nationalDexId + i / 100,
+      nationalDexId: p.nationalDexId + i / 1000,
     })),
     ...p.megas.map((f, i) => ({
       ...f,
-      nationalDexId: p.nationalDexId + i / 100,
+      nationalDexId: p.nationalDexId + i / 2000,
     })),
     ...p.regionalForms.map((f, i) => ({
       ...f,
-      nationalDexId: p.nationalDexId + i / 100,
+      nationalDexId: p.nationalDexId + i / 3000,
     })),
   ]);
 
-  const seed = defaultSeed();
-
-  return (
-    <div className="p-2">
-      <App dex={dex} seed={seed} />
-    </div>
-  );
+  return <HomePageContent dex={dex} />;
 }
