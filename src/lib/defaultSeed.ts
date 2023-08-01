@@ -1,6 +1,5 @@
+import moment from "moment";
+
 export function defaultSeed() {
-  const date = new Date();
-  return new Date(`${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`)
-    .getTime()
-    .toString();
+  return moment().format("YYYY-MM-DD");
 }

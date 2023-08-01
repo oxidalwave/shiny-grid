@@ -1,14 +1,14 @@
 import { use } from "react";
-import App from "~/components/App";
 import { prisma } from "~/server/db";
+import SeedPageContent from "./content";
 
-interface SeededPageProps {
+interface SeedPageProps {
   params: {
     seed: string;
   };
 }
 
-export default function HomePage({ params }: SeededPageProps) {
+export default function SeedPage({ params }: SeedPageProps) {
   const dex = use(
     prisma.pokemon.findMany({
       include: {
@@ -29,9 +29,5 @@ export default function HomePage({ params }: SeededPageProps) {
     })
   );
 
-  return (
-    <div className="p-2">
-      <App dex={dex} seed={params.seed} />
-    </div>
-  );
+  return <SeedPageContent dex={dex} seed={params.seed} />;
 }
