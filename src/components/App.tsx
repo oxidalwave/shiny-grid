@@ -6,7 +6,7 @@ import { type Pokemon } from "~/lib/data/dex";
 import { getCategories } from "~/lib/getCategories";
 import type Category from "~/lib/categories";
 import Grid from "./Grid";
-import { signIn, useSession } from "next-auth/react";
+import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 
 export interface GridProps {
@@ -65,12 +65,20 @@ export default function App({
     <div className="justify-center">
       <div className="p-2 w-screen">
         {session.data ? (
-          <Link
-            href={`/${seed}/${session.data.user.name}`}
-            className="w-full rounded p-2 m-2 bg-slate-700 hover:scale-110 z-10 hover:z-20 transition ease-in-out"
-          >
-            Share your grid
-          </Link>
+          <div className="flex">
+            <Link
+              href={`/${seed}/${session.data.user.name}`}
+              className="w-full rounded p-2 m-2 bg-slate-700 hover:scale-110 z-10 hover:z-20 transition ease-in-out"
+            >
+              Share your grid
+            </Link>
+            <button
+              className="w-full rounded p-2 m-2 bg-slate-700 hover:scale-110 z-10 hover:z-20 transition ease-in-out"
+              onClick={() => void signOut()}
+            >
+              Log out
+            </button>
+          </div>
         ) : (
           <button
             className="w-full rounded p-2 m-2 bg-slate-700 hover:scale-110 z-10 hover:z-20 transition ease-in-out"
