@@ -62,18 +62,18 @@ export default function App({
   }
 
   return (
-    <div className="justify-center">
-      <div className="p-2 w-screen">
+    <div className="">
+      <div className="p-2">
         {session.data ? (
           <div className="flex">
             <Link
               href={`/${seed}/${session.data.user.name}`}
-              className="w-full rounded p-2 m-2 bg-slate-700 hover:scale-110 z-10 hover:z-20 transition ease-in-out"
+              className="w-full rounded p-2 m-2 bg-slate-700 hover:bg-slate-800"
             >
               Share your grid
             </Link>
             <button
-              className="w-full rounded p-2 m-2 bg-slate-700 hover:scale-110 z-10 hover:z-20 transition ease-in-out"
+              className="w-full rounded p-2 m-2 bg-slate-700 hover:bg-slate-800"
               onClick={() => void signOut()}
             >
               Log out
@@ -81,7 +81,7 @@ export default function App({
           </div>
         ) : (
           <button
-            className="w-full rounded p-2 m-2 bg-slate-700 hover:scale-110 z-10 hover:z-20 transition ease-in-out"
+            className="w-full rounded p-2 m-2 bg-slate-700 hover:bg-slate-800"
             onClick={() => void signIn()}
           >
             Log In to share your grid

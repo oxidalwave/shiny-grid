@@ -17,7 +17,7 @@ export interface GridProps {
 
 export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
   return (
-    <div className="grid grid-cols-4 divide-y divide-x divide-slate-500 border-b border-b-slate-500 border-r border-r-slate-500">
+    <div className="grid grid-cols-4 divide-y divide-x divide-slate-700 border-b border-b-slate-700 border-r border-r-slate-700">
       <div className="h-24" />
       <CategoryLabel category={categories[0]!} />
       <CategoryLabel category={categories[1]!} />

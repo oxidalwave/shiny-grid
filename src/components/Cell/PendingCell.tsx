@@ -46,7 +46,7 @@ export default function PendingCell({
         ref={modalRef}
       >
         <button
-          className="w-full justify-center rounded bg-slate-900 flex p-2"
+          className="w-full justify-center rounded bg-slate-800 hover:bg-slate-900 flex p-2"
           onClick={handleClose}
         >
           Close
@@ -83,7 +83,7 @@ export default function PendingCell({
         </div>
       </dialog>
       <button
-        className="h-full bg-slate-500 hover:bg-slate-700 hover:scale-110 z-10 hover:z-20 transition ease-in-out"
+        className="h-full bg-slate-700 hover:bg-slate-800"
         onClick={handleOpen}
       />
     </>
