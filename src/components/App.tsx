@@ -62,28 +62,30 @@ export default function App({
   }
 
   return (
-    <div className="flex flex-col h-full justify-center">
+    <div className="justify-center">
+      <div className="p-2 w-screen">
+        {session.data ? (
+          <Link
+            href={`/${seed}/${session.data.user.name}`}
+            className="w-full rounded p-2 m-2 bg-slate-700 hover:scale-110 z-10 hover:z-20 transition ease-in-out"
+          >
+            Share your grid
+          </Link>
+        ) : (
+          <button
+            className="w-full rounded p-2 bg-slate-700 hover:scale-110 z-10 hover:z-20 transition ease-in-out"
+            onClick={() => void signIn("DISCORD")}
+          >
+            Log In to share your grid
+          </button>
+        )}
+      </div>
       <Grid
         categories={categories}
         dex={dex}
         guesses={guesses}
         onGuess={handleGuess}
       />
-      {session.data ? (
-        <Link
-          href={`/${seed}/${session.data.user.name}`}
-          className="w-1/3 rounded p-2 m-2 bg-slate-700 hover:scale-110 z-10 hover:z-20 transition ease-in-out"
-        >
-          Share your grid
-        </Link>
-      ) : (
-        <button
-          className="w-1/3 rounded p-2 bg-slate-700 hover:scale-110 z-10 hover:z-20 transition ease-in-out"
-          onClick={() => void signIn("DISCORD")}
-        >
-          Log In to share your grid
-        </button>
-      )}
     </div>
   );
 }

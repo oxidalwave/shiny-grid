@@ -18,11 +18,11 @@ export interface GridProps {
 export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
   return (
     <div className="grid grid-cols-4 divide-y divide-x divide-slate-500 border-b border-b-slate-500 border-r border-r-slate-500">
-      <div className="h-12" />
+      <div className="h-24" />
       <CategoryLabel category={categories[0]!} />
       <CategoryLabel category={categories[1]!} />
       <CategoryLabel category={categories[2]!} />
-      <div className="h-20">
+      <div className="h-24">
         <CategoryLabel category={categories[3]!} />
       </div>
       <Cell
@@ -49,7 +49,7 @@ export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
         guesses={guesses}
         onGuess={onGuess}
       />
-      <div className="h-20">
+      <div className="h-24">
         <CategoryLabel category={categories[4]!} />
       </div>
       <Cell
@@ -76,7 +76,7 @@ export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
         guesses={guesses}
         onGuess={onGuess}
       />
-      <div className="h-20">
+      <div className="h-24">
         <CategoryLabel category={categories[5]!} />
       </div>
       <Cell
