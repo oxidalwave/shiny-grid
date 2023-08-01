@@ -1,15 +1,9 @@
-export const revalidate = 3600;
+export const dynamic = 'force-dynamic'
 
 import App from "~/components/App";
+import { defaultSeed } from "~/lib/defaultSeed";
 
 export default function HomePageLoading() {
-  function defaultSeed() {
-    const date = new Date();
-    return new Date(
-      `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`
-    ).getTime().toString();
-  }
-
   const seed = defaultSeed();
 
   return (
