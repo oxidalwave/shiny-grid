@@ -14,7 +14,7 @@ export default function HomePage({
 }: {
   searchParams: Record<string, never>;
 }) {
-  const dex = use(
+  const pokemon = use(
     prisma.pokemon.findMany({
       include: {
         types: {
@@ -27,12 +27,67 @@ export default function HomePage({
             ability: true,
           },
         },
-        forms: true,
-        regionalForms: true,
-        megas: true,
+        forms: {
+          include: {
+            types: {
+              include: {
+                type: true,
+              },
+            },
+            abilities: {
+              include: {
+                ability: true,
+              },
+            },
+          },
+        },
+        regionalForms: {
+          include: {
+            types: {
+              include: {
+                type: true,
+              },
+            },
+            abilities: {
+              include: {
+                ability: true,
+              },
+            },
+          },
+        },
+        megas: {
+          include: {
+            types: {
+              include: {
+                type: true,
+              },
+            },
+            abilities: {
+              include: {
+                ability: true,
+              },
+            },
+          },
+        },
       },
     })
   );
+
+  const dex = pokemon.flatMap((p) => [
+    p,
+    ...p.forms.map((f, i) => ({
+      ...f,
+      nationalDexId: p.nationalDexId + i / 100,
+    })),
+    ...p.megas.map((f, i) => ({
+      ...f,
+      nationalDexId: p.nationalDexId + i / 100,
+    })),
+    ...p.regionalForms.map((f, i) => ({
+      ...f,
+      nationalDexId: p.nationalDexId + i / 100,
+    })),
+  ]);
 
   const seed = defaultSeed();
 
