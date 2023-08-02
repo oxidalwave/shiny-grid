@@ -641,6 +641,71 @@ async function main() {
       })
       .then(({ id }) => console.log(id));
   }
+  
+  await prisma.pokemon.updateMany({
+    where: {
+      name: {
+        startsWith: "Mega",
+      },
+    },
+    data: {
+      generationId: (await prisma.generation.findUnique({
+        where: { name: 6 },
+      }))!.id,
+    },
+  });
+
+  await prisma.pokemon.updateMany({
+    where: {
+      name: {
+        startsWith: "Alolan",
+      },
+    },
+    data: {
+      generationId: (await prisma.generation.findUnique({
+        where: { name: 7 },
+      }))!.id,
+    },
+  });
+
+  await prisma.pokemon.updateMany({
+    where: {
+      name: {
+        startsWith: "Galarian",
+      },
+    },
+    data: {
+      generationId: (await prisma.generation.findUnique({
+        where: { name: 8 },
+      }))!.id,
+    },
+  });
+
+  await prisma.pokemon.updateMany({
+    where: {
+      name: {
+        startsWith: "Hisuian",
+      },
+    },
+    data: {
+      generationId: (await prisma.generation.findUnique({
+        where: { name: 8 },
+      }))!.id,
+    },
+  });
+
+  await prisma.pokemon.updateMany({
+    where: {
+      name: {
+        startsWith: "Paldean",
+      },
+    },
+    data: {
+      generationId: (await prisma.generation.findUnique({
+        where: { name: 9 },
+      }))!.id,
+    },
+  });
 }
 
 main()
