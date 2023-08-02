@@ -1,23 +1,4 @@
-export interface Pokemon {
-  id: string;
-  nationalDexId: number;
-  name: string;
-  hp: number;
-  attack: number;
-  defense: number;
-  specialAttack: number;
-  specialDefense: number;
-  speed: number;
-  imageUrl?: string;
-  types: {
-    type: {
-      name: string;
-      generationIntroduced: number;
-    };
-  }[];
-  abilities: {
-    ability: {
-      name: string;
-    };
-  }[];
-}
+import { type z } from "zod";
+import { type PokemonValidator } from "./pokemon";
+
+export type Pokemon = z.infer<typeof PokemonValidator>;

@@ -3,7 +3,7 @@ import type Category from ".";
 import { type Pokemon } from "../data/dex";
 
 export const Generation1: Category = {
-  id: "gen-Generation1",
+  id: "Generation1",
   label: "Generation 1",
   icon: (
     <div className="flex flex-col">
@@ -37,7 +37,7 @@ export const Generation1: Category = {
 };
 
 export const Generation2: Category = {
-  id: "gen-Generation2",
+  id: "Generation2",
   label: "Generation 2",
   icon: (
     <div className="flex flex-col">
@@ -53,7 +53,7 @@ export const Generation2: Category = {
 };
 
 export const Generation3: Category = {
-  id: "gen-Generation3",
+  id: "Generation3",
   label: "Generation 3",
   test: (p: Pokemon) => p.nationalDexId >= 252 && p.nationalDexId < 387,
   icon: (
@@ -74,7 +74,7 @@ export const Generation3: Category = {
 };
 
 export const Generation4: Category = {
-  id: "gen-Generation4",
+  id: "Generation4",
   label: "Generation 4",
   test: (p: Pokemon) => p.nationalDexId >= 387 && p.nationalDexId < 494,
 
@@ -96,7 +96,7 @@ export const Generation4: Category = {
 };
 
 export const Generation5: Category = {
-  id: "gen-Generation5",
+  id: "Generation5",
   label: "Generation 5",
   test: (p: Pokemon) => p.nationalDexId >= 494 && p.nationalDexId < 650,
   icon: (
@@ -113,7 +113,7 @@ export const Generation5: Category = {
 };
 
 export const Generation6: Category = {
-  id: "gen-Generation6",
+  id: "Generation6",
   label: "Generation 6",
   test: (p: Pokemon) => p.nationalDexId >= 650 && p.nationalDexId < 722,
   icon: (
@@ -128,7 +128,7 @@ export const Generation6: Category = {
 };
 
 export const Generation7: Category = {
-  id: "gen-Generation7",
+  id: "Generation7",
   label: "Generation 7",
   test: (p: Pokemon) => p.nationalDexId >= 722 && p.nationalDexId < 810,
   icon: (
@@ -155,7 +155,7 @@ export const Generation7: Category = {
 };
 
 export const Generation8: Category = {
-  id: "gen-Generation8",
+  id: "Generation8",
   label: "Generation 8",
   test: (p: Pokemon) => p.nationalDexId >= 810 && p.nationalDexId < 906,
   icon: (
@@ -170,7 +170,7 @@ export const Generation8: Category = {
 };
 
 export const Generation9: Category = {
-  id: "gen-Generation9",
+  id: "Generation9",
   label: "Generation 9",
   test: (p: Pokemon) => p.nationalDexId >= 906 && p.nationalDexId < 1011,
   icon: (

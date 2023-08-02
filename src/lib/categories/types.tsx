@@ -6,7 +6,7 @@ const isOfType = (p: Pokemon, t: string) =>
   p?.types?.map((t) => t.type.name)?.includes(t);
 
 export const WaterType: Category = {
-  id: "type-WaterType",
+  id: "WaterType",
   label: "Water Type",
   icon: (
     <Image alt="Water Type" src="/types/water.png" width={64} height={64} />
@@ -15,7 +15,7 @@ export const WaterType: Category = {
 };
 
 export const NormalType: Category = {
-  id: "type-NormalType",
+  id: "NormalType",
   label: "Normal Type",
   icon: (
     <Image alt="Normal Type" src="/types/normal.png" width={64} height={64} />
@@ -24,14 +24,14 @@ export const NormalType: Category = {
 };
 
 export const FireType: Category = {
-  id: "type-FireType",
+  id: "FireType",
   label: "Fire Type",
   icon: <Image alt="Fire Type" src="/types/fire.png" width={64} height={64} />,
   test: (p: Pokemon) => isOfType(p, "Fire"),
 };
 
 export const FightingType: Category = {
-  id: "type-FightingType",
+  id: "FightingType",
   label: "Fighting Type",
   icon: (
     <Image
@@ -45,7 +45,7 @@ export const FightingType: Category = {
 };
 
 export const FlyingType: Category = {
-  id: "type-FlyingType",
+  id: "FlyingType",
   label: "Flying Type",
   icon: (
     <Image alt="Flying Type" src="/types/flying.png" width={64} height={64} />
@@ -54,7 +54,7 @@ export const FlyingType: Category = {
 };
 
 export const GrassType: Category = {
-  id: "type-GrassType",
+  id: "GrassType",
   label: "Grass Type",
   icon: (
     <Image alt="Grass Type" src="/types/grass.png" width={64} height={64} />
@@ -63,7 +63,7 @@ export const GrassType: Category = {
 };
 
 export const PoisonType: Category = {
-  id: "type-PoisonType",
+  id: "PoisonType",
   label: "Poison Type",
   icon: (
     <Image alt="Poison Type" src="/types/poison.png" width={64} height={64} />
@@ -72,7 +72,7 @@ export const PoisonType: Category = {
 };
 
 export const ElectricType: Category = {
-  id: "type-ElectricType",
+  id: "ElectricType",
   label: "Electric Type",
   icon: (
     <Image
@@ -86,7 +86,7 @@ export const ElectricType: Category = {
 };
 
 export const GroundType: Category = {
-  id: "type-GroundType",
+  id: "GroundType",
   label: "Ground Type",
   icon: (
     <Image alt="Ground Type" src="/types/ground.png" width={64} height={64} />
@@ -95,7 +95,7 @@ export const GroundType: Category = {
 };
 
 export const PsychicType: Category = {
-  id: "type-PsychicType",
+  id: "PsychicType",
   label: "Psychic Type",
   icon: (
     <Image alt="Psychic Type" src="/types/psychic.png" width={64} height={64} />
@@ -104,28 +104,28 @@ export const PsychicType: Category = {
 };
 
 export const RockType: Category = {
-  id: "type-RockType",
+  id: "RockType",
   label: "Rock Type",
   icon: <Image alt="Rock Type" src="/types/rock.png" width={64} height={64} />,
   test: (p: Pokemon) => isOfType(p, "Rock"),
 };
 
 export const IceType: Category = {
-  id: "type-IceType",
+  id: "IceType",
   label: "Ice Type",
   icon: <Image alt="Ice Type" src="/types/ice.png" width={64} height={64} />,
   test: (p: Pokemon) => isOfType(p, "Ice"),
 };
 
 export const BugType: Category = {
-  id: "type-BugType",
+  id: "BugType",
   label: "Bug Type",
   icon: <Image alt="Bug Type" src="/types/bug.png" width={64} height={64} />,
   test: (p: Pokemon) => isOfType(p, "Bug"),
 };
 
 export const DragonType: Category = {
-  id: "type-DragonType",
+  id: "DragonType",
   label: "Dragon Type",
   icon: (
     <Image alt="Dragon Type" src="/types/dragon.png" width={64} height={64} />
@@ -134,7 +134,7 @@ export const DragonType: Category = {
 };
 
 export const GhostType: Category = {
-  id: "type-GhostType",
+  id: "GhostType",
   label: "Ghost Type",
   icon: (
     <Image alt="Ghost Type" src="/types/ghost.png" width={64} height={64} />
@@ -143,14 +143,14 @@ export const GhostType: Category = {
 };
 
 export const DarkType: Category = {
-  id: "type-DarkType",
+  id: "DarkType",
   label: "Dark Type",
   icon: <Image alt="Dark Type" src="/types/dark.png" width={64} height={64} />,
   test: (p: Pokemon) => isOfType(p, "Dark"),
 };
 
 export const SteelType: Category = {
-  id: "type-SteelType",
+  id: "SteelType",
   label: "Steel Type",
   icon: (
     <Image alt="Steel Type" src="/types/steel.png" width={64} height={64} />
@@ -159,7 +159,7 @@ export const SteelType: Category = {
 };
 
 export const FairyType: Category = {
-  id: "type-FairyType",
+  id: "FairyType",
   label: "Fairy Type",
   icon: (
     <Image alt="Fairy Type" src="/types/fairy.png" width={64} height={64} />

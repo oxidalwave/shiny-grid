@@ -40,13 +40,27 @@ export default function HomePage() {
   const categoryIds = use(
     fetch(`${env.URL}/api/seeds/${seed}/categories`)
       .then((r) => r.json())
-      .then((j) => z.array(z.object({ id: z.string() })).parse(j))
+      .then((j) =>
+        z
+          .array(
+            z.object({
+              id: z.string(),
+              kind: z.union([
+                z.literal("EGGGROUP"),
+                z.literal("TYPE"),
+                z.literal("GEN"),
+                z.literal("STAT"),
+              ]),
+            })
+          )
+          .parse(j)
+      )
   );
 
   return (
     <div className="p-2">
       <App
-        categoryIds={categoryIds.map(({ id }) => id)}
+        categoryIds={categoryIds}
         username={session?.user?.name ?? undefined}
         dex={dex}
         seed={seed}

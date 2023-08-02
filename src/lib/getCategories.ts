@@ -15,5 +15,30 @@ export function getCategories(seed: string) {
   const generation = Generations[rand(Generations.length)]!;
   const stats = Stats[rand(Stats.length)]!;
 
-  return [type1, type2, generation, type3, type4, stats].map((c) => c.id);
+  return [
+    {
+      id: type1.id,
+      kind: "TYPE",
+    },
+    {
+      id: type2.id,
+      kind: "TYPE",
+    },
+    {
+      id: generation.id,
+      kind: "GEN",
+    },
+    {
+      id: type3.id,
+      kind: "TYPE",
+    },
+    {
+      id: type4.id,
+      kind: "TYPE",
+    },
+    {
+      id: stats.id,
+      kind: "STAT",
+    },
+  ];
 }

@@ -12,7 +12,10 @@ import { getCategoryFromId } from "~/lib/categories";
 export interface GridProps {
   dex: Pokemon[];
   seed: string;
-  categoryIds: string[];
+  categoryIds: {
+    kind: "TYPE" | "GEN" | "STAT" | "EGGGROUP";
+    id: string;
+  }[];
   username?: string;
   initialAnswers: {
     categoryIndex: number;

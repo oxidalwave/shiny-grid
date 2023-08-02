@@ -39,13 +39,27 @@ export default function SharedPage({
       cache: "force-cache",
     })
       .then((r) => r.json())
-      .then((j) => z.array(z.object({ id: z.string() })).parse(j))
+      .then((j) =>
+        z
+          .array(
+            z.object({
+              id: z.string(),
+              kind: z.union([
+                z.literal("EGGGROUP"),
+                z.literal("TYPE"),
+                z.literal("GEN"),
+                z.literal("STAT"),
+              ]),
+            })
+          )
+          .parse(j)
+      )
   );
 
   return (
     <div className="p-2">
       <App
-        categoryIds={categoryIds.map(({ id }) => id)}
+        categoryIds={categoryIds}
         username={params.username}
         dex={dex}
         seed={params.seed}
