@@ -67,7 +67,7 @@ export const Generation3: Category = {
           width={64}
           height={64}
         />
-        <Image alt="crystal" src="/boxart/emerald.png" width={64} height={64} />
+        <Image alt="Emerald" src="/boxart/emerald.jpg" width={64} height={64} />
       </div>
     </div>
   ),
@@ -82,11 +82,23 @@ export const Generation4: Category = {
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
       <div className="flex justify-center">
-        <Image alt="diamond" src="/boxart/diamond.png" width={64} height={64} />
-        <Image alt="pearl" src="/boxart/pearl.png" width={64} height={64} />
+        <Image alt="diamond" src="/boxart/diamond.jpg" width={64} height={64} />
+        <Image alt="pearl" src="/boxart/pearl.jpg" width={64} height={64} />
         <Image
           alt="platinum"
           src="/boxart/platinum.png"
+          width={64}
+          height={64}
+        />
+        <Image
+          alt="heartgold"
+          src="/boxart/heartgold.jpg"
+          width={64}
+          height={64}
+        />
+        <Image
+          alt="soulsilver"
+          src="/boxart/soulsilver.jpg"
           width={64}
           height={64}
         />
@@ -122,6 +134,18 @@ export const Generation6: Category = {
       <div className="flex justify-center">
         <Image alt="x" src="/boxart/x.png" width={64} height={64} />
         <Image alt="y" src="/boxart/y.png" width={64} height={64} />
+        <Image
+          alt="omegaruby"
+          src="/boxart/omegaruby.ong"
+          width={64}
+          height={64}
+        />
+        <Image
+          alt="alphasapphire"
+          src="/boxart/alphasapphire.png"
+          width={64}
+          height={64}
+        />
       </div>
     </div>
   ),
@@ -164,6 +188,24 @@ export const Generation8: Category = {
       <div className="flex justify-center">
         <Image alt="sword" src="/boxart/sword.png" width={64} height={64} />
         <Image alt="shield" src="/boxart/shield.png" width={64} height={64} />
+        <Image
+          alt="brilliantdiamond"
+          src="/boxart/brilliantdiamond.jpg"
+          width={64}
+          height={64}
+        />
+        <Image
+          alt="shiningpearl"
+          src="/boxart/shiningpearl.jpg"
+          width={64}
+          height={64}
+        />
+        <Image
+          alt="legendsarceus"
+          src="/boxart/legendsarceus.png"
+          width={64}
+          height={64}
+        />
       </div>
     </div>
   ),
