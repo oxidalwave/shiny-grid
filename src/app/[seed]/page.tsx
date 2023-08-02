@@ -1,5 +1,3 @@
-export const revalidate = 7200;
-
 import { use } from "react";
 import { getServerSession } from "next-auth";
 import App from "~/components/App";
