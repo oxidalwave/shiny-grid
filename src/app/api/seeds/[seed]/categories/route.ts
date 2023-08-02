@@ -5,6 +5,6 @@ export const GET = (
   request: Request,
   { params }: { params: { seed: string } }
 ) => {
-  const cats = getCategories(params.seed)
-  return NextResponse.json(cats)
+  const cats = getCategories(params.seed);
+  return NextResponse.json(cats.map((id) => ({ id })));
 };

@@ -7,8 +7,6 @@ import { z } from "zod";
 import { authOptions } from "~/server/auth";
 import { env } from "~/env.mjs";
 import { PokemonValidator } from "~/lib/data/pokemon";
-import { getCategories } from "~/lib/getCategories";
-import { getCategoryFromId } from "~/lib/categories";
 
 export default function SeedPage({ params }: { params: { seed: string } }) {
   const dex = use(
@@ -36,16 +34,16 @@ export default function SeedPage({ params }: { params: { seed: string } }) {
       )
     : [];
 
-  const categories = use(
+  const categoryIds = use(
     fetch(`${env.URL}/api/seeds/${params.seed}/categories`)
       .then((r) => r.json())
-      .then((j) => z.array(z.string()).parse(j))
+      .then((j) => z.array(z.object({ id: z.string() })).parse(j))
   );
 
   return (
     <div className="p-2">
       <App
-        categoryIds={categories}
+        categoryIds={categoryIds.map(({ id }) => id)}
         username={session?.user?.name ?? undefined}
         dex={dex}
         seed={params.seed}

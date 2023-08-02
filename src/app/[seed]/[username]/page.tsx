@@ -5,7 +5,6 @@ import { PokemonValidator } from "~/lib/data/pokemon";
 import App from "~/components/App";
 import { z } from "zod";
 import { env } from "~/env.mjs";
-import { getCategories } from "~/lib/getCategories";
 
 export default function SharedPage({
   params,
@@ -33,12 +32,16 @@ export default function SharedPage({
       )
   );
 
-  const categories = getCategories(params.seed);
+  const categoryIds = use(
+    fetch(`${env.URL}/api/seeds/${params.seed}/categories`)
+      .then((r) => r.json())
+      .then((j) => z.array(z.object({ id: z.string() })).parse(j))
+  );
 
   return (
     <div className="p-2">
       <App
-        categories={categories}
+        categoryIds={categoryIds.map(({ id }) => id)}
         username={params.username}
         dex={dex}
         seed={params.seed}
