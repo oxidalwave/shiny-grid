@@ -9,7 +9,7 @@ export const Generation1: Category = {
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
-      <div className="flex justify-center">
+      <div className="grid grid-cols-2">
         <Image
           className=""
           alt="red"
@@ -25,7 +25,7 @@ export const Generation1: Category = {
           height={64}
         />
         <Image
-          className=""
+          className="col-span-2 justify-self-center"
           alt="yellow"
           src="/boxart/yellow.png"
           width={64}
@@ -43,10 +43,16 @@ export const Generation2: Category = {
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
-      <div className="flex justify-center">
+      <div className="grid grid-cols-2">
         <Image alt="gold" src="/boxart/gold.png" width={64} height={64} />
         <Image alt="silver" src="/boxart/silver.png" width={64} height={64} />
-        <Image alt="crystal" src="/boxart/crystal.png" width={64} height={64} />
+        <Image
+          className="col-span-2 justify-self-center"
+          alt="crystal"
+          src="/boxart/crystal.png"
+          width={64}
+          height={64}
+        />
       </div>
     </div>
   ),
@@ -59,7 +65,7 @@ export const Generation3: Category = {
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
-      <div className="flex justify-center">
+      <div className="grid grid-cols-2">
         <Image alt="ruby" src="/boxart/ruby.png" width={64} height={64} />
         <Image
           alt="sapphire"
@@ -67,7 +73,13 @@ export const Generation3: Category = {
           width={64}
           height={64}
         />
-        <Image alt="Emerald" src="/boxart/emerald.jpg" width={64} height={64} />
+        <Image
+          className="col-span-2 justify-self-center"
+          alt="Emerald"
+          src="/boxart/emerald.jpg"
+          width={64}
+          height={64}
+        />
       </div>
     </div>
   ),
@@ -81,10 +93,11 @@ export const Generation4: Category = {
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
-      <div className="flex justify-center">
+      <div className="grid grid-cols-2">
         <Image alt="diamond" src="/boxart/diamond.jpg" width={64} height={64} />
         <Image alt="pearl" src="/boxart/pearl.jpg" width={64} height={64} />
         <Image
+          className="col-span-2 justify-self-center"
           alt="platinum"
           src="/boxart/platinum.png"
           width={64}
@@ -114,7 +127,7 @@ export const Generation5: Category = {
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
-      <div className="flex justify-center">
+      <div className="grid grid-cols-2">
         <Image alt="black" src="/boxart/black.png" width={64} height={64} />
         <Image alt="black2" src="/boxart/black2.png" width={64} height={64} />
         <Image alt="white" src="/boxart/white.png" width={64} height={64} />
@@ -131,12 +144,12 @@ export const Generation6: Category = {
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
-      <div className="flex justify-center">
+      <div className="grid grid-cols-2">
         <Image alt="x" src="/boxart/x.png" width={64} height={64} />
         <Image alt="y" src="/boxart/y.png" width={64} height={64} />
         <Image
           alt="omegaruby"
-          src="/boxart/omegaruby.ong"
+          src="/boxart/omegaruby.png"
           width={64}
           height={64}
         />
@@ -158,7 +171,7 @@ export const Generation7: Category = {
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
-      <div className="flex justify-center">
+      <div className="grid grid-cols-2">
         <Image alt="sun" src="/boxart/sun.png" width={64} height={64} />
         <Image
           alt="ultrasun"
@@ -185,7 +198,7 @@ export const Generation8: Category = {
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
-      <div className="flex justify-center">
+      <div className="grid grid-cols-2">
         <Image alt="sword" src="/boxart/sword.png" width={64} height={64} />
         <Image alt="shield" src="/boxart/shield.png" width={64} height={64} />
         <Image
@@ -201,6 +214,7 @@ export const Generation8: Category = {
           height={64}
         />
         <Image
+          className="col-span-2 justify-self-center"
           alt="legendsarceus"
           src="/boxart/legendsarceus.png"
           width={64}
@@ -218,7 +232,7 @@ export const Generation9: Category = {
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
-      <div className="flex justify-center">
+      <div className="grid grid-cols-2">
         <Image alt="scarlet" src="/boxart/scarlet.png" width={64} height={64} />
         <Image alt="violet" src="/boxart/violet.png" width={64} height={64} />
       </div>
