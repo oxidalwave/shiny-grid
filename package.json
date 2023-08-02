@@ -20,6 +20,7 @@
     "@trpc/react-query": "^10.26.0",
     "@trpc/server": "^10.26.0",
     "@types/random-seed": "^0.3.3",
+    "@vercel/analytics": "^1.0.1",
     "luxon": "^3.3.0",
     "next": "^13.4.2",
     "next-auth": "^4.22.1",
