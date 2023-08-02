@@ -10,7 +10,7 @@ import { PokemonValidator } from "~/lib/data/pokemon";
 
 export default function SeedPage({ params }: { params: { seed: string } }) {
   const dex = use(
-    fetch(`${env.URL}/api/pokemon`)
+    fetch(`${env.URL}/api/pokemon`, { next: { revalidate: 3600 } })
       .then((r) => r.json())
       .then((j) => z.array(PokemonValidator).parse(j))
   );
@@ -35,7 +35,7 @@ export default function SeedPage({ params }: { params: { seed: string } }) {
     : [];
 
   const categoryIds = use(
-    fetch(`${env.URL}/api/seeds/${params.seed}/categories`)
+    fetch(`${env.URL}/api/seeds/${params.seed}/categories`, { next: { revalidate: 3600 } })
       .then((r) => r.json())
       .then((j) => z.array(z.object({ id: z.string() })).parse(j))
   );

@@ -33,7 +33,7 @@ export default function SharedPage({
   );
 
   const categoryIds = use(
-    fetch(`${env.URL}/api/seeds/${params.seed}/categories`)
+    fetch(`${env.URL}/api/seeds/${params.seed}/categories`, { next: { revalidate: 3600 } })
       .then((r) => r.json())
       .then((j) => z.array(z.object({ id: z.string() })).parse(j))
   );
