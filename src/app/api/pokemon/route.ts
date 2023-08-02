@@ -1,3 +1,5 @@
+export const revalidate = 43200;
+
 import { NextResponse } from "next/server";
 import { getPokedex } from "~/lib/data/pokemon";
 

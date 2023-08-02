@@ -123,191 +123,197 @@ async function main() {
   }
 
   for (const p of mega) {
-    const main = dex.find((d) => d.Nat === p.Nat);
+    const main = dex.find((d) => d.Nat === Math.floor(p.Nat));
 
-    await prisma.pokemon
-      .create({
-        data: {
-          kind: "MEGA",
-          nationalDexId: p.Nat,
-          name: p.Pokemon,
-          hp: p.HP,
-          attack: p.Atk,
-          defense: p.Def,
-          specialAttack: p.SpA,
-          specialDefense: p.SpD,
-          speed: p.Spe,
+    if (main) {
+      await prisma.pokemon
+        .create({
+          data: {
+            kind: "MEGA",
+            nationalDexId: p.Nat,
+            name: p.Pokemon,
+            hp: p.HP,
+            attack: p.Atk,
+            defense: p.Def,
+            specialAttack: p.SpA,
+            specialDefense: p.SpD,
+            speed: p.Spe,
 
-          evWorth: main?.["EV Worth"],
-          gender: main?.Gender,
-          evolve: main?.Evolve,
-          catchRate: main?.Catch,
+            evWorth: main?.["EV Worth"],
+            gender: main?.Gender,
+            evolve: main?.Evolve,
+            catchRate: main?.Catch,
 
-          imageUrl: `/sprites/${("000" + p.Nat).slice(-4)}_01.png`,
+            imageUrl: `/sprites/${("000" + main.Nat).slice(-4)}_01.png`,
 
-          types: {
-            create: p.types.map((t) => ({
-              type: {
-                connectOrCreate: {
-                  where: { name: t },
-                  create: { name: t, generationIntroduced: 1 },
+            types: {
+              create: p.types.map((t) => ({
+                type: {
+                  connectOrCreate: {
+                    where: { name: t },
+                    create: { name: t, generationIntroduced: 1 },
+                  },
                 },
-              },
-            })),
+              })),
+            },
+
+            abilities: {
+              create: p.abilities.map((t) => ({
+                ability: {
+                  connectOrCreate: {
+                    where: { name: t },
+                    create: { name: t },
+                  },
+                },
+              })),
+            },
           },
 
-          abilities: {
-            create: p.abilities.map((t) => ({
-              ability: {
-                connectOrCreate: {
-                  where: { name: t },
-                  create: { name: t },
-                },
-              },
-            })),
+          include: {
+            types: true,
+            abilities: true,
           },
-        },
-
-        include: {
-          types: true,
-          abilities: true,
-        },
-      })
-      .then(({ id }) => console.log(id));
+        })
+        .then(({ id }) => console.log(id));
+    }
   }
 
   for (const p of regional) {
-    const main = dex.find((d) => d.Nat === p.Nat);
+    const main = dex.find((d) => d.Nat === Math.floor(p.Nat));
 
-    await prisma.pokemon
-      .create({
-        data: {
-          kind: "REGIONAL",
-          nationalDexId: p.Nat,
-          name: p.Pokemon,
-          hp: p.HP,
-          attack: p.Atk,
-          defense: p.Def,
-          specialAttack: p.SpA,
-          specialDefense: p.SpD,
-          speed: p.Spe,
+    if (main) {
+      await prisma.pokemon
+        .create({
+          data: {
+            kind: "REGIONAL",
+            nationalDexId: p.Nat,
+            name: p.Pokemon,
+            hp: p.HP,
+            attack: p.Atk,
+            defense: p.Def,
+            specialAttack: p.SpA,
+            specialDefense: p.SpD,
+            speed: p.Spe,
 
-          evWorth: p["EV Worth"],
-          gender: p.Gender,
-          evolve: p.Evolve,
-          catchRate: main?.Catch,
-          imageUrl: `/sprites/${("000" + p.Nat).slice(-4)}_01.png`,
+            evWorth: p["EV Worth"],
+            gender: p.Gender,
+            evolve: p.Evolve,
+            catchRate: main?.Catch,
+            imageUrl: `/sprites/${("000" + main.Nat).slice(-4)}_01.png`,
 
-          types: {
-            create: p.types.map((t) => ({
-              type: {
-                connectOrCreate: {
-                  where: { name: t },
-                  create: { name: t, generationIntroduced: 1 },
-                },
-              },
-            })),
-          },
-
-          abilities: {
-            create: p.abilities.map((t) => ({
-              ability: {
-                connectOrCreate: {
-                  where: { name: t },
-                  create: { name: t },
-                },
-              },
-            })),
-          },
-
-          eggGroups: main
-            ? {
-                create: main.eggGroups.map((t) => ({
-                  eggGroup: {
-                    connectOrCreate: {
-                      where: { name: t },
-                      create: { name: t },
-                    },
+            types: {
+              create: p.types.map((t) => ({
+                type: {
+                  connectOrCreate: {
+                    where: { name: t },
+                    create: { name: t, generationIntroduced: 1 },
                   },
-                })),
-              }
-            : undefined,
-        },
+                },
+              })),
+            },
 
-        include: {
-          types: true,
-          abilities: true,
-          eggGroups: true,
-        },
-      })
-      .then(({ id }) => console.log(id));
+            abilities: {
+              create: p.abilities.map((t) => ({
+                ability: {
+                  connectOrCreate: {
+                    where: { name: t },
+                    create: { name: t },
+                  },
+                },
+              })),
+            },
+
+            eggGroups: main
+              ? {
+                  create: main.eggGroups.map((t) => ({
+                    eggGroup: {
+                      connectOrCreate: {
+                        where: { name: t },
+                        create: { name: t },
+                      },
+                    },
+                  })),
+                }
+              : undefined,
+          },
+
+          include: {
+            types: true,
+            abilities: true,
+            eggGroups: true,
+          },
+        })
+        .then(({ id }) => console.log(id));
+    }
   }
 
   for (const p of forms) {
-    const main = dex.find((d) => d.Nat === p.Nat);
+    const main = dex.find((d) => d.Nat === Math.floor(p.Nat));
 
-    await prisma.pokemon
-      .create({
-        data: {
-          kind: "ALTERNATE",
-          nationalDexId: p.Nat,
-          name: p.Pokemon,
-          hp: p.HP,
-          attack: p.Atk,
-          defense: p.Def,
-          specialAttack: p.SpA,
-          specialDefense: p.SpD,
-          speed: p.Spe,
+    if (main) {
+      await prisma.pokemon
+        .create({
+          data: {
+            kind: "ALTERNATE",
+            nationalDexId: p.Nat,
+            name: p.Pokemon,
+            hp: p.HP,
+            attack: p.Atk,
+            defense: p.Def,
+            specialAttack: p.SpA,
+            specialDefense: p.SpD,
+            speed: p.Spe,
 
-          evWorth: p["EV Worth"],
-          gender: p.Gender,
-          evolve: p.Evolve,
-          catchRate: main?.Catch,
-          imageUrl: `/sprites/${("000" + p.Nat).slice(-4)}_01.png`,
+            evWorth: p["EV Worth"],
+            gender: p.Gender,
+            evolve: p.Evolve,
+            catchRate: main?.Catch,
+            imageUrl: `/sprites/${("000" + main.Nat).slice(-4)}_01.png`,
 
-          types: {
-            create: p.types.map((t) => ({
-              type: {
-                connectOrCreate: {
-                  where: { name: t },
-                  create: { name: t, generationIntroduced: 1 },
-                },
-              },
-            })),
-          },
-
-          abilities: {
-            create: p.abilities.map((t) => ({
-              ability: {
-                connectOrCreate: {
-                  where: { name: t },
-                  create: { name: t },
-                },
-              },
-            })),
-          },
-
-          eggGroups: main
-            ? {
-                create: main.eggGroups.map((t) => ({
-                  eggGroup: {
-                    connectOrCreate: {
-                      where: { name: t },
-                      create: { name: t },
-                    },
+            types: {
+              create: p.types.map((t) => ({
+                type: {
+                  connectOrCreate: {
+                    where: { name: t },
+                    create: { name: t, generationIntroduced: 1 },
                   },
-                })),
-              }
-            : undefined,
-        },
+                },
+              })),
+            },
 
-        include: {
-          types: true,
-          abilities: true,
-          eggGroups: true,
-        },
-      })
-      .then(({ id }) => console.log(id));
+            abilities: {
+              create: p.abilities.map((t) => ({
+                ability: {
+                  connectOrCreate: {
+                    where: { name: t },
+                    create: { name: t },
+                  },
+                },
+              })),
+            },
+
+            eggGroups: main
+              ? {
+                  create: main.eggGroups.map((t) => ({
+                    eggGroup: {
+                      connectOrCreate: {
+                        where: { name: t },
+                        create: { name: t },
+                      },
+                    },
+                  })),
+                }
+              : undefined,
+          },
+
+          include: {
+            types: true,
+            abilities: true,
+            eggGroups: true,
+          },
+        })
+        .then(({ id }) => console.log(id));
+    }
   }
 }
 
