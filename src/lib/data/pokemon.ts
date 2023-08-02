@@ -11,11 +11,11 @@ export const PokemonValidator = z.object({
   specialAttack: z.number(),
   specialDefense: z.number(),
   speed: z.number(),
-  // evWorth: z.string(),
-  // gender: z.string(),
-  // evolve: z.string(),
-  // catchRate: z.number(),
-  imageUrl: z.string().optional(),
+  evWorth: z.string().optional(),
+  gender: z.string().optional(),
+  evolve: z.string().optional(),
+  catchRate: z.number().optional(),
+  imageUrl: z.string(),
   types: z.array(
     z.object({
       type: z.object({
@@ -34,7 +34,7 @@ export const PokemonValidator = z.object({
 });
 
 export async function getPokedex() {
-  const pokemon = await prisma.pokemon.findMany({
+  return await prisma.pokemon.findMany({
     include: {
       types: {
         include: {
@@ -46,64 +46,6 @@ export async function getPokedex() {
           ability: true,
         },
       },
-      forms: {
-        include: {
-          types: {
-            include: {
-              type: true,
-            },
-          },
-          abilities: {
-            include: {
-              ability: true,
-            },
-          },
-        },
-      },
-      regionalForms: {
-        include: {
-          types: {
-            include: {
-              type: true,
-            },
-          },
-          abilities: {
-            include: {
-              ability: true,
-            },
-          },
-        },
-      },
-      megas: {
-        include: {
-          types: {
-            include: {
-              type: true,
-            },
-          },
-          abilities: {
-            include: {
-              ability: true,
-            },
-          },
-        },
-      },
     },
   });
-
-  return pokemon.flatMap((p) => [
-    p,
-    ...p.forms.map((f, i) => ({
-      ...f,
-      nationalDexId: p.nationalDexId + i / 1000,
-    })),
-    ...p.megas.map((f, i) => ({
-      ...f,
-      nationalDexId: p.nationalDexId + i / 2000,
-    })),
-    ...p.regionalForms.map((f, i) => ({
-      ...f,
-      nationalDexId: p.nationalDexId + i / 3000,
-    })),
-  ]);
 }

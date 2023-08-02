@@ -66,41 +66,34 @@ model VerificationToken {
 }
 
 model Type {
-    id                    String                     @id @default(cuid())
-    name                  String
-    generationIntroduced  Int
-    pokemonAlternateForms PokemonAlternateFormType[]
-    PokemonRegionalForms  PokemonRegionalFormType[]
-    PokemonMegas          PokemonMegaType[]
-    PokemonType           PokemonType[]
+    id                   String        @id @default(cuid())
+    name                 String
+    generationIntroduced Int
+    PokemonType          PokemonType[]
 
     @@unique([name])
 }
 
 model Ability {
-    id                    String                        @id @default(cuid())
-    name                  String
-    pokemonAlternateForms PokemonAlternateFormAbility[]
-    pokemonRegionalForms  PokemonRegionalFormAbility[]
-    PokemonMegas          PokemonMegaAbility[]
-    PokemonAbility        PokemonAbility[]
+    id             String           @id @default(cuid())
+    name           String
+    PokemonAbility PokemonAbility[]
 
     @@unique([name])
 }
 
 model EggGroup {
-    id                           String                         @id @default(cuid())
-    name                         String
-    pokemonEggGroup              PokemonEggGroup[]
-    PokemonAlternateFormEggGroup PokemonAlternateFormEggGroup[]
-    PokemonRegionalFormEggGroup  PokemonRegionalFormEggGroup[]
+    id              String            @id @default(cuid())
+    name            String
+    pokemonEggGroup PokemonEggGroup[]
 
     @@unique([name])
 }
 
 model Pokemon {
-    id             String                 @id @default(cuid())
+    id             String            @id @default(cuid())
     name           String
+    kind           String            @default("POKEMON")
     nationalDexId  Int
     hp             Int
     attack         Int
@@ -108,14 +101,11 @@ model Pokemon {
     specialAttack  Int
     specialDefense Int
     speed          Int
-    evWorth        String
-    gender         String
-    evolve         String
-    catchRate      Int
+    evWorth        String?
+    gender         String?
+    evolve         String?
+    catchRate      Int?
     imageUrl       String
-    forms          PokemonAlternateForm[]
-    regionalForms  PokemonRegionalForm[]
-    megas          PokemonMega[]
     types          PokemonType[]
     abilities      PokemonAbility[]
     eggGroups      PokemonEggGroup[]
@@ -150,155 +140,10 @@ model PokemonAbility {
     pokemonId String
     abilityId String
 
+    isHidden Boolean @default(false)
+
     @@unique([pokemonId, abilityId])
     @@index([pokemonId])
-    @@index([abilityId])
-}
-
-model PokemonAlternateForm {
-    id                           String                         @id @default(cuid())
-    name                         String
-    hp                           Int
-    attack                       Int
-    defense                      Int
-    specialAttack                Int
-    specialDefense               Int
-    speed                        Int
-    types                        PokemonAlternateFormType[]
-    abilities                    PokemonAlternateFormAbility[]
-    evWorth                      String
-    gender                       String
-    evolve                       String
-    pokemon                      Pokemon                        @relation(fields: [pokemonId], references: [id])
-    pokemonId                    String
-    PokemonAlternateFormEggGroup PokemonAlternateFormEggGroup[]
-
-    @@index([pokemonId])
-}
-
-model PokemonAlternateFormEggGroup {
-    form       PokemonAlternateForm @relation(fields: [formId], references: [id])
-    eggGroup   EggGroup             @relation(fields: [eggGroupId], references: [id])
-    formId     String
-    eggGroupId String
-
-    @@unique([formId, eggGroupId])
-    @@index([formId])
-    @@index([eggGroupId])
-}
-
-model PokemonAlternateFormType {
-    form   PokemonAlternateForm @relation(fields: [formId], references: [id])
-    type   Type                 @relation(fields: [typeId], references: [id])
-    formId String
-    typeId String
-
-    @@unique([formId, typeId])
-    @@index([formId])
-    @@index([typeId])
-}
-
-model PokemonAlternateFormAbility {
-    form      PokemonAlternateForm @relation(fields: [formId], references: [id])
-    ability   Ability              @relation(fields: [abilityId], references: [id])
-    formId    String
-    abilityId String
-
-    @@unique([formId, abilityId])
-    @@index([formId])
-    @@index([abilityId])
-}
-
-model PokemonMega {
-    id             String               @id @default(cuid())
-    name           String
-    hp             Int
-    attack         Int
-    defense        Int
-    specialAttack  Int
-    specialDefense Int
-    speed          Int
-    types          PokemonMegaType[]
-    abilities      PokemonMegaAbility[]
-    pokemon        Pokemon              @relation(fields: [pokemonId], references: [id])
-    pokemonId      String
-
-    @@index([pokemonId])
-}
-
-model PokemonMegaType {
-    mega   PokemonMega @relation(fields: [megaId], references: [id])
-    type   Type        @relation(fields: [typeId], references: [id])
-    megaId String
-    typeId String
-
-    @@unique([megaId, typeId])
-    @@index([megaId])
-    @@index([typeId])
-}
-
-model PokemonMegaAbility {
-    mega      PokemonMega @relation(fields: [megaId], references: [id])
-    ability   Ability     @relation(fields: [abilityId], references: [id])
-    megaId    String
-    abilityId String
-
-    @@unique([megaId, abilityId])
-    @@index([megaId])
-    @@index([abilityId])
-}
-
-model PokemonRegionalForm {
-    id                          String                        @id @default(cuid())
-    name                        String
-    hp                          Int
-    attack                      Int
-    defense                     Int
-    specialAttack               Int
-    specialDefense              Int
-    speed                       Int
-    types                       PokemonRegionalFormType[]
-    abilities                   PokemonRegionalFormAbility[]
-    evWorth                     String
-    gender                      String
-    evolve                      String
-    pokemon                     Pokemon                       @relation(fields: [pokemonId], references: [id])
-    pokemonId                   String
-    PokemonRegionalFormEggGroup PokemonRegionalFormEggGroup[]
-
-    @@index([pokemonId])
-}
-
-model PokemonRegionalFormEggGroup {
-    form       PokemonRegionalForm @relation(fields: [formId], references: [id])
-    eggGroup   EggGroup            @relation(fields: [eggGroupId], references: [id])
-    formId     String
-    eggGroupId String
-
-    @@unique([formId, eggGroupId])
-    @@index([formId])
-    @@index([eggGroupId])
-}
-
-model PokemonRegionalFormType {
-    form   PokemonRegionalForm @relation(fields: [formId], references: [id])
-    type   Type                @relation(fields: [typeId], references: [id])
-    formId String
-    typeId String
-
-    @@unique([formId, typeId])
-    @@index([formId])
-    @@index([typeId])
-}
-
-model PokemonRegionalFormAbility {
-    form      PokemonRegionalForm @relation(fields: [formId], references: [id])
-    ability   Ability             @relation(fields: [abilityId], references: [id])
-    formId    String
-    abilityId String
-
-    @@unique([formId, abilityId])
-    @@index([formId])
     @@index([abilityId])
 }
 

@@ -11,8 +11,8 @@ export default function CorrectCell({ guess }: CorrectCellProps) {
       <Image
         alt={guess.name}
         src={guess.imageUrl ?? ""}
-        width={56}
-        height={42}
+        width={128}
+        height={128}
       />
     </div>
   );
