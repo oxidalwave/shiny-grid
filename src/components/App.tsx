@@ -3,15 +3,16 @@
 import { useEffect, useState } from "react";
 import { type Pokemon } from "~/lib/data/dex";
 
-import { getCategories } from "~/lib/getCategories";
 import type Category from "~/lib/categories";
 import Grid from "./Grid";
 import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
+import { getCategoryFromId } from "~/lib/categories";
 
 export interface GridProps {
   dex: Pokemon[];
   seed: string;
+  categoryIds: string[];
   username?: string;
   initialAnswers: {
     categoryIndex: number;
@@ -22,10 +23,12 @@ export interface GridProps {
 export default function App({
   dex,
   seed,
+  categoryIds,
   username,
   initialAnswers,
 }: GridProps) {
-  const categories = getCategories(seed);
+  const categories = categoryIds.map(getCategoryFromId);
+
   const session = useSession();
 
   const [guesses, setGuesses] = useState<string[]>([]);
@@ -48,10 +51,13 @@ export default function App({
       temp[categoryIndex] = pokemon.id;
       setGuesses(temp);
 
-      fetch(`/api/${seed}/${session.data?.user.name}/${categoryIndex}`, {
-        body: JSON.stringify({ id: pokemon.id }),
-        method: "POST",
-      }).catch((e) => {
+      fetch(
+        `/api/seeds/${seed}/users/${session.data?.user.name}/categories/${categoryIndex}`,
+        {
+          body: JSON.stringify({ id: pokemon.id }),
+          method: "POST",
+        }
+      ).catch((e) => {
         console.log(e);
       });
     } else if (!session) {
