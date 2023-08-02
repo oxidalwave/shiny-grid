@@ -9,6 +9,10 @@ export const PokemonValidator = z.object({
     .or(z.literal("ALTERNATE"))
     .or(z.literal("MEGA")),
   nationalDexId: z.number().int(),
+  generationIntroducedIn: z.object({
+    id: z.string(),
+    name: z.number().int(),
+  }),
   hp: z.number().int(),
   attack: z.number().int(),
   defense: z.number().int(),
@@ -33,7 +37,10 @@ export const PokemonValidator = z.object({
       type: z.object({
         id: z.string(),
         name: z.string(),
-        generationIntroduced: z.number(),
+        generationIntroduced: z.object({
+          id: z.string(),
+          name: z.number().int(),
+        }),
       }),
     })
   ),

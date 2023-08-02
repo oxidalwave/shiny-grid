@@ -67,49 +67,51 @@ model VerificationToken {
 
 model Type {
     id                   String        @id @default(cuid())
-    name                 String
-    generationIntroduced Int
+    name                 String        @unique
+    generationIntroduced Generation    @relation(fields: [generationId], references: [id])
     PokemonType          PokemonType[]
+    generationId         String
 
-    @@unique([name])
+    @@index([generationId])
 }
 
 model Ability {
     id             String           @id @default(cuid())
-    name           String
+    name           String           @unique
     PokemonAbility PokemonAbility[]
-
-    @@unique([name])
 }
 
 model EggGroup {
     id              String            @id @default(cuid())
-    name            String
+    name            String            @unique
     pokemonEggGroup PokemonEggGroup[]
-
-    @@unique([name])
 }
 
 model Pokemon {
-    id             String            @id @default(cuid())
-    name           String
-    kind           String            @default("POKEMON")
-    nationalDexId  Int
-    hp             Int
-    attack         Int
-    defense        Int
-    specialAttack  Int
-    specialDefense Int
-    speed          Int
-    evWorth        String?
-    gender         String?
-    evolve         String?
-    catchRate      Int?
-    imageUrl       String
-    types          PokemonType[]
-    abilities      PokemonAbility[]
-    eggGroups      PokemonEggGroup[]
-    UserAnswer     UserAnswer[]
+    id                     String            @id @default(cuid())
+    name                   String
+    kind                   String
+    nationalDexId          Int
+    hp                     Int
+    attack                 Int
+    defense                Int
+    specialAttack          Int
+    specialDefense         Int
+    speed                  Int
+    generationId           String
+    generationIntroducedIn Generation        @relation(fields: [generationId], references: [id])
+    evWorth                String?
+    gender                 String?
+    evolve                 String?
+    catchRate              Int?
+    imageUrl               String
+    types                  PokemonType[]
+    abilities              PokemonAbility[]
+    eggGroups              PokemonEggGroup[]
+    UserAnswer             UserAnswer[]
+    pokemonGame            PokemonGame[]
+
+    @@index([generationId])
 }
 
 model PokemonEggGroup {
@@ -145,6 +147,37 @@ model PokemonAbility {
     @@unique([pokemonId, abilityId])
     @@index([pokemonId])
     @@index([abilityId])
+}
+
+model Generation {
+    id   String @id @default(cuid())
+    name Int    @unique
+
+    games   Game[]
+    pokemon Pokemon[]
+    Type    Type[]
+}
+
+model Game {
+    id           String        @id @default(cuid())
+    name         String        @unique
+    generation   Generation    @relation(fields: [generationId], references: [id])
+    generationId String
+    boxartUrl    String
+    pokemonGames PokemonGame[]
+
+    @@index([generationId])
+}
+
+model PokemonGame {
+    pokemon   Pokemon @relation(fields: [pokemonId], references: [id])
+    game      Game    @relation(fields: [gameId], references: [id])
+    pokemonId String
+    gameId    String
+
+    @@unique([pokemonId, gameId])
+    @@index([pokemonId])
+    @@index([gameId])
 }
 
 model UserAnswer {

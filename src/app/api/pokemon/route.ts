@@ -4,6 +4,7 @@ import { prisma } from "~/server/db";
 export const GET = async () => {
   const pokedex = await prisma.pokemon.findMany({
     include: {
+      generationIntroducedIn: true,
       types: {
         select: {
           type: {

@@ -10,54 +10,245 @@ const prisma = new PrismaClient({ log: [] });
 async function main() {
   await prisma.userAnswer.deleteMany();
 
+  await prisma.pokemonGame.deleteMany();
+
+  await prisma.game.deleteMany();
+
   await prisma.pokemonAbility.deleteMany();
   await prisma.pokemonType.deleteMany();
   await prisma.pokemonEggGroup.deleteMany();
+
   await prisma.pokemon.deleteMany();
 
   await prisma.type.deleteMany();
   await prisma.ability.deleteMany();
   await prisma.eggGroup.deleteMany();
+  await prisma.generation.deleteMany();
 
-  await prisma.type.createMany({
-    data: [
-      { name: "Normal", generationIntroduced: 1 },
-      { name: "Fire", generationIntroduced: 1 },
-      { name: "Fighting", generationIntroduced: 1 },
-      { name: "Water", generationIntroduced: 1 },
-      { name: "Flying", generationIntroduced: 1 },
-      { name: "Grass", generationIntroduced: 1 },
-      { name: "Poison", generationIntroduced: 1 },
-      { name: "Electric", generationIntroduced: 1 },
-      { name: "Ground", generationIntroduced: 1 },
-      { name: "Psychic", generationIntroduced: 1 },
-      { name: "Rock", generationIntroduced: 1 },
-      { name: "Ice", generationIntroduced: 1 },
-      { name: "Bug", generationIntroduced: 1 },
-      { name: "Dragon", generationIntroduced: 1 },
-      { name: "Ghost", generationIntroduced: 1 },
-      { name: "Dark", generationIntroduced: 2 },
-      { name: "Steel", generationIntroduced: 2 },
-      { name: "Fairy", generationIntroduced: 6 },
-      { name: "???", generationIntroduced: 1 },
-    ],
-  });
+  const gens = [
+    {
+      name: 1,
+      pokemonGames: [
+        {
+          name: "Red",
+          boxartUrl: "/boxart/red.png",
+        },
+        {
+          name: "Blue",
+          boxartUrl: "/boxart/Blue.png",
+        },
+        {
+          name: "Yellow",
+          boxartUrl: "/boxart/yellow.png",
+        },
+      ],
+    },
+    {
+      name: 2,
+      pokemonGames: [
+        {
+          name: "Gold",
+          boxartUrl: "/boxart/gold.png",
+        },
+        {
+          name: "Silver",
+          boxartUrl: "/boxart/silver.png",
+        },
+        {
+          name: "Crystal",
+          boxartUrl: "/boxart/crystal.png",
+        },
+      ],
+    },
+    {
+      name: 3,
+      pokemonGames: [
+        {
+          name: "Ruby",
+          boxartUrl: "/boxart/ruby.png",
+        },
+        {
+          name: "Sapphire",
+          boxartUrl: "/boxart/sapphire.png",
+        },
+        {
+          name: "Emerald",
+          boxartUrl: "/boxart/emerald.png",
+        },
+        {
+          name: "FireRed",
+          boxartUrl: "/boxart/firered.png",
+        },
+        {
+          name: "LeafGreen",
+          boxartUrl: "/boxart/leafgreen.png",
+        },
+      ],
+    },
+    {
+      name: 4,
+      pokemonGames: [
+        {
+          name: "Diamond",
+          boxartUrl: "/boxart/diamond.png",
+        },
+        {
+          name: "Pearl",
+          boxartUrl: "/boxart/pearl.png",
+        },
+        {
+          name: "Platinum",
+          boxartUrl: "/boxart/platinum.png",
+        },
+        {
+          name: "HeartGold",
+          boxartUrl: "/boxart/heartgold.png",
+        },
+        {
+          name: "SoulSilver",
+          boxartUrl: "/boxart/soulsilver.png",
+        },
+      ],
+    },
+    {
+      name: 5,
+      pokemonGames: [
+        {
+          name: "Black",
+          boxartUrl: "/boxart/black.png",
+        },
+        {
+          name: "White",
+          boxartUrl: "/boxart/white.png",
+        },
+        {
+          name: "Black 2",
+          boxartUrl: "/boxart/black2.png",
+        },
+        {
+          name: "White 2",
+          boxartUrl: "/boxart/white2.png",
+        },
+      ],
+    },
+    {
+      name: 6,
+      pokemonGames: [
+        {
+          name: "X",
+          boxartUrl: "/boxart/x.png",
+        },
+        {
+          name: "Y",
+          boxartUrl: "/boxart/y.png",
+        },
+        {
+          name: "Omega Ruby",
+          boxartUrl: "/boxart/omegaruby.png",
+        },
+        {
+          name: "Alpha Sapphire",
+          boxartUrl: "/boxart/alphasapphire.png",
+        },
+      ],
+    },
+    {
+      name: 7,
+      pokemonGames: [
+        {
+          name: "Sun",
+          boxartUrl: "/boxart/sun.png",
+        },
+        {
+          name: "Moon",
+          boxartUrl: "/boxart/moon.png",
+        },
+        {
+          name: "Ultra Sun",
+          boxartUrl: "/boxart/ultrasun.png",
+        },
+        {
+          name: "Ultra Moon",
+          boxartUrl: "/boxart/ultramoon.png",
+        },
+      ],
+    },
+    {
+      name: 8,
+      pokemonGames: [
+        {
+          name: "Sword",
+          boxartUrl: "/boxart/sword.png",
+        },
+        {
+          name: "Shield",
+          boxartUrl: "/boxart/shield.png",
+        },
+        {
+          name: "Brilliant Diamond",
+          boxartUrl: "/boxart/brilliantdiamond.png",
+        },
+        {
+          name: "Shining Pearl",
+          boxartUrl: "/boxart/shiningpearl.png",
+        },
+        {
+          name: "Legends Arceus",
+          boxartUrl: "/boxart/arceus.png",
+        },
+      ],
+    },
+    {
+      name: 9,
+      pokemonGames: [
+        {
+          name: "Scarlet",
+          boxartUrl: "/boxart/scarlet.png",
+        },
+        {
+          name: "Violet",
+          boxartUrl: "/boxart/violet.png",
+        },
+      ],
+    },
+  ];
 
-  await prisma.ability.createMany({
-    data: dex
-      .flatMap((p) => p.abilities)
-      .filter((value, index, array) => array.indexOf(value) === index)
-      .map((name) => ({ name })),
-    skipDuplicates: true,
-  });
+  for (const g of gens) {
+    await prisma.generation.create({
+      data: {
+        name: g.name,
+        games: {
+          create: g.pokemonGames.map((pg) => ({
+            name: pg.name,
+            boxartUrl: pg.boxartUrl,
+          })),
+        },
+      },
+    });
+  }
 
-  await prisma.eggGroup.createMany({
-    data: dex
-      .flatMap((p) => p.eggGroups)
-      .filter((value, index, array) => array.indexOf(value) === index)
-      .map((name) => ({ name })),
-    skipDuplicates: true,
-  });
+  function genById(id: number) {
+    if (id >= 1 && id < 152) {
+      return 1;
+    } else if (id >= 152 && id <= 251) {
+      return 2;
+    } else if (id >= 252 && id < 387) {
+      return 3;
+    } else if (id >= 387 && id < 494) {
+      return 4;
+    } else if (id >= 494 && id < 650) {
+      return 5;
+    } else if (id >= 650 && id < 722) {
+      return 6;
+    } else if (id >= 722 && id < 810) {
+      return 7;
+    } else if (id >= 810 && id < 906) {
+      return 8;
+    } else if (id >= 906 && id < 1011) {
+      return 9;
+    }
+    return 0;
+  }
 
   for (const p of dex) {
     await prisma.pokemon
@@ -72,7 +263,14 @@ async function main() {
           specialAttack: p.SpA,
           specialDefense: p.SpD,
           speed: p.Spe,
-
+          generationIntroducedIn: {
+            connectOrCreate: {
+              where: { name: genById(p.Nat) },
+              create: {
+                name: genById(p.Nat),
+              },
+            },
+          },
           evWorth: p["EV Worth"],
           gender: p.Gender,
           evolve: p.Evolve,
@@ -80,240 +278,368 @@ async function main() {
           imageUrl: `/sprites/${("000" + p.Nat).slice(-4)}.png`,
 
           types: {
-            create: p.types.map((t) => ({
-              type: {
-                connectOrCreate: {
-                  where: { name: t },
-                  create: { name: t, generationIntroduced: 1 },
+            create: [
+              {
+                type: {
+                  connectOrCreate: {
+                    where: { name: p["Type I"] },
+                    create: {
+                      name: p["Type I"],
+                      generationIntroduced: {
+                        connect: {
+                          name: 1,
+                        },
+                      },
+                    },
+                  },
                 },
               },
-            })),
+              {
+                type: {
+                  connectOrCreate: {
+                    where: { name: p["Type II"] },
+                    create: {
+                      name: p["Type II"],
+                      generationIntroduced: {
+                        connect: {
+                          name: 1,
+                        },
+                      },
+                    },
+                  },
+                },
+              },
+            ].filter((t) => t.type.connectOrCreate.where.name !== ""),
           },
 
           abilities: {
-            create: p.abilities.map((t) => ({
-              ability: {
-                connectOrCreate: {
-                  where: { name: t },
-                  create: { name: t },
+            create: [
+              {
+                isHidden: false,
+                ability: {
+                  connectOrCreate: {
+                    where: { name: p["Ability I"] },
+                    create: { name: p["Ability I"] },
+                  },
                 },
               },
-            })),
+              {
+                isHidden: false,
+                ability: {
+                  connectOrCreate: {
+                    where: { name: p["Ability II"] },
+                    create: { name: p["Ability II"] },
+                  },
+                },
+              },
+              {
+                isHidden: true,
+                ability: {
+                  connectOrCreate: {
+                    where: { name: p["Hidden Ability"] },
+                    create: { name: p["Hidden Ability"] },
+                  },
+                },
+              },
+            ].filter((a) => a.ability.connectOrCreate.where.name !== ""),
           },
 
           eggGroups: {
-            create: p.eggGroups.map((t) => ({
-              eggGroup: {
-                connectOrCreate: {
-                  where: { name: t },
-                  create: { name: t },
+            create: [
+              {
+                eggGroup: {
+                  connectOrCreate: {
+                    where: { name: p["Egg Group I"] },
+                    create: { name: p["Egg Group I"] },
+                  },
                 },
               },
-            })),
+              {
+                eggGroup: {
+                  connectOrCreate: {
+                    where: { name: p["Egg Group II"] },
+                    create: { name: p["Egg Group II"] },
+                  },
+                },
+              },
+            ].filter((e) => e.eggGroup.connectOrCreate.where.name !== ""),
           },
-        },
-
-        include: {
-          types: true,
-          abilities: true,
-          eggGroups: true,
         },
       })
       .then(({ id }) => console.log(id));
   }
 
   for (const p of mega) {
-    const main = dex.find((d) => d.Nat === Math.floor(p.Nat));
+    await prisma.pokemon
+      .create({
+        data: {
+          kind: "MEGA",
+          nationalDexId: p.Nat,
+          name: p.Pokemon,
+          hp: p.HP,
+          attack: p.Atk,
+          defense: p.Def,
+          specialAttack: p.SpA,
+          specialDefense: p.SpD,
+          speed: p.Spe,
+          generationIntroducedIn: {
+            connectOrCreate: {
+              where: { name: genById(p.Nat) },
+              create: {
+                name: genById(p.Nat),
+              },
+            },
+          },
 
-    if (main) {
-      await prisma.pokemon
-        .create({
-          data: {
-            kind: "MEGA",
-            nationalDexId: p.Nat,
-            name: p.Pokemon,
-            hp: p.HP,
-            attack: p.Atk,
-            defense: p.Def,
-            specialAttack: p.SpA,
-            specialDefense: p.SpD,
-            speed: p.Spe,
+          imageUrl: `/sprites/${("000" + p.Nat).slice(-4)}_01.png`,
 
-            evWorth: main?.["EV Worth"],
-            gender: main?.Gender,
-            evolve: main?.Evolve,
-            catchRate: main?.Catch,
-
-            imageUrl: `/sprites/${("000" + main.Nat).slice(-4)}_01.png`,
-
-            types: {
-              create: p.types.map((t) => ({
+          types: {
+            create: [
+              {
                 type: {
                   connectOrCreate: {
-                    where: { name: t },
-                    create: { name: t, generationIntroduced: 1 },
+                    where: { name: p["Type I"] },
+                    create: {
+                      name: p["Type I"],
+                      generationIntroduced: {
+                        connect: {
+                          name: 1,
+                        },
+                      },
+                    },
                   },
                 },
-              })),
-            },
+              },
+              {
+                type: {
+                  connectOrCreate: {
+                    where: { name: p["Type II"] },
+                    create: {
+                      name: p["Type II"],
+                      generationIntroduced: {
+                        connect: {
+                          name: 1,
+                        },
+                      },
+                    },
+                  },
+                },
+              },
+            ].filter((t) => t.type.connectOrCreate.where.name !== ""),
+          },
 
-            abilities: {
-              create: p.abilities.map((t) => ({
+          abilities: {
+            create: [
+              {
+                isHidden: false,
                 ability: {
                   connectOrCreate: {
-                    where: { name: t },
-                    create: { name: t },
+                    where: { name: p["Ability I"] },
+                    create: { name: p["Ability I"] },
                   },
                 },
-              })),
-            },
+              },
+            ].filter((a) => a.ability.connectOrCreate.where.name !== ""),
           },
-
-          include: {
-            types: true,
-            abilities: true,
-          },
-        })
-        .then(({ id }) => console.log(id));
-    }
+        },
+      })
+      .then(({ id }) => console.log(id));
   }
 
   for (const p of regional) {
-    const main = dex.find((d) => d.Nat === Math.floor(p.Nat));
+    await prisma.pokemon
+      .create({
+        data: {
+          kind: "POKEMON",
+          nationalDexId: p.Nat,
+          name: p.Pokemon,
+          hp: p.HP,
+          attack: p.Atk,
+          defense: p.Def,
+          specialAttack: p.SpA,
+          specialDefense: p.SpD,
+          speed: p.Spe,
+          generationIntroducedIn: {
+            connectOrCreate: {
+              where: { name: genById(p.Nat) },
+              create: {
+                name: genById(p.Nat),
+              },
+            },
+          },
+          evWorth: p["EV Worth"],
+          gender: p.Gender,
+          evolve: p.Evolve,
 
-    if (main) {
-      await prisma.pokemon
-        .create({
-          data: {
-            kind: "REGIONAL",
-            nationalDexId: p.Nat,
-            name: p.Pokemon,
-            hp: p.HP,
-            attack: p.Atk,
-            defense: p.Def,
-            specialAttack: p.SpA,
-            specialDefense: p.SpD,
-            speed: p.Spe,
+          imageUrl: `/sprites/${("000" + p.Nat).slice(-4)}_001.png`,
 
-            evWorth: p["EV Worth"],
-            gender: p.Gender,
-            evolve: p.Evolve,
-            catchRate: main?.Catch,
-            imageUrl: `/sprites/${("000" + main.Nat).slice(-4)}_01.png`,
-
-            types: {
-              create: p.types.map((t) => ({
+          types: {
+            create: [
+              {
                 type: {
                   connectOrCreate: {
-                    where: { name: t },
-                    create: { name: t, generationIntroduced: 1 },
-                  },
-                },
-              })),
-            },
-
-            abilities: {
-              create: p.abilities.map((t) => ({
-                ability: {
-                  connectOrCreate: {
-                    where: { name: t },
-                    create: { name: t },
-                  },
-                },
-              })),
-            },
-
-            eggGroups: main
-              ? {
-                  create: main.eggGroups.map((t) => ({
-                    eggGroup: {
-                      connectOrCreate: {
-                        where: { name: t },
-                        create: { name: t },
+                    where: { name: p["Type I"] },
+                    create: {
+                      name: p["Type I"],
+                      generationIntroduced: {
+                        connect: {
+                          name: 1,
+                        },
                       },
                     },
-                  })),
-                }
-              : undefined,
+                  },
+                },
+              },
+              {
+                type: {
+                  connectOrCreate: {
+                    where: { name: p["Type II"] },
+                    create: {
+                      name: p["Type II"],
+                      generationIntroduced: {
+                        connect: {
+                          name: 1,
+                        },
+                      },
+                    },
+                  },
+                },
+              },
+            ].filter((t) => t.type.connectOrCreate.where.name !== ""),
           },
 
-          include: {
-            types: true,
-            abilities: true,
-            eggGroups: true,
+          abilities: {
+            create: [
+              {
+                isHidden: false,
+                ability: {
+                  connectOrCreate: {
+                    where: { name: p["Ability I"] },
+                    create: { name: p["Ability I"] },
+                  },
+                },
+              },
+              {
+                isHidden: false,
+                ability: {
+                  connectOrCreate: {
+                    where: { name: p["Ability II"] },
+                    create: { name: p["Ability II"] },
+                  },
+                },
+              },
+              {
+                isHidden: true,
+                ability: {
+                  connectOrCreate: {
+                    where: { name: p["Hidden Ability"] },
+                    create: { name: p["Hidden Ability"] },
+                  },
+                },
+              },
+            ].filter((a) => a.ability.connectOrCreate.where.name !== ""),
           },
-        })
-        .then(({ id }) => console.log(id));
-    }
+        },
+      })
+      .then(({ id }) => console.log(id));
   }
 
   for (const p of forms) {
-    const main = dex.find((d) => d.Nat === Math.floor(p.Nat));
+    await prisma.pokemon
+      .create({
+        data: {
+          kind: "POKEMON",
+          nationalDexId: p.Nat,
+          name: p.Pokemon,
+          hp: p.HP,
+          attack: p.Atk,
+          defense: p.Def,
+          specialAttack: p.SpA,
+          specialDefense: p.SpD,
+          speed: p.Spe,
+          generationIntroducedIn: {
+            connectOrCreate: {
+              where: { name: genById(p.Nat) },
+              create: {
+                name: genById(p.Nat),
+              },
+            },
+          },
+          evWorth: p["EV Worth"],
+          gender: p.Gender,
+          evolve: p.Evolve,
 
-    if (main) {
-      await prisma.pokemon
-        .create({
-          data: {
-            kind: "ALTERNATE",
-            nationalDexId: p.Nat,
-            name: p.Pokemon,
-            hp: p.HP,
-            attack: p.Atk,
-            defense: p.Def,
-            specialAttack: p.SpA,
-            specialDefense: p.SpD,
-            speed: p.Spe,
+          imageUrl: `/sprites/${("000" + p.Nat).slice(-4)}_001.png`,
 
-            evWorth: p["EV Worth"],
-            gender: p.Gender,
-            evolve: p.Evolve,
-            catchRate: main?.Catch,
-            imageUrl: `/sprites/${("000" + main.Nat).slice(-4)}_01.png`,
-
-            types: {
-              create: p.types.map((t) => ({
+          types: {
+            create: [
+              {
                 type: {
                   connectOrCreate: {
-                    where: { name: t },
-                    create: { name: t, generationIntroduced: 1 },
-                  },
-                },
-              })),
-            },
-
-            abilities: {
-              create: p.abilities.map((t) => ({
-                ability: {
-                  connectOrCreate: {
-                    where: { name: t },
-                    create: { name: t },
-                  },
-                },
-              })),
-            },
-
-            eggGroups: main
-              ? {
-                  create: main.eggGroups.map((t) => ({
-                    eggGroup: {
-                      connectOrCreate: {
-                        where: { name: t },
-                        create: { name: t },
+                    where: { name: p["Type I"] },
+                    create: {
+                      name: p["Type I"],
+                      generationIntroduced: {
+                        connect: {
+                          name: 1,
+                        },
                       },
                     },
-                  })),
-                }
-              : undefined,
+                  },
+                },
+              },
+              {
+                type: {
+                  connectOrCreate: {
+                    where: { name: p["Type II"] },
+                    create: {
+                      name: p["Type II"],
+                      generationIntroduced: {
+                        connect: {
+                          name: 1,
+                        },
+                      },
+                    },
+                  },
+                },
+              },
+            ].filter((t) => t.type.connectOrCreate.where.name !== ""),
           },
 
-          include: {
-            types: true,
-            abilities: true,
-            eggGroups: true,
+          abilities: {
+            create: [
+              {
+                isHidden: false,
+                ability: {
+                  connectOrCreate: {
+                    where: { name: p["Ability I"] },
+                    create: { name: p["Ability I"] },
+                  },
+                },
+              },
+              {
+                isHidden: false,
+                ability: {
+                  connectOrCreate: {
+                    where: { name: p["Ability II"] },
+                    create: { name: p["Ability II"] },
+                  },
+                },
+              },
+              {
+                isHidden: true,
+                ability: {
+                  connectOrCreate: {
+                    where: { name: p["Hidden Ability"] },
+                    create: { name: p["Hidden Ability"] },
+                  },
+                },
+              },
+            ].filter((a) => a.ability.connectOrCreate.where.name !== ""),
           },
-        })
-        .then(({ id }) => console.log(id));
-    }
+        },
+      })
+      .then(({ id }) => console.log(id));
   }
 }
 

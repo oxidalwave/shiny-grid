@@ -49,7 +49,7 @@ export default function App({
     categories: Category[],
     categoryIndex: number
   ) {
-    if (session && session.data?.user.name === username) {
+    if (session.data && session.data.user.name === username) {
       const temp = [...guesses];
       temp[categoryIndex] = pokemon.id;
       setGuesses(temp);

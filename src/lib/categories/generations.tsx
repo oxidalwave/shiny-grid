@@ -5,6 +5,7 @@ import { type Pokemon } from "../data/dex";
 export const Generation1: Category = {
   id: "Generation1",
   label: "Generation 1",
+  test: (p: Pokemon) => p.generationIntroducedIn.name === 1,
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
@@ -33,12 +34,12 @@ export const Generation1: Category = {
       </div>
     </div>
   ),
-  test: (p: Pokemon) => p.nationalDexId >= 1 && p.nationalDexId < 152,
 };
 
 export const Generation2: Category = {
   id: "Generation2",
   label: "Generation 2",
+  test: (p: Pokemon) => p.generationIntroducedIn.name === 2,
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
@@ -49,13 +50,12 @@ export const Generation2: Category = {
       </div>
     </div>
   ),
-  test: (p: Pokemon) => p.nationalDexId >= 152 && p.nationalDexId <= 251,
 };
 
 export const Generation3: Category = {
   id: "Generation3",
   label: "Generation 3",
-  test: (p: Pokemon) => p.nationalDexId >= 252 && p.nationalDexId < 387,
+  test: (p: Pokemon) => p.generationIntroducedIn.name === 3,
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
@@ -76,7 +76,7 @@ export const Generation3: Category = {
 export const Generation4: Category = {
   id: "Generation4",
   label: "Generation 4",
-  test: (p: Pokemon) => p.nationalDexId >= 387 && p.nationalDexId < 494,
+  test: (p: Pokemon) => p.generationIntroducedIn.name === 4,
 
   icon: (
     <div className="flex flex-col">
@@ -98,7 +98,7 @@ export const Generation4: Category = {
 export const Generation5: Category = {
   id: "Generation5",
   label: "Generation 5",
-  test: (p: Pokemon) => p.nationalDexId >= 494 && p.nationalDexId < 650,
+  test: (p: Pokemon) => p.generationIntroducedIn.name === 5,
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
@@ -115,7 +115,7 @@ export const Generation5: Category = {
 export const Generation6: Category = {
   id: "Generation6",
   label: "Generation 6",
-  test: (p: Pokemon) => p.nationalDexId >= 650 && p.nationalDexId < 722,
+  test: (p: Pokemon) => p.generationIntroducedIn.name === 6,
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
@@ -130,7 +130,7 @@ export const Generation6: Category = {
 export const Generation7: Category = {
   id: "Generation7",
   label: "Generation 7",
-  test: (p: Pokemon) => p.nationalDexId >= 722 && p.nationalDexId < 810,
+  test: (p: Pokemon) => p.generationIntroducedIn.name === 7,
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
@@ -157,7 +157,7 @@ export const Generation7: Category = {
 export const Generation8: Category = {
   id: "Generation8",
   label: "Generation 8",
-  test: (p: Pokemon) => p.nationalDexId >= 810 && p.nationalDexId < 906,
+  test: (p: Pokemon) => p.generationIntroducedIn.name === 8,
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
@@ -172,7 +172,7 @@ export const Generation8: Category = {
 export const Generation9: Category = {
   id: "Generation9",
   label: "Generation 9",
-  test: (p: Pokemon) => p.nationalDexId >= 906 && p.nationalDexId < 1011,
+  test: (p: Pokemon) => p.generationIntroducedIn.name === 9,
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>

@@ -1,6 +1,6 @@
 [
   {
-    "Nat": 3.1,
+    "Nat": 3,
     "Pokemon": "Mega Venusaur",
     "HP": 80,
     "Atk": 100,
@@ -9,11 +9,12 @@
     "SpD": 120,
     "Spe": 80,
     "Total": 625,
-    "types": ["Grass", "Poison"],
-    "abilities": ["Thick Fat"]
+    "Type I": "Grass",
+    "Type II": "Poison",
+    "Ability I": "Thick Fat"
   },
   {
-    "Nat": 6.1,
+    "Nat": 6,
     "Pokemon": "Mega Charizard X",
     "HP": 78,
     "Atk": 130,
@@ -22,11 +23,12 @@
     "SpD": 85,
     "Spe": 100,
     "Total": 634,
-    "types": ["Fire", "Dragon"],
-    "abilities": ["Tough Claws"]
+    "Type I": "Fire",
+    "Type II": "Dragon",
+    "Ability I": "Tough Claws"
   },
   {
-    "Nat": 6.2,
+    "Nat": 6,
     "Pokemon": "Mega Charizard Y",
     "HP": 78,
     "Atk": 104,
@@ -35,11 +37,12 @@
     "SpD": 115,
     "Spe": 100,
     "Total": 634,
-    "types": ["Fire", "Flying"],
-    "abilities": ["Drought"]
+    "Type I": "Fire",
+    "Type II": "Flying",
+    "Ability I": "Drought"
   },
   {
-    "Nat": 9.1,
+    "Nat": 9,
     "Pokemon": "Mega Blastoise",
     "HP": 79,
     "Atk": 103,
@@ -48,11 +51,12 @@
     "SpD": 115,
     "Spe": 78,
     "Total": 630,
-    "types": ["Water"],
-    "abilities": ["Mega Launcher"]
+    "Type I": "Water",
+    "Type II": "",
+    "Ability I": "Mega Launcher"
   },
   {
-    "Nat": 15.1,
+    "Nat": 15,
     "Pokemon": "Mega Beedrill",
     "HP": 65,
     "Atk": 150,
@@ -61,11 +65,12 @@
     "SpD": 80,
     "Spe": 145,
     "Total": 495,
-    "types": ["Bug", "Poison"],
-    "abilities": ["Adaptability"]
+    "Type I": "Bug",
+    "Type II": "Poison",
+    "Ability I": "Adaptability"
   },
   {
-    "Nat": 18.1,
+    "Nat": 18,
     "Pokemon": "Mega Pidgeot",
     "HP": 83,
     "Atk": 80,
@@ -74,11 +79,12 @@
     "SpD": 80,
     "Spe": 121,
     "Total": 579,
-    "types": ["Normal", "Flying"],
-    "abilities": ["No Guard"]
+    "Type I": "Normal",
+    "Type II": "Flying",
+    "Ability I": "No Guard"
   },
   {
-    "Nat": 65.1,
+    "Nat": 65,
     "Pokemon": "Mega Alakazam",
     "HP": 55,
     "Atk": 50,
@@ -87,11 +93,12 @@
     "SpD": 105,
     "Spe": 150,
     "Total": 600,
-    "types": ["Psychic"],
-    "abilities": ["Trace"]
+    "Type I": "Psychic",
+    "Type II": "",
+    "Ability I": "Trace"
   },
   {
-    "Nat": 80.1,
+    "Nat": 80,
     "Pokemon": "Mega Slowbro",
     "HP": 95,
     "Atk": 75,
@@ -100,11 +107,12 @@
     "SpD": 80,
     "Spe": 30,
     "Total": 590,
-    "types": ["Water", "Psychic"],
-    "abilities": ["Shell Armor"]
+    "Type I": "Water",
+    "Type II": "Psychic",
+    "Ability I": "Shell Armor"
   },
   {
-    "Nat": 94.1,
+    "Nat": 94,
     "Pokemon": "Mega Gengar",
     "HP": 60,
     "Atk": 65,
@@ -113,11 +121,12 @@
     "SpD": 95,
     "Spe": 130,
     "Total": 600,
-    "types": ["Ghost", "Poison"],
-    "abilities": ["Shadow Tag"]
+    "Type I": "Ghost",
+    "Type II": "Poison",
+    "Ability I": "Shadow Tag"
   },
   {
-    "Nat": 115.1,
+    "Nat": 115,
     "Pokemon": "Mega Kangaskhan",
     "HP": 105,
     "Atk": 125,
@@ -126,11 +135,12 @@
     "SpD": 100,
     "Spe": 100,
     "Total": 590,
-    "types": ["Normal"],
-    "abilities": ["Parental Bond"]
+    "Type I": "Normal",
+    "Type II": "",
+    "Ability I": "Parental Bond"
   },
   {
-    "Nat": 127.1,
+    "Nat": 127,
     "Pokemon": "Mega Pinsir",
     "HP": 65,
     "Atk": 155,
@@ -139,11 +149,12 @@
     "SpD": 90,
     "Spe": 105,
     "Total": 600,
-    "types": ["Bug", "Flying"],
-    "abilities": ["Aerilate"]
+    "Type I": "Bug",
+    "Type II": "Flying",
+    "Ability I": "Aerilate"
   },
   {
-    "Nat": 130.1,
+    "Nat": 130,
     "Pokemon": "Mega Gyarados",
     "HP": 95,
     "Atk": 155,
@@ -152,11 +163,12 @@
     "SpD": 130,
     "Spe": 81,
     "Total": 640,
-    "types": ["Water", "Dark"],
-    "abilities": ["Mold Breaker"]
+    "Type I": "Water",
+    "Type II": "Dark",
+    "Ability I": "Mold Breaker"
   },
   {
-    "Nat": 142.1,
+    "Nat": 142,
     "Pokemon": "Mega Aerodactyl",
     "HP": 80,
     "Atk": 135,
@@ -165,11 +177,12 @@
     "SpD": 95,
     "Spe": 150,
     "Total": 615,
-    "types": ["Rock", "Flying"],
-    "abilities": ["Tough Claws"]
+    "Type I": "Rock",
+    "Type II": "Flying",
+    "Ability I": "Tough Claws"
   },
   {
-    "Nat": 150.1,
+    "Nat": 150,
     "Pokemon": "Mega Mewtwo X",
     "HP": 106,
     "Atk": 190,
@@ -178,11 +191,12 @@
     "SpD": 100,
     "Spe": 130,
     "Total": 780,
-    "types": ["Psychic", "Fighting"],
-    "abilities": ["Steadfast"]
+    "Type I": "Psychic",
+    "Type II": "Fighting",
+    "Ability I": "Steadfast"
   },
   {
-    "Nat": 150.2,
+    "Nat": 150,
     "Pokemon": "Mega Mewtwo Y",
     "HP": 106,
     "Atk": 150,
@@ -191,11 +205,12 @@
     "SpD": 120,
     "Spe": 140,
     "Total": 780,
-    "types": ["Psychic"],
-    "abilities": ["Insomnia"]
+    "Type I": "Psychic",
+    "Type II": "",
+    "Ability I": "Insomnia"
   },
   {
-    "Nat": 181.1,
+    "Nat": 181,
     "Pokemon": "Mega Ampharos",
     "HP": 90,
     "Atk": 95,
@@ -204,11 +219,12 @@
     "SpD": 110,
     "Spe": 45,
     "Total": 610,
-    "types": ["Electric", "Dragon"],
-    "abilities": ["Mold Breaker"]
+    "Type I": "Electric",
+    "Type II": "Dragon",
+    "Ability I": "Mold Breaker"
   },
   {
-    "Nat": 208.1,
+    "Nat": 208,
     "Pokemon": "Mega Steelix",
     "HP": 75,
     "Atk": 125,
@@ -217,11 +233,12 @@
     "SpD": 95,
     "Spe": 30,
     "Total": 610,
-    "types": ["Steel", "Ground"],
-    "abilities": ["Sand Force"]
+    "Type I": "Steel",
+    "Type II": "Ground",
+    "Ability I": "Sand Force"
   },
   {
-    "Nat": 212.1,
+    "Nat": 212,
     "Pokemon": "Mega Scizor",
     "HP": 70,
     "Atk": 150,
@@ -230,11 +247,12 @@
     "SpD": 100,
     "Spe": 75,
     "Total": 600,
-    "types": ["Bug", "Steel"],
-    "abilities": ["Technician"]
+    "Type I": "Bug",
+    "Type II": "Steel",
+    "Ability I": "Technician"
   },
   {
-    "Nat": 214.1,
+    "Nat": 214,
     "Pokemon": "Mega Heracross",
     "HP": 80,
     "Atk": 185,
@@ -243,11 +261,12 @@
     "SpD": 105,
     "Spe": 75,
     "Total": 600,
-    "types": ["Bug", "Fighting"],
-    "abilities": ["Skill Link"]
+    "Type I": "Bug",
+    "Type II": "Fighting",
+    "Ability I": "Skill Link"
   },
   {
-    "Nat": 229.1,
+    "Nat": 229,
     "Pokemon": "Mega Houndoom",
     "HP": 75,
     "Atk": 90,
@@ -256,11 +275,12 @@
     "SpD": 90,
     "Spe": 115,
     "Total": 600,
-    "types": ["Dark", "Fire"],
-    "abilities": ["Solar Power"]
+    "Type I": "Dark",
+    "Type II": "Fire",
+    "Ability I": "Solar Power"
   },
   {
-    "Nat": 248.1,
+    "Nat": 248,
     "Pokemon": "Mega Tyranitar",
     "HP": 100,
     "Atk": 164,
@@ -269,11 +289,12 @@
     "SpD": 120,
     "Spe": 71,
     "Total": 700,
-    "types": ["Rock", "Dark"],
-    "abilities": ["Sand Stream"]
+    "Type I": "Rock",
+    "Type II": "Dark",
+    "Ability I": "Sand Stream"
   },
   {
-    "Nat": 254.1,
+    "Nat": 254,
     "Pokemon": "Mega Sceptile",
     "HP": 70,
     "Atk": 110,
@@ -282,11 +303,12 @@
     "SpD": 85,
     "Spe": 145,
     "Total": 630,
-    "types": ["Grass", "Dragon"],
-    "abilities": ["Lightning Rod"]
+    "Type I": "Grass",
+    "Type II": "Dragon",
+    "Ability I": "Lightning Rod"
   },
   {
-    "Nat": 257.1,
+    "Nat": 257,
     "Pokemon": "Mega Blaziken",
     "HP": 80,
     "Atk": 160,
@@ -295,11 +317,12 @@
     "SpD": 80,
     "Spe": 100,
     "Total": 630,
-    "types": ["Fire", "Fighting"],
-    "abilities": ["Speed Boost"]
+    "Type I": "Fire",
+    "Type II": "Fighting",
+    "Ability I": "Speed Boost"
   },
   {
-    "Nat": 260.1,
+    "Nat": 260,
     "Pokemon": "Mega Swampert",
     "HP": 100,
     "Atk": 150,
@@ -308,11 +331,12 @@
     "SpD": 110,
     "Spe": 70,
     "Total": 635,
-    "types": ["Water", "Ground"],
-    "abilities": ["Swift Swim"]
+    "Type I": "Water",
+    "Type II": "Ground",
+    "Ability I": "Swift Swim"
   },
   {
-    "Nat": 282.1,
+    "Nat": 282,
     "Pokemon": "Mega Gardevoir",
     "HP": 68,
     "Atk": 85,
@@ -321,11 +345,12 @@
     "SpD": 135,
     "Spe": 100,
     "Total": 618,
-    "types": ["Psychic", "Fairy"],
-    "abilities": ["Pixilate"]
+    "Type I": "Psychic",
+    "Type II": "Fairy",
+    "Ability I": "Pixilate"
   },
   {
-    "Nat": 302.1,
+    "Nat": 302,
     "Pokemon": "Mega Sableye",
     "HP": 50,
     "Atk": 85,
@@ -334,11 +359,12 @@
     "SpD": 115,
     "Spe": 20,
     "Total": 480,
-    "types": ["Dark", "Ghost"],
-    "abilities": ["Magic Bounce"]
+    "Type I": "Dark",
+    "Type II": "Ghost",
+    "Ability I": "Magic Bounce"
   },
   {
-    "Nat": 303.1,
+    "Nat": 303,
     "Pokemon": "Mega Mawile",
     "HP": 50,
     "Atk": 105,
@@ -347,11 +373,12 @@
     "SpD": 95,
     "Spe": 50,
     "Total": 480,
-    "types": ["Steel", "Fairy"],
-    "abilities": ["Huge Power"]
+    "Type I": "Steel",
+    "Type II": "Fairy",
+    "Ability I": "Huge Power"
   },
   {
-    "Nat": 306.1,
+    "Nat": 306,
     "Pokemon": "Mega Aggron",
     "HP": 70,
     "Atk": 140,
@@ -360,11 +387,12 @@
     "SpD": 80,
     "Spe": 50,
     "Total": 630,
-    "types": ["Steel"],
-    "abilities": ["Filter"]
+    "Type I": "Steel",
+    "Type II": "",
+    "Ability I": "Filter"
   },
   {
-    "Nat": 308.1,
+    "Nat": 308,
     "Pokemon": "Mega Medicham",
     "HP": 60,
     "Atk": 100,
@@ -373,11 +401,12 @@
     "SpD": 85,
     "Spe": 100,
     "Total": 510,
-    "types": ["Fighting", "Psychic"],
-    "abilities": ["Pure Power"]
+    "Type I": "Fighting",
+    "Type II": "Psychic",
+    "Ability I": "Pure Power"
   },
   {
-    "Nat": 310.1,
+    "Nat": 310,
     "Pokemon": "Mega Manectric",
     "HP": 70,
     "Atk": 75,
@@ -386,11 +415,12 @@
     "SpD": 80,
     "Spe": 135,
     "Total": 575,
-    "types": ["Electric"],
-    "abilities": ["Intimidate"]
+    "Type I": "Electric",
+    "Type II": "",
+    "Ability I": "Intimidate"
   },
   {
-    "Nat": 319.1,
+    "Nat": 319,
     "Pokemon": "Mega Sharpedo",
     "HP": 70,
     "Atk": 140,
@@ -399,11 +429,12 @@
     "SpD": 65,
     "Spe": 105,
     "Total": 560,
-    "types": ["Water", "Dark"],
-    "abilities": ["Strong Jaw"]
+    "Type I": "Water",
+    "Type II": "Dark",
+    "Ability I": "Strong Jaw"
   },
   {
-    "Nat": 323.1,
+    "Nat": 323,
     "Pokemon": "Mega Camerupt",
     "HP": 70,
     "Atk": 120,
@@ -412,11 +443,12 @@
     "SpD": 105,
     "Spe": 20,
     "Total": 560,
-    "types": ["Fire", "Ground"],
-    "abilities": ["Sheer Force"]
+    "Type I": "Fire",
+    "Type II": "Ground",
+    "Ability I": "Sheer Force"
   },
   {
-    "Nat": 334.1,
+    "Nat": 334,
     "Pokemon": "Mega Altaria",
     "HP": 75,
     "Atk": 110,
@@ -425,11 +457,12 @@
     "SpD": 105,
     "Spe": 80,
     "Total": 590,
-    "types": ["Dragon", "Fairy"],
-    "abilities": ["Pixilate"]
+    "Type I": "Dragon",
+    "Type II": "Fairy",
+    "Ability I": "Pixilate"
   },
   {
-    "Nat": 354.1,
+    "Nat": 354,
     "Pokemon": "Mega Banette",
     "HP": 64,
     "Atk": 165,
@@ -438,11 +471,12 @@
     "SpD": 83,
     "Spe": 75,
     "Total": 555,
-    "types": ["Ghost"],
-    "abilities": ["Prankster"]
+    "Type I": "Ghost",
+    "Type II": "",
+    "Ability I": "Prankster"
   },
   {
-    "Nat": 359.1,
+    "Nat": 359,
     "Pokemon": "Mega Absol",
     "HP": 65,
     "Atk": 150,
@@ -451,11 +485,12 @@
     "SpD": 60,
     "Spe": 115,
     "Total": 565,
-    "types": ["Dark"],
-    "abilities": ["Magic Bounce"]
+    "Type I": "Dark",
+    "Type II": "",
+    "Ability I": "Magic Bounce"
   },
   {
-    "Nat": 362.1,
+    "Nat": 362,
     "Pokemon": "Mega Glalie",
     "HP": 80,
     "Atk": 120,
@@ -464,11 +499,12 @@
     "SpD": 80,
     "Spe": 100,
     "Total": 580,
-    "types": ["Ice"],
-    "abilities": ["Refrigerate"]
+    "Type I": "Ice",
+    "Type II": "",
+    "Ability I": "Refrigerate"
   },
   {
-    "Nat": 373.1,
+    "Nat": 373,
     "Pokemon": "Mega Salamence",
     "HP": 95,
     "Atk": 145,
@@ -477,11 +513,12 @@
     "SpD": 90,
     "Spe": 120,
     "Total": 700,
-    "types": ["Dragon", "Flying"],
-    "abilities": ["Aerilate"]
+    "Type I": "Dragon",
+    "Type II": "Flying",
+    "Ability I": "Aerilate"
   },
   {
-    "Nat": 376.1,
+    "Nat": 376,
     "Pokemon": "Mega Metagross",
     "HP": 80,
     "Atk": 145,
@@ -490,11 +527,12 @@
     "SpD": 110,
     "Spe": 110,
     "Total": 700,
-    "types": ["Steel", "Psychic"],
-    "abilities": ["Tough Claws"]
+    "Type I": "Steel",
+    "Type II": "Psychic",
+    "Ability I": "Tough Claws"
   },
   {
-    "Nat": 380.1,
+    "Nat": 380,
     "Pokemon": "Mega Latias",
     "HP": 80,
     "Atk": 100,
@@ -503,11 +541,12 @@
     "SpD": 150,
     "Spe": 110,
     "Total": 700,
-    "types": ["Dragon", "Psychic"],
-    "abilities": ["Levitate"]
+    "Type I": "Dragon",
+    "Type II": "Psychic",
+    "Ability I": "Levitate"
   },
   {
-    "Nat": 381.1,
+    "Nat": 381,
     "Pokemon": "Mega Latios",
     "HP": 80,
     "Atk": 130,
@@ -516,11 +555,12 @@
     "SpD": 120,
     "Spe": 110,
     "Total": 700,
-    "types": ["Dragon", "Psychic"],
-    "abilities": ["Levitate"]
+    "Type I": "Dragon",
+    "Type II": "Psychic",
+    "Ability I": "Levitate"
   },
   {
-    "Nat": 384.1,
+    "Nat": 384,
     "Pokemon": "Mega Rayquaza",
     "HP": 105,
     "Atk": 180,
@@ -529,11 +569,12 @@
     "SpD": 100,
     "Spe": 115,
     "Total": 780,
-    "types": ["Dragon", "Flying"],
-    "abilities": ["Delta Stream"]
+    "Type I": "Dragon",
+    "Type II": "Flying",
+    "Ability I": "Delta Stream"
   },
   {
-    "Nat": 428.1,
+    "Nat": 428,
     "Pokemon": "Mega Lopunny",
     "HP": 65,
     "Atk": 136,
@@ -542,11 +583,12 @@
     "SpD": 96,
     "Spe": 135,
     "Total": 580,
-    "types": ["Normal", "Fighting"],
-    "abilities": ["Scrappy"]
+    "Type I": "Normal",
+    "Type II": "Fighting",
+    "Ability I": "Scrappy"
   },
   {
-    "Nat": 445.1,
+    "Nat": 445,
     "Pokemon": "Mega Garchomp",
     "HP": 108,
     "Atk": 170,
@@ -555,11 +597,12 @@
     "SpD": 95,
     "Spe": 92,
     "Total": 700,
-    "types": ["Dragon", "Ground"],
-    "abilities": ["Sand Force"]
+    "Type I": "Dragon",
+    "Type II": "Ground",
+    "Ability I": "Sand Force"
   },
   {
-    "Nat": 448.1,
+    "Nat": 448,
     "Pokemon": "Mega Lucario",
     "HP": 70,
     "Atk": 145,
@@ -568,11 +611,12 @@
     "SpD": 70,
     "Spe": 112,
     "Total": 625,
-    "types": ["Fighting", "Steel"],
-    "abilities": ["Adaptability"]
+    "Type I": "Fighting",
+    "Type II": "Steel",
+    "Ability I": "Adaptability"
   },
   {
-    "Nat": 460.1,
+    "Nat": 460,
     "Pokemon": "Mega Abomasnow",
     "HP": 90,
     "Atk": 132,
@@ -581,11 +625,12 @@
     "SpD": 105,
     "Spe": 30,
     "Total": 594,
-    "types": ["Ice", "Grass"],
-    "abilities": ["Snow Warning"]
+    "Type I": "Ice",
+    "Type II": "Grass",
+    "Ability I": "Snow Warning"
   },
   {
-    "Nat": 475.1,
+    "Nat": 475,
     "Pokemon": "Mega Gallade",
     "HP": 68,
     "Atk": 165,
@@ -594,11 +639,12 @@
     "SpD": 115,
     "Spe": 110,
     "Total": 618,
-    "types": ["Psychic", "Fighting"],
-    "abilities": ["Inner Focus"]
+    "Type I": "Psychic",
+    "Type II": "Fighting",
+    "Ability I": "Inner Focus"
   },
   {
-    "Nat": 531.1,
+    "Nat": 531,
     "Pokemon": "Mega Audino",
     "HP": 103,
     "Atk": 60,
@@ -607,11 +653,12 @@
     "SpD": 126,
     "Spe": 50,
     "Total": 545,
-    "types": ["Normal", "Fairy"],
-    "abilities": ["Healer"]
+    "Type I": "Normal",
+    "Type II": "Fairy",
+    "Ability I": "Healer"
   },
   {
-    "Nat": 719.1,
+    "Nat": 719,
     "Pokemon": "Mega Diance",
     "HP": 50,
     "Atk": 160,
@@ -620,7 +667,8 @@
     "SpD": 110,
     "Spe": 110,
     "Total": 700,
-    "types": ["Rock", "Fairy"],
-    "abilities": ["Magic Bounce"]
+    "Type I": "Rock",
+    "Type II": "Fairy",
+    "Ability I": "Magic Bounce"
   }
 ]
