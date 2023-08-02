@@ -3,7 +3,6 @@ import gen from "random-seed";
 import { Generations } from "./categories/generations";
 import { Stats } from "./categories/stats";
 import { Types } from "./categories/types";
-import { Hash } from "crypto";
 
 interface CategoryCode {
   id: string;
@@ -12,42 +11,50 @@ interface CategoryCode {
 
 function isInvalidCombo(categories: CategoryCode[]) {
   const codes = categories.map(({ id }) => id);
+  // Check for invalid type combos
   if (codes.includes("NormalType") && codes.includes("IceType")) {
-    console.log("Invalid combo: NormalType & IceType");
     return true;
   }
   if (codes.includes("NormalType") && codes.includes("BugType")) {
-    console.log("Invalid combo: NormalType & BugType");
     return true;
   }
   if (codes.includes("NormalType") && codes.includes("RockType")) {
-    console.log("Invalid combo: NormalType & RockType");
     return true;
   }
   if (codes.includes("NormalType") && codes.includes("SteelType")) {
-    console.log("Invalid combo: NormalType & SteelType");
     return true;
   }
   if (codes.includes("FireType") && codes.includes("FairyType")) {
-    console.log("Invalid combo: FireType & FairyType");
     return true;
   }
   if (codes.includes("IceType") && codes.includes("PoisonType")) {
-    console.log("Invalid combo: IceType & PoisonType");
     return true;
   }
   if (codes.includes("GroundType") && codes.includes("FairyType")) {
-    console.log("Invalid combo: GroundType & FairyType");
     return true;
   }
   if (codes.includes("BugType") && codes.includes("DragonType")) {
-    console.log("Invalid combo: BugType & DragonType");
     return true;
   }
   if (codes.includes("RockType") && codes.includes("GhostType")) {
-    console.log("Invalid combo: RockType & GhostType");
     return true;
   }
+
+  // check for duplicate types
+  if (codes[0] === codes[1]) {
+    return true;
+  }
+
+  //check for invalid gen
+  if (false) {
+    return true;
+  }
+
+  // check for invalid stat
+  if (false) {
+    return true;
+  }
+
   return false;
 }
 
