@@ -21,14 +21,14 @@ export const PokemonValidator = z.object({
   evolve: z.string().nullish(),
   catchRate: z.number().int().nullish(),
   imageUrl: z.string(),
-  eggGroups: z.array(
+  /*eggGroups: z.array(
     z.object({
       eggGroup: z.object({
         id: z.string(),
         name: z.string(),
       }),
     })
-  ),
+  ),*/
   types: z.array(
     z.object({
       type: z.object({
