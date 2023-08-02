@@ -12,7 +12,7 @@ export default function SharedPage({
   params: { seed: string; username: string };
 }) {
   const dex = use(
-    fetch(`${env.URL}/api/pokemon`, { next: { revalidate: 3600 } })
+    fetch(`${env.URL}/api/pokemon`, { cache: "force-cache" })
       .then((r) => r.json())
       .then((j) => z.array(PokemonValidator).parse(j))
   );
@@ -33,7 +33,9 @@ export default function SharedPage({
   );
 
   const categoryIds = use(
-    fetch(`${env.URL}/api/seeds/${params.seed}/categories`, { next: { revalidate: 3600 } })
+    fetch(`${env.URL}/api/seeds/${params.seed}/categories`, {
+      cache: "force-cache",
+    })
       .then((r) => r.json())
       .then((j) => z.array(z.object({ id: z.string() })).parse(j))
   );
