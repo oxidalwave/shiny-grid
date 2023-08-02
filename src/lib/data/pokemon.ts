@@ -11,10 +11,10 @@ export const PokemonValidator = z.object({
   specialAttack: z.number(),
   specialDefense: z.number(),
   speed: z.number(),
-  evWorth: z.string().optional(),
-  gender: z.string().optional(),
-  evolve: z.string().optional(),
-  catchRate: z.number().optional(),
+  evWorth: z.string().nullable(),
+  gender: z.string().nullable(),
+  evolve: z.string().nullable(),
+  catchRate: z.number().nullable(),
   imageUrl: z.string(),
   types: z.array(
     z.object({
