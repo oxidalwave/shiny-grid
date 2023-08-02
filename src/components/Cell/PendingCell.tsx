@@ -73,10 +73,10 @@ export default function PendingCell({
                   loading="lazy"
                   alt={p.name}
                   src={p.imageUrl ?? ""}
-                  width={28}
-                  height={21}
+                  width={24}
+                  height={24}
                 />
-                <div>{p.name}</div>
+                <div className="pl-2">{p.name}</div>
               </button>
             ))}
           </div>
