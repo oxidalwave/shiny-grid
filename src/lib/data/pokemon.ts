@@ -4,18 +4,30 @@ import { prisma } from "~/server/db";
 export const PokemonValidator = z.object({
   id: z.string(),
   name: z.string(),
-  nationalDexId: z.number(),
-  hp: z.number(),
-  attack: z.number(),
-  defense: z.number(),
-  specialAttack: z.number(),
-  specialDefense: z.number(),
-  speed: z.number(),
-  evWorth: z.string().nullable(),
-  gender: z.string().nullable(),
-  evolve: z.string().nullable(),
-  catchRate: z.number().nullable(),
+  kind: z
+    .literal("POKEMON")
+    .or(z.literal("REGIONAL"))
+    .or(z.literal("ALTERNATE"))
+    .or(z.literal("MEGA")),
+  nationalDexId: z.number().int(),
+  hp: z.number().int(),
+  attack: z.number().int(),
+  defense: z.number().int(),
+  specialAttack: z.number().int(),
+  specialDefense: z.number().int(),
+  speed: z.number().int(),
+  evWorth: z.string().nullish(),
+  gender: z.string().nullish(),
+  evolve: z.string().nullish(),
+  catchRate: z.number().int().nullish(),
   imageUrl: z.string(),
+  eggGroups: z.array(
+    z.object({
+      eggGroup: z.object({
+        name: z.string(),
+      }),
+    })
+  ),
   types: z.array(
     z.object({
       type: z.object({
@@ -26,6 +38,7 @@ export const PokemonValidator = z.object({
   ),
   abilities: z.array(
     z.object({
+      isHidden: z.boolean(),
       ability: z.object({
         name: z.string(),
       }),
@@ -44,6 +57,11 @@ export async function getPokedex() {
       abilities: {
         include: {
           ability: true,
+        },
+      },
+      eggGroups: {
+        include: {
+          eggGroup: true,
         },
       },
     },
