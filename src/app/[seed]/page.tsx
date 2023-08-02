@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { use } from "react";
 import { getServerSession } from "next-auth";
 import App from "~/components/App";
@@ -36,9 +38,7 @@ export default function SeedPage({ params }: { params: { seed: string } }) {
     : [];
 
   const categoryIds = use(
-    fetch(`${env.URL}/api/seeds/${params.seed}/categories`, {
-      next: { revalidate: 3600 },
-    })
+    fetch(`${env.URL}/api/seeds/${params.seed}/categories`)
       .then((r) => r.json())
       .then((j) =>
         z

@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { use } from "react";
 import { getServerSession } from "next-auth";
 import App from "~/components/App";
