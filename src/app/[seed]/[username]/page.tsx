@@ -12,7 +12,7 @@ export default function SharedPage({
   params: { seed: string; username: string };
 }) {
   const dex = use(
-    fetch(`${env.URL}/api/pokemon`, { cache: "force-cache" })
+    fetch(`${env.URL}/api/pokemon`)
       .then((r) => r.json())
       .then((j) => z.array(PokemonValidator).parse(j))
   );

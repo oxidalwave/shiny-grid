@@ -10,7 +10,7 @@ import { PokemonValidator } from "~/lib/data/pokemon";
 
 export default function SeedPage({ params }: { params: { seed: string } }) {
   const dex = use(
-    fetch(`${env.URL}/api/pokemon`, { next: { revalidate: 3600 } })
+    fetch(`${env.URL}/api/pokemon`)
       .then((r) => r.json())
       .then((j) => z.array(PokemonValidator).parse(j))
   );
