@@ -20,7 +20,9 @@ export default function HomePage() {
 
   const initialAnswers = session
     ? use(
-        fetch(`${env.URL}/api/seeds/${seed}/users/${session.user.name}`)
+        fetch(`${env.URL}/api/seeds/${seed}/users/${session.user.name}`, {
+          cache: "no-cache",
+        })
           .then((r) => r.json())
           .then((j) =>
             z
@@ -36,7 +38,7 @@ export default function HomePage() {
     : [];
 
   const categoryIds = use(
-    fetch(`${env.URL}/api/seeds/${seed}/categories`, { next: { revalidate: 3600 } })
+    fetch(`${env.URL}/api/seeds/${seed}/categories`)
       .then((r) => r.json())
       .then((j) => z.array(z.object({ id: z.string() })).parse(j))
   );
