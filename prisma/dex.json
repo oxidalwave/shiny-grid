@@ -2,7 +2,7 @@
   {
     "Nat": 1,
     "Pokemon": "Bulbasaur",
-    "imageUrl": "/sprites/bulbasaur.png",
+
     "HP": 45,
     "Atk": 49,
     "Def": 49,
@@ -21,7 +21,7 @@
   {
     "Nat": 2,
     "Pokemon": "Ivysaur",
-    "imageUrl": "/sprites/ivysaur.png",
+
     "HP": 60,
     "Atk": 62,
     "Def": 63,
@@ -40,7 +40,7 @@
   {
     "Nat": 3,
     "Pokemon": "Venusaur",
-    "imageUrl": "/sprites/venusaur.png",
+
     "HP": 80,
     "Atk": 82,
     "Def": 83,
@@ -59,7 +59,7 @@
   {
     "Nat": 4,
     "Pokemon": "Charmander",
-    "imageUrl": "/sprites/charmander.png",
+
     "HP": 39,
     "Atk": 52,
     "Def": 43,
@@ -78,7 +78,7 @@
   {
     "Nat": 5,
     "Pokemon": "Charmeleon",
-    "imageUrl": "/sprites/charmeleon.png",
+
     "HP": 58,
     "Atk": 64,
     "Def": 58,
@@ -97,7 +97,7 @@
   {
     "Nat": 6,
     "Pokemon": "Charizard",
-    "imageUrl": "/sprites/charizard.png",
+
     "HP": 78,
     "Atk": 84,
     "Def": 78,
@@ -116,7 +116,7 @@
   {
     "Nat": 7,
     "Pokemon": "Squirtle",
-    "imageUrl": "/sprites/squirtle.png",
+
     "HP": 44,
     "Atk": 48,
     "Def": 65,
@@ -135,7 +135,7 @@
   {
     "Nat": 8,
     "Pokemon": "Wartortle",
-    "imageUrl": "/sprites/wartortle.png",
+
     "HP": 59,
     "Atk": 63,
     "Def": 80,
@@ -154,7 +154,7 @@
   {
     "Nat": 9,
     "Pokemon": "Blastoise",
-    "imageUrl": "/sprites/blastoise.png",
+
     "HP": 79,
     "Atk": 83,
     "Def": 100,
@@ -173,7 +173,7 @@
   {
     "Nat": 10,
     "Pokemon": "Caterpie",
-    "imageUrl": "/sprites/caterpie.png",
+
     "HP": 45,
     "Atk": 30,
     "Def": 35,
@@ -192,7 +192,7 @@
   {
     "Nat": 11,
     "Pokemon": "Metapod",
-    "imageUrl": "/sprites/metapod.png",
+
     "HP": 50,
     "Atk": 20,
     "Def": 55,
@@ -211,7 +211,7 @@
   {
     "Nat": 12,
     "Pokemon": "Butterfree",
-    "imageUrl": "/sprites/butterfree.png",
+
     "HP": 60,
     "Atk": 45,
     "Def": 50,
@@ -230,7 +230,7 @@
   {
     "Nat": 13,
     "Pokemon": "Weedle",
-    "imageUrl": "/sprites/weedle.png",
+
     "HP": 40,
     "Atk": 35,
     "Def": 30,
@@ -249,7 +249,7 @@
   {
     "Nat": 14,
     "Pokemon": "Kakuna",
-    "imageUrl": "/sprites/kakuna.png",
+
     "HP": 45,
     "Atk": 25,
     "Def": 50,
@@ -268,7 +268,7 @@
   {
     "Nat": 15,
     "Pokemon": "Beedrill",
-    "imageUrl": "/sprites/beedrill.png",
+
     "HP": 65,
     "Atk": 90,
     "Def": 40,
@@ -287,7 +287,7 @@
   {
     "Nat": 16,
     "Pokemon": "Pidgey",
-    "imageUrl": "/sprites/pidgey.png",
+
     "HP": 40,
     "Atk": 45,
     "Def": 40,
@@ -306,7 +306,7 @@
   {
     "Nat": 17,
     "Pokemon": "Pidgeotto",
-    "imageUrl": "/sprites/pidgeotto.png",
+
     "HP": 63,
     "Atk": 60,
     "Def": 55,
@@ -325,7 +325,7 @@
   {
     "Nat": 18,
     "Pokemon": "Pidgeot",
-    "imageUrl": "/sprites/pidgeot.png",
+
     "HP": 83,
     "Atk": 80,
     "Def": 75,
@@ -344,7 +344,7 @@
   {
     "Nat": 19,
     "Pokemon": "Rattata",
-    "imageUrl": "/sprites/rattata.png",
+
     "HP": 30,
     "Atk": 56,
     "Def": 35,
@@ -363,7 +363,7 @@
   {
     "Nat": 20,
     "Pokemon": "Raticate",
-    "imageUrl": "/sprites/raticate.png",
+
     "HP": 55,
     "Atk": 81,
     "Def": 60,
@@ -382,7 +382,7 @@
   {
     "Nat": 21,
     "Pokemon": "Spearow",
-    "imageUrl": "/sprites/spearow.png",
+
     "HP": 40,
     "Atk": 60,
     "Def": 30,
@@ -401,7 +401,7 @@
   {
     "Nat": 22,
     "Pokemon": "Fearow",
-    "imageUrl": "/sprites/fearow.png",
+
     "HP": 65,
     "Atk": 90,
     "Def": 65,
@@ -420,7 +420,7 @@
   {
     "Nat": 23,
     "Pokemon": "Ekans",
-    "imageUrl": "/sprites/ekans.png",
+
     "HP": 35,
     "Atk": 60,
     "Def": 44,
@@ -439,7 +439,7 @@
   {
     "Nat": 24,
     "Pokemon": "Arbok",
-    "imageUrl": "/sprites/arbok.png",
+
     "HP": 60,
     "Atk": 95,
     "Def": 69,
@@ -458,7 +458,7 @@
   {
     "Nat": 25,
     "Pokemon": "Pikachu",
-    "imageUrl": "/sprites/pikachu.png",
+
     "HP": 35,
     "Atk": 55,
     "Def": 40,
@@ -477,7 +477,7 @@
   {
     "Nat": 26,
     "Pokemon": "Raichu",
-    "imageUrl": "/sprites/raichu.png",
+
     "HP": 60,
     "Atk": 90,
     "Def": 55,
@@ -496,7 +496,7 @@
   {
     "Nat": 27,
     "Pokemon": "Sandshrew",
-    "imageUrl": "/sprites/sandshrew.png",
+
     "HP": 50,
     "Atk": 75,
     "Def": 85,
@@ -515,7 +515,7 @@
   {
     "Nat": 28,
     "Pokemon": "Sandslash",
-    "imageUrl": "/sprites/sandslash.png",
+
     "HP": 75,
     "Atk": 100,
     "Def": 110,
@@ -534,7 +534,7 @@
   {
     "Nat": 29,
     "Pokemon": "Nidoran ♀",
-    "imageUrl": "/sprites/nidoran-f.png",
+
     "HP": 55,
     "Atk": 47,
     "Def": 52,
@@ -553,7 +553,7 @@
   {
     "Nat": 30,
     "Pokemon": "Nidorina",
-    "imageUrl": "/sprites/nidorina.png",
+
     "HP": 70,
     "Atk": 62,
     "Def": 67,
@@ -572,7 +572,7 @@
   {
     "Nat": 31,
     "Pokemon": "Nidoqueen",
-    "imageUrl": "/sprites/nidoqueen.png",
+
     "HP": 90,
     "Atk": 92,
     "Def": 87,
@@ -591,7 +591,7 @@
   {
     "Nat": 32,
     "Pokemon": "Nidoran ♂",
-    "imageUrl": "/sprites/nidoran-f.png",
+
     "HP": 46,
     "Atk": 57,
     "Def": 40,
@@ -610,7 +610,7 @@
   {
     "Nat": 33,
     "Pokemon": "Nidorino",
-    "imageUrl": "/sprites/nidorino.png",
+
     "HP": 61,
     "Atk": 72,
     "Def": 57,
@@ -629,7 +629,7 @@
   {
     "Nat": 34,
     "Pokemon": "Nidoking",
-    "imageUrl": "/sprites/nidoking.png",
+
     "HP": 81,
     "Atk": 102,
     "Def": 77,
@@ -648,7 +648,7 @@
   {
     "Nat": 35,
     "Pokemon": "Clefairy",
-    "imageUrl": "/sprites/clefairy.png",
+
     "HP": 70,
     "Atk": 45,
     "Def": 48,
@@ -667,7 +667,7 @@
   {
     "Nat": 36,
     "Pokemon": "Clefable",
-    "imageUrl": "/sprites/clefable.png",
+
     "HP": 95,
     "Atk": 70,
     "Def": 73,
@@ -686,7 +686,7 @@
   {
     "Nat": 37,
     "Pokemon": "Vulpix",
-    "imageUrl": "/sprites/vulpix.png",
+
     "HP": 38,
     "Atk": 41,
     "Def": 40,
@@ -705,7 +705,7 @@
   {
     "Nat": 38,
     "Pokemon": "Ninetales",
-    "imageUrl": "/sprites/ninetales.png",
+
     "HP": 73,
     "Atk": 76,
     "Def": 75,
@@ -724,7 +724,7 @@
   {
     "Nat": 39,
     "Pokemon": "Jigglypuff",
-    "imageUrl": "/sprites/jigglypuff.png",
+
     "HP": 115,
     "Atk": 45,
     "Def": 20,
@@ -743,7 +743,7 @@
   {
     "Nat": 40,
     "Pokemon": "Wigglytuff",
-    "imageUrl": "/sprites/wigglytuff.png",
+
     "HP": 140,
     "Atk": 70,
     "Def": 45,
@@ -762,7 +762,7 @@
   {
     "Nat": 41,
     "Pokemon": "Zubat",
-    "imageUrl": "/sprites/zubat.png",
+
     "HP": 40,
     "Atk": 45,
     "Def": 35,
@@ -781,7 +781,7 @@
   {
     "Nat": 42,
     "Pokemon": "Golbat",
-    "imageUrl": "/sprites/golbat.png",
+
     "HP": 75,
     "Atk": 80,
     "Def": 70,
@@ -800,7 +800,7 @@
   {
     "Nat": 43,
     "Pokemon": "Oddish",
-    "imageUrl": "/sprites/oddish.png",
+
     "HP": 45,
     "Atk": 50,
     "Def": 55,
@@ -819,7 +819,7 @@
   {
     "Nat": 44,
     "Pokemon": "Gloom",
-    "imageUrl": "/sprites/gloom.png",
+
     "HP": 60,
     "Atk": 65,
     "Def": 70,
@@ -838,7 +838,7 @@
   {
     "Nat": 45,
     "Pokemon": "Vileplume",
-    "imageUrl": "/sprites/vileplume.png",
+
     "HP": 75,
     "Atk": 80,
     "Def": 85,
@@ -857,7 +857,7 @@
   {
     "Nat": 46,
     "Pokemon": "Paras",
-    "imageUrl": "/sprites/paras.png",
+
     "HP": 35,
     "Atk": 70,
     "Def": 55,
@@ -876,7 +876,7 @@
   {
     "Nat": 47,
     "Pokemon": "Parasect",
-    "imageUrl": "/sprites/parasect.png",
+
     "HP": 60,
     "Atk": 95,
     "Def": 80,
@@ -895,7 +895,7 @@
   {
     "Nat": 48,
     "Pokemon": "Venonat",
-    "imageUrl": "/sprites/venonat.png",
+
     "HP": 60,
     "Atk": 55,
     "Def": 50,
@@ -914,7 +914,7 @@
   {
     "Nat": 49,
     "Pokemon": "Venomoth",
-    "imageUrl": "/sprites/venomoth.png",
+
     "HP": 70,
     "Atk": 65,
     "Def": 60,
@@ -933,7 +933,7 @@
   {
     "Nat": 50,
     "Pokemon": "Diglett",
-    "imageUrl": "/sprites/diglett.png",
+
     "HP": 10,
     "Atk": 55,
     "Def": 25,
@@ -952,7 +952,7 @@
   {
     "Nat": 51,
     "Pokemon": "Dugtrio",
-    "imageUrl": "/sprites/dugtrio.png",
+
     "HP": 35,
     "Atk": 100,
     "Def": 50,
@@ -971,7 +971,7 @@
   {
     "Nat": 52,
     "Pokemon": "Meowth",
-    "imageUrl": "/sprites/meowth.png",
+
     "HP": 40,
     "Atk": 45,
     "Def": 35,
@@ -990,7 +990,7 @@
   {
     "Nat": 53,
     "Pokemon": "Persian",
-    "imageUrl": "/sprites/persian.png",
+
     "HP": 65,
     "Atk": 70,
     "Def": 60,
@@ -1009,7 +1009,7 @@
   {
     "Nat": 54,
     "Pokemon": "Psyduck",
-    "imageUrl": "/sprites/psyduck.png",
+
     "HP": 50,
     "Atk": 52,
     "Def": 48,
@@ -1028,7 +1028,7 @@
   {
     "Nat": 55,
     "Pokemon": "Golduck",
-    "imageUrl": "/sprites/golduck.png",
+
     "HP": 80,
     "Atk": 82,
     "Def": 78,
@@ -1047,7 +1047,7 @@
   {
     "Nat": 56,
     "Pokemon": "Mankey",
-    "imageUrl": "/sprites/mankey.png",
+
     "HP": 40,
     "Atk": 80,
     "Def": 35,
@@ -1066,7 +1066,7 @@
   {
     "Nat": 57,
     "Pokemon": "Primeape",
-    "imageUrl": "/sprites/primeape.png",
+
     "HP": 65,
     "Atk": 105,
     "Def": 60,
@@ -1085,7 +1085,7 @@
   {
     "Nat": 58,
     "Pokemon": "Growlithe",
-    "imageUrl": "/sprites/growlithe.png",
+
     "HP": 55,
     "Atk": 70,
     "Def": 45,
@@ -1104,7 +1104,7 @@
   {
     "Nat": 59,
     "Pokemon": "Arcanine",
-    "imageUrl": "/sprites/arcanine.png",
+
     "HP": 90,
     "Atk": 110,
     "Def": 80,
@@ -1123,7 +1123,7 @@
   {
     "Nat": 60,
     "Pokemon": "Poliwag",
-    "imageUrl": "/sprites/poliwag.png",
+
     "HP": 40,
     "Atk": 50,
     "Def": 40,
@@ -1142,7 +1142,7 @@
   {
     "Nat": 61,
     "Pokemon": "Poliwhirl",
-    "imageUrl": "/sprites/poliwhirl.png",
+
     "HP": 65,
     "Atk": 65,
     "Def": 65,
@@ -1161,7 +1161,7 @@
   {
     "Nat": 62,
     "Pokemon": "Poliwrath",
-    "imageUrl": "/sprites/poliwrath.png",
+
     "HP": 90,
     "Atk": 95,
     "Def": 95,
@@ -1180,7 +1180,7 @@
   {
     "Nat": 63,
     "Pokemon": "Abra",
-    "imageUrl": "/sprites/abra.png",
+
     "HP": 25,
     "Atk": 20,
     "Def": 15,
@@ -1199,7 +1199,7 @@
   {
     "Nat": 64,
     "Pokemon": "Kadabra",
-    "imageUrl": "/sprites/kadabra.png",
+
     "HP": 40,
     "Atk": 35,
     "Def": 30,
@@ -1218,7 +1218,7 @@
   {
     "Nat": 65,
     "Pokemon": "Alakazam",
-    "imageUrl": "/sprites/alakazam.png",
+
     "HP": 55,
     "Atk": 50,
     "Def": 45,
@@ -1237,7 +1237,7 @@
   {
     "Nat": 66,
     "Pokemon": "Machop",
-    "imageUrl": "/sprites/machop.png",
+
     "HP": 70,
     "Atk": 80,
     "Def": 50,
@@ -1256,7 +1256,7 @@
   {
     "Nat": 67,
     "Pokemon": "Machoke",
-    "imageUrl": "/sprites/machoke.png",
+
     "HP": 80,
     "Atk": 100,
     "Def": 70,
@@ -1275,7 +1275,7 @@
   {
     "Nat": 68,
     "Pokemon": "Machamp",
-    "imageUrl": "/sprites/machamp.png",
+
     "HP": 90,
     "Atk": 130,
     "Def": 80,
@@ -1294,7 +1294,7 @@
   {
     "Nat": 69,
     "Pokemon": "Bellsprout",
-    "imageUrl": "/sprites/bellsprout.png",
+
     "HP": 50,
     "Atk": 75,
     "Def": 35,
@@ -1313,7 +1313,7 @@
   {
     "Nat": 70,
     "Pokemon": "Weepinbell",
-    "imageUrl": "/sprites/weepinbell.png",
+
     "HP": 65,
     "Atk": 90,
     "Def": 50,
@@ -1332,7 +1332,7 @@
   {
     "Nat": 71,
     "Pokemon": "Victreebel",
-    "imageUrl": "/sprites/victreebel.png",
+
     "HP": 80,
     "Atk": 105,
     "Def": 65,
@@ -1351,7 +1351,7 @@
   {
     "Nat": 72,
     "Pokemon": "Tentacool",
-    "imageUrl": "/sprites/tentacool.png",
+
     "HP": 40,
     "Atk": 40,
     "Def": 35,
@@ -1370,7 +1370,7 @@
   {
     "Nat": 73,
     "Pokemon": "Tentacruel",
-    "imageUrl": "/sprites/tentacruel.png",
+
     "HP": 80,
     "Atk": 70,
     "Def": 65,
@@ -1389,7 +1389,7 @@
   {
     "Nat": 74,
     "Pokemon": "Geodude",
-    "imageUrl": "/sprites/geodude.png",
+
     "HP": 40,
     "Atk": 80,
     "Def": 100,
@@ -1408,7 +1408,7 @@
   {
     "Nat": 75,
     "Pokemon": "Graveler",
-    "imageUrl": "/sprites/graveler.png",
+
     "HP": 55,
     "Atk": 95,
     "Def": 115,
@@ -1427,7 +1427,7 @@
   {
     "Nat": 76,
     "Pokemon": "Golem",
-    "imageUrl": "/sprites/golem.png",
+
     "HP": 80,
     "Atk": 120,
     "Def": 130,
@@ -1446,7 +1446,7 @@
   {
     "Nat": 77,
     "Pokemon": "Ponyta",
-    "imageUrl": "/sprites/ponyta.png",
+
     "HP": 50,
     "Atk": 85,
     "Def": 55,
@@ -1465,7 +1465,7 @@
   {
     "Nat": 78,
     "Pokemon": "Rapidash",
-    "imageUrl": "/sprites/rapidash.png",
+
     "HP": 65,
     "Atk": 100,
     "Def": 70,
@@ -1484,7 +1484,7 @@
   {
     "Nat": 79,
     "Pokemon": "Slowpoke",
-    "imageUrl": "/sprites/slowpoke.png",
+
     "HP": 90,
     "Atk": 65,
     "Def": 65,
@@ -1503,7 +1503,7 @@
   {
     "Nat": 80,
     "Pokemon": "Slowbro",
-    "imageUrl": "/sprites/slowbro.png",
+
     "HP": 95,
     "Atk": 75,
     "Def": 110,
@@ -1522,7 +1522,7 @@
   {
     "Nat": 81,
     "Pokemon": "Magnemite",
-    "imageUrl": "/sprites/magnemite.png",
+
     "HP": 25,
     "Atk": 35,
     "Def": 70,
@@ -1541,7 +1541,7 @@
   {
     "Nat": 82,
     "Pokemon": "Magneton",
-    "imageUrl": "/sprites/magneton.png",
+
     "HP": 50,
     "Atk": 60,
     "Def": 95,
@@ -1560,7 +1560,7 @@
   {
     "Nat": 83,
     "Pokemon": "Farfetch'd",
-    "imageUrl": "/sprites/farfetch'd.png",
+
     "HP": 52,
     "Atk": 90,
     "Def": 55,
@@ -1579,7 +1579,7 @@
   {
     "Nat": 84,
     "Pokemon": "Doduo",
-    "imageUrl": "/sprites/doduo.png",
+
     "HP": 35,
     "Atk": 85,
     "Def": 45,
@@ -1598,7 +1598,7 @@
   {
     "Nat": 85,
     "Pokemon": "Dodrio",
-    "imageUrl": "/sprites/dodrio.png",
+
     "HP": 60,
     "Atk": 110,
     "Def": 70,
@@ -1617,7 +1617,7 @@
   {
     "Nat": 86,
     "Pokemon": "Seel",
-    "imageUrl": "/sprites/seel.png",
+
     "HP": 65,
     "Atk": 45,
     "Def": 55,
@@ -1636,7 +1636,7 @@
   {
     "Nat": 87,
     "Pokemon": "Dewgong",
-    "imageUrl": "/sprites/dewgong.png",
+
     "HP": 90,
     "Atk": 70,
     "Def": 80,
@@ -1655,7 +1655,7 @@
   {
     "Nat": 88,
     "Pokemon": "Grimer",
-    "imageUrl": "/sprites/grimer.png",
+
     "HP": 80,
     "Atk": 80,
     "Def": 50,
@@ -1674,7 +1674,7 @@
   {
     "Nat": 89,
     "Pokemon": "Muk",
-    "imageUrl": "/sprites/muk.png",
+
     "HP": 105,
     "Atk": 105,
     "Def": 75,
@@ -1693,7 +1693,7 @@
   {
     "Nat": 90,
     "Pokemon": "Shellder",
-    "imageUrl": "/sprites/shellder.png",
+
     "HP": 30,
     "Atk": 65,
     "Def": 100,
@@ -1712,7 +1712,7 @@
   {
     "Nat": 91,
     "Pokemon": "Cloyster",
-    "imageUrl": "/sprites/cloyster.png",
+
     "HP": 50,
     "Atk": 95,
     "Def": 180,
@@ -1731,7 +1731,7 @@
   {
     "Nat": 92,
     "Pokemon": "Gastly",
-    "imageUrl": "/sprites/gastly.png",
+
     "HP": 30,
     "Atk": 35,
     "Def": 30,
@@ -1750,7 +1750,7 @@
   {
     "Nat": 93,
     "Pokemon": "Haunter",
-    "imageUrl": "/sprites/haunter.png",
+
     "HP": 45,
     "Atk": 50,
     "Def": 45,
@@ -1769,7 +1769,7 @@
   {
     "Nat": 94,
     "Pokemon": "Gengar",
-    "imageUrl": "/sprites/gengar.png",
+
     "HP": 60,
     "Atk": 65,
     "Def": 60,
@@ -1788,7 +1788,7 @@
   {
     "Nat": 95,
     "Pokemon": "Onix",
-    "imageUrl": "/sprites/onix.png",
+
     "HP": 35,
     "Atk": 45,
     "Def": 160,
@@ -1807,7 +1807,7 @@
   {
     "Nat": 96,
     "Pokemon": "Drowzee",
-    "imageUrl": "/sprites/drowzee.png",
+
     "HP": 60,
     "Atk": 48,
     "Def": 45,
@@ -1826,7 +1826,7 @@
   {
     "Nat": 97,
     "Pokemon": "Hypno",
-    "imageUrl": "/sprites/hypno.png",
+
     "HP": 85,
     "Atk": 73,
     "Def": 70,
@@ -1845,7 +1845,7 @@
   {
     "Nat": 98,
     "Pokemon": "Krabby",
-    "imageUrl": "/sprites/krabby.png",
+
     "HP": 30,
     "Atk": 105,
     "Def": 90,
@@ -1864,7 +1864,7 @@
   {
     "Nat": 99,
     "Pokemon": "Kingler",
-    "imageUrl": "/sprites/kingler.png",
+
     "HP": 55,
     "Atk": 130,
     "Def": 115,
@@ -1883,7 +1883,7 @@
   {
     "Nat": 100,
     "Pokemon": "Voltorb",
-    "imageUrl": "/sprites/voltorb.png",
+
     "HP": 40,
     "Atk": 30,
     "Def": 50,
@@ -1902,7 +1902,7 @@
   {
     "Nat": 101,
     "Pokemon": "Electrode",
-    "imageUrl": "/sprites/electrode.png",
+
     "HP": 60,
     "Atk": 50,
     "Def": 70,
@@ -1921,7 +1921,7 @@
   {
     "Nat": 102,
     "Pokemon": "Exeggcute",
-    "imageUrl": "/sprites/exeggcute.png",
+
     "HP": 60,
     "Atk": 40,
     "Def": 80,
@@ -1940,7 +1940,7 @@
   {
     "Nat": 103,
     "Pokemon": "Exeggutor",
-    "imageUrl": "/sprites/exeggutor.png",
+
     "HP": 95,
     "Atk": 95,
     "Def": 85,
@@ -1959,7 +1959,7 @@
   {
     "Nat": 104,
     "Pokemon": "Cubone",
-    "imageUrl": "/sprites/cubone.png",
+
     "HP": 50,
     "Atk": 50,
     "Def": 95,
@@ -1978,7 +1978,7 @@
   {
     "Nat": 105,
     "Pokemon": "Marowak",
-    "imageUrl": "/sprites/marowak.png",
+
     "HP": 60,
     "Atk": 80,
     "Def": 110,
@@ -1997,7 +1997,7 @@
   {
     "Nat": 106,
     "Pokemon": "Hitmonlee",
-    "imageUrl": "/sprites/hitmonlee.png",
+
     "HP": 50,
     "Atk": 120,
     "Def": 53,
@@ -2016,7 +2016,7 @@
   {
     "Nat": 107,
     "Pokemon": "Hitmonchan",
-    "imageUrl": "/sprites/hitmonchan.png",
+
     "HP": 50,
     "Atk": 105,
     "Def": 79,
@@ -2035,7 +2035,7 @@
   {
     "Nat": 108,
     "Pokemon": "Lickitung",
-    "imageUrl": "/sprites/lickitung.png",
+
     "HP": 90,
     "Atk": 55,
     "Def": 75,
@@ -2054,7 +2054,7 @@
   {
     "Nat": 109,
     "Pokemon": "Koffing",
-    "imageUrl": "/sprites/koffing.png",
+
     "HP": 40,
     "Atk": 65,
     "Def": 95,
@@ -2073,7 +2073,7 @@
   {
     "Nat": 110,
     "Pokemon": "Weezing",
-    "imageUrl": "/sprites/weezing.png",
+
     "HP": 65,
     "Atk": 90,
     "Def": 120,
@@ -2092,7 +2092,7 @@
   {
     "Nat": 111,
     "Pokemon": "Rhyhorn",
-    "imageUrl": "/sprites/rhyhorn.png",
+
     "HP": 80,
     "Atk": 85,
     "Def": 95,
@@ -2111,7 +2111,7 @@
   {
     "Nat": 112,
     "Pokemon": "Rhydon",
-    "imageUrl": "/sprites/rhydon.png",
+
     "HP": 105,
     "Atk": 130,
     "Def": 120,
@@ -2130,7 +2130,7 @@
   {
     "Nat": 113,
     "Pokemon": "Chansey",
-    "imageUrl": "/sprites/chansey.png",
+
     "HP": 250,
     "Atk": 5,
     "Def": 5,
@@ -2149,7 +2149,7 @@
   {
     "Nat": 114,
     "Pokemon": "Tangela",
-    "imageUrl": "/sprites/tangela.png",
+
     "HP": 65,
     "Atk": 55,
     "Def": 115,
@@ -2168,7 +2168,7 @@
   {
     "Nat": 115,
     "Pokemon": "Kangaskhan",
-    "imageUrl": "/sprites/kangaskhan.png",
+
     "HP": 105,
     "Atk": 95,
     "Def": 80,
@@ -2187,7 +2187,7 @@
   {
     "Nat": 116,
     "Pokemon": "Horsea",
-    "imageUrl": "/sprites/horsea.png",
+
     "HP": 30,
     "Atk": 40,
     "Def": 70,
@@ -2206,7 +2206,7 @@
   {
     "Nat": 117,
     "Pokemon": "Seadra",
-    "imageUrl": "/sprites/seadra.png",
+
     "HP": 55,
     "Atk": 65,
     "Def": 95,
@@ -2225,7 +2225,7 @@
   {
     "Nat": 118,
     "Pokemon": "Goldeen",
-    "imageUrl": "/sprites/goldeen.png",
+
     "HP": 45,
     "Atk": 67,
     "Def": 60,
@@ -2244,7 +2244,7 @@
   {
     "Nat": 119,
     "Pokemon": "Seaking",
-    "imageUrl": "/sprites/seaking.png",
+
     "HP": 80,
     "Atk": 92,
     "Def": 65,
@@ -2263,7 +2263,7 @@
   {
     "Nat": 120,
     "Pokemon": "Staryu",
-    "imageUrl": "/sprites/staryu.png",
+
     "HP": 30,
     "Atk": 45,
     "Def": 55,
@@ -2282,7 +2282,7 @@
   {
     "Nat": 121,
     "Pokemon": "Starmie",
-    "imageUrl": "/sprites/starmie.png",
+
     "HP": 60,
     "Atk": 75,
     "Def": 85,
@@ -2301,7 +2301,7 @@
   {
     "Nat": 122,
     "Pokemon": "Mr. Mime",
-    "imageUrl": "/sprites/mr-mime.png",
+
     "HP": 40,
     "Atk": 45,
     "Def": 65,
@@ -2320,7 +2320,7 @@
   {
     "Nat": 123,
     "Pokemon": "Scyther",
-    "imageUrl": "/sprites/scyther.png",
+
     "HP": 70,
     "Atk": 110,
     "Def": 80,
@@ -2339,7 +2339,7 @@
   {
     "Nat": 124,
     "Pokemon": "Jynx",
-    "imageUrl": "/sprites/jynx.png",
+
     "HP": 65,
     "Atk": 50,
     "Def": 35,
@@ -2358,7 +2358,7 @@
   {
     "Nat": 125,
     "Pokemon": "Electabuzz",
-    "imageUrl": "/sprites/electabuzz.png",
+
     "HP": 65,
     "Atk": 83,
     "Def": 57,
@@ -2377,7 +2377,7 @@
   {
     "Nat": 126,
     "Pokemon": "Magmar",
-    "imageUrl": "/sprites/magmar.png",
+
     "HP": 65,
     "Atk": 95,
     "Def": 57,
@@ -2396,7 +2396,7 @@
   {
     "Nat": 127,
     "Pokemon": "Pinsir",
-    "imageUrl": "/sprites/pinsir.png",
+
     "HP": 65,
     "Atk": 125,
     "Def": 100,
@@ -2415,7 +2415,7 @@
   {
     "Nat": 128,
     "Pokemon": "Tauros",
-    "imageUrl": "/sprites/tauros.png",
+
     "HP": 75,
     "Atk": 100,
     "Def": 95,
@@ -2434,7 +2434,7 @@
   {
     "Nat": 129,
     "Pokemon": "Magikarp",
-    "imageUrl": "/sprites/magikarp.png",
+
     "HP": 20,
     "Atk": 10,
     "Def": 55,
@@ -2453,7 +2453,7 @@
   {
     "Nat": 130,
     "Pokemon": "Gyarados",
-    "imageUrl": "/sprites/gyarados.png",
+
     "HP": 95,
     "Atk": 125,
     "Def": 79,
@@ -2472,7 +2472,7 @@
   {
     "Nat": 131,
     "Pokemon": "Lapras",
-    "imageUrl": "/sprites/lapras.png",
+
     "HP": 130,
     "Atk": 85,
     "Def": 80,
@@ -2491,7 +2491,7 @@
   {
     "Nat": 132,
     "Pokemon": "Ditto",
-    "imageUrl": "/sprites/ditto.png",
+
     "HP": 48,
     "Atk": 48,
     "Def": 48,
@@ -2510,7 +2510,7 @@
   {
     "Nat": 133,
     "Pokemon": "Eevee",
-    "imageUrl": "/sprites/eevee.png",
+
     "HP": 55,
     "Atk": 55,
     "Def": 50,
@@ -2529,7 +2529,7 @@
   {
     "Nat": 134,
     "Pokemon": "Vaporeon",
-    "imageUrl": "/sprites/vaporeon.png",
+
     "HP": 130,
     "Atk": 65,
     "Def": 60,
@@ -2548,7 +2548,7 @@
   {
     "Nat": 135,
     "Pokemon": "Jolteon",
-    "imageUrl": "/sprites/jolteon.png",
+
     "HP": 65,
     "Atk": 65,
     "Def": 60,
@@ -2567,7 +2567,7 @@
   {
     "Nat": 136,
     "Pokemon": "Flareon",
-    "imageUrl": "/sprites/flareon.png",
+
     "HP": 65,
     "Atk": 130,
     "Def": 60,
@@ -2586,7 +2586,7 @@
   {
     "Nat": 137,
     "Pokemon": "Porygon",
-    "imageUrl": "/sprites/porygon.png",
+
     "HP": 65,
     "Atk": 60,
     "Def": 70,
@@ -2605,7 +2605,7 @@
   {
     "Nat": 138,
     "Pokemon": "Omanyte",
-    "imageUrl": "/sprites/omanyte.png",
+
     "HP": 35,
     "Atk": 40,
     "Def": 100,
@@ -2624,7 +2624,7 @@
   {
     "Nat": 139,
     "Pokemon": "Omastar",
-    "imageUrl": "/sprites/omastar.png",
+
     "HP": 70,
     "Atk": 60,
     "Def": 125,
@@ -2643,7 +2643,7 @@
   {
     "Nat": 140,
     "Pokemon": "Kabuto",
-    "imageUrl": "/sprites/kabuto.png",
+
     "HP": 30,
     "Atk": 80,
     "Def": 90,
@@ -2662,7 +2662,7 @@
   {
     "Nat": 141,
     "Pokemon": "Kabutops",
-    "imageUrl": "/sprites/kabutops.png",
+
     "HP": 60,
     "Atk": 115,
     "Def": 105,
@@ -2681,7 +2681,7 @@
   {
     "Nat": 142,
     "Pokemon": "Aerodactyl",
-    "imageUrl": "/sprites/aerodactyl.png",
+
     "HP": 80,
     "Atk": 105,
     "Def": 65,
@@ -2700,7 +2700,7 @@
   {
     "Nat": 143,
     "Pokemon": "Snorlax",
-    "imageUrl": "/sprites/snorlax.png",
+
     "HP": 160,
     "Atk": 110,
     "Def": 65,
@@ -2719,7 +2719,7 @@
   {
     "Nat": 144,
     "Pokemon": "Articuno",
-    "imageUrl": "/sprites/articuno.png",
+
     "HP": 90,
     "Atk": 85,
     "Def": 100,
@@ -2738,7 +2738,7 @@
   {
     "Nat": 145,
     "Pokemon": "Zapdos",
-    "imageUrl": "/sprites/zapdos.png",
+
     "HP": 90,
     "Atk": 90,
     "Def": 85,
@@ -2757,7 +2757,7 @@
   {
     "Nat": 146,
     "Pokemon": "Moltres",
-    "imageUrl": "/sprites/moltres.png",
+
     "HP": 90,
     "Atk": 100,
     "Def": 90,
@@ -2776,7 +2776,7 @@
   {
     "Nat": 147,
     "Pokemon": "Dratini",
-    "imageUrl": "/sprites/dratini.png",
+
     "HP": 41,
     "Atk": 64,
     "Def": 45,
@@ -2795,7 +2795,7 @@
   {
     "Nat": 148,
     "Pokemon": "Dragonair",
-    "imageUrl": "/sprites/dragonair.png",
+
     "HP": 61,
     "Atk": 84,
     "Def": 65,
@@ -2814,7 +2814,7 @@
   {
     "Nat": 149,
     "Pokemon": "Dragonite",
-    "imageUrl": "/sprites/dragonite.png",
+
     "HP": 91,
     "Atk": 134,
     "Def": 95,
@@ -2833,7 +2833,7 @@
   {
     "Nat": 150,
     "Pokemon": "Mewtwo",
-    "imageUrl": "/sprites/mewtwo.png",
+
     "HP": 106,
     "Atk": 110,
     "Def": 90,
@@ -2852,7 +2852,7 @@
   {
     "Nat": 151,
     "Pokemon": "Mew",
-    "imageUrl": "/sprites/mew.png",
+
     "HP": 100,
     "Atk": 100,
     "Def": 100,
@@ -2871,7 +2871,7 @@
   {
     "Nat": 152,
     "Pokemon": "Chikorita",
-    "imageUrl": "/sprites/chikorita.png",
+
     "HP": 45,
     "Atk": 49,
     "Def": 65,
@@ -2890,7 +2890,7 @@
   {
     "Nat": 153,
     "Pokemon": "Bayleef",
-    "imageUrl": "/sprites/bayleef.png",
+
     "HP": 60,
     "Atk": 62,
     "Def": 80,
@@ -2909,7 +2909,7 @@
   {
     "Nat": 154,
     "Pokemon": "Meganium",
-    "imageUrl": "/sprites/meganium.png",
+
     "HP": 80,
     "Atk": 82,
     "Def": 100,
@@ -2928,7 +2928,7 @@
   {
     "Nat": 155,
     "Pokemon": "Cyndaquil",
-    "imageUrl": "/sprites/cyndaquil.png",
+
     "HP": 39,
     "Atk": 52,
     "Def": 43,
@@ -2947,7 +2947,7 @@
   {
     "Nat": 156,
     "Pokemon": "Quilava",
-    "imageUrl": "/sprites/quilava.png",
+
     "HP": 58,
     "Atk": 64,
     "Def": 58,
@@ -2966,7 +2966,7 @@
   {
     "Nat": 157,
     "Pokemon": "Typhlosion",
-    "imageUrl": "/sprites/typhlosion.png",
+
     "HP": 78,
     "Atk": 84,
     "Def": 78,
@@ -2985,7 +2985,7 @@
   {
     "Nat": 158,
     "Pokemon": "Totodile",
-    "imageUrl": "/sprites/totodile.png",
+
     "HP": 50,
     "Atk": 65,
     "Def": 64,
@@ -3004,7 +3004,7 @@
   {
     "Nat": 159,
     "Pokemon": "Croconaw",
-    "imageUrl": "/sprites/croconaw.png",
+
     "HP": 65,
     "Atk": 80,
     "Def": 80,
@@ -3023,7 +3023,7 @@
   {
     "Nat": 160,
     "Pokemon": "Feraligatr",
-    "imageUrl": "/sprites/feraligatr.png",
+
     "HP": 85,
     "Atk": 105,
     "Def": 100,
@@ -3042,7 +3042,7 @@
   {
     "Nat": 161,
     "Pokemon": "Sentret",
-    "imageUrl": "/sprites/sentret.png",
+
     "HP": 35,
     "Atk": 46,
     "Def": 34,
@@ -3061,7 +3061,7 @@
   {
     "Nat": 162,
     "Pokemon": "Furret",
-    "imageUrl": "/sprites/furret.png",
+
     "HP": 85,
     "Atk": 76,
     "Def": 64,
@@ -3080,7 +3080,7 @@
   {
     "Nat": 163,
     "Pokemon": "Hoothoot",
-    "imageUrl": "/sprites/hoothoot.png",
+
     "HP": 60,
     "Atk": 30,
     "Def": 30,
@@ -3099,7 +3099,7 @@
   {
     "Nat": 164,
     "Pokemon": "Noctowl",
-    "imageUrl": "/sprites/noctowl.png",
+
     "HP": 100,
     "Atk": 50,
     "Def": 50,
@@ -3118,7 +3118,7 @@
   {
     "Nat": 165,
     "Pokemon": "Ledyba",
-    "imageUrl": "/sprites/ledyba.png",
+
     "HP": 40,
     "Atk": 20,
     "Def": 30,
@@ -3137,7 +3137,7 @@
   {
     "Nat": 166,
     "Pokemon": "Ledian",
-    "imageUrl": "/sprites/ledian.png",
+
     "HP": 55,
     "Atk": 35,
     "Def": 50,
@@ -3156,7 +3156,7 @@
   {
     "Nat": 167,
     "Pokemon": "Spinarak",
-    "imageUrl": "/sprites/spinarak.png",
+
     "HP": 40,
     "Atk": 60,
     "Def": 40,
@@ -3175,7 +3175,7 @@
   {
     "Nat": 168,
     "Pokemon": "Ariados",
-    "imageUrl": "/sprites/ariados.png",
+
     "HP": 70,
     "Atk": 90,
     "Def": 70,
@@ -3194,7 +3194,7 @@
   {
     "Nat": 169,
     "Pokemon": "Crobat",
-    "imageUrl": "/sprites/crobat.png",
+
     "HP": 85,
     "Atk": 90,
     "Def": 80,
@@ -3213,7 +3213,7 @@
   {
     "Nat": 170,
     "Pokemon": "Chinchou",
-    "imageUrl": "/sprites/chinchou.png",
+
     "HP": 75,
     "Atk": 38,
     "Def": 38,
@@ -3232,7 +3232,7 @@
   {
     "Nat": 171,
     "Pokemon": "Lanturn",
-    "imageUrl": "/sprites/lanturn.png",
+
     "HP": 125,
     "Atk": 58,
     "Def": 58,
@@ -3251,7 +3251,7 @@
   {
     "Nat": 172,
     "Pokemon": "Pichu",
-    "imageUrl": "/sprites/pichu.png",
+
     "HP": 20,
     "Atk": 40,
     "Def": 15,
@@ -3270,7 +3270,7 @@
   {
     "Nat": 173,
     "Pokemon": "Cleffa",
-    "imageUrl": "/sprites/cleffa.png",
+
     "HP": 50,
     "Atk": 25,
     "Def": 28,
@@ -3289,7 +3289,7 @@
   {
     "Nat": 174,
     "Pokemon": "Igglybuff",
-    "imageUrl": "/sprites/igglybuff.png",
+
     "HP": 90,
     "Atk": 30,
     "Def": 15,
@@ -3308,7 +3308,7 @@
   {
     "Nat": 175,
     "Pokemon": "Togepi",
-    "imageUrl": "/sprites/togepi.png",
+
     "HP": 35,
     "Atk": 20,
     "Def": 65,
@@ -3327,7 +3327,7 @@
   {
     "Nat": 176,
     "Pokemon": "Togetic",
-    "imageUrl": "/sprites/togetic.png",
+
     "HP": 55,
     "Atk": 40,
     "Def": 85,
@@ -3346,7 +3346,7 @@
   {
     "Nat": 177,
     "Pokemon": "Natu",
-    "imageUrl": "/sprites/natu.png",
+
     "HP": 40,
     "Atk": 50,
     "Def": 45,
@@ -3365,7 +3365,7 @@
   {
     "Nat": 178,
     "Pokemon": "Xatu",
-    "imageUrl": "/sprites/xatu.png",
+
     "HP": 65,
     "Atk": 75,
     "Def": 70,
@@ -3384,7 +3384,7 @@
   {
     "Nat": 179,
     "Pokemon": "Mareep",
-    "imageUrl": "/sprites/mareep.png",
+
     "HP": 55,
     "Atk": 40,
     "Def": 40,
@@ -3403,7 +3403,7 @@
   {
     "Nat": 180,
     "Pokemon": "Flaaffy",
-    "imageUrl": "/sprites/flaaffy.png",
+
     "HP": 70,
     "Atk": 55,
     "Def": 55,
@@ -3422,7 +3422,7 @@
   {
     "Nat": 181,
     "Pokemon": "Ampharos",
-    "imageUrl": "/sprites/ampharos.png",
+
     "HP": 90,
     "Atk": 75,
     "Def": 85,
@@ -3441,7 +3441,7 @@
   {
     "Nat": 182,
     "Pokemon": "Bellossom",
-    "imageUrl": "/sprites/bellossom.png",
+
     "HP": 75,
     "Atk": 80,
     "Def": 95,
@@ -3460,7 +3460,7 @@
   {
     "Nat": 183,
     "Pokemon": "Marill",
-    "imageUrl": "/sprites/marill.png",
+
     "HP": 70,
     "Atk": 20,
     "Def": 50,
@@ -3479,7 +3479,7 @@
   {
     "Nat": 184,
     "Pokemon": "Azumarill",
-    "imageUrl": "/sprites/azumarill.png",
+
     "HP": 100,
     "Atk": 50,
     "Def": 80,
@@ -3498,7 +3498,7 @@
   {
     "Nat": 185,
     "Pokemon": "Sudowoodo",
-    "imageUrl": "/sprites/sudowoodo.png",
+
     "HP": 70,
     "Atk": 100,
     "Def": 115,
@@ -3517,7 +3517,7 @@
   {
     "Nat": 186,
     "Pokemon": "Politoed",
-    "imageUrl": "/sprites/politoed.png",
+
     "HP": 90,
     "Atk": 75,
     "Def": 75,
@@ -3536,7 +3536,7 @@
   {
     "Nat": 187,
     "Pokemon": "Hoppip",
-    "imageUrl": "/sprites/hoppip.png",
+
     "HP": 35,
     "Atk": 35,
     "Def": 40,
@@ -3555,7 +3555,7 @@
   {
     "Nat": 188,
     "Pokemon": "Skiploom",
-    "imageUrl": "/sprites/skiploom.png",
+
     "HP": 55,
     "Atk": 45,
     "Def": 50,
@@ -3574,7 +3574,7 @@
   {
     "Nat": 189,
     "Pokemon": "Jumpluff",
-    "imageUrl": "/sprites/jumpluff.png",
+
     "HP": 75,
     "Atk": 55,
     "Def": 70,
@@ -3593,7 +3593,7 @@
   {
     "Nat": 190,
     "Pokemon": "Aipom",
-    "imageUrl": "/sprites/aipom.png",
+
     "HP": 55,
     "Atk": 70,
     "Def": 55,
@@ -3612,7 +3612,7 @@
   {
     "Nat": 191,
     "Pokemon": "Sunkern",
-    "imageUrl": "/sprites/sunkern.png",
+
     "HP": 30,
     "Atk": 30,
     "Def": 30,
@@ -3631,7 +3631,7 @@
   {
     "Nat": 192,
     "Pokemon": "Sunflora",
-    "imageUrl": "/sprites/sunflora.png",
+
     "HP": 75,
     "Atk": 75,
     "Def": 55,
@@ -3650,7 +3650,7 @@
   {
     "Nat": 193,
     "Pokemon": "Yanma",
-    "imageUrl": "/sprites/yanma.png",
+
     "HP": 65,
     "Atk": 65,
     "Def": 45,
@@ -3669,7 +3669,7 @@
   {
     "Nat": 194,
     "Pokemon": "Wooper",
-    "imageUrl": "/sprites/wooper.png",
+
     "HP": 55,
     "Atk": 45,
     "Def": 45,
@@ -3688,7 +3688,7 @@
   {
     "Nat": 195,
     "Pokemon": "Quagsire",
-    "imageUrl": "/sprites/quagsire.png",
+
     "HP": 95,
     "Atk": 85,
     "Def": 85,
@@ -3707,7 +3707,7 @@
   {
     "Nat": 196,
     "Pokemon": "Espeon",
-    "imageUrl": "/sprites/espeon.png",
+
     "HP": 65,
     "Atk": 65,
     "Def": 60,
@@ -3726,7 +3726,7 @@
   {
     "Nat": 197,
     "Pokemon": "Umbreon",
-    "imageUrl": "/sprites/umbreon.png",
+
     "HP": 95,
     "Atk": 65,
     "Def": 110,
@@ -3745,7 +3745,7 @@
   {
     "Nat": 198,
     "Pokemon": "Murkrow",
-    "imageUrl": "/sprites/murkrow.png",
+
     "HP": 60,
     "Atk": 85,
     "Def": 42,
@@ -3764,7 +3764,7 @@
   {
     "Nat": 199,
     "Pokemon": "Slowking",
-    "imageUrl": "/sprites/slowking.png",
+
     "HP": 95,
     "Atk": 75,
     "Def": 80,
@@ -3783,7 +3783,7 @@
   {
     "Nat": 200,
     "Pokemon": "Misdreavus",
-    "imageUrl": "/sprites/misdreavus.png",
+
     "HP": 60,
     "Atk": 60,
     "Def": 60,
@@ -3802,7 +3802,7 @@
   {
     "Nat": 201,
     "Pokemon": "Unown",
-    "imageUrl": "/sprites/unown.png",
+
     "HP": 48,
     "Atk": 72,
     "Def": 48,
@@ -3821,7 +3821,7 @@
   {
     "Nat": 202,
     "Pokemon": "Wobbuffet",
-    "imageUrl": "/sprites/wobbuffet.png",
+
     "HP": 190,
     "Atk": 33,
     "Def": 58,
@@ -3840,7 +3840,7 @@
   {
     "Nat": 203,
     "Pokemon": "Girafarig",
-    "imageUrl": "/sprites/girafarig.png",
+
     "HP": 70,
     "Atk": 80,
     "Def": 65,
@@ -3859,7 +3859,7 @@
   {
     "Nat": 204,
     "Pokemon": "Pineco",
-    "imageUrl": "/sprites/pineco.png",
+
     "HP": 50,
     "Atk": 65,
     "Def": 90,
@@ -3878,7 +3878,7 @@
   {
     "Nat": 205,
     "Pokemon": "Forretress",
-    "imageUrl": "/sprites/forretress.png",
+
     "HP": 75,
     "Atk": 90,
     "Def": 140,
@@ -3897,7 +3897,7 @@
   {
     "Nat": 206,
     "Pokemon": "Dunsparce",
-    "imageUrl": "/sprites/dunsparce.png",
+
     "HP": 100,
     "Atk": 70,
     "Def": 70,
@@ -3916,7 +3916,7 @@
   {
     "Nat": 207,
     "Pokemon": "Gligar",
-    "imageUrl": "/sprites/gligar.png",
+
     "HP": 65,
     "Atk": 75,
     "Def": 105,
@@ -3935,7 +3935,7 @@
   {
     "Nat": 208,
     "Pokemon": "Steelix",
-    "imageUrl": "/sprites/steelix.png",
+
     "HP": 75,
     "Atk": 85,
     "Def": 200,
@@ -3954,7 +3954,7 @@
   {
     "Nat": 209,
     "Pokemon": "Snubbull",
-    "imageUrl": "/sprites/snubbull.png",
+
     "HP": 60,
     "Atk": 80,
     "Def": 50,
@@ -3973,7 +3973,7 @@
   {
     "Nat": 210,
     "Pokemon": "Granbull",
-    "imageUrl": "/sprites/granbull.png",
+
     "HP": 90,
     "Atk": 120,
     "Def": 75,
@@ -3992,7 +3992,7 @@
   {
     "Nat": 211,
     "Pokemon": "Qwilfish",
-    "imageUrl": "/sprites/qwilfish.png",
+
     "HP": 65,
     "Atk": 95,
     "Def": 85,
@@ -4011,7 +4011,7 @@
   {
     "Nat": 212,
     "Pokemon": "Scizor",
-    "imageUrl": "/sprites/scizor.png",
+
     "HP": 70,
     "Atk": 130,
     "Def": 100,
@@ -4030,7 +4030,7 @@
   {
     "Nat": 213,
     "Pokemon": "Shuckle",
-    "imageUrl": "/sprites/shuckle.png",
+
     "HP": 20,
     "Atk": 10,
     "Def": 230,
@@ -4049,7 +4049,7 @@
   {
     "Nat": 214,
     "Pokemon": "Heracross",
-    "imageUrl": "/sprites/heracross.png",
+
     "HP": 80,
     "Atk": 125,
     "Def": 75,
@@ -4068,7 +4068,7 @@
   {
     "Nat": 215,
     "Pokemon": "Sneasel",
-    "imageUrl": "/sprites/sneasel.png",
+
     "HP": 55,
     "Atk": 95,
     "Def": 55,
@@ -4087,7 +4087,7 @@
   {
     "Nat": 216,
     "Pokemon": "Teddiursa",
-    "imageUrl": "/sprites/teddiursa.png",
+
     "HP": 60,
     "Atk": 80,
     "Def": 50,
@@ -4106,7 +4106,7 @@
   {
     "Nat": 217,
     "Pokemon": "Ursaring",
-    "imageUrl": "/sprites/ursaring.png",
+
     "HP": 90,
     "Atk": 130,
     "Def": 75,
@@ -4125,7 +4125,7 @@
   {
     "Nat": 218,
     "Pokemon": "Slugma",
-    "imageUrl": "/sprites/slugma.png",
+
     "HP": 40,
     "Atk": 40,
     "Def": 40,
@@ -4144,7 +4144,7 @@
   {
     "Nat": 219,
     "Pokemon": "Magcargo",
-    "imageUrl": "/sprites/magcargo.png",
+
     "HP": 60,
     "Atk": 50,
     "Def": 120,
@@ -4163,7 +4163,7 @@
   {
     "Nat": 220,
     "Pokemon": "Swinub",
-    "imageUrl": "/sprites/swinub.png",
+
     "HP": 50,
     "Atk": 50,
     "Def": 40,
@@ -4182,7 +4182,7 @@
   {
     "Nat": 221,
     "Pokemon": "Piloswine",
-    "imageUrl": "/sprites/piloswine.png",
+
     "HP": 100,
     "Atk": 100,
     "Def": 80,
@@ -4201,7 +4201,7 @@
   {
     "Nat": 222,
     "Pokemon": "Corsola",
-    "imageUrl": "/sprites/corsola.png",
+
     "HP": 65,
     "Atk": 55,
     "Def": 95,
@@ -4220,7 +4220,7 @@
   {
     "Nat": 223,
     "Pokemon": "Remoraid",
-    "imageUrl": "/sprites/remoraid.png",
+
     "HP": 35,
     "Atk": 65,
     "Def": 35,
@@ -4239,7 +4239,7 @@
   {
     "Nat": 224,
     "Pokemon": "Octillery",
-    "imageUrl": "/sprites/octillery.png",
+
     "HP": 75,
     "Atk": 105,
     "Def": 75,
@@ -4258,7 +4258,7 @@
   {
     "Nat": 225,
     "Pokemon": "Delibird",
-    "imageUrl": "/sprites/delibird.png",
+
     "HP": 45,
     "Atk": 55,
     "Def": 45,
@@ -4277,7 +4277,7 @@
   {
     "Nat": 226,
     "Pokemon": "Mantine",
-    "imageUrl": "/sprites/mantine.png",
+
     "HP": 85,
     "Atk": 40,
     "Def": 70,
@@ -4296,7 +4296,7 @@
   {
     "Nat": 227,
     "Pokemon": "Skarmory",
-    "imageUrl": "/sprites/skarmory.png",
+
     "HP": 65,
     "Atk": 80,
     "Def": 140,
@@ -4315,7 +4315,7 @@
   {
     "Nat": 228,
     "Pokemon": "Houndour",
-    "imageUrl": "/sprites/houndour.png",
+
     "HP": 45,
     "Atk": 60,
     "Def": 30,
@@ -4334,7 +4334,7 @@
   {
     "Nat": 229,
     "Pokemon": "Houndoom",
-    "imageUrl": "/sprites/houndoom.png",
+
     "HP": 75,
     "Atk": 90,
     "Def": 50,
@@ -4353,7 +4353,7 @@
   {
     "Nat": 230,
     "Pokemon": "Kingdra",
-    "imageUrl": "/sprites/kingdra.png",
+
     "HP": 75,
     "Atk": 95,
     "Def": 95,
@@ -4372,7 +4372,7 @@
   {
     "Nat": 231,
     "Pokemon": "Phanpy",
-    "imageUrl": "/sprites/phanpy.png",
+
     "HP": 90,
     "Atk": 60,
     "Def": 60,
@@ -4391,7 +4391,7 @@
   {
     "Nat": 232,
     "Pokemon": "Donphan",
-    "imageUrl": "/sprites/donphan.png",
+
     "HP": 90,
     "Atk": 120,
     "Def": 120,
@@ -4410,7 +4410,7 @@
   {
     "Nat": 233,
     "Pokemon": "Porygon2",
-    "imageUrl": "/sprites/porygon2.png",
+
     "HP": 85,
     "Atk": 80,
     "Def": 90,
@@ -4429,7 +4429,7 @@
   {
     "Nat": 234,
     "Pokemon": "Stantler",
-    "imageUrl": "/sprites/stantler.png",
+
     "HP": 73,
     "Atk": 95,
     "Def": 62,
@@ -4448,7 +4448,7 @@
   {
     "Nat": 235,
     "Pokemon": "Smeargle",
-    "imageUrl": "/sprites/smeargle.png",
+
     "HP": 55,
     "Atk": 20,
     "Def": 35,
@@ -4467,7 +4467,7 @@
   {
     "Nat": 236,
     "Pokemon": "Tyrogue",
-    "imageUrl": "/sprites/tyrogue.png",
+
     "HP": 35,
     "Atk": 35,
     "Def": 35,
@@ -4486,7 +4486,7 @@
   {
     "Nat": 237,
     "Pokemon": "Hitmontop",
-    "imageUrl": "/sprites/hitmontop.png",
+
     "HP": 50,
     "Atk": 95,
     "Def": 95,
@@ -4505,7 +4505,7 @@
   {
     "Nat": 238,
     "Pokemon": "Smoochum",
-    "imageUrl": "/sprites/smoochum.png",
+
     "HP": 45,
     "Atk": 30,
     "Def": 15,
@@ -4524,7 +4524,7 @@
   {
     "Nat": 239,
     "Pokemon": "Elekid",
-    "imageUrl": "/sprites/elekid.png",
+
     "HP": 45,
     "Atk": 63,
     "Def": 37,
@@ -4543,7 +4543,7 @@
   {
     "Nat": 240,
     "Pokemon": "Magby",
-    "imageUrl": "/sprites/magby.png",
+
     "HP": 45,
     "Atk": 75,
     "Def": 37,
@@ -4562,7 +4562,7 @@
   {
     "Nat": 241,
     "Pokemon": "Miltank",
-    "imageUrl": "/sprites/miltank.png",
+
     "HP": 95,
     "Atk": 80,
     "Def": 105,
@@ -4581,7 +4581,7 @@
   {
     "Nat": 242,
     "Pokemon": "Blissey",
-    "imageUrl": "/sprites/blissey.png",
+
     "HP": 255,
     "Atk": 10,
     "Def": 10,
@@ -4600,7 +4600,7 @@
   {
     "Nat": 243,
     "Pokemon": "Raikou",
-    "imageUrl": "/sprites/raikou.png",
+
     "HP": 90,
     "Atk": 85,
     "Def": 75,
@@ -4619,7 +4619,7 @@
   {
     "Nat": 244,
     "Pokemon": "Entei",
-    "imageUrl": "/sprites/entei.png",
+
     "HP": 115,
     "Atk": 115,
     "Def": 85,
@@ -4638,7 +4638,7 @@
   {
     "Nat": 245,
     "Pokemon": "Suicune",
-    "imageUrl": "/sprites/suicune.png",
+
     "HP": 100,
     "Atk": 75,
     "Def": 115,
@@ -4657,7 +4657,7 @@
   {
     "Nat": 246,
     "Pokemon": "Larvitar",
-    "imageUrl": "/sprites/larvitar.png",
+
     "HP": 50,
     "Atk": 64,
     "Def": 50,
@@ -4676,7 +4676,7 @@
   {
     "Nat": 247,
     "Pokemon": "Pupitar",
-    "imageUrl": "/sprites/pupitar.png",
+
     "HP": 70,
     "Atk": 84,
     "Def": 70,
@@ -4695,7 +4695,7 @@
   {
     "Nat": 248,
     "Pokemon": "Tyranitar",
-    "imageUrl": "/sprites/tyranitar.png",
+
     "HP": 100,
     "Atk": 134,
     "Def": 110,
@@ -4714,7 +4714,7 @@
   {
     "Nat": 249,
     "Pokemon": "Lugia",
-    "imageUrl": "/sprites/lugia.png",
+
     "HP": 106,
     "Atk": 90,
     "Def": 130,
@@ -4733,7 +4733,7 @@
   {
     "Nat": 250,
     "Pokemon": "Ho-oh",
-    "imageUrl": "/sprites/ho-oh.png",
+
     "HP": 106,
     "Atk": 130,
     "Def": 90,
@@ -4752,7 +4752,7 @@
   {
     "Nat": 251,
     "Pokemon": "Celebi",
-    "imageUrl": "/sprites/celebi.png",
+
     "HP": 100,
     "Atk": 100,
     "Def": 100,
@@ -4771,7 +4771,7 @@
   {
     "Nat": 252,
     "Pokemon": "Treecko",
-    "imageUrl": "/sprites/treecko.png",
+
     "HP": 40,
     "Atk": 45,
     "Def": 35,
@@ -4790,7 +4790,7 @@
   {
     "Nat": 253,
     "Pokemon": "Grovyle",
-    "imageUrl": "/sprites/grovyle.png",
+
     "HP": 50,
     "Atk": 65,
     "Def": 45,
@@ -4809,7 +4809,7 @@
   {
     "Nat": 254,
     "Pokemon": "Sceptile",
-    "imageUrl": "/sprites/sceptile.png",
+
     "HP": 70,
     "Atk": 85,
     "Def": 65,
@@ -4828,7 +4828,7 @@
   {
     "Nat": 255,
     "Pokemon": "Torchic",
-    "imageUrl": "/sprites/torchic.png",
+
     "HP": 45,
     "Atk": 60,
     "Def": 40,
@@ -4847,7 +4847,7 @@
   {
     "Nat": 256,
     "Pokemon": "Combusken",
-    "imageUrl": "/sprites/combusken.png",
+
     "HP": 60,
     "Atk": 85,
     "Def": 60,
@@ -4866,7 +4866,7 @@
   {
     "Nat": 257,
     "Pokemon": "Blaziken",
-    "imageUrl": "/sprites/blaziken.png",
+
     "HP": 80,
     "Atk": 120,
     "Def": 70,
@@ -4885,7 +4885,7 @@
   {
     "Nat": 258,
     "Pokemon": "Mudkip",
-    "imageUrl": "/sprites/mudkip.png",
+
     "HP": 50,
     "Atk": 70,
     "Def": 50,
@@ -4904,7 +4904,7 @@
   {
     "Nat": 259,
     "Pokemon": "Marshtomp",
-    "imageUrl": "/sprites/marshtomp.png",
+
     "HP": 70,
     "Atk": 85,
     "Def": 70,
@@ -4923,7 +4923,7 @@
   {
     "Nat": 260,
     "Pokemon": "Swampert",
-    "imageUrl": "/sprites/swampert.png",
+
     "HP": 100,
     "Atk": 110,
     "Def": 90,
@@ -4942,7 +4942,7 @@
   {
     "Nat": 261,
     "Pokemon": "Poochyena",
-    "imageUrl": "/sprites/poochyena.png",
+
     "HP": 35,
     "Atk": 55,
     "Def": 35,
@@ -4961,7 +4961,7 @@
   {
     "Nat": 262,
     "Pokemon": "Mightyena",
-    "imageUrl": "/sprites/mightyena.png",
+
     "HP": 70,
     "Atk": 90,
     "Def": 70,
@@ -4980,7 +4980,7 @@
   {
     "Nat": 263,
     "Pokemon": "Zigzagoon",
-    "imageUrl": "/sprites/zigzagoon.png",
+
     "HP": 38,
     "Atk": 30,
     "Def": 41,
@@ -4999,7 +4999,7 @@
   {
     "Nat": 264,
     "Pokemon": "Linoone",
-    "imageUrl": "/sprites/linoone.png",
+
     "HP": 78,
     "Atk": 70,
     "Def": 61,
@@ -5018,7 +5018,7 @@
   {
     "Nat": 265,
     "Pokemon": "Wurmple",
-    "imageUrl": "/sprites/wurmple.png",
+
     "HP": 45,
     "Atk": 45,
     "Def": 35,
@@ -5037,7 +5037,7 @@
   {
     "Nat": 266,
     "Pokemon": "Silcoon",
-    "imageUrl": "/sprites/silcoon.png",
+
     "HP": 50,
     "Atk": 35,
     "Def": 55,
@@ -5056,7 +5056,7 @@
   {
     "Nat": 267,
     "Pokemon": "Beautifly",
-    "imageUrl": "/sprites/beautifly.png",
+
     "HP": 60,
     "Atk": 70,
     "Def": 50,
@@ -5075,7 +5075,7 @@
   {
     "Nat": 268,
     "Pokemon": "Cascoon",
-    "imageUrl": "/sprites/cascoon.png",
+
     "HP": 50,
     "Atk": 35,
     "Def": 55,
@@ -5094,7 +5094,7 @@
   {
     "Nat": 269,
     "Pokemon": "Dustox",
-    "imageUrl": "/sprites/dustox.png",
+
     "HP": 60,
     "Atk": 50,
     "Def": 70,
@@ -5113,7 +5113,7 @@
   {
     "Nat": 270,
     "Pokemon": "Lotad",
-    "imageUrl": "/sprites/lotad.png",
+
     "HP": 40,
     "Atk": 30,
     "Def": 30,
@@ -5132,7 +5132,7 @@
   {
     "Nat": 271,
     "Pokemon": "Lombre",
-    "imageUrl": "/sprites/lombre.png",
+
     "HP": 60,
     "Atk": 50,
     "Def": 50,
@@ -5151,7 +5151,7 @@
   {
     "Nat": 272,
     "Pokemon": "Ludicolo",
-    "imageUrl": "/sprites/ludicolo.png",
+
     "HP": 80,
     "Atk": 70,
     "Def": 70,
@@ -5170,7 +5170,7 @@
   {
     "Nat": 273,
     "Pokemon": "Seedot",
-    "imageUrl": "/sprites/seedot.png",
+
     "HP": 40,
     "Atk": 40,
     "Def": 50,
@@ -5189,7 +5189,7 @@
   {
     "Nat": 274,
     "Pokemon": "Nuzleaf",
-    "imageUrl": "/sprites/nuzleaf.png",
+
     "HP": 70,
     "Atk": 70,
     "Def": 40,
@@ -5208,7 +5208,7 @@
   {
     "Nat": 275,
     "Pokemon": "Shiftry",
-    "imageUrl": "/sprites/shiftry.png",
+
     "HP": 90,
     "Atk": 100,
     "Def": 60,
@@ -5227,7 +5227,7 @@
   {
     "Nat": 276,
     "Pokemon": "Taillow",
-    "imageUrl": "/sprites/taillow.png",
+
     "HP": 40,
     "Atk": 55,
     "Def": 30,
@@ -5246,7 +5246,7 @@
   {
     "Nat": 277,
     "Pokemon": "Swellow",
-    "imageUrl": "/sprites/swellow.png",
+
     "HP": 60,
     "Atk": 85,
     "Def": 60,
@@ -5265,7 +5265,7 @@
   {
     "Nat": 278,
     "Pokemon": "Wingull",
-    "imageUrl": "/sprites/wingull.png",
+
     "HP": 40,
     "Atk": 30,
     "Def": 30,
@@ -5284,7 +5284,7 @@
   {
     "Nat": 279,
     "Pokemon": "Pelipper",
-    "imageUrl": "/sprites/pelipper.png",
+
     "HP": 60,
     "Atk": 50,
     "Def": 100,
@@ -5303,7 +5303,7 @@
   {
     "Nat": 280,
     "Pokemon": "Ralts",
-    "imageUrl": "/sprites/ralts.png",
+
     "HP": 28,
     "Atk": 25,
     "Def": 25,
@@ -5322,7 +5322,7 @@
   {
     "Nat": 281,
     "Pokemon": "Kirlia",
-    "imageUrl": "/sprites/kirlia.png",
+
     "HP": 38,
     "Atk": 35,
     "Def": 35,
@@ -5341,7 +5341,7 @@
   {
     "Nat": 282,
     "Pokemon": "Gardevoir",
-    "imageUrl": "/sprites/gardevoir.png",
+
     "HP": 68,
     "Atk": 65,
     "Def": 65,
@@ -5360,7 +5360,7 @@
   {
     "Nat": 283,
     "Pokemon": "Surskit",
-    "imageUrl": "/sprites/surskit.png",
+
     "HP": 40,
     "Atk": 30,
     "Def": 32,
@@ -5379,7 +5379,7 @@
   {
     "Nat": 284,
     "Pokemon": "Masquerain",
-    "imageUrl": "/sprites/masquerain.png",
+
     "HP": 70,
     "Atk": 60,
     "Def": 62,
@@ -5398,7 +5398,7 @@
   {
     "Nat": 285,
     "Pokemon": "Shroomish",
-    "imageUrl": "/sprites/shroomish.png",
+
     "HP": 60,
     "Atk": 40,
     "Def": 60,
@@ -5417,7 +5417,7 @@
   {
     "Nat": 286,
     "Pokemon": "Breloom",
-    "imageUrl": "/sprites/breloom.png",
+
     "HP": 60,
     "Atk": 130,
     "Def": 80,
@@ -5436,7 +5436,7 @@
   {
     "Nat": 287,
     "Pokemon": "Slakoth",
-    "imageUrl": "/sprites/slakoth.png",
+
     "HP": 60,
     "Atk": 60,
     "Def": 60,
@@ -5455,7 +5455,7 @@
   {
     "Nat": 288,
     "Pokemon": "Vigoroth",
-    "imageUrl": "/sprites/vigoroth.png",
+
     "HP": 80,
     "Atk": 80,
     "Def": 80,
@@ -5474,7 +5474,7 @@
   {
     "Nat": 289,
     "Pokemon": "Slaking",
-    "imageUrl": "/sprites/slaking.png",
+
     "HP": 150,
     "Atk": 160,
     "Def": 100,
@@ -5493,7 +5493,7 @@
   {
     "Nat": 290,
     "Pokemon": "Nincada",
-    "imageUrl": "/sprites/nincada.png",
+
     "HP": 31,
     "Atk": 45,
     "Def": 90,
@@ -5512,7 +5512,7 @@
   {
     "Nat": 291,
     "Pokemon": "Ninjask",
-    "imageUrl": "/sprites/ninjask.png",
+
     "HP": 61,
     "Atk": 90,
     "Def": 45,
@@ -5531,7 +5531,7 @@
   {
     "Nat": 292,
     "Pokemon": "Shedinja",
-    "imageUrl": "/sprites/shedinja.png",
+
     "HP": 1,
     "Atk": 90,
     "Def": 45,
@@ -5550,7 +5550,7 @@
   {
     "Nat": 293,
     "Pokemon": "Whismur",
-    "imageUrl": "/sprites/whismur.png",
+
     "HP": 64,
     "Atk": 51,
     "Def": 23,
@@ -5569,7 +5569,7 @@
   {
     "Nat": 294,
     "Pokemon": "Loudred",
-    "imageUrl": "/sprites/loudred.png",
+
     "HP": 84,
     "Atk": 71,
     "Def": 43,
@@ -5588,7 +5588,7 @@
   {
     "Nat": 295,
     "Pokemon": "Exploud",
-    "imageUrl": "/sprites/exploud.png",
+
     "HP": 104,
     "Atk": 91,
     "Def": 63,
@@ -5607,7 +5607,7 @@
   {
     "Nat": 296,
     "Pokemon": "Makuhita",
-    "imageUrl": "/sprites/makuhita.png",
+
     "HP": 72,
     "Atk": 60,
     "Def": 30,
@@ -5626,7 +5626,7 @@
   {
     "Nat": 297,
     "Pokemon": "Hariyama",
-    "imageUrl": "/sprites/hariyama.png",
+
     "HP": 144,
     "Atk": 120,
     "Def": 60,
@@ -5645,7 +5645,7 @@
   {
     "Nat": 298,
     "Pokemon": "Azurill",
-    "imageUrl": "/sprites/azurill.png",
+
     "HP": 50,
     "Atk": 20,
     "Def": 40,
@@ -5664,7 +5664,7 @@
   {
     "Nat": 299,
     "Pokemon": "Nosepass",
-    "imageUrl": "/sprites/nosepass.png",
+
     "HP": 30,
     "Atk": 45,
     "Def": 135,
@@ -5683,7 +5683,7 @@
   {
     "Nat": 300,
     "Pokemon": "Skitty",
-    "imageUrl": "/sprites/skitty.png",
+
     "HP": 50,
     "Atk": 45,
     "Def": 45,
@@ -5702,7 +5702,7 @@
   {
     "Nat": 301,
     "Pokemon": "Delcatty",
-    "imageUrl": "/sprites/delcatty.png",
+
     "HP": 70,
     "Atk": 65,
     "Def": 65,
@@ -5721,7 +5721,7 @@
   {
     "Nat": 302,
     "Pokemon": "Sableye",
-    "imageUrl": "/sprites/sableye.png",
+
     "HP": 50,
     "Atk": 75,
     "Def": 75,
@@ -5740,7 +5740,7 @@
   {
     "Nat": 303,
     "Pokemon": "Mawile",
-    "imageUrl": "/sprites/mawile.png",
+
     "HP": 50,
     "Atk": 85,
     "Def": 85,
@@ -5759,7 +5759,7 @@
   {
     "Nat": 304,
     "Pokemon": "Aron",
-    "imageUrl": "/sprites/aron.png",
+
     "HP": 50,
     "Atk": 70,
     "Def": 100,
@@ -5778,7 +5778,7 @@
   {
     "Nat": 305,
     "Pokemon": "Lairon",
-    "imageUrl": "/sprites/lairon.png",
+
     "HP": 60,
     "Atk": 90,
     "Def": 140,
@@ -5797,7 +5797,7 @@
   {
     "Nat": 306,
     "Pokemon": "Aggron",
-    "imageUrl": "/sprites/aggron.png",
+
     "HP": 70,
     "Atk": 110,
     "Def": 180,
@@ -5816,7 +5816,7 @@
   {
     "Nat": 307,
     "Pokemon": "Meditite",
-    "imageUrl": "/sprites/meditite.png",
+
     "HP": 30,
     "Atk": 40,
     "Def": 55,
@@ -5835,7 +5835,7 @@
   {
     "Nat": 308,
     "Pokemon": "Medicham",
-    "imageUrl": "/sprites/medicham.png",
+
     "HP": 60,
     "Atk": 60,
     "Def": 75,
@@ -5854,7 +5854,7 @@
   {
     "Nat": 309,
     "Pokemon": "Electrike",
-    "imageUrl": "/sprites/electrike.png",
+
     "HP": 40,
     "Atk": 45,
     "Def": 40,
@@ -5873,7 +5873,7 @@
   {
     "Nat": 310,
     "Pokemon": "Manectric",
-    "imageUrl": "/sprites/manectric.png",
+
     "HP": 70,
     "Atk": 75,
     "Def": 60,
@@ -5892,7 +5892,7 @@
   {
     "Nat": 311,
     "Pokemon": "Plusle",
-    "imageUrl": "/sprites/plusle.png",
+
     "HP": 60,
     "Atk": 50,
     "Def": 40,
@@ -5911,7 +5911,7 @@
   {
     "Nat": 312,
     "Pokemon": "Minun",
-    "imageUrl": "/sprites/minun.png",
+
     "HP": 60,
     "Atk": 40,
     "Def": 50,
@@ -5930,7 +5930,7 @@
   {
     "Nat": 313,
     "Pokemon": "Volbeat",
-    "imageUrl": "/sprites/volbeat.png",
+
     "HP": 65,
     "Atk": 73,
     "Def": 75,
@@ -5949,7 +5949,7 @@
   {
     "Nat": 314,
     "Pokemon": "Illumise",
-    "imageUrl": "/sprites/illumise.png",
+
     "HP": 65,
     "Atk": 47,
     "Def": 75,
@@ -5968,7 +5968,7 @@
   {
     "Nat": 315,
     "Pokemon": "Roselia",
-    "imageUrl": "/sprites/roselia.png",
+
     "HP": 50,
     "Atk": 60,
     "Def": 45,
@@ -5987,7 +5987,7 @@
   {
     "Nat": 316,
     "Pokemon": "Gulpin",
-    "imageUrl": "/sprites/gulpin.png",
+
     "HP": 70,
     "Atk": 43,
     "Def": 53,
@@ -6006,7 +6006,7 @@
   {
     "Nat": 317,
     "Pokemon": "Swalot",
-    "imageUrl": "/sprites/swalot.png",
+
     "HP": 100,
     "Atk": 73,
     "Def": 83,
@@ -6025,7 +6025,7 @@
   {
     "Nat": 318,
     "Pokemon": "Carvanha",
-    "imageUrl": "/sprites/carvanha.png",
+
     "HP": 45,
     "Atk": 90,
     "Def": 20,
@@ -6044,7 +6044,7 @@
   {
     "Nat": 319,
     "Pokemon": "Sharpedo",
-    "imageUrl": "/sprites/sharpedo.png",
+
     "HP": 70,
     "Atk": 120,
     "Def": 40,
@@ -6063,7 +6063,7 @@
   {
     "Nat": 320,
     "Pokemon": "Wailmer",
-    "imageUrl": "/sprites/wailmer.png",
+
     "HP": 130,
     "Atk": 70,
     "Def": 35,
@@ -6082,7 +6082,7 @@
   {
     "Nat": 321,
     "Pokemon": "Wailord",
-    "imageUrl": "/sprites/wailord.png",
+
     "HP": 170,
     "Atk": 90,
     "Def": 45,
@@ -6101,7 +6101,7 @@
   {
     "Nat": 322,
     "Pokemon": "Numel",
-    "imageUrl": "/sprites/numel.png",
+
     "HP": 60,
     "Atk": 60,
     "Def": 40,
@@ -6120,7 +6120,7 @@
   {
     "Nat": 323,
     "Pokemon": "Camerupt",
-    "imageUrl": "/sprites/camerupt.png",
+
     "HP": 70,
     "Atk": 100,
     "Def": 70,
@@ -6139,7 +6139,7 @@
   {
     "Nat": 324,
     "Pokemon": "Torkoal",
-    "imageUrl": "/sprites/torkoal.png",
+
     "HP": 70,
     "Atk": 85,
     "Def": 140,
@@ -6158,7 +6158,7 @@
   {
     "Nat": 325,
     "Pokemon": "Spoink",
-    "imageUrl": "/sprites/spoink.png",
+
     "HP": 60,
     "Atk": 25,
     "Def": 35,
@@ -6177,7 +6177,7 @@
   {
     "Nat": 326,
     "Pokemon": "Grumpig",
-    "imageUrl": "/sprites/grumpig.png",
+
     "HP": 80,
     "Atk": 45,
     "Def": 65,
@@ -6196,7 +6196,7 @@
   {
     "Nat": 327,
     "Pokemon": "Spinda",
-    "imageUrl": "/sprites/spinda.png",
+
     "HP": 60,
     "Atk": 60,
     "Def": 60,
@@ -6215,7 +6215,7 @@
   {
     "Nat": 328,
     "Pokemon": "Trapinch",
-    "imageUrl": "/sprites/trapinch.png",
+
     "HP": 45,
     "Atk": 100,
     "Def": 45,
@@ -6234,7 +6234,7 @@
   {
     "Nat": 329,
     "Pokemon": "Vibrava",
-    "imageUrl": "/sprites/vibrava.png",
+
     "HP": 50,
     "Atk": 70,
     "Def": 50,
@@ -6253,7 +6253,7 @@
   {
     "Nat": 330,
     "Pokemon": "Flygon",
-    "imageUrl": "/sprites/flygon.png",
+
     "HP": 80,
     "Atk": 100,
     "Def": 80,
@@ -6272,7 +6272,7 @@
   {
     "Nat": 331,
     "Pokemon": "Cacnea",
-    "imageUrl": "/sprites/cacnea.png",
+
     "HP": 50,
     "Atk": 85,
     "Def": 40,
@@ -6291,7 +6291,7 @@
   {
     "Nat": 332,
     "Pokemon": "Cacturne",
-    "imageUrl": "/sprites/cacturne.png",
+
     "HP": 70,
     "Atk": 115,
     "Def": 60,
@@ -6310,7 +6310,7 @@
   {
     "Nat": 333,
     "Pokemon": "Swablu",
-    "imageUrl": "/sprites/swablu.png",
+
     "HP": 45,
     "Atk": 40,
     "Def": 60,
@@ -6329,7 +6329,7 @@
   {
     "Nat": 334,
     "Pokemon": "Altaria",
-    "imageUrl": "/sprites/altaria.png",
+
     "HP": 75,
     "Atk": 70,
     "Def": 90,
@@ -6348,7 +6348,7 @@
   {
     "Nat": 335,
     "Pokemon": "Zangoose",
-    "imageUrl": "/sprites/zangoose.png",
+
     "HP": 73,
     "Atk": 115,
     "Def": 60,
@@ -6367,7 +6367,7 @@
   {
     "Nat": 336,
     "Pokemon": "Seviper",
-    "imageUrl": "/sprites/seviper.png",
+
     "HP": 73,
     "Atk": 100,
     "Def": 60,
@@ -6386,7 +6386,7 @@
   {
     "Nat": 337,
     "Pokemon": "Lunatone",
-    "imageUrl": "/sprites/lunatone.png",
+
     "HP": 90,
     "Atk": 55,
     "Def": 65,
@@ -6405,7 +6405,7 @@
   {
     "Nat": 338,
     "Pokemon": "Solrock",
-    "imageUrl": "/sprites/solrock.png",
+
     "HP": 90,
     "Atk": 95,
     "Def": 85,
@@ -6424,7 +6424,7 @@
   {
     "Nat": 339,
     "Pokemon": "Barboach",
-    "imageUrl": "/sprites/barboach.png",
+
     "HP": 50,
     "Atk": 48,
     "Def": 43,
@@ -6443,7 +6443,7 @@
   {
     "Nat": 340,
     "Pokemon": "Whiscash",
-    "imageUrl": "/sprites/whiscash.png",
+
     "HP": 110,
     "Atk": 78,
     "Def": 73,
@@ -6462,7 +6462,7 @@
   {
     "Nat": 341,
     "Pokemon": "Corphish",
-    "imageUrl": "/sprites/corphish.png",
+
     "HP": 43,
     "Atk": 80,
     "Def": 65,
@@ -6481,7 +6481,7 @@
   {
     "Nat": 342,
     "Pokemon": "Crawdaunt",
-    "imageUrl": "/sprites/crawdaunt.png",
+
     "HP": 63,
     "Atk": 120,
     "Def": 85,
@@ -6500,7 +6500,7 @@
   {
     "Nat": 343,
     "Pokemon": "Baltoy",
-    "imageUrl": "/sprites/baltoy.png",
+
     "HP": 40,
     "Atk": 40,
     "Def": 55,
@@ -6519,7 +6519,7 @@
   {
     "Nat": 344,
     "Pokemon": "Claydol",
-    "imageUrl": "/sprites/claydol.png",
+
     "HP": 60,
     "Atk": 70,
     "Def": 105,
@@ -6538,7 +6538,7 @@
   {
     "Nat": 345,
     "Pokemon": "Lileep",
-    "imageUrl": "/sprites/lileep.png",
+
     "HP": 66,
     "Atk": 41,
     "Def": 77,
@@ -6557,7 +6557,7 @@
   {
     "Nat": 346,
     "Pokemon": "Cradily",
-    "imageUrl": "/sprites/cradily.png",
+
     "HP": 86,
     "Atk": 81,
     "Def": 97,
@@ -6576,7 +6576,7 @@
   {
     "Nat": 347,
     "Pokemon": "Anorith",
-    "imageUrl": "/sprites/anorith.png",
+
     "HP": 45,
     "Atk": 95,
     "Def": 50,
@@ -6595,7 +6595,7 @@
   {
     "Nat": 348,
     "Pokemon": "Armaldo",
-    "imageUrl": "/sprites/armaldo.png",
+
     "HP": 75,
     "Atk": 125,
     "Def": 100,
@@ -6614,7 +6614,7 @@
   {
     "Nat": 349,
     "Pokemon": "Feebas",
-    "imageUrl": "/sprites/feebas.png",
+
     "HP": 20,
     "Atk": 15,
     "Def": 20,
@@ -6633,7 +6633,7 @@
   {
     "Nat": 350,
     "Pokemon": "Milotic",
-    "imageUrl": "/sprites/milotic.png",
+
     "HP": 95,
     "Atk": 60,
     "Def": 79,
@@ -6652,7 +6652,7 @@
   {
     "Nat": 351,
     "Pokemon": "Castform",
-    "imageUrl": "/sprites/castform.png",
+
     "HP": 70,
     "Atk": 70,
     "Def": 70,
@@ -6671,7 +6671,7 @@
   {
     "Nat": 352,
     "Pokemon": "Kecleon",
-    "imageUrl": "/sprites/kecleon.png",
+
     "HP": 60,
     "Atk": 90,
     "Def": 70,
@@ -6690,7 +6690,7 @@
   {
     "Nat": 353,
     "Pokemon": "Shuppet",
-    "imageUrl": "/sprites/shuppet.png",
+
     "HP": 44,
     "Atk": 75,
     "Def": 35,
@@ -6709,7 +6709,7 @@
   {
     "Nat": 354,
     "Pokemon": "Banette",
-    "imageUrl": "/sprites/banette.png",
+
     "HP": 64,
     "Atk": 115,
     "Def": 65,
@@ -6728,7 +6728,7 @@
   {
     "Nat": 355,
     "Pokemon": "Duskull",
-    "imageUrl": "/sprites/duskull.png",
+
     "HP": 20,
     "Atk": 40,
     "Def": 90,
@@ -6747,7 +6747,7 @@
   {
     "Nat": 356,
     "Pokemon": "Dusclops",
-    "imageUrl": "/sprites/dusclops.png",
+
     "HP": 40,
     "Atk": 70,
     "Def": 130,
@@ -6766,7 +6766,7 @@
   {
     "Nat": 357,
     "Pokemon": "Tropius",
-    "imageUrl": "/sprites/tropius.png",
+
     "HP": 99,
     "Atk": 68,
     "Def": 83,
@@ -6785,7 +6785,7 @@
   {
     "Nat": 358,
     "Pokemon": "Chimecho",
-    "imageUrl": "/sprites/chimecho.png",
+
     "HP": 75,
     "Atk": 50,
     "Def": 80,
@@ -6804,7 +6804,7 @@
   {
     "Nat": 359,
     "Pokemon": "Absol",
-    "imageUrl": "/sprites/absol.png",
+
     "HP": 65,
     "Atk": 130,
     "Def": 60,
@@ -6823,7 +6823,7 @@
   {
     "Nat": 360,
     "Pokemon": "Wynaut",
-    "imageUrl": "/sprites/wynaut.png",
+
     "HP": 95,
     "Atk": 23,
     "Def": 48,
@@ -6842,7 +6842,7 @@
   {
     "Nat": 361,
     "Pokemon": "Snorunt",
-    "imageUrl": "/sprites/snorunt.png",
+
     "HP": 50,
     "Atk": 50,
     "Def": 50,
@@ -6861,7 +6861,7 @@
   {
     "Nat": 362,
     "Pokemon": "Glalie",
-    "imageUrl": "/sprites/glalie.png",
+
     "HP": 80,
     "Atk": 80,
     "Def": 80,
@@ -6880,7 +6880,7 @@
   {
     "Nat": 363,
     "Pokemon": "Spheal",
-    "imageUrl": "/sprites/spheal.png",
+
     "HP": 70,
     "Atk": 40,
     "Def": 50,
@@ -6899,7 +6899,7 @@
   {
     "Nat": 364,
     "Pokemon": "Sealeo",
-    "imageUrl": "/sprites/sealeo.png",
+
     "HP": 90,
     "Atk": 60,
     "Def": 70,
@@ -6918,7 +6918,7 @@
   {
     "Nat": 365,
     "Pokemon": "Walrein",
-    "imageUrl": "/sprites/walrein.png",
+
     "HP": 110,
     "Atk": 80,
     "Def": 90,
@@ -6937,7 +6937,7 @@
   {
     "Nat": 366,
     "Pokemon": "Clamperl",
-    "imageUrl": "/sprites/clamperl.png",
+
     "HP": 35,
     "Atk": 64,
     "Def": 85,
@@ -6956,7 +6956,7 @@
   {
     "Nat": 367,
     "Pokemon": "Huntail",
-    "imageUrl": "/sprites/huntail.png",
+
     "HP": 55,
     "Atk": 104,
     "Def": 105,
@@ -6975,7 +6975,7 @@
   {
     "Nat": 368,
     "Pokemon": "Gorebyss",
-    "imageUrl": "/sprites/gorebyss.png",
+
     "HP": 55,
     "Atk": 84,
     "Def": 105,
@@ -6994,7 +6994,7 @@
   {
     "Nat": 369,
     "Pokemon": "Relicanth",
-    "imageUrl": "/sprites/relicanth.png",
+
     "HP": 100,
     "Atk": 90,
     "Def": 130,
@@ -7013,7 +7013,7 @@
   {
     "Nat": 370,
     "Pokemon": "Luvdisc",
-    "imageUrl": "/sprites/luvdisc.png",
+
     "HP": 43,
     "Atk": 30,
     "Def": 55,
@@ -7032,7 +7032,7 @@
   {
     "Nat": 371,
     "Pokemon": "Bagon",
-    "imageUrl": "/sprites/bagon.png",
+
     "HP": 45,
     "Atk": 75,
     "Def": 60,
@@ -7051,7 +7051,7 @@
   {
     "Nat": 372,
     "Pokemon": "Shelgon",
-    "imageUrl": "/sprites/shelgon.png",
+
     "HP": 65,
     "Atk": 95,
     "Def": 100,
@@ -7070,7 +7070,7 @@
   {
     "Nat": 373,
     "Pokemon": "Salamence",
-    "imageUrl": "/sprites/salamence.png",
+
     "HP": 95,
     "Atk": 135,
     "Def": 80,
@@ -7089,7 +7089,7 @@
   {
     "Nat": 374,
     "Pokemon": "Beldum",
-    "imageUrl": "/sprites/beldum.png",
+
     "HP": 40,
     "Atk": 55,
     "Def": 80,
@@ -7108,7 +7108,7 @@
   {
     "Nat": 375,
     "Pokemon": "Metang",
-    "imageUrl": "/sprites/metang.png",
+
     "HP": 60,
     "Atk": 75,
     "Def": 100,
@@ -7127,7 +7127,7 @@
   {
     "Nat": 376,
     "Pokemon": "Metagross",
-    "imageUrl": "/sprites/metagross.png",
+
     "HP": 80,
     "Atk": 135,
     "Def": 130,
@@ -7146,7 +7146,7 @@
   {
     "Nat": 377,
     "Pokemon": "Regirock",
-    "imageUrl": "/sprites/regirock.png",
+
     "HP": 80,
     "Atk": 100,
     "Def": 200,
@@ -7165,7 +7165,7 @@
   {
     "Nat": 378,
     "Pokemon": "Regice",
-    "imageUrl": "/sprites/regice.png",
+
     "HP": 80,
     "Atk": 50,
     "Def": 100,
@@ -7184,7 +7184,7 @@
   {
     "Nat": 379,
     "Pokemon": "Registeel",
-    "imageUrl": "/sprites/registeel.png",
+
     "HP": 80,
     "Atk": 75,
     "Def": 150,
@@ -7203,7 +7203,7 @@
   {
     "Nat": 380,
     "Pokemon": "Latias",
-    "imageUrl": "/sprites/latias.png",
+
     "HP": 80,
     "Atk": 80,
     "Def": 90,
@@ -7222,7 +7222,7 @@
   {
     "Nat": 381,
     "Pokemon": "Latios",
-    "imageUrl": "/sprites/latios.png",
+
     "HP": 80,
     "Atk": 90,
     "Def": 80,
@@ -7241,7 +7241,7 @@
   {
     "Nat": 382,
     "Pokemon": "Kyogre",
-    "imageUrl": "/sprites/kyogre.png",
+
     "HP": 100,
     "Atk": 100,
     "Def": 90,
@@ -7260,7 +7260,7 @@
   {
     "Nat": 383,
     "Pokemon": "Groudon",
-    "imageUrl": "/sprites/groudon.png",
+
     "HP": 100,
     "Atk": 150,
     "Def": 140,
@@ -7279,7 +7279,7 @@
   {
     "Nat": 384,
     "Pokemon": "Rayquaza",
-    "imageUrl": "/sprites/rayquaza.png",
+
     "HP": 105,
     "Atk": 150,
     "Def": 90,
@@ -7298,7 +7298,7 @@
   {
     "Nat": 385,
     "Pokemon": "Jirachi",
-    "imageUrl": "/sprites/jirachi.png",
+
     "HP": 100,
     "Atk": 100,
     "Def": 100,
@@ -7317,7 +7317,7 @@
   {
     "Nat": 386,
     "Pokemon": "Deoxys",
-    "imageUrl": "/sprites/deoxys.png",
+
     "HP": 50,
     "Atk": 150,
     "Def": 50,
@@ -7336,7 +7336,7 @@
   {
     "Nat": 387,
     "Pokemon": "Turtwig",
-    "imageUrl": "/sprites/turtwig.png",
+
     "HP": 55,
     "Atk": 68,
     "Def": 64,
@@ -7355,7 +7355,7 @@
   {
     "Nat": 388,
     "Pokemon": "Grotle",
-    "imageUrl": "/sprites/grotle.png",
+
     "HP": 75,
     "Atk": 89,
     "Def": 85,
@@ -7374,7 +7374,7 @@
   {
     "Nat": 389,
     "Pokemon": "Torterra",
-    "imageUrl": "/sprites/torterra.png",
+
     "HP": 95,
     "Atk": 109,
     "Def": 105,
@@ -7393,7 +7393,7 @@
   {
     "Nat": 390,
     "Pokemon": "Chimchar",
-    "imageUrl": "/sprites/chimchar.png",
+
     "HP": 44,
     "Atk": 58,
     "Def": 44,
@@ -7412,7 +7412,7 @@
   {
     "Nat": 391,
     "Pokemon": "Monferno",
-    "imageUrl": "/sprites/monferno.png",
+
     "HP": 64,
     "Atk": 78,
     "Def": 52,
@@ -7431,7 +7431,7 @@
   {
     "Nat": 392,
     "Pokemon": "Infernape",
-    "imageUrl": "/sprites/infernape.png",
+
     "HP": 76,
     "Atk": 104,
     "Def": 71,
@@ -7450,7 +7450,7 @@
   {
     "Nat": 393,
     "Pokemon": "Piplup",
-    "imageUrl": "/sprites/piplup.png",
+
     "HP": 53,
     "Atk": 51,
     "Def": 53,
@@ -7469,7 +7469,7 @@
   {
     "Nat": 394,
     "Pokemon": "Prinplup",
-    "imageUrl": "/sprites/prinplup.png",
+
     "HP": 64,
     "Atk": 66,
     "Def": 68,
@@ -7488,7 +7488,7 @@
   {
     "Nat": 395,
     "Pokemon": "Empoleon",
-    "imageUrl": "/sprites/empoleon.png",
+
     "HP": 84,
     "Atk": 86,
     "Def": 88,
@@ -7507,7 +7507,7 @@
   {
     "Nat": 396,
     "Pokemon": "Starly",
-    "imageUrl": "/sprites/starly.png",
+
     "HP": 40,
     "Atk": 55,
     "Def": 30,
@@ -7526,7 +7526,7 @@
   {
     "Nat": 397,
     "Pokemon": "Staravia",
-    "imageUrl": "/sprites/staravia.png",
+
     "HP": 55,
     "Atk": 75,
     "Def": 50,
@@ -7545,7 +7545,7 @@
   {
     "Nat": 398,
     "Pokemon": "Staraptor",
-    "imageUrl": "/sprites/staraptor.png",
+
     "HP": 85,
     "Atk": 120,
     "Def": 70,
@@ -7564,7 +7564,7 @@
   {
     "Nat": 399,
     "Pokemon": "Bidoof",
-    "imageUrl": "/sprites/bidoof.png",
+
     "HP": 59,
     "Atk": 45,
     "Def": 40,
@@ -7583,7 +7583,7 @@
   {
     "Nat": 400,
     "Pokemon": "Bibarel",
-    "imageUrl": "/sprites/bibarel.png",
+
     "HP": 79,
     "Atk": 85,
     "Def": 60,
@@ -7602,7 +7602,7 @@
   {
     "Nat": 401,
     "Pokemon": "Kricketot",
-    "imageUrl": "/sprites/kricketot.png",
+
     "HP": 37,
     "Atk": 25,
     "Def": 41,
@@ -7621,7 +7621,7 @@
   {
     "Nat": 402,
     "Pokemon": "Kricketune",
-    "imageUrl": "/sprites/kricketune.png",
+
     "HP": 77,
     "Atk": 85,
     "Def": 51,
@@ -7640,7 +7640,7 @@
   {
     "Nat": 403,
     "Pokemon": "Shinx",
-    "imageUrl": "/sprites/shinx.png",
+
     "HP": 45,
     "Atk": 65,
     "Def": 34,
@@ -7659,7 +7659,7 @@
   {
     "Nat": 404,
     "Pokemon": "Luxio",
-    "imageUrl": "/sprites/luxio.png",
+
     "HP": 60,
     "Atk": 85,
     "Def": 49,
@@ -7678,7 +7678,7 @@
   {
     "Nat": 405,
     "Pokemon": "Luxray",
-    "imageUrl": "/sprites/luxray.png",
+
     "HP": 80,
     "Atk": 120,
     "Def": 79,
@@ -7697,7 +7697,7 @@
   {
     "Nat": 406,
     "Pokemon": "Budew",
-    "imageUrl": "/sprites/budew.png",
+
     "HP": 40,
     "Atk": 30,
     "Def": 35,
@@ -7716,7 +7716,7 @@
   {
     "Nat": 407,
     "Pokemon": "Roserade",
-    "imageUrl": "/sprites/roserade.png",
+
     "HP": 60,
     "Atk": 70,
     "Def": 65,
@@ -7735,7 +7735,7 @@
   {
     "Nat": 408,
     "Pokemon": "Cranidos",
-    "imageUrl": "/sprites/cranidos.png",
+
     "HP": 67,
     "Atk": 125,
     "Def": 40,
@@ -7754,7 +7754,7 @@
   {
     "Nat": 409,
     "Pokemon": "Rampardos",
-    "imageUrl": "/sprites/rampardos.png",
+
     "HP": 97,
     "Atk": 165,
     "Def": 60,
@@ -7773,7 +7773,7 @@
   {
     "Nat": 410,
     "Pokemon": "Shieldon",
-    "imageUrl": "/sprites/shieldon.png",
+
     "HP": 30,
     "Atk": 42,
     "Def": 118,
@@ -7792,7 +7792,7 @@
   {
     "Nat": 411,
     "Pokemon": "Bastiodon",
-    "imageUrl": "/sprites/bastiodon.png",
+
     "HP": 60,
     "Atk": 52,
     "Def": 168,
@@ -7811,7 +7811,7 @@
   {
     "Nat": 412,
     "Pokemon": "Burmy",
-    "imageUrl": "/sprites/burmy.png",
+
     "HP": 40,
     "Atk": 29,
     "Def": 45,
@@ -7830,7 +7830,7 @@
   {
     "Nat": 413,
     "Pokemon": "Wormadam (P)",
-    "imageUrl": "/sprites/wormadam-(p).png",
+
     "HP": 60,
     "Atk": 59,
     "Def": 85,
@@ -7849,7 +7849,7 @@
   {
     "Nat": 414,
     "Pokemon": "Mothim",
-    "imageUrl": "/sprites/mothim.png",
+
     "HP": 70,
     "Atk": 94,
     "Def": 50,
@@ -7868,7 +7868,7 @@
   {
     "Nat": 415,
     "Pokemon": "Combee",
-    "imageUrl": "/sprites/combee.png",
+
     "HP": 30,
     "Atk": 30,
     "Def": 42,
@@ -7887,7 +7887,7 @@
   {
     "Nat": 416,
     "Pokemon": "Vespiquen",
-    "imageUrl": "/sprites/vespiquen.png",
+
     "HP": 70,
     "Atk": 80,
     "Def": 102,
@@ -7906,7 +7906,7 @@
   {
     "Nat": 417,
     "Pokemon": "Pachirisu",
-    "imageUrl": "/sprites/pachirisu.png",
+
     "HP": 60,
     "Atk": 45,
     "Def": 70,
@@ -7925,7 +7925,7 @@
   {
     "Nat": 418,
     "Pokemon": "Buizel",
-    "imageUrl": "/sprites/buizel.png",
+
     "HP": 55,
     "Atk": 65,
     "Def": 35,
@@ -7944,7 +7944,7 @@
   {
     "Nat": 419,
     "Pokemon": "Floatzel",
-    "imageUrl": "/sprites/floatzel.png",
+
     "HP": 85,
     "Atk": 105,
     "Def": 55,
@@ -7963,7 +7963,7 @@
   {
     "Nat": 420,
     "Pokemon": "Cherubi",
-    "imageUrl": "/sprites/cherubi.png",
+
     "HP": 45,
     "Atk": 35,
     "Def": 45,
@@ -7982,7 +7982,7 @@
   {
     "Nat": 421,
     "Pokemon": "Cherrim",
-    "imageUrl": "/sprites/cherrim.png",
+
     "HP": 70,
     "Atk": 60,
     "Def": 70,
@@ -8001,7 +8001,7 @@
   {
     "Nat": 422,
     "Pokemon": "Shellos",
-    "imageUrl": "/sprites/shellos.png",
+
     "HP": 76,
     "Atk": 48,
     "Def": 48,
@@ -8020,7 +8020,7 @@
   {
     "Nat": 423,
     "Pokemon": "Gastrodon",
-    "imageUrl": "/sprites/gastrodon.png",
+
     "HP": 111,
     "Atk": 83,
     "Def": 68,
@@ -8039,7 +8039,7 @@
   {
     "Nat": 424,
     "Pokemon": "Ambipom",
-    "imageUrl": "/sprites/ambipom.png",
+
     "HP": 75,
     "Atk": 100,
     "Def": 66,
@@ -8058,7 +8058,7 @@
   {
     "Nat": 425,
     "Pokemon": "Drifloon",
-    "imageUrl": "/sprites/drifloon.png",
+
     "HP": 90,
     "Atk": 50,
     "Def": 34,
@@ -8077,7 +8077,7 @@
   {
     "Nat": 426,
     "Pokemon": "Drifblim",
-    "imageUrl": "/sprites/drifblim.png",
+
     "HP": 150,
     "Atk": 80,
     "Def": 44,
@@ -8096,7 +8096,7 @@
   {
     "Nat": 427,
     "Pokemon": "Buneary",
-    "imageUrl": "/sprites/buneary.png",
+
     "HP": 55,
     "Atk": 66,
     "Def": 44,
@@ -8115,7 +8115,7 @@
   {
     "Nat": 428,
     "Pokemon": "Lopunny",
-    "imageUrl": "/sprites/lopunny.png",
+
     "HP": 65,
     "Atk": 76,
     "Def": 84,
@@ -8134,7 +8134,7 @@
   {
     "Nat": 429,
     "Pokemon": "Mismagius",
-    "imageUrl": "/sprites/mismagius.png",
+
     "HP": 60,
     "Atk": 60,
     "Def": 60,
@@ -8153,7 +8153,7 @@
   {
     "Nat": 430,
     "Pokemon": "Honchkrow",
-    "imageUrl": "/sprites/honchkrow.png",
+
     "HP": 100,
     "Atk": 125,
     "Def": 52,
@@ -8172,7 +8172,7 @@
   {
     "Nat": 431,
     "Pokemon": "Glameow",
-    "imageUrl": "/sprites/glameow.png",
+
     "HP": 49,
     "Atk": 55,
     "Def": 42,
@@ -8191,7 +8191,7 @@
   {
     "Nat": 432,
     "Pokemon": "Purugly",
-    "imageUrl": "/sprites/purugly.png",
+
     "HP": 71,
     "Atk": 82,
     "Def": 64,
@@ -8210,7 +8210,7 @@
   {
     "Nat": 433,
     "Pokemon": "Chingling",
-    "imageUrl": "/sprites/chingling.png",
+
     "HP": 45,
     "Atk": 30,
     "Def": 50,
@@ -8229,7 +8229,7 @@
   {
     "Nat": 434,
     "Pokemon": "Stunky",
-    "imageUrl": "/sprites/stunky.png",
+
     "HP": 63,
     "Atk": 63,
     "Def": 47,
@@ -8248,7 +8248,7 @@
   {
     "Nat": 435,
     "Pokemon": "Skuntank",
-    "imageUrl": "/sprites/skuntank.png",
+
     "HP": 103,
     "Atk": 93,
     "Def": 67,
@@ -8267,7 +8267,7 @@
   {
     "Nat": 436,
     "Pokemon": "Bronzor",
-    "imageUrl": "/sprites/bronzor.png",
+
     "HP": 57,
     "Atk": 24,
     "Def": 86,
@@ -8286,7 +8286,7 @@
   {
     "Nat": 437,
     "Pokemon": "Bronzong",
-    "imageUrl": "/sprites/bronzong.png",
+
     "HP": 67,
     "Atk": 89,
     "Def": 116,
@@ -8305,7 +8305,7 @@
   {
     "Nat": 438,
     "Pokemon": "Bonsly",
-    "imageUrl": "/sprites/bonsly.png",
+
     "HP": 50,
     "Atk": 80,
     "Def": 95,
@@ -8324,7 +8324,7 @@
   {
     "Nat": 439,
     "Pokemon": "Mime Jr.",
-    "imageUrl": "/sprites/mime-jr..png",
+
     "HP": 20,
     "Atk": 25,
     "Def": 45,
@@ -8343,7 +8343,7 @@
   {
     "Nat": 440,
     "Pokemon": "Happiny",
-    "imageUrl": "/sprites/happiny.png",
+
     "HP": 100,
     "Atk": 5,
     "Def": 5,
@@ -8362,7 +8362,7 @@
   {
     "Nat": 441,
     "Pokemon": "Chatot",
-    "imageUrl": "/sprites/chatot.png",
+
     "HP": 76,
     "Atk": 65,
     "Def": 45,
@@ -8381,7 +8381,7 @@
   {
     "Nat": 442,
     "Pokemon": "Spiritomb",
-    "imageUrl": "/sprites/spiritomb.png",
+
     "HP": 50,
     "Atk": 92,
     "Def": 108,
@@ -8400,7 +8400,7 @@
   {
     "Nat": 443,
     "Pokemon": "Gible",
-    "imageUrl": "/sprites/gible.png",
+
     "HP": 58,
     "Atk": 70,
     "Def": 45,
@@ -8419,7 +8419,7 @@
   {
     "Nat": 444,
     "Pokemon": "Gabite",
-    "imageUrl": "/sprites/gabite.png",
+
     "HP": 68,
     "Atk": 90,
     "Def": 65,
@@ -8438,7 +8438,7 @@
   {
     "Nat": 445,
     "Pokemon": "Garchomp",
-    "imageUrl": "/sprites/garchomp.png",
+
     "HP": 108,
     "Atk": 130,
     "Def": 95,
@@ -8457,7 +8457,7 @@
   {
     "Nat": 446,
     "Pokemon": "Munchlax",
-    "imageUrl": "/sprites/munchlax.png",
+
     "HP": 135,
     "Atk": 85,
     "Def": 40,
@@ -8476,7 +8476,7 @@
   {
     "Nat": 447,
     "Pokemon": "Riolu",
-    "imageUrl": "/sprites/riolu.png",
+
     "HP": 40,
     "Atk": 70,
     "Def": 40,
@@ -8495,7 +8495,7 @@
   {
     "Nat": 448,
     "Pokemon": "Lucario",
-    "imageUrl": "/sprites/lucario.png",
+
     "HP": 70,
     "Atk": 110,
     "Def": 70,
@@ -8514,7 +8514,7 @@
   {
     "Nat": 449,
     "Pokemon": "Hippopotas",
-    "imageUrl": "/sprites/hippopotas.png",
+
     "HP": 68,
     "Atk": 72,
     "Def": 78,
@@ -8533,7 +8533,7 @@
   {
     "Nat": 450,
     "Pokemon": "Hippowdon",
-    "imageUrl": "/sprites/hippowdon.png",
+
     "HP": 108,
     "Atk": 112,
     "Def": 118,
@@ -8552,7 +8552,7 @@
   {
     "Nat": 451,
     "Pokemon": "Skorupi",
-    "imageUrl": "/sprites/skorupi.png",
+
     "HP": 40,
     "Atk": 50,
     "Def": 90,
@@ -8571,7 +8571,7 @@
   {
     "Nat": 452,
     "Pokemon": "Drapion",
-    "imageUrl": "/sprites/drapion.png",
+
     "HP": 70,
     "Atk": 90,
     "Def": 110,
@@ -8590,7 +8590,7 @@
   {
     "Nat": 453,
     "Pokemon": "Croagunk",
-    "imageUrl": "/sprites/croagunk.png",
+
     "HP": 48,
     "Atk": 61,
     "Def": 40,
@@ -8609,7 +8609,7 @@
   {
     "Nat": 454,
     "Pokemon": "Toxicroak",
-    "imageUrl": "/sprites/toxicroak.png",
+
     "HP": 83,
     "Atk": 106,
     "Def": 65,
@@ -8628,7 +8628,7 @@
   {
     "Nat": 455,
     "Pokemon": "Carnivine",
-    "imageUrl": "/sprites/carnivine.png",
+
     "HP": 74,
     "Atk": 100,
     "Def": 72,
@@ -8647,7 +8647,7 @@
   {
     "Nat": 456,
     "Pokemon": "Finneon",
-    "imageUrl": "/sprites/finneon.png",
+
     "HP": 49,
     "Atk": 49,
     "Def": 56,
@@ -8666,7 +8666,7 @@
   {
     "Nat": 457,
     "Pokemon": "Lumineon",
-    "imageUrl": "/sprites/lumineon.png",
+
     "HP": 69,
     "Atk": 69,
     "Def": 76,
@@ -8685,7 +8685,7 @@
   {
     "Nat": 458,
     "Pokemon": "Mantyke",
-    "imageUrl": "/sprites/mantyke.png",
+
     "HP": 45,
     "Atk": 20,
     "Def": 50,
@@ -8704,7 +8704,7 @@
   {
     "Nat": 459,
     "Pokemon": "Snover",
-    "imageUrl": "/sprites/snover.png",
+
     "HP": 60,
     "Atk": 62,
     "Def": 50,
@@ -8723,7 +8723,7 @@
   {
     "Nat": 460,
     "Pokemon": "Abomasnow",
-    "imageUrl": "/sprites/abomasnow.png",
+
     "HP": 90,
     "Atk": 92,
     "Def": 75,
@@ -8742,7 +8742,7 @@
   {
     "Nat": 461,
     "Pokemon": "Weavile",
-    "imageUrl": "/sprites/weavile.png",
+
     "HP": 70,
     "Atk": 120,
     "Def": 65,
@@ -8761,7 +8761,7 @@
   {
     "Nat": 462,
     "Pokemon": "Magnezone",
-    "imageUrl": "/sprites/magnezone.png",
+
     "HP": 70,
     "Atk": 70,
     "Def": 115,
@@ -8780,7 +8780,7 @@
   {
     "Nat": 463,
     "Pokemon": "Lickilicky",
-    "imageUrl": "/sprites/lickilicky.png",
+
     "HP": 110,
     "Atk": 85,
     "Def": 95,
@@ -8799,7 +8799,7 @@
   {
     "Nat": 464,
     "Pokemon": "Rhyperior",
-    "imageUrl": "/sprites/rhyperior.png",
+
     "HP": 115,
     "Atk": 140,
     "Def": 130,
@@ -8818,7 +8818,7 @@
   {
     "Nat": 465,
     "Pokemon": "Tangrowth",
-    "imageUrl": "/sprites/tangrowth.png",
+
     "HP": 100,
     "Atk": 100,
     "Def": 125,
@@ -8837,7 +8837,7 @@
   {
     "Nat": 466,
     "Pokemon": "Electivire",
-    "imageUrl": "/sprites/electivire.png",
+
     "HP": 75,
     "Atk": 123,
     "Def": 67,
@@ -8856,7 +8856,7 @@
   {
     "Nat": 467,
     "Pokemon": "Magmortar",
-    "imageUrl": "/sprites/magmortar.png",
+
     "HP": 75,
     "Atk": 95,
     "Def": 67,
@@ -8875,7 +8875,7 @@
   {
     "Nat": 468,
     "Pokemon": "Togekiss",
-    "imageUrl": "/sprites/togekiss.png",
+
     "HP": 85,
     "Atk": 50,
     "Def": 95,
@@ -8894,7 +8894,7 @@
   {
     "Nat": 469,
     "Pokemon": "Yanmega",
-    "imageUrl": "/sprites/yanmega.png",
+
     "HP": 86,
     "Atk": 76,
     "Def": 86,
@@ -8913,7 +8913,7 @@
   {
     "Nat": 470,
     "Pokemon": "Leafeon",
-    "imageUrl": "/sprites/leafeon.png",
+
     "HP": 65,
     "Atk": 110,
     "Def": 130,
@@ -8932,7 +8932,7 @@
   {
     "Nat": 471,
     "Pokemon": "Glaceon",
-    "imageUrl": "/sprites/glaceon.png",
+
     "HP": 65,
     "Atk": 60,
     "Def": 110,
@@ -8951,7 +8951,7 @@
   {
     "Nat": 472,
     "Pokemon": "Gliscor",
-    "imageUrl": "/sprites/gliscor.png",
+
     "HP": 75,
     "Atk": 95,
     "Def": 125,
@@ -8970,7 +8970,7 @@
   {
     "Nat": 473,
     "Pokemon": "Mamoswine",
-    "imageUrl": "/sprites/mamoswine.png",
+
     "HP": 110,
     "Atk": 130,
     "Def": 80,
@@ -8989,7 +8989,7 @@
   {
     "Nat": 474,
     "Pokemon": "Porygon-Z",
-    "imageUrl": "/sprites/porygon-z.png",
+
     "HP": 85,
     "Atk": 80,
     "Def": 70,
@@ -9008,7 +9008,7 @@
   {
     "Nat": 475,
     "Pokemon": "Gallade",
-    "imageUrl": "/sprites/gallade.png",
+
     "HP": 68,
     "Atk": 125,
     "Def": 65,
@@ -9027,7 +9027,7 @@
   {
     "Nat": 476,
     "Pokemon": "Probopass",
-    "imageUrl": "/sprites/probopass.png",
+
     "HP": 60,
     "Atk": 55,
     "Def": 145,
@@ -9046,7 +9046,7 @@
   {
     "Nat": 477,
     "Pokemon": "Dusknoir",
-    "imageUrl": "/sprites/dusknoir.png",
+
     "HP": 45,
     "Atk": 100,
     "Def": 135,
@@ -9065,7 +9065,7 @@
   {
     "Nat": 478,
     "Pokemon": "Froslass",
-    "imageUrl": "/sprites/froslass.png",
+
     "HP": 70,
     "Atk": 80,
     "Def": 70,
@@ -9084,7 +9084,7 @@
   {
     "Nat": 479,
     "Pokemon": "Rotom",
-    "imageUrl": "/sprites/rotom.png",
+
     "HP": 50,
     "Atk": 50,
     "Def": 77,
@@ -9103,7 +9103,7 @@
   {
     "Nat": 480,
     "Pokemon": "Uxie",
-    "imageUrl": "/sprites/uxie.png",
+
     "HP": 75,
     "Atk": 75,
     "Def": 130,
@@ -9122,7 +9122,7 @@
   {
     "Nat": 481,
     "Pokemon": "Mesprit",
-    "imageUrl": "/sprites/mesprit.png",
+
     "HP": 80,
     "Atk": 105,
     "Def": 105,
@@ -9141,7 +9141,7 @@
   {
     "Nat": 482,
     "Pokemon": "Azelf",
-    "imageUrl": "/sprites/azelf.png",
+
     "HP": 75,
     "Atk": 125,
     "Def": 70,
@@ -9160,7 +9160,7 @@
   {
     "Nat": 483,
     "Pokemon": "Dialga",
-    "imageUrl": "/sprites/dialga.png",
+
     "HP": 100,
     "Atk": 120,
     "Def": 120,
@@ -9179,7 +9179,7 @@
   {
     "Nat": 484,
     "Pokemon": "Palkia",
-    "imageUrl": "/sprites/palkia.png",
+
     "HP": 90,
     "Atk": 120,
     "Def": 100,
@@ -9198,7 +9198,7 @@
   {
     "Nat": 485,
     "Pokemon": "Heatran",
-    "imageUrl": "/sprites/heatran.png",
+
     "HP": 91,
     "Atk": 90,
     "Def": 106,
@@ -9217,7 +9217,7 @@
   {
     "Nat": 486,
     "Pokemon": "Regigigas",
-    "imageUrl": "/sprites/regigigas.png",
+
     "HP": 110,
     "Atk": 160,
     "Def": 110,
@@ -9236,7 +9236,7 @@
   {
     "Nat": 487,
     "Pokemon": "Giratina",
-    "imageUrl": "/sprites/giratina.png",
+
     "HP": 150,
     "Atk": 100,
     "Def": 120,
@@ -9255,7 +9255,7 @@
   {
     "Nat": 488,
     "Pokemon": "Cresselia",
-    "imageUrl": "/sprites/cresselia.png",
+
     "HP": 120,
     "Atk": 70,
     "Def": 110,
@@ -9274,7 +9274,7 @@
   {
     "Nat": 489,
     "Pokemon": "Phione",
-    "imageUrl": "/sprites/phione.png",
+
     "HP": 80,
     "Atk": 80,
     "Def": 80,
@@ -9293,7 +9293,7 @@
   {
     "Nat": 490,
     "Pokemon": "Manaphy",
-    "imageUrl": "/sprites/manaphy.png",
+
     "HP": 100,
     "Atk": 100,
     "Def": 100,
@@ -9312,7 +9312,7 @@
   {
     "Nat": 491,
     "Pokemon": "Darkrai",
-    "imageUrl": "/sprites/darkrai.png",
+
     "HP": 70,
     "Atk": 90,
     "Def": 90,
@@ -9331,7 +9331,7 @@
   {
     "Nat": 492,
     "Pokemon": "Shaymin",
-    "imageUrl": "/sprites/shaymin.png",
+
     "HP": 100,
     "Atk": 100,
     "Def": 100,
@@ -9350,7 +9350,7 @@
   {
     "Nat": 493,
     "Pokemon": "Arceus",
-    "imageUrl": "/sprites/arceus.png",
+
     "HP": 120,
     "Atk": 120,
     "Def": 120,
@@ -9369,7 +9369,7 @@
   {
     "Nat": 494,
     "Pokemon": "Victini",
-    "imageUrl": "/sprites/victini.png",
+
     "HP": 100,
     "Atk": 100,
     "Def": 100,
@@ -9388,7 +9388,7 @@
   {
     "Nat": 495,
     "Pokemon": "Snivy",
-    "imageUrl": "/sprites/snivy.png",
+
     "HP": 45,
     "Atk": 45,
     "Def": 55,
@@ -9407,7 +9407,7 @@
   {
     "Nat": 496,
     "Pokemon": "Servine",
-    "imageUrl": "/sprites/servine.png",
+
     "HP": 60,
     "Atk": 60,
     "Def": 75,
@@ -9426,7 +9426,7 @@
   {
     "Nat": 497,
     "Pokemon": "Serperior",
-    "imageUrl": "/sprites/serperior.png",
+
     "HP": 75,
     "Atk": 75,
     "Def": 95,
@@ -9445,7 +9445,7 @@
   {
     "Nat": 498,
     "Pokemon": "Tepig",
-    "imageUrl": "/sprites/tepig.png",
+
     "HP": 65,
     "Atk": 63,
     "Def": 45,
@@ -9464,7 +9464,7 @@
   {
     "Nat": 499,
     "Pokemon": "Pignite",
-    "imageUrl": "/sprites/pignite.png",
+
     "HP": 90,
     "Atk": 93,
     "Def": 55,
@@ -9483,7 +9483,7 @@
   {
     "Nat": 500,
     "Pokemon": "Emboar",
-    "imageUrl": "/sprites/emboar.png",
+
     "HP": 110,
     "Atk": 123,
     "Def": 65,
@@ -9502,7 +9502,7 @@
   {
     "Nat": 501,
     "Pokemon": "Oshawott",
-    "imageUrl": "/sprites/oshawott.png",
+
     "HP": 55,
     "Atk": 55,
     "Def": 45,
@@ -9521,7 +9521,7 @@
   {
     "Nat": 502,
     "Pokemon": "Dewott",
-    "imageUrl": "/sprites/dewott.png",
+
     "HP": 75,
     "Atk": 75,
     "Def": 60,
@@ -9540,7 +9540,7 @@
   {
     "Nat": 503,
     "Pokemon": "Samurott",
-    "imageUrl": "/sprites/samurott.png",
+
     "HP": 95,
     "Atk": 100,
     "Def": 85,
@@ -9559,7 +9559,7 @@
   {
     "Nat": 504,
     "Pokemon": "Patrat",
-    "imageUrl": "/sprites/patrat.png",
+
     "HP": 45,
     "Atk": 55,
     "Def": 39,
@@ -9578,7 +9578,7 @@
   {
     "Nat": 505,
     "Pokemon": "Watchog",
-    "imageUrl": "/sprites/watchog.png",
+
     "HP": 60,
     "Atk": 85,
     "Def": 69,
@@ -9597,7 +9597,7 @@
   {
     "Nat": 506,
     "Pokemon": "Lillipup",
-    "imageUrl": "/sprites/lillipup.png",
+
     "HP": 45,
     "Atk": 60,
     "Def": 45,
@@ -9616,7 +9616,7 @@
   {
     "Nat": 507,
     "Pokemon": "Herdier",
-    "imageUrl": "/sprites/herdier.png",
+
     "HP": 65,
     "Atk": 80,
     "Def": 65,
@@ -9635,7 +9635,7 @@
   {
     "Nat": 508,
     "Pokemon": "Stoutland",
-    "imageUrl": "/sprites/stoutland.png",
+
     "HP": 85,
     "Atk": 110,
     "Def": 90,
@@ -9654,7 +9654,7 @@
   {
     "Nat": 509,
     "Pokemon": "Purrloin",
-    "imageUrl": "/sprites/purrloin.png",
+
     "HP": 41,
     "Atk": 50,
     "Def": 37,
@@ -9673,7 +9673,7 @@
   {
     "Nat": 510,
     "Pokemon": "Liepard",
-    "imageUrl": "/sprites/liepard.png",
+
     "HP": 64,
     "Atk": 88,
     "Def": 50,
@@ -9692,7 +9692,7 @@
   {
     "Nat": 511,
     "Pokemon": "Pansage",
-    "imageUrl": "/sprites/pansage.png",
+
     "HP": 50,
     "Atk": 53,
     "Def": 48,
@@ -9711,7 +9711,7 @@
   {
     "Nat": 512,
     "Pokemon": "Simisage",
-    "imageUrl": "/sprites/simisage.png",
+
     "HP": 75,
     "Atk": 98,
     "Def": 63,
@@ -9730,7 +9730,7 @@
   {
     "Nat": 513,
     "Pokemon": "Pansear",
-    "imageUrl": "/sprites/pansear.png",
+
     "HP": 50,
     "Atk": 53,
     "Def": 48,
@@ -9749,7 +9749,7 @@
   {
     "Nat": 514,
     "Pokemon": "Simisear",
-    "imageUrl": "/sprites/simisear.png",
+
     "HP": 75,
     "Atk": 98,
     "Def": 63,
@@ -9768,7 +9768,7 @@
   {
     "Nat": 515,
     "Pokemon": "Panpour",
-    "imageUrl": "/sprites/panpour.png",
+
     "HP": 50,
     "Atk": 53,
     "Def": 48,
@@ -9787,7 +9787,7 @@
   {
     "Nat": 516,
     "Pokemon": "Simipour",
-    "imageUrl": "/sprites/simipour.png",
+
     "HP": 75,
     "Atk": 98,
     "Def": 63,
@@ -9806,7 +9806,7 @@
   {
     "Nat": 517,
     "Pokemon": "Munna",
-    "imageUrl": "/sprites/munna.png",
+
     "HP": 76,
     "Atk": 25,
     "Def": 45,
@@ -9825,7 +9825,7 @@
   {
     "Nat": 518,
     "Pokemon": "Musharna",
-    "imageUrl": "/sprites/musharna.png",
+
     "HP": 116,
     "Atk": 55,
     "Def": 85,
@@ -9844,7 +9844,7 @@
   {
     "Nat": 519,
     "Pokemon": "Pidove",
-    "imageUrl": "/sprites/pidove.png",
+
     "HP": 50,
     "Atk": 55,
     "Def": 50,
@@ -9863,7 +9863,7 @@
   {
     "Nat": 520,
     "Pokemon": "Tranquill",
-    "imageUrl": "/sprites/tranquill.png",
+
     "HP": 62,
     "Atk": 77,
     "Def": 62,
@@ -9882,7 +9882,7 @@
   {
     "Nat": 521,
     "Pokemon": "Unfezant",
-    "imageUrl": "/sprites/unfezant.png",
+
     "HP": 80,
     "Atk": 115,
     "Def": 80,
@@ -9901,7 +9901,7 @@
   {
     "Nat": 522,
     "Pokemon": "Blitzle",
-    "imageUrl": "/sprites/blitzle.png",
+
     "HP": 45,
     "Atk": 60,
     "Def": 32,
@@ -9920,7 +9920,7 @@
   {
     "Nat": 523,
     "Pokemon": "Zebstrika",
-    "imageUrl": "/sprites/zebstrika.png",
+
     "HP": 75,
     "Atk": 100,
     "Def": 63,
@@ -9939,7 +9939,7 @@
   {
     "Nat": 524,
     "Pokemon": "Roggenrola",
-    "imageUrl": "/sprites/roggenrola.png",
+
     "HP": 55,
     "Atk": 75,
     "Def": 85,
@@ -9958,7 +9958,7 @@
   {
     "Nat": 525,
     "Pokemon": "Boldore",
-    "imageUrl": "/sprites/boldore.png",
+
     "HP": 70,
     "Atk": 105,
     "Def": 105,
@@ -9977,7 +9977,7 @@
   {
     "Nat": 526,
     "Pokemon": "Gigalith",
-    "imageUrl": "/sprites/gigalith.png",
+
     "HP": 85,
     "Atk": 135,
     "Def": 130,
@@ -9996,7 +9996,7 @@
   {
     "Nat": 527,
     "Pokemon": "Woobat",
-    "imageUrl": "/sprites/woobat.png",
+
     "HP": 65,
     "Atk": 45,
     "Def": 43,
@@ -10015,7 +10015,7 @@
   {
     "Nat": 528,
     "Pokemon": "Swoobat",
-    "imageUrl": "/sprites/swoobat.png",
+
     "HP": 67,
     "Atk": 57,
     "Def": 55,
@@ -10034,7 +10034,7 @@
   {
     "Nat": 529,
     "Pokemon": "Drilbur",
-    "imageUrl": "/sprites/drilbur.png",
+
     "HP": 60,
     "Atk": 85,
     "Def": 40,
@@ -10053,7 +10053,7 @@
   {
     "Nat": 530,
     "Pokemon": "Excadrill",
-    "imageUrl": "/sprites/excadrill.png",
+
     "HP": 110,
     "Atk": 135,
     "Def": 60,
@@ -10072,7 +10072,7 @@
   {
     "Nat": 531,
     "Pokemon": "Audino",
-    "imageUrl": "/sprites/audino.png",
+
     "HP": 103,
     "Atk": 60,
     "Def": 86,
@@ -10091,7 +10091,7 @@
   {
     "Nat": 532,
     "Pokemon": "Timburr",
-    "imageUrl": "/sprites/timburr.png",
+
     "HP": 75,
     "Atk": 80,
     "Def": 55,
@@ -10110,7 +10110,7 @@
   {
     "Nat": 533,
     "Pokemon": "Gurdurr",
-    "imageUrl": "/sprites/gurdurr.png",
+
     "HP": 85,
     "Atk": 105,
     "Def": 85,
@@ -10129,7 +10129,7 @@
   {
     "Nat": 534,
     "Pokemon": "Conkeldurr",
-    "imageUrl": "/sprites/conkeldurr.png",
+
     "HP": 105,
     "Atk": 140,
     "Def": 95,
@@ -10148,7 +10148,7 @@
   {
     "Nat": 535,
     "Pokemon": "Tympole",
-    "imageUrl": "/sprites/tympole.png",
+
     "HP": 50,
     "Atk": 50,
     "Def": 40,
@@ -10167,7 +10167,7 @@
   {
     "Nat": 536,
     "Pokemon": "Palpitoad",
-    "imageUrl": "/sprites/palpitoad.png",
+
     "HP": 75,
     "Atk": 65,
     "Def": 55,
@@ -10186,7 +10186,7 @@
   {
     "Nat": 537,
     "Pokemon": "Seismitoad",
-    "imageUrl": "/sprites/seismitoad.png",
+
     "HP": 105,
     "Atk": 95,
     "Def": 75,
@@ -10205,7 +10205,7 @@
   {
     "Nat": 538,
     "Pokemon": "Throh",
-    "imageUrl": "/sprites/throh.png",
+
     "HP": 120,
     "Atk": 100,
     "Def": 85,
@@ -10224,7 +10224,7 @@
   {
     "Nat": 539,
     "Pokemon": "Sawk",
-    "imageUrl": "/sprites/sawk.png",
+
     "HP": 75,
     "Atk": 125,
     "Def": 75,
@@ -10243,7 +10243,7 @@
   {
     "Nat": 540,
     "Pokemon": "Sewaddle",
-    "imageUrl": "/sprites/sewaddle.png",
+
     "HP": 45,
     "Atk": 53,
     "Def": 70,
@@ -10262,7 +10262,7 @@
   {
     "Nat": 541,
     "Pokemon": "Swadloon",
-    "imageUrl": "/sprites/swadloon.png",
+
     "HP": 55,
     "Atk": 63,
     "Def": 90,
@@ -10281,7 +10281,7 @@
   {
     "Nat": 542,
     "Pokemon": "Leavanny",
-    "imageUrl": "/sprites/leavanny.png",
+
     "HP": 75,
     "Atk": 103,
     "Def": 80,
@@ -10300,7 +10300,7 @@
   {
     "Nat": 543,
     "Pokemon": "Venipede",
-    "imageUrl": "/sprites/venipede.png",
+
     "HP": 30,
     "Atk": 45,
     "Def": 59,
@@ -10319,7 +10319,7 @@
   {
     "Nat": 544,
     "Pokemon": "Whirlipede",
-    "imageUrl": "/sprites/whirlipede.png",
+
     "HP": 40,
     "Atk": 55,
     "Def": 99,
@@ -10338,7 +10338,7 @@
   {
     "Nat": 545,
     "Pokemon": "Scolipede",
-    "imageUrl": "/sprites/scolipede.png",
+
     "HP": 60,
     "Atk": 100,
     "Def": 89,
@@ -10357,7 +10357,7 @@
   {
     "Nat": 546,
     "Pokemon": "Cottonee",
-    "imageUrl": "/sprites/cottonee.png",
+
     "HP": 40,
     "Atk": 27,
     "Def": 60,
@@ -10376,7 +10376,7 @@
   {
     "Nat": 547,
     "Pokemon": "Whimsicott",
-    "imageUrl": "/sprites/whimsicott.png",
+
     "HP": 60,
     "Atk": 67,
     "Def": 85,
@@ -10395,7 +10395,7 @@
   {
     "Nat": 548,
     "Pokemon": "Petilil",
-    "imageUrl": "/sprites/petilil.png",
+
     "HP": 45,
     "Atk": 35,
     "Def": 50,
@@ -10414,7 +10414,7 @@
   {
     "Nat": 549,
     "Pokemon": "Lilligant",
-    "imageUrl": "/sprites/lilligant.png",
+
     "HP": 70,
     "Atk": 60,
     "Def": 75,
@@ -10433,7 +10433,7 @@
   {
     "Nat": 550,
     "Pokemon": "Red Basculin",
-    "imageUrl": "/sprites/red-basculin.png",
+
     "HP": 70,
     "Atk": 92,
     "Def": 65,
@@ -10452,7 +10452,7 @@
   {
     "Nat": 551,
     "Pokemon": "Sandile",
-    "imageUrl": "/sprites/sandile.png",
+
     "HP": 50,
     "Atk": 72,
     "Def": 35,
@@ -10471,7 +10471,7 @@
   {
     "Nat": 552,
     "Pokemon": "Krokorok",
-    "imageUrl": "/sprites/krokorok.png",
+
     "HP": 60,
     "Atk": 82,
     "Def": 45,
@@ -10490,7 +10490,7 @@
   {
     "Nat": 553,
     "Pokemon": "Krookodile",
-    "imageUrl": "/sprites/krookodile.png",
+
     "HP": 95,
     "Atk": 117,
     "Def": 80,
@@ -10509,7 +10509,7 @@
   {
     "Nat": 554,
     "Pokemon": "Darumaka",
-    "imageUrl": "/sprites/darumaka.png",
+
     "HP": 70,
     "Atk": 90,
     "Def": 45,
@@ -10528,7 +10528,7 @@
   {
     "Nat": 555,
     "Pokemon": "Darmanitan",
-    "imageUrl": "/sprites/darmanitan.png",
+
     "HP": 105,
     "Atk": 140,
     "Def": 55,
@@ -10547,7 +10547,7 @@
   {
     "Nat": 556,
     "Pokemon": "Maractus",
-    "imageUrl": "/sprites/maractus.png",
+
     "HP": 75,
     "Atk": 86,
     "Def": 67,
@@ -10566,7 +10566,7 @@
   {
     "Nat": 557,
     "Pokemon": "Dwebble",
-    "imageUrl": "/sprites/dwebble.png",
+
     "HP": 50,
     "Atk": 65,
     "Def": 85,
@@ -10585,7 +10585,7 @@
   {
     "Nat": 558,
     "Pokemon": "Crustle",
-    "imageUrl": "/sprites/crustle.png",
+
     "HP": 70,
     "Atk": 105,
     "Def": 125,
@@ -10604,7 +10604,7 @@
   {
     "Nat": 559,
     "Pokemon": "Scraggy",
-    "imageUrl": "/sprites/scraggy.png",
+
     "HP": 50,
     "Atk": 75,
     "Def": 70,
@@ -10623,7 +10623,7 @@
   {
     "Nat": 560,
     "Pokemon": "Scrafty",
-    "imageUrl": "/sprites/scrafty.png",
+
     "HP": 65,
     "Atk": 90,
     "Def": 115,
@@ -10642,7 +10642,7 @@
   {
     "Nat": 561,
     "Pokemon": "Sigilyph",
-    "imageUrl": "/sprites/sigilyph.png",
+
     "HP": 72,
     "Atk": 58,
     "Def": 80,
@@ -10661,7 +10661,7 @@
   {
     "Nat": 562,
     "Pokemon": "Yamask",
-    "imageUrl": "/sprites/yamask.png",
+
     "HP": 38,
     "Atk": 30,
     "Def": 85,
@@ -10680,7 +10680,7 @@
   {
     "Nat": 563,
     "Pokemon": "Cofagrigus",
-    "imageUrl": "/sprites/cofagrigus.png",
+
     "HP": 58,
     "Atk": 50,
     "Def": 145,
@@ -10699,7 +10699,7 @@
   {
     "Nat": 564,
     "Pokemon": "Tirtouga",
-    "imageUrl": "/sprites/tirtouga.png",
+
     "HP": 54,
     "Atk": 78,
     "Def": 103,
@@ -10718,7 +10718,7 @@
   {
     "Nat": 565,
     "Pokemon": "Carracosta",
-    "imageUrl": "/sprites/carracosta.png",
+
     "HP": 74,
     "Atk": 108,
     "Def": 133,
@@ -10737,7 +10737,7 @@
   {
     "Nat": 566,
     "Pokemon": "Archen",
-    "imageUrl": "/sprites/archen.png",
+
     "HP": 55,
     "Atk": 112,
     "Def": 45,
@@ -10756,7 +10756,7 @@
   {
     "Nat": 567,
     "Pokemon": "Archeops",
-    "imageUrl": "/sprites/archeops.png",
+
     "HP": 75,
     "Atk": 140,
     "Def": 65,
@@ -10775,7 +10775,7 @@
   {
     "Nat": 568,
     "Pokemon": "Trubbish",
-    "imageUrl": "/sprites/trubbish.png",
+
     "HP": 50,
     "Atk": 50,
     "Def": 62,
@@ -10794,7 +10794,7 @@
   {
     "Nat": 569,
     "Pokemon": "Garbodor",
-    "imageUrl": "/sprites/garbodor.png",
+
     "HP": 80,
     "Atk": 95,
     "Def": 82,
@@ -10813,7 +10813,7 @@
   {
     "Nat": 570,
     "Pokemon": "Zorua",
-    "imageUrl": "/sprites/zorua.png",
+
     "HP": 40,
     "Atk": 65,
     "Def": 40,
@@ -10832,7 +10832,7 @@
   {
     "Nat": 571,
     "Pokemon": "Zoroark",
-    "imageUrl": "/sprites/zoroark.png",
+
     "HP": 60,
     "Atk": 105,
     "Def": 60,
@@ -10851,7 +10851,7 @@
   {
     "Nat": 572,
     "Pokemon": "Minccino",
-    "imageUrl": "/sprites/minccino.png",
+
     "HP": 55,
     "Atk": 50,
     "Def": 40,
@@ -10870,7 +10870,7 @@
   {
     "Nat": 573,
     "Pokemon": "Ciccino",
-    "imageUrl": "/sprites/ciccino.png",
+
     "HP": 75,
     "Atk": 95,
     "Def": 60,
@@ -10889,7 +10889,7 @@
   {
     "Nat": 574,
     "Pokemon": "Gothita",
-    "imageUrl": "/sprites/gothita.png",
+
     "HP": 45,
     "Atk": 30,
     "Def": 50,
@@ -10908,7 +10908,7 @@
   {
     "Nat": 575,
     "Pokemon": "Gothorita",
-    "imageUrl": "/sprites/gothorita.png",
+
     "HP": 60,
     "Atk": 45,
     "Def": 70,
@@ -10927,7 +10927,7 @@
   {
     "Nat": 576,
     "Pokemon": "Gothitelle",
-    "imageUrl": "/sprites/gothitelle.png",
+
     "HP": 70,
     "Atk": 55,
     "Def": 95,
@@ -10946,7 +10946,7 @@
   {
     "Nat": 577,
     "Pokemon": "Solosis",
-    "imageUrl": "/sprites/solosis.png",
+
     "HP": 45,
     "Atk": 30,
     "Def": 40,
@@ -10965,7 +10965,7 @@
   {
     "Nat": 578,
     "Pokemon": "Duosion",
-    "imageUrl": "/sprites/duosion.png",
+
     "HP": 65,
     "Atk": 40,
     "Def": 50,
@@ -10984,7 +10984,7 @@
   {
     "Nat": 579,
     "Pokemon": "Reuniclus",
-    "imageUrl": "/sprites/reuniclus.png",
+
     "HP": 110,
     "Atk": 65,
     "Def": 75,
@@ -11003,7 +11003,7 @@
   {
     "Nat": 580,
     "Pokemon": "Ducklett",
-    "imageUrl": "/sprites/ducklett.png",
+
     "HP": 62,
     "Atk": 44,
     "Def": 50,
@@ -11022,7 +11022,7 @@
   {
     "Nat": 581,
     "Pokemon": "Swanna",
-    "imageUrl": "/sprites/swanna.png",
+
     "HP": 75,
     "Atk": 87,
     "Def": 63,
@@ -11041,7 +11041,7 @@
   {
     "Nat": 582,
     "Pokemon": "Vanillite",
-    "imageUrl": "/sprites/vanillite.png",
+
     "HP": 36,
     "Atk": 50,
     "Def": 50,
@@ -11060,7 +11060,7 @@
   {
     "Nat": 583,
     "Pokemon": "Vanillish",
-    "imageUrl": "/sprites/vanillish.png",
+
     "HP": 51,
     "Atk": 65,
     "Def": 65,
@@ -11079,7 +11079,7 @@
   {
     "Nat": 584,
     "Pokemon": "Vanilluxe",
-    "imageUrl": "/sprites/vanilluxe.png",
+
     "HP": 71,
     "Atk": 95,
     "Def": 85,
@@ -11098,7 +11098,7 @@
   {
     "Nat": 585,
     "Pokemon": "Deerling",
-    "imageUrl": "/sprites/deerling.png",
+
     "HP": 60,
     "Atk": 60,
     "Def": 50,
@@ -11117,7 +11117,7 @@
   {
     "Nat": 586,
     "Pokemon": "Sawsbuck",
-    "imageUrl": "/sprites/sawsbuck.png",
+
     "HP": 80,
     "Atk": 100,
     "Def": 70,
@@ -11136,7 +11136,7 @@
   {
     "Nat": 587,
     "Pokemon": "Emolga",
-    "imageUrl": "/sprites/emolga.png",
+
     "HP": 55,
     "Atk": 75,
     "Def": 60,
@@ -11155,7 +11155,7 @@
   {
     "Nat": 588,
     "Pokemon": "Karrablast",
-    "imageUrl": "/sprites/karrablast.png",
+
     "HP": 50,
     "Atk": 75,
     "Def": 45,
@@ -11174,7 +11174,7 @@
   {
     "Nat": 589,
     "Pokemon": "Escavalier",
-    "imageUrl": "/sprites/escavalier.png",
+
     "HP": 70,
     "Atk": 135,
     "Def": 105,
@@ -11193,7 +11193,7 @@
   {
     "Nat": 590,
     "Pokemon": "Foongus",
-    "imageUrl": "/sprites/foongus.png",
+
     "HP": 69,
     "Atk": 55,
     "Def": 45,
@@ -11212,7 +11212,7 @@
   {
     "Nat": 591,
     "Pokemon": "Amoonguss",
-    "imageUrl": "/sprites/amoonguss.png",
+
     "HP": 114,
     "Atk": 85,
     "Def": 70,
@@ -11231,7 +11231,7 @@
   {
     "Nat": 592,
     "Pokemon": "Frillish",
-    "imageUrl": "/sprites/frillish.png",
+
     "HP": 55,
     "Atk": 40,
     "Def": 50,
@@ -11250,7 +11250,7 @@
   {
     "Nat": 593,
     "Pokemon": "Jellicent",
-    "imageUrl": "/sprites/jellicent.png",
+
     "HP": 100,
     "Atk": 60,
     "Def": 70,
@@ -11269,7 +11269,7 @@
   {
     "Nat": 594,
     "Pokemon": "Alomomola",
-    "imageUrl": "/sprites/alomomola.png",
+
     "HP": 165,
     "Atk": 75,
     "Def": 80,
@@ -11288,7 +11288,7 @@
   {
     "Nat": 595,
     "Pokemon": "Joltik",
-    "imageUrl": "/sprites/joltik.png",
+
     "HP": 50,
     "Atk": 47,
     "Def": 50,
@@ -11307,7 +11307,7 @@
   {
     "Nat": 596,
     "Pokemon": "Galvantula",
-    "imageUrl": "/sprites/galvantula.png",
+
     "HP": 70,
     "Atk": 77,
     "Def": 60,
@@ -11326,7 +11326,7 @@
   {
     "Nat": 597,
     "Pokemon": "Ferroseed",
-    "imageUrl": "/sprites/ferroseed.png",
+
     "HP": 44,
     "Atk": 50,
     "Def": 91,
@@ -11345,7 +11345,7 @@
   {
     "Nat": 598,
     "Pokemon": "Ferrothorn",
-    "imageUrl": "/sprites/ferrothorn.png",
+
     "HP": 74,
     "Atk": 94,
     "Def": 131,
@@ -11364,7 +11364,7 @@
   {
     "Nat": 599,
     "Pokemon": "Klink",
-    "imageUrl": "/sprites/klink.png",
+
     "HP": 40,
     "Atk": 55,
     "Def": 70,
@@ -11383,7 +11383,7 @@
   {
     "Nat": 600,
     "Pokemon": "Klang",
-    "imageUrl": "/sprites/klang.png",
+
     "HP": 60,
     "Atk": 80,
     "Def": 95,
@@ -11402,7 +11402,7 @@
   {
     "Nat": 601,
     "Pokemon": "Klinklang",
-    "imageUrl": "/sprites/klinklang.png",
+
     "HP": 60,
     "Atk": 100,
     "Def": 115,
@@ -11421,7 +11421,7 @@
   {
     "Nat": 602,
     "Pokemon": "Tynamo",
-    "imageUrl": "/sprites/tynamo.png",
+
     "HP": 35,
     "Atk": 55,
     "Def": 40,
@@ -11440,7 +11440,7 @@
   {
     "Nat": 603,
     "Pokemon": "Eelektrik",
-    "imageUrl": "/sprites/eelektrik.png",
+
     "HP": 65,
     "Atk": 85,
     "Def": 70,
@@ -11459,7 +11459,7 @@
   {
     "Nat": 604,
     "Pokemon": "Eelektross",
-    "imageUrl": "/sprites/eelektross.png",
+
     "HP": 85,
     "Atk": 115,
     "Def": 80,
@@ -11478,7 +11478,7 @@
   {
     "Nat": 605,
     "Pokemon": "Elgyem",
-    "imageUrl": "/sprites/elgyem.png",
+
     "HP": 55,
     "Atk": 55,
     "Def": 55,
@@ -11497,7 +11497,7 @@
   {
     "Nat": 606,
     "Pokemon": "Beheeyem",
-    "imageUrl": "/sprites/beheeyem.png",
+
     "HP": 75,
     "Atk": 75,
     "Def": 75,
@@ -11516,7 +11516,7 @@
   {
     "Nat": 607,
     "Pokemon": "Litwick",
-    "imageUrl": "/sprites/litwick.png",
+
     "HP": 50,
     "Atk": 30,
     "Def": 55,
@@ -11535,7 +11535,7 @@
   {
     "Nat": 608,
     "Pokemon": "Lampent",
-    "imageUrl": "/sprites/lampent.png",
+
     "HP": 60,
     "Atk": 40,
     "Def": 60,
@@ -11554,7 +11554,7 @@
   {
     "Nat": 609,
     "Pokemon": "Chandelure",
-    "imageUrl": "/sprites/chandelure.png",
+
     "HP": 60,
     "Atk": 55,
     "Def": 90,
@@ -11573,7 +11573,7 @@
   {
     "Nat": 610,
     "Pokemon": "Axew",
-    "imageUrl": "/sprites/axew.png",
+
     "HP": 46,
     "Atk": 87,
     "Def": 60,
@@ -11592,7 +11592,7 @@
   {
     "Nat": 611,
     "Pokemon": "Fraxure",
-    "imageUrl": "/sprites/fraxure.png",
+
     "HP": 66,
     "Atk": 117,
     "Def": 70,
@@ -11611,7 +11611,7 @@
   {
     "Nat": 612,
     "Pokemon": "Haxorus",
-    "imageUrl": "/sprites/haxorus.png",
+
     "HP": 76,
     "Atk": 147,
     "Def": 90,
@@ -11630,7 +11630,7 @@
   {
     "Nat": 613,
     "Pokemon": "Cubchoo",
-    "imageUrl": "/sprites/cubchoo.png",
+
     "HP": 55,
     "Atk": 70,
     "Def": 40,
@@ -11649,7 +11649,7 @@
   {
     "Nat": 614,
     "Pokemon": "Beartic",
-    "imageUrl": "/sprites/beartic.png",
+
     "HP": 95,
     "Atk": 130,
     "Def": 80,
@@ -11668,7 +11668,7 @@
   {
     "Nat": 615,
     "Pokemon": "Cryogonal",
-    "imageUrl": "/sprites/cryogonal.png",
+
     "HP": 80,
     "Atk": 50,
     "Def": 50,
@@ -11687,7 +11687,7 @@
   {
     "Nat": 616,
     "Pokemon": "Shelmet",
-    "imageUrl": "/sprites/shelmet.png",
+
     "HP": 50,
     "Atk": 40,
     "Def": 85,
@@ -11706,7 +11706,7 @@
   {
     "Nat": 617,
     "Pokemon": "Accelgor",
-    "imageUrl": "/sprites/accelgor.png",
+
     "HP": 80,
     "Atk": 70,
     "Def": 40,
@@ -11725,7 +11725,7 @@
   {
     "Nat": 618,
     "Pokemon": "Stunfisk",
-    "imageUrl": "/sprites/stunfisk.png",
+
     "HP": 109,
     "Atk": 66,
     "Def": 84,
@@ -11744,7 +11744,7 @@
   {
     "Nat": 619,
     "Pokemon": "Mienfoo",
-    "imageUrl": "/sprites/mienfoo.png",
+
     "HP": 45,
     "Atk": 85,
     "Def": 50,
@@ -11763,7 +11763,7 @@
   {
     "Nat": 620,
     "Pokemon": "Mienshao",
-    "imageUrl": "/sprites/mienshao.png",
+
     "HP": 65,
     "Atk": 125,
     "Def": 60,
@@ -11782,7 +11782,7 @@
   {
     "Nat": 621,
     "Pokemon": "Druddigon",
-    "imageUrl": "/sprites/druddigon.png",
+
     "HP": 77,
     "Atk": 120,
     "Def": 90,
@@ -11801,7 +11801,7 @@
   {
     "Nat": 622,
     "Pokemon": "Golett",
-    "imageUrl": "/sprites/golett.png",
+
     "HP": 59,
     "Atk": 74,
     "Def": 50,
@@ -11820,7 +11820,7 @@
   {
     "Nat": 623,
     "Pokemon": "Golurk",
-    "imageUrl": "/sprites/golurk.png",
+
     "HP": 89,
     "Atk": 124,
     "Def": 80,
@@ -11839,7 +11839,7 @@
   {
     "Nat": 624,
     "Pokemon": "Pawniard",
-    "imageUrl": "/sprites/pawniard.png",
+
     "HP": 45,
     "Atk": 85,
     "Def": 70,
@@ -11858,7 +11858,7 @@
   {
     "Nat": 625,
     "Pokemon": "Bisharp",
-    "imageUrl": "/sprites/bisharp.png",
+
     "HP": 65,
     "Atk": 125,
     "Def": 100,
@@ -11877,7 +11877,7 @@
   {
     "Nat": 626,
     "Pokemon": "Bouffalant",
-    "imageUrl": "/sprites/bouffalant.png",
+
     "HP": 95,
     "Atk": 110,
     "Def": 95,
@@ -11896,7 +11896,7 @@
   {
     "Nat": 627,
     "Pokemon": "Rufflet",
-    "imageUrl": "/sprites/rufflet.png",
+
     "HP": 70,
     "Atk": 83,
     "Def": 50,
@@ -11915,7 +11915,7 @@
   {
     "Nat": 628,
     "Pokemon": "Braviary",
-    "imageUrl": "/sprites/braviary.png",
+
     "HP": 100,
     "Atk": 123,
     "Def": 75,
@@ -11934,7 +11934,7 @@
   {
     "Nat": 629,
     "Pokemon": "Vullaby",
-    "imageUrl": "/sprites/vullaby.png",
+
     "HP": 70,
     "Atk": 55,
     "Def": 75,
@@ -11953,7 +11953,7 @@
   {
     "Nat": 630,
     "Pokemon": "Mandibuzz",
-    "imageUrl": "/sprites/mandibuzz.png",
+
     "HP": 110,
     "Atk": 65,
     "Def": 105,
@@ -11972,7 +11972,7 @@
   {
     "Nat": 631,
     "Pokemon": "Heatmor",
-    "imageUrl": "/sprites/heatmor.png",
+
     "HP": 85,
     "Atk": 97,
     "Def": 66,
@@ -11991,7 +11991,7 @@
   {
     "Nat": 632,
     "Pokemon": "Durant",
-    "imageUrl": "/sprites/durant.png",
+
     "HP": 58,
     "Atk": 109,
     "Def": 112,
@@ -12010,7 +12010,7 @@
   {
     "Nat": 633,
     "Pokemon": "Deino",
-    "imageUrl": "/sprites/deino.png",
+
     "HP": 52,
     "Atk": 65,
     "Def": 50,
@@ -12029,7 +12029,7 @@
   {
     "Nat": 634,
     "Pokemon": "Zweilous",
-    "imageUrl": "/sprites/zweilous.png",
+
     "HP": 72,
     "Atk": 85,
     "Def": 70,
@@ -12048,7 +12048,7 @@
   {
     "Nat": 635,
     "Pokemon": "Hydreigon",
-    "imageUrl": "/sprites/hydreigon.png",
+
     "HP": 92,
     "Atk": 105,
     "Def": 90,
@@ -12067,7 +12067,7 @@
   {
     "Nat": 636,
     "Pokemon": "Larvesta",
-    "imageUrl": "/sprites/larvesta.png",
+
     "HP": 55,
     "Atk": 85,
     "Def": 55,
@@ -12086,7 +12086,7 @@
   {
     "Nat": 637,
     "Pokemon": "Volcarona",
-    "imageUrl": "/sprites/volcarona.png",
+
     "HP": 85,
     "Atk": 60,
     "Def": 65,
@@ -12105,7 +12105,7 @@
   {
     "Nat": 638,
     "Pokemon": "Cobalion",
-    "imageUrl": "/sprites/cobalion.png",
+
     "HP": 91,
     "Atk": 90,
     "Def": 129,
@@ -12124,7 +12124,7 @@
   {
     "Nat": 639,
     "Pokemon": "Terrakion",
-    "imageUrl": "/sprites/terrakion.png",
+
     "HP": 91,
     "Atk": 129,
     "Def": 90,
@@ -12143,7 +12143,7 @@
   {
     "Nat": 640,
     "Pokemon": "Virizion",
-    "imageUrl": "/sprites/virizion.png",
+
     "HP": 91,
     "Atk": 90,
     "Def": 72,
@@ -12162,7 +12162,7 @@
   {
     "Nat": 641,
     "Pokemon": "Tornadus",
-    "imageUrl": "/sprites/tornadus.png",
+
     "HP": 79,
     "Atk": 115,
     "Def": 70,
@@ -12181,7 +12181,7 @@
   {
     "Nat": 642,
     "Pokemon": "Thundurus",
-    "imageUrl": "/sprites/thundurus.png",
+
     "HP": 79,
     "Atk": 115,
     "Def": 70,
@@ -12200,7 +12200,7 @@
   {
     "Nat": 643,
     "Pokemon": "Reshiram",
-    "imageUrl": "/sprites/reshiram.png",
+
     "HP": 100,
     "Atk": 120,
     "Def": 100,
@@ -12219,7 +12219,7 @@
   {
     "Nat": 644,
     "Pokemon": "Zekrom",
-    "imageUrl": "/sprites/zekrom.png",
+
     "HP": 100,
     "Atk": 150,
     "Def": 120,
@@ -12238,7 +12238,7 @@
   {
     "Nat": 645,
     "Pokemon": "Landorus",
-    "imageUrl": "/sprites/landorus.png",
+
     "HP": 89,
     "Atk": 125,
     "Def": 90,
@@ -12257,7 +12257,7 @@
   {
     "Nat": 646,
     "Pokemon": "Kyurem",
-    "imageUrl": "/sprites/kyurem.png",
+
     "HP": 125,
     "Atk": 130,
     "Def": 90,
@@ -12276,7 +12276,7 @@
   {
     "Nat": 647,
     "Pokemon": "Keldeo",
-    "imageUrl": "/sprites/keldeo.png",
+
     "HP": 91,
     "Atk": 72,
     "Def": 90,
@@ -12295,7 +12295,7 @@
   {
     "Nat": 648,
     "Pokemon": "Meloetta (A)",
-    "imageUrl": "/sprites/meloetta-(a).png",
+
     "HP": 100,
     "Atk": 77,
     "Def": 77,
@@ -12314,7 +12314,7 @@
   {
     "Nat": 649,
     "Pokemon": "Genesect",
-    "imageUrl": "/sprites/genesect.png",
+
     "HP": 71,
     "Atk": 120,
     "Def": 95,
@@ -12333,7 +12333,7 @@
   {
     "Nat": 650,
     "Pokemon": "Chespin",
-    "imageUrl": "/sprites/chespin.png",
+
     "HP": 56,
     "Atk": 61,
     "Def": 65,
@@ -12352,7 +12352,7 @@
   {
     "Nat": 651,
     "Pokemon": "Quilladin",
-    "imageUrl": "/sprites/quilladin.png",
+
     "HP": 61,
     "Atk": 78,
     "Def": 95,
@@ -12371,7 +12371,7 @@
   {
     "Nat": 652,
     "Pokemon": "Chesnaught",
-    "imageUrl": "/sprites/chesnaught.png",
+
     "HP": 88,
     "Atk": 107,
     "Def": 122,
@@ -12390,7 +12390,7 @@
   {
     "Nat": 653,
     "Pokemon": "Fennekin",
-    "imageUrl": "/sprites/fennekin.png",
+
     "HP": 40,
     "Atk": 45,
     "Def": 40,
@@ -12409,7 +12409,7 @@
   {
     "Nat": 654,
     "Pokemon": "Braixen",
-    "imageUrl": "/sprites/braixen.png",
+
     "HP": 59,
     "Atk": 59,
     "Def": 58,
@@ -12428,7 +12428,7 @@
   {
     "Nat": 655,
     "Pokemon": "Delphox",
-    "imageUrl": "/sprites/delphox.png",
+
     "HP": 75,
     "Atk": 69,
     "Def": 72,
@@ -12447,7 +12447,7 @@
   {
     "Nat": 656,
     "Pokemon": "Froakie",
-    "imageUrl": "/sprites/froakie.png",
+
     "HP": 41,
     "Atk": 56,
     "Def": 40,
@@ -12466,7 +12466,7 @@
   {
     "Nat": 657,
     "Pokemon": "Frogadier",
-    "imageUrl": "/sprites/frogadier.png",
+
     "HP": 54,
     "Atk": 63,
     "Def": 52,
@@ -12485,7 +12485,7 @@
   {
     "Nat": 658,
     "Pokemon": "Greninja",
-    "imageUrl": "/sprites/greninja.png",
+
     "HP": 72,
     "Atk": 95,
     "Def": 67,
@@ -12504,7 +12504,7 @@
   {
     "Nat": 659,
     "Pokemon": "Bunnelby",
-    "imageUrl": "/sprites/bunnelby.png",
+
     "HP": 38,
     "Atk": 36,
     "Def": 38,
@@ -12523,7 +12523,7 @@
   {
     "Nat": 660,
     "Pokemon": "Diggersby",
-    "imageUrl": "/sprites/diggersby.png",
+
     "HP": 85,
     "Atk": 56,
     "Def": 77,
@@ -12542,7 +12542,7 @@
   {
     "Nat": 661,
     "Pokemon": "Fletchling",
-    "imageUrl": "/sprites/fletchling.png",
+
     "HP": 45,
     "Atk": 50,
     "Def": 43,
@@ -12561,7 +12561,7 @@
   {
     "Nat": 662,
     "Pokemon": "Fletchinder",
-    "imageUrl": "/sprites/fletchinder.png",
+
     "HP": 62,
     "Atk": 73,
     "Def": 55,
@@ -12580,7 +12580,7 @@
   {
     "Nat": 663,
     "Pokemon": "Talonflame",
-    "imageUrl": "/sprites/talonflame.png",
+
     "HP": 78,
     "Atk": 81,
     "Def": 71,
@@ -12599,7 +12599,7 @@
   {
     "Nat": 664,
     "Pokemon": "Scatterbug",
-    "imageUrl": "/sprites/scatterbug.png",
+
     "HP": 38,
     "Atk": 35,
     "Def": 40,
@@ -12618,7 +12618,7 @@
   {
     "Nat": 665,
     "Pokemon": "Spewpa",
-    "imageUrl": "/sprites/spewpa.png",
+
     "HP": 45,
     "Atk": 22,
     "Def": 60,
@@ -12637,7 +12637,7 @@
   {
     "Nat": 666,
     "Pokemon": "Vivillon",
-    "imageUrl": "/sprites/vivillon.png",
+
     "HP": 80,
     "Atk": 52,
     "Def": 50,
@@ -12656,7 +12656,7 @@
   {
     "Nat": 667,
     "Pokemon": "Litleo",
-    "imageUrl": "/sprites/litleo.png",
+
     "HP": 62,
     "Atk": 50,
     "Def": 58,
@@ -12675,7 +12675,7 @@
   {
     "Nat": 668,
     "Pokemon": "Pyroar",
-    "imageUrl": "/sprites/pyroar.png",
+
     "HP": 86,
     "Atk": 68,
     "Def": 72,
@@ -12694,7 +12694,7 @@
   {
     "Nat": 669,
     "Pokemon": "Flabébé",
-    "imageUrl": "/sprites/flabébé.png",
+
     "HP": 44,
     "Atk": 38,
     "Def": 39,
@@ -12713,7 +12713,7 @@
   {
     "Nat": 670,
     "Pokemon": "Floette",
-    "imageUrl": "/sprites/floette.png",
+
     "HP": 54,
     "Atk": 45,
     "Def": 47,
@@ -12732,7 +12732,7 @@
   {
     "Nat": 671,
     "Pokemon": "Florges",
-    "imageUrl": "/sprites/florges.png",
+
     "HP": 78,
     "Atk": 65,
     "Def": 68,
@@ -12751,7 +12751,7 @@
   {
     "Nat": 672,
     "Pokemon": "Skiddo",
-    "imageUrl": "/sprites/skiddo.png",
+
     "HP": 66,
     "Atk": 65,
     "Def": 48,
@@ -12770,7 +12770,7 @@
   {
     "Nat": 673,
     "Pokemon": "Gogoat",
-    "imageUrl": "/sprites/gogoat.png",
+
     "HP": 123,
     "Atk": 100,
     "Def": 62,
@@ -12789,7 +12789,7 @@
   {
     "Nat": 674,
     "Pokemon": "Pancham",
-    "imageUrl": "/sprites/pancham.png",
+
     "HP": 67,
     "Atk": 82,
     "Def": 62,
@@ -12808,7 +12808,7 @@
   {
     "Nat": 675,
     "Pokemon": "Pangoro",
-    "imageUrl": "/sprites/pangoro.png",
+
     "HP": 95,
     "Atk": 124,
     "Def": 78,
@@ -12827,7 +12827,7 @@
   {
     "Nat": 676,
     "Pokemon": "Furfrou",
-    "imageUrl": "/sprites/furfrou.png",
+
     "HP": 75,
     "Atk": 80,
     "Def": 60,
@@ -12846,7 +12846,7 @@
   {
     "Nat": 677,
     "Pokemon": "Espurr",
-    "imageUrl": "/sprites/espurr.png",
+
     "HP": 62,
     "Atk": 48,
     "Def": 54,
@@ -12865,7 +12865,7 @@
   {
     "Nat": 678,
     "Pokemon": "Male Meowstic",
-    "imageUrl": "/sprites/male-meowstic.png",
+
     "HP": 74,
     "Atk": 48,
     "Def": 76,
@@ -12884,7 +12884,7 @@
   {
     "Nat": 679,
     "Pokemon": "Honedge",
-    "imageUrl": "/sprites/honedge.png",
+
     "HP": 45,
     "Atk": 80,
     "Def": 100,
@@ -12903,7 +12903,7 @@
   {
     "Nat": 680,
     "Pokemon": "Doublade",
-    "imageUrl": "/sprites/doublade.png",
+
     "HP": 59,
     "Atk": 110,
     "Def": 150,
@@ -12922,7 +12922,7 @@
   {
     "Nat": 681,
     "Pokemon": "S Aegislash",
-    "imageUrl": "/sprites/s-aegislash.png",
+
     "HP": 60,
     "Atk": 50,
     "Def": 140,
@@ -12941,7 +12941,7 @@
   {
     "Nat": 682,
     "Pokemon": "Spritzee",
-    "imageUrl": "/sprites/spritzee.png",
+
     "HP": 78,
     "Atk": 52,
     "Def": 60,
@@ -12960,7 +12960,7 @@
   {
     "Nat": 683,
     "Pokemon": "Aromatisse",
-    "imageUrl": "/sprites/aromatisse.png",
+
     "HP": 101,
     "Atk": 72,
     "Def": 72,
@@ -12979,7 +12979,7 @@
   {
     "Nat": 684,
     "Pokemon": "Swirlix",
-    "imageUrl": "/sprites/swirlix.png",
+
     "HP": 62,
     "Atk": 48,
     "Def": 66,
@@ -12998,7 +12998,7 @@
   {
     "Nat": 685,
     "Pokemon": "Slurpuff",
-    "imageUrl": "/sprites/slurpuff.png",
+
     "HP": 82,
     "Atk": 80,
     "Def": 86,
@@ -13017,7 +13017,7 @@
   {
     "Nat": 686,
     "Pokemon": "Inkay",
-    "imageUrl": "/sprites/inkay.png",
+
     "HP": 53,
     "Atk": 54,
     "Def": 53,
@@ -13036,7 +13036,7 @@
   {
     "Nat": 687,
     "Pokemon": "Malamar",
-    "imageUrl": "/sprites/malamar.png",
+
     "HP": 86,
     "Atk": 92,
     "Def": 88,
@@ -13055,7 +13055,7 @@
   {
     "Nat": 688,
     "Pokemon": "Binacle",
-    "imageUrl": "/sprites/binacle.png",
+
     "HP": 42,
     "Atk": 52,
     "Def": 67,
@@ -13074,7 +13074,7 @@
   {
     "Nat": 689,
     "Pokemon": "Barbaracle",
-    "imageUrl": "/sprites/barbaracle.png",
+
     "HP": 72,
     "Atk": 105,
     "Def": 115,
@@ -13093,7 +13093,7 @@
   {
     "Nat": 690,
     "Pokemon": "Skrelp",
-    "imageUrl": "/sprites/skrelp.png",
+
     "HP": 50,
     "Atk": 60,
     "Def": 60,
@@ -13112,7 +13112,7 @@
   {
     "Nat": 691,
     "Pokemon": "Dragalge",
-    "imageUrl": "/sprites/dragalge.png",
+
     "HP": 65,
     "Atk": 75,
     "Def": 90,
@@ -13131,7 +13131,7 @@
   {
     "Nat": 692,
     "Pokemon": "Clauncher",
-    "imageUrl": "/sprites/clauncher.png",
+
     "HP": 50,
     "Atk": 53,
     "Def": 62,
@@ -13150,7 +13150,7 @@
   {
     "Nat": 693,
     "Pokemon": "Clawitzer",
-    "imageUrl": "/sprites/clawitzer.png",
+
     "HP": 71,
     "Atk": 73,
     "Def": 88,
@@ -13169,7 +13169,7 @@
   {
     "Nat": 694,
     "Pokemon": "Helioptile",
-    "imageUrl": "/sprites/helioptile.png",
+
     "HP": 44,
     "Atk": 38,
     "Def": 33,
@@ -13188,7 +13188,7 @@
   {
     "Nat": 695,
     "Pokemon": "Heliolisk",
-    "imageUrl": "/sprites/heliolisk.png",
+
     "HP": 62,
     "Atk": 55,
     "Def": 52,
@@ -13207,7 +13207,7 @@
   {
     "Nat": 696,
     "Pokemon": "Tyrunt",
-    "imageUrl": "/sprites/tyrunt.png",
+
     "HP": 58,
     "Atk": 89,
     "Def": 77,
@@ -13226,7 +13226,7 @@
   {
     "Nat": 697,
     "Pokemon": "Tyrantrum",
-    "imageUrl": "/sprites/tyrantrum.png",
+
     "HP": 82,
     "Atk": 121,
     "Def": 119,
@@ -13245,7 +13245,7 @@
   {
     "Nat": 698,
     "Pokemon": "Amaura",
-    "imageUrl": "/sprites/amaura.png",
+
     "HP": 77,
     "Atk": 59,
     "Def": 50,
@@ -13264,7 +13264,7 @@
   {
     "Nat": 699,
     "Pokemon": "Aurorus",
-    "imageUrl": "/sprites/aurorus.png",
+
     "HP": 123,
     "Atk": 77,
     "Def": 72,
@@ -13283,7 +13283,7 @@
   {
     "Nat": 700,
     "Pokemon": "Sylveon",
-    "imageUrl": "/sprites/sylveon.png",
+
     "HP": 95,
     "Atk": 65,
     "Def": 65,
@@ -13302,7 +13302,7 @@
   {
     "Nat": 701,
     "Pokemon": "Hawlucha",
-    "imageUrl": "/sprites/hawlucha.png",
+
     "HP": 78,
     "Atk": 92,
     "Def": 75,
@@ -13321,7 +13321,7 @@
   {
     "Nat": 702,
     "Pokemon": "Dedenne",
-    "imageUrl": "/sprites/dedenne.png",
+
     "HP": 67,
     "Atk": 58,
     "Def": 57,
@@ -13340,7 +13340,7 @@
   {
     "Nat": 703,
     "Pokemon": "Carbink",
-    "imageUrl": "/sprites/carbink.png",
+
     "HP": 50,
     "Atk": 50,
     "Def": 150,
@@ -13359,7 +13359,7 @@
   {
     "Nat": 704,
     "Pokemon": "Goomy",
-    "imageUrl": "/sprites/goomy.png",
+
     "HP": 45,
     "Atk": 50,
     "Def": 35,
@@ -13378,7 +13378,7 @@
   {
     "Nat": 705,
     "Pokemon": "Sliggoo",
-    "imageUrl": "/sprites/sliggoo.png",
+
     "HP": 68,
     "Atk": 75,
     "Def": 53,
@@ -13397,7 +13397,7 @@
   {
     "Nat": 706,
     "Pokemon": "Goodra",
-    "imageUrl": "/sprites/goodra.png",
+
     "HP": 90,
     "Atk": 100,
     "Def": 70,
@@ -13416,7 +13416,7 @@
   {
     "Nat": 707,
     "Pokemon": "Klefki",
-    "imageUrl": "/sprites/klefki.png",
+
     "HP": 57,
     "Atk": 80,
     "Def": 91,
@@ -13435,7 +13435,7 @@
   {
     "Nat": 708,
     "Pokemon": "Phantump",
-    "imageUrl": "/sprites/phantump.png",
+
     "HP": 43,
     "Atk": 70,
     "Def": 48,
@@ -13454,7 +13454,7 @@
   {
     "Nat": 709,
     "Pokemon": "Trevenant",
-    "imageUrl": "/sprites/trevenant.png",
+
     "HP": 85,
     "Atk": 110,
     "Def": 76,
@@ -13473,7 +13473,7 @@
   {
     "Nat": 710,
     "Pokemon": "S Pumpkaboo",
-    "imageUrl": "/sprites/s-pumpkaboo.png",
+
     "HP": 44,
     "Atk": 66,
     "Def": 70,
@@ -13492,7 +13492,7 @@
   {
     "Nat": 711,
     "Pokemon": "Sm Gourgeist",
-    "imageUrl": "/sprites/sm-gourgeist.png",
+
     "HP": 55,
     "Atk": 85,
     "Def": 122,
@@ -13511,7 +13511,7 @@
   {
     "Nat": 712,
     "Pokemon": "Bergmite",
-    "imageUrl": "/sprites/bergmite.png",
+
     "HP": 55,
     "Atk": 69,
     "Def": 85,
@@ -13530,7 +13530,7 @@
   {
     "Nat": 713,
     "Pokemon": "Avalugg",
-    "imageUrl": "/sprites/avalugg.png",
+
     "HP": 95,
     "Atk": 117,
     "Def": 184,
@@ -13549,7 +13549,7 @@
   {
     "Nat": 714,
     "Pokemon": "Noibat",
-    "imageUrl": "/sprites/noibat.png",
+
     "HP": 40,
     "Atk": 30,
     "Def": 35,
@@ -13568,7 +13568,7 @@
   {
     "Nat": 715,
     "Pokemon": "Noivern",
-    "imageUrl": "/sprites/noivern.png",
+
     "HP": 85,
     "Atk": 70,
     "Def": 80,
@@ -13587,7 +13587,7 @@
   {
     "Nat": 716,
     "Pokemon": "Xerneas",
-    "imageUrl": "/sprites/xerneas.png",
+
     "HP": 126,
     "Atk": 131,
     "Def": 95,
@@ -13606,7 +13606,7 @@
   {
     "Nat": 717,
     "Pokemon": "Yveltal",
-    "imageUrl": "/sprites/yveltal.png",
+
     "HP": 126,
     "Atk": 131,
     "Def": 95,
@@ -13625,7 +13625,7 @@
   {
     "Nat": 718,
     "Pokemon": "Zygarde 50%",
-    "imageUrl": "/sprites/zygarde-50%.png",
+
     "HP": 108,
     "Atk": 100,
     "Def": 121,
@@ -13644,7 +13644,7 @@
   {
     "Nat": 719,
     "Pokemon": "Diancie",
-    "imageUrl": "/sprites/diancie.png",
+
     "HP": 50,
     "Atk": 100,
     "Def": 150,
@@ -13663,7 +13663,7 @@
   {
     "Nat": 720,
     "Pokemon": "Hoopa (C)",
-    "imageUrl": "/sprites/hoopa-(c).png",
+
     "HP": 80,
     "Atk": 110,
     "Def": 60,
@@ -13682,7 +13682,7 @@
   {
     "Nat": 721,
     "Pokemon": "Volcanion",
-    "imageUrl": "/sprites/volcanion.png",
+
     "HP": 80,
     "Atk": 110,
     "Def": 120,
@@ -13701,7 +13701,7 @@
   {
     "Nat": 722,
     "Pokemon": "Rowlet",
-    "imageUrl": "/sprites/rowlet.png",
+
     "HP": 68,
     "Atk": 55,
     "Def": 55,
@@ -13720,7 +13720,7 @@
   {
     "Nat": 723,
     "Pokemon": "Dartrix",
-    "imageUrl": "/sprites/dartrix.png",
+
     "HP": 78,
     "Atk": 75,
     "Def": 75,
@@ -13739,7 +13739,7 @@
   {
     "Nat": 724,
     "Pokemon": "Decidueye",
-    "imageUrl": "/sprites/decidueye.png",
+
     "HP": 78,
     "Atk": 107,
     "Def": 75,
@@ -13758,7 +13758,7 @@
   {
     "Nat": 725,
     "Pokemon": "Litten",
-    "imageUrl": "/sprites/litten.png",
+
     "HP": 45,
     "Atk": 65,
     "Def": 40,
@@ -13777,7 +13777,7 @@
   {
     "Nat": 726,
     "Pokemon": "Torracat",
-    "imageUrl": "/sprites/torracat.png",
+
     "HP": 65,
     "Atk": 85,
     "Def": 50,
@@ -13796,7 +13796,7 @@
   {
     "Nat": 727,
     "Pokemon": "Incineroar",
-    "imageUrl": "/sprites/incineroar.png",
+
     "HP": 95,
     "Atk": 115,
     "Def": 90,
@@ -13815,7 +13815,7 @@
   {
     "Nat": 728,
     "Pokemon": "Popplio",
-    "imageUrl": "/sprites/popplio.png",
+
     "HP": 50,
     "Atk": 54,
     "Def": 54,
@@ -13834,7 +13834,7 @@
   {
     "Nat": 729,
     "Pokemon": "Brionne",
-    "imageUrl": "/sprites/brionne.png",
+
     "HP": 60,
     "Atk": 69,
     "Def": 69,
@@ -13853,7 +13853,7 @@
   {
     "Nat": 730,
     "Pokemon": "Primarina",
-    "imageUrl": "/sprites/primarina.png",
+
     "HP": 80,
     "Atk": 74,
     "Def": 74,
@@ -13872,7 +13872,7 @@
   {
     "Nat": 731,
     "Pokemon": "Pikipek",
-    "imageUrl": "/sprites/pikipek.png",
+
     "HP": 35,
     "Atk": 75,
     "Def": 30,
@@ -13891,7 +13891,7 @@
   {
     "Nat": 732,
     "Pokemon": "Trumbeak",
-    "imageUrl": "/sprites/trumbeak.png",
+
     "HP": 55,
     "Atk": 85,
     "Def": 50,
@@ -13910,7 +13910,7 @@
   {
     "Nat": 733,
     "Pokemon": "Toucannon",
-    "imageUrl": "/sprites/toucannon.png",
+
     "HP": 80,
     "Atk": 120,
     "Def": 75,
@@ -13929,7 +13929,7 @@
   {
     "Nat": 734,
     "Pokemon": "Yungoos",
-    "imageUrl": "/sprites/yungoos.png",
+
     "HP": 48,
     "Atk": 70,
     "Def": 30,
@@ -13948,7 +13948,7 @@
   {
     "Nat": 735,
     "Pokemon": "Gumshoos",
-    "imageUrl": "/sprites/gumshoos.png",
+
     "HP": 88,
     "Atk": 110,
     "Def": 60,
@@ -13967,7 +13967,7 @@
   {
     "Nat": 736,
     "Pokemon": "Grubbin",
-    "imageUrl": "/sprites/grubbin.png",
+
     "HP": 47,
     "Atk": 62,
     "Def": 45,
@@ -13986,7 +13986,7 @@
   {
     "Nat": 737,
     "Pokemon": "Charjabug",
-    "imageUrl": "/sprites/charjabug.png",
+
     "HP": 57,
     "Atk": 82,
     "Def": 95,
@@ -14005,7 +14005,7 @@
   {
     "Nat": 738,
     "Pokemon": "Vikavolt",
-    "imageUrl": "/sprites/vikavolt.png",
+
     "HP": 77,
     "Atk": 70,
     "Def": 90,
@@ -14024,7 +14024,7 @@
   {
     "Nat": 739,
     "Pokemon": "Crabrawler",
-    "imageUrl": "/sprites/crabrawler.png",
+
     "HP": 47,
     "Atk": 82,
     "Def": 57,
@@ -14043,7 +14043,7 @@
   {
     "Nat": 740,
     "Pokemon": "Crabominable",
-    "imageUrl": "/sprites/crabominable.png",
+
     "HP": 97,
     "Atk": 132,
     "Def": 77,
@@ -14062,7 +14062,7 @@
   {
     "Nat": 741,
     "Pokemon": "Pom Oricorio",
-    "imageUrl": "/sprites/pom-oricorio.png",
+
     "HP": 75,
     "Atk": 70,
     "Def": 70,
@@ -14081,7 +14081,7 @@
   {
     "Nat": 742,
     "Pokemon": "Cutiefly",
-    "imageUrl": "/sprites/cutiefly.png",
+
     "HP": 40,
     "Atk": 45,
     "Def": 40,
@@ -14100,7 +14100,7 @@
   {
     "Nat": 743,
     "Pokemon": "Ribombee",
-    "imageUrl": "/sprites/ribombee.png",
+
     "HP": 60,
     "Atk": 55,
     "Def": 60,
@@ -14119,7 +14119,7 @@
   {
     "Nat": 744,
     "Pokemon": "Rockruff",
-    "imageUrl": "/sprites/rockruff.png",
+
     "HP": 45,
     "Atk": 65,
     "Def": 40,
@@ -14138,7 +14138,7 @@
   {
     "Nat": 745,
     "Pokemon": "Day Lycanroc",
-    "imageUrl": "/sprites/day-lycanroc.png",
+
     "HP": 75,
     "Atk": 115,
     "Def": 65,
@@ -14157,7 +14157,7 @@
   {
     "Nat": 746,
     "Pokemon": "Wishiwashi",
-    "imageUrl": "/sprites/wishiwashi.png",
+
     "HP": 45,
     "Atk": 20,
     "Def": 20,
@@ -14176,7 +14176,7 @@
   {
     "Nat": 747,
     "Pokemon": "Mareanie",
-    "imageUrl": "/sprites/mareanie.png",
+
     "HP": 50,
     "Atk": 53,
     "Def": 62,
@@ -14195,7 +14195,7 @@
   {
     "Nat": 748,
     "Pokemon": "Toxapex",
-    "imageUrl": "/sprites/toxapex.png",
+
     "HP": 50,
     "Atk": 63,
     "Def": 152,
@@ -14214,7 +14214,7 @@
   {
     "Nat": 749,
     "Pokemon": "Mudbray",
-    "imageUrl": "/sprites/mudbray.png",
+
     "HP": 70,
     "Atk": 100,
     "Def": 70,
@@ -14233,7 +14233,7 @@
   {
     "Nat": 750,
     "Pokemon": "Mudsdale",
-    "imageUrl": "/sprites/mudsdale.png",
+
     "HP": 100,
     "Atk": 125,
     "Def": 100,
@@ -14252,7 +14252,7 @@
   {
     "Nat": 751,
     "Pokemon": "Dewpider",
-    "imageUrl": "/sprites/dewpider.png",
+
     "HP": 38,
     "Atk": 40,
     "Def": 52,
@@ -14271,7 +14271,7 @@
   {
     "Nat": 752,
     "Pokemon": "Araquanid",
-    "imageUrl": "/sprites/araquanid.png",
+
     "HP": 68,
     "Atk": 70,
     "Def": 92,
@@ -14290,7 +14290,7 @@
   {
     "Nat": 753,
     "Pokemon": "Fomantis",
-    "imageUrl": "/sprites/fomantis.png",
+
     "HP": 40,
     "Atk": 55,
     "Def": 35,
@@ -14309,7 +14309,7 @@
   {
     "Nat": 754,
     "Pokemon": "Lurantis",
-    "imageUrl": "/sprites/lurantis.png",
+
     "HP": 70,
     "Atk": 105,
     "Def": 90,
@@ -14328,7 +14328,7 @@
   {
     "Nat": 755,
     "Pokemon": "Morelull",
-    "imageUrl": "/sprites/morelull.png",
+
     "HP": 40,
     "Atk": 35,
     "Def": 55,
@@ -14347,7 +14347,7 @@
   {
     "Nat": 756,
     "Pokemon": "Shiinotic",
-    "imageUrl": "/sprites/shiinotic.png",
+
     "HP": 60,
     "Atk": 45,
     "Def": 80,
@@ -14366,7 +14366,7 @@
   {
     "Nat": 757,
     "Pokemon": "Salandit",
-    "imageUrl": "/sprites/salandit.png",
+
     "HP": 48,
     "Atk": 44,
     "Def": 40,
@@ -14385,7 +14385,7 @@
   {
     "Nat": 758,
     "Pokemon": "Salazzle",
-    "imageUrl": "/sprites/salazzle.png",
+
     "HP": 68,
     "Atk": 64,
     "Def": 60,
@@ -14404,7 +14404,7 @@
   {
     "Nat": 759,
     "Pokemon": "Stufful",
-    "imageUrl": "/sprites/stufful.png",
+
     "HP": 70,
     "Atk": 75,
     "Def": 50,
@@ -14423,7 +14423,7 @@
   {
     "Nat": 760,
     "Pokemon": "Bewear",
-    "imageUrl": "/sprites/bewear.png",
+
     "HP": 120,
     "Atk": 125,
     "Def": 80,
@@ -14442,7 +14442,7 @@
   {
     "Nat": 761,
     "Pokemon": "Bounsweet",
-    "imageUrl": "/sprites/bounsweet.png",
+
     "HP": 42,
     "Atk": 30,
     "Def": 38,
@@ -14461,7 +14461,7 @@
   {
     "Nat": 762,
     "Pokemon": "Steenee",
-    "imageUrl": "/sprites/steenee.png",
+
     "HP": 52,
     "Atk": 40,
     "Def": 48,
@@ -14480,7 +14480,7 @@
   {
     "Nat": 763,
     "Pokemon": "Tsareena",
-    "imageUrl": "/sprites/tsareena.png",
+
     "HP": 72,
     "Atk": 120,
     "Def": 98,
@@ -14499,7 +14499,7 @@
   {
     "Nat": 764,
     "Pokemon": "Comfey",
-    "imageUrl": "/sprites/comfey.png",
+
     "HP": 51,
     "Atk": 52,
     "Def": 90,
@@ -14518,7 +14518,7 @@
   {
     "Nat": 765,
     "Pokemon": "Oranguru",
-    "imageUrl": "/sprites/oranguru.png",
+
     "HP": 90,
     "Atk": 60,
     "Def": 80,
@@ -14537,7 +14537,7 @@
   {
     "Nat": 766,
     "Pokemon": "Passimian",
-    "imageUrl": "/sprites/passimian.png",
+
     "HP": 100,
     "Atk": 120,
     "Def": 90,
@@ -14556,7 +14556,7 @@
   {
     "Nat": 767,
     "Pokemon": "Wimpod",
-    "imageUrl": "/sprites/wimpod.png",
+
     "HP": 25,
     "Atk": 35,
     "Def": 40,
@@ -14575,7 +14575,7 @@
   {
     "Nat": 768,
     "Pokemon": "Golisopod",
-    "imageUrl": "/sprites/golisopod.png",
+
     "HP": 75,
     "Atk": 125,
     "Def": 140,
@@ -14594,7 +14594,7 @@
   {
     "Nat": 769,
     "Pokemon": "Sandygast",
-    "imageUrl": "/sprites/sandygast.png",
+
     "HP": 55,
     "Atk": 55,
     "Def": 80,
@@ -14613,7 +14613,7 @@
   {
     "Nat": 770,
     "Pokemon": "Palossand",
-    "imageUrl": "/sprites/palossand.png",
+
     "HP": 85,
     "Atk": 75,
     "Def": 110,
@@ -14632,7 +14632,7 @@
   {
     "Nat": 771,
     "Pokemon": "Pyukumuku",
-    "imageUrl": "/sprites/pyukumuku.png",
+
     "HP": 55,
     "Atk": 60,
     "Def": 130,
@@ -14651,7 +14651,7 @@
   {
     "Nat": 772,
     "Pokemon": "Type: Null",
-    "imageUrl": "/sprites/type: null.png",
+
     "HP": 95,
     "Atk": 95,
     "Def": 95,
@@ -14670,7 +14670,7 @@
   {
     "Nat": 773,
     "Pokemon": "Silvally",
-    "imageUrl": "/sprites/silvally.png",
+
     "HP": 95,
     "Atk": 95,
     "Def": 95,
@@ -14689,7 +14689,7 @@
   {
     "Nat": 774,
     "Pokemon": "Minior",
-    "imageUrl": "/sprites/minior.png",
+
     "HP": 60,
     "Atk": 60,
     "Def": 100,
@@ -14708,7 +14708,7 @@
   {
     "Nat": 775,
     "Pokemon": "Komala",
-    "imageUrl": "/sprites/komala.png",
+
     "HP": 65,
     "Atk": 115,
     "Def": 65,
@@ -14727,7 +14727,7 @@
   {
     "Nat": 776,
     "Pokemon": "Turtonator",
-    "imageUrl": "/sprites/turtonator.png",
+
     "HP": 60,
     "Atk": 78,
     "Def": 135,
@@ -14746,7 +14746,7 @@
   {
     "Nat": 777,
     "Pokemon": "Togedemaru",
-    "imageUrl": "/sprites/togedemaru.png",
+
     "HP": 65,
     "Atk": 98,
     "Def": 63,
@@ -14765,7 +14765,7 @@
   {
     "Nat": 778,
     "Pokemon": "Mimikyu",
-    "imageUrl": "/sprites/mimikyu.png",
+
     "HP": 55,
     "Atk": 90,
     "Def": 80,
@@ -14784,7 +14784,7 @@
   {
     "Nat": 779,
     "Pokemon": "Bruxish",
-    "imageUrl": "/sprites/bruxish.png",
+
     "HP": 68,
     "Atk": 105,
     "Def": 70,
@@ -14803,7 +14803,7 @@
   {
     "Nat": 780,
     "Pokemon": "Drampa",
-    "imageUrl": "/sprites/drampa.png",
+
     "HP": 78,
     "Atk": 60,
     "Def": 85,
@@ -14822,7 +14822,7 @@
   {
     "Nat": 781,
     "Pokemon": "Dhelmise",
-    "imageUrl": "/sprites/dhelmise.png",
+
     "HP": 70,
     "Atk": 131,
     "Def": 100,
@@ -14841,7 +14841,7 @@
   {
     "Nat": 782,
     "Pokemon": "Jangmo-o",
-    "imageUrl": "/sprites/jangmo-o.png",
+
     "HP": 45,
     "Atk": 55,
     "Def": 65,
@@ -14860,7 +14860,7 @@
   {
     "Nat": 783,
     "Pokemon": "Hakamo-o",
-    "imageUrl": "/sprites/hakamo-o.png",
+
     "HP": 55,
     "Atk": 75,
     "Def": 90,
@@ -14879,7 +14879,7 @@
   {
     "Nat": 784,
     "Pokemon": "Kommo-o",
-    "imageUrl": "/sprites/kommo-o.png",
+
     "HP": 75,
     "Atk": 110,
     "Def": 125,
@@ -14898,7 +14898,7 @@
   {
     "Nat": 785,
     "Pokemon": "Tapu Koko",
-    "imageUrl": "/sprites/tapu-koko.png",
+
     "HP": 70,
     "Atk": 115,
     "Def": 85,
@@ -14917,7 +14917,7 @@
   {
     "Nat": 786,
     "Pokemon": "Tapu Lele",
-    "imageUrl": "/sprites/tapu-lele.png",
+
     "HP": 70,
     "Atk": 85,
     "Def": 75,
@@ -14936,7 +14936,7 @@
   {
     "Nat": 787,
     "Pokemon": "Tapu Bulu",
-    "imageUrl": "/sprites/tapu-bulu.png",
+
     "HP": 70,
     "Atk": 130,
     "Def": 115,
@@ -14955,7 +14955,7 @@
   {
     "Nat": 788,
     "Pokemon": "Tapu Fini",
-    "imageUrl": "/sprites/tapu-fini.png",
+
     "HP": 70,
     "Atk": 75,
     "Def": 115,
@@ -14974,7 +14974,7 @@
   {
     "Nat": 789,
     "Pokemon": "Cosmog",
-    "imageUrl": "/sprites/cosmog.png",
+
     "HP": 43,
     "Atk": 29,
     "Def": 31,
@@ -14993,7 +14993,7 @@
   {
     "Nat": 790,
     "Pokemon": "Cosmoem",
-    "imageUrl": "/sprites/cosmoem.png",
+
     "HP": 43,
     "Atk": 29,
     "Def": 131,
@@ -15012,7 +15012,7 @@
   {
     "Nat": 791,
     "Pokemon": "Solgaleo",
-    "imageUrl": "/sprites/solgaleo.png",
+
     "HP": 137,
     "Atk": 137,
     "Def": 107,
@@ -15031,7 +15031,7 @@
   {
     "Nat": 792,
     "Pokemon": "Lunala",
-    "imageUrl": "/sprites/lunala.png",
+
     "HP": 137,
     "Atk": 113,
     "Def": 89,
@@ -15050,7 +15050,7 @@
   {
     "Nat": 793,
     "Pokemon": "Nihilego",
-    "imageUrl": "/sprites/nihilego.png",
+
     "HP": 109,
     "Atk": 53,
     "Def": 47,
@@ -15069,7 +15069,7 @@
   {
     "Nat": 794,
     "Pokemon": "Buzzwole",
-    "imageUrl": "/sprites/buzzwole.png",
+
     "HP": 107,
     "Atk": 139,
     "Def": 139,
@@ -15088,7 +15088,7 @@
   {
     "Nat": 795,
     "Pokemon": "Pheromosa",
-    "imageUrl": "/sprites/pheromosa.png",
+
     "HP": 71,
     "Atk": 137,
     "Def": 37,
@@ -15107,7 +15107,7 @@
   {
     "Nat": 796,
     "Pokemon": "Xurkitree",
-    "imageUrl": "/sprites/xurkitree.png",
+
     "HP": 83,
     "Atk": 89,
     "Def": 71,
@@ -15126,7 +15126,7 @@
   {
     "Nat": 797,
     "Pokemon": "Celesteela",
-    "imageUrl": "/sprites/celesteela.png",
+
     "HP": 97,
     "Atk": 101,
     "Def": 103,
@@ -15145,7 +15145,7 @@
   {
     "Nat": 798,
     "Pokemon": "Kartana",
-    "imageUrl": "/sprites/kartana.png",
+
     "HP": 59,
     "Atk": 181,
     "Def": 131,
@@ -15164,7 +15164,7 @@
   {
     "Nat": 799,
     "Pokemon": "Guzzlord",
-    "imageUrl": "/sprites/guzzlord.png",
+
     "HP": 223,
     "Atk": 101,
     "Def": 53,
@@ -15183,7 +15183,7 @@
   {
     "Nat": 800,
     "Pokemon": "Necrozma",
-    "imageUrl": "/sprites/necrozma.png",
+
     "HP": 97,
     "Atk": 107,
     "Def": 101,
@@ -15202,7 +15202,7 @@
   {
     "Nat": 801,
     "Pokemon": "Magearna",
-    "imageUrl": "/sprites/magearna.png",
+
     "HP": 80,
     "Atk": 95,
     "Def": 115,
@@ -15221,7 +15221,7 @@
   {
     "Nat": 802,
     "Pokemon": "Marshadow",
-    "imageUrl": "/sprites/marshadow.png",
+
     "HP": 90,
     "Atk": 125,
     "Def": 80,
@@ -15240,7 +15240,7 @@
   {
     "Nat": 803,
     "Pokemon": "Poipole",
-    "imageUrl": "/sprites/poipole.png",
+
     "HP": 67,
     "Atk": 73,
     "Def": 67,
@@ -15259,7 +15259,7 @@
   {
     "Nat": 804,
     "Pokemon": "Naganadel",
-    "imageUrl": "/sprites/naganadel.png",
+
     "HP": 73,
     "Atk": 73,
     "Def": 73,
@@ -15278,7 +15278,7 @@
   {
     "Nat": 805,
     "Pokemon": "Stakataka",
-    "imageUrl": "/sprites/stakataka.png",
+
     "HP": 61,
     "Atk": 131,
     "Def": 211,
@@ -15297,7 +15297,7 @@
   {
     "Nat": 806,
     "Pokemon": "Blacephalon",
-    "imageUrl": "/sprites/blacephalon.png",
+
     "HP": 53,
     "Atk": 127,
     "Def": 53,
@@ -15316,7 +15316,7 @@
   {
     "Nat": 807,
     "Pokemon": "Zerora",
-    "imageUrl": "/sprites/zerora.png",
+
     "HP": 88,
     "Atk": 112,
     "Def": 75,
@@ -15335,7 +15335,7 @@
   {
     "Nat": 808,
     "Pokemon": "Meltan",
-    "imageUrl": "/sprites/meltan.png",
+
     "HP": 46,
     "Atk": 65,
     "Def": 65,
@@ -15354,7 +15354,7 @@
   {
     "Nat": 809,
     "Pokemon": "Melmetal",
-    "imageUrl": "/sprites/melmetal.png",
+
     "HP": 135,
     "Atk": 143,
     "Def": 143,
@@ -15373,7 +15373,7 @@
   {
     "Nat": 810,
     "Pokemon": "Grookey",
-    "imageUrl": "/sprites/grookey.png",
+
     "HP": 50,
     "Atk": 65,
     "Def": 50,
@@ -15392,7 +15392,7 @@
   {
     "Nat": 811,
     "Pokemon": "Thwackey",
-    "imageUrl": "/sprites/thwackey.png",
+
     "HP": 70,
     "Atk": 85,
     "Def": 70,
@@ -15411,7 +15411,7 @@
   {
     "Nat": 812,
     "Pokemon": "Rillaboom",
-    "imageUrl": "/sprites/rillaboom.png",
+
     "HP": 100,
     "Atk": 125,
     "Def": 90,
@@ -15430,7 +15430,7 @@
   {
     "Nat": 813,
     "Pokemon": "Scorbunny",
-    "imageUrl": "/sprites/scorbunny.png",
+
     "HP": 50,
     "Atk": 71,
     "Def": 40,
@@ -15449,7 +15449,7 @@
   {
     "Nat": 814,
     "Pokemon": "Raboot",
-    "imageUrl": "/sprites/raboot.png",
+
     "HP": 65,
     "Atk": 86,
     "Def": 60,
@@ -15468,7 +15468,7 @@
   {
     "Nat": 815,
     "Pokemon": "Cinderace",
-    "imageUrl": "/sprites/cinderace.png",
+
     "HP": 80,
     "Atk": 116,
     "Def": 75,
@@ -15487,7 +15487,7 @@
   {
     "Nat": 816,
     "Pokemon": "Sobble",
-    "imageUrl": "/sprites/sobble.png",
+
     "HP": 50,
     "Atk": 40,
     "Def": 40,
@@ -15506,7 +15506,7 @@
   {
     "Nat": 817,
     "Pokemon": "Drizzile",
-    "imageUrl": "/sprites/drizzile.png",
+
     "HP": 65,
     "Atk": 60,
     "Def": 55,
@@ -15525,7 +15525,7 @@
   {
     "Nat": 818,
     "Pokemon": "Inteleon",
-    "imageUrl": "/sprites/inteleon.png",
+
     "HP": 70,
     "Atk": 85,
     "Def": 65,
@@ -15544,7 +15544,7 @@
   {
     "Nat": 819,
     "Pokemon": "Skwovet",
-    "imageUrl": "/sprites/skwovet.png",
+
     "HP": 70,
     "Atk": 55,
     "Def": 55,
@@ -15563,7 +15563,7 @@
   {
     "Nat": 820,
     "Pokemon": "Greedent",
-    "imageUrl": "/sprites/greedent.png",
+
     "HP": 120,
     "Atk": 95,
     "Def": 95,
@@ -15582,7 +15582,7 @@
   {
     "Nat": 821,
     "Pokemon": "Rookidee",
-    "imageUrl": "/sprites/rookidee.png",
+
     "HP": 38,
     "Atk": 47,
     "Def": 35,
@@ -15601,7 +15601,7 @@
   {
     "Nat": 822,
     "Pokemon": "Corvisquire",
-    "imageUrl": "/sprites/corvisquire.png",
+
     "HP": 68,
     "Atk": 67,
     "Def": 55,
@@ -15620,7 +15620,7 @@
   {
     "Nat": 823,
     "Pokemon": "Corviknight",
-    "imageUrl": "/sprites/corviknight.png",
+
     "HP": 98,
     "Atk": 87,
     "Def": 105,
@@ -15639,7 +15639,7 @@
   {
     "Nat": 824,
     "Pokemon": "Blipibug",
-    "imageUrl": "/sprites/blipibug.png",
+
     "HP": 25,
     "Atk": 20,
     "Def": 20,
@@ -15658,7 +15658,7 @@
   {
     "Nat": 825,
     "Pokemon": "Dottler",
-    "imageUrl": "/sprites/dottler.png",
+
     "HP": 50,
     "Atk": 35,
     "Def": 80,
@@ -15677,7 +15677,7 @@
   {
     "Nat": 826,
     "Pokemon": "Orbeetle",
-    "imageUrl": "/sprites/orbeetle.png",
+
     "HP": 60,
     "Atk": 45,
     "Def": 110,
@@ -15696,7 +15696,7 @@
   {
     "Nat": 827,
     "Pokemon": "Nickit",
-    "imageUrl": "/sprites/nickit.png",
+
     "HP": 40,
     "Atk": 28,
     "Def": 28,
@@ -15715,7 +15715,7 @@
   {
     "Nat": 828,
     "Pokemon": "Theivul",
-    "imageUrl": "/sprites/theivul.png",
+
     "HP": 70,
     "Atk": 58,
     "Def": 58,
@@ -15734,7 +15734,7 @@
   {
     "Nat": 829,
     "Pokemon": "Gossifleur",
-    "imageUrl": "/sprites/gossifleur.png",
+
     "HP": 40,
     "Atk": 40,
     "Def": 60,
@@ -15753,7 +15753,7 @@
   {
     "Nat": 830,
     "Pokemon": "Eldegoss",
-    "imageUrl": "/sprites/eldegoss.png",
+
     "HP": 60,
     "Atk": 50,
     "Def": 90,
@@ -15772,7 +15772,7 @@
   {
     "Nat": 831,
     "Pokemon": "Wooloo",
-    "imageUrl": "/sprites/wooloo.png",
+
     "HP": 42,
     "Atk": 40,
     "Def": 55,
@@ -15791,7 +15791,7 @@
   {
     "Nat": 832,
     "Pokemon": "Dubwool",
-    "imageUrl": "/sprites/dubwool.png",
+
     "HP": 72,
     "Atk": 80,
     "Def": 100,
@@ -15810,7 +15810,7 @@
   {
     "Nat": 833,
     "Pokemon": "Chewtle",
-    "imageUrl": "/sprites/chewtle.png",
+
     "HP": 50,
     "Atk": 64,
     "Def": 50,
@@ -15829,7 +15829,7 @@
   {
     "Nat": 834,
     "Pokemon": "Drednaw",
-    "imageUrl": "/sprites/drednaw.png",
+
     "HP": 90,
     "Atk": 115,
     "Def": 90,
@@ -15848,7 +15848,7 @@
   {
     "Nat": 835,
     "Pokemon": "Yamper",
-    "imageUrl": "/sprites/yamper.png",
+
     "HP": 59,
     "Atk": 45,
     "Def": 50,
@@ -15867,7 +15867,7 @@
   {
     "Nat": 836,
     "Pokemon": "Boltund",
-    "imageUrl": "/sprites/boltund.png",
+
     "HP": 69,
     "Atk": 90,
     "Def": 60,
@@ -15886,7 +15886,7 @@
   {
     "Nat": 837,
     "Pokemon": "Rolycoly",
-    "imageUrl": "/sprites/rolycoly.png",
+
     "HP": 30,
     "Atk": 40,
     "Def": 50,
@@ -15905,7 +15905,7 @@
   {
     "Nat": 838,
     "Pokemon": "Carkol",
-    "imageUrl": "/sprites/carkol.png",
+
     "HP": 80,
     "Atk": 60,
     "Def": 90,
@@ -15924,7 +15924,7 @@
   {
     "Nat": 839,
     "Pokemon": "Coalossal",
-    "imageUrl": "/sprites/coalossal.png",
+
     "HP": 110,
     "Atk": 80,
     "Def": 120,
@@ -15943,7 +15943,7 @@
   {
     "Nat": 840,
     "Pokemon": "Applin",
-    "imageUrl": "/sprites/applin.png",
+
     "HP": 40,
     "Atk": 40,
     "Def": 80,
@@ -15962,7 +15962,7 @@
   {
     "Nat": 841,
     "Pokemon": "Flapple",
-    "imageUrl": "/sprites/flapple.png",
+
     "HP": 70,
     "Atk": 110,
     "Def": 80,
@@ -15981,7 +15981,7 @@
   {
     "Nat": 842,
     "Pokemon": "Applerun",
-    "imageUrl": "/sprites/applerun.png",
+
     "HP": 110,
     "Atk": 85,
     "Def": 80,
@@ -16000,7 +16000,7 @@
   {
     "Nat": 843,
     "Pokemon": "Silicobra",
-    "imageUrl": "/sprites/silicobra.png",
+
     "HP": 52,
     "Atk": 57,
     "Def": 75,
@@ -16019,7 +16019,7 @@
   {
     "Nat": 844,
     "Pokemon": "Sandaconda",
-    "imageUrl": "/sprites/sandaconda.png",
+
     "HP": 72,
     "Atk": 107,
     "Def": 125,
@@ -16038,7 +16038,7 @@
   {
     "Nat": 845,
     "Pokemon": "Cramorant",
-    "imageUrl": "/sprites/cramorant.png",
+
     "HP": 70,
     "Atk": 85,
     "Def": 55,
@@ -16057,7 +16057,7 @@
   {
     "Nat": 846,
     "Pokemon": "Arrokuda",
-    "imageUrl": "/sprites/arrokuda.png",
+
     "HP": 41,
     "Atk": 63,
     "Def": 40,
@@ -16076,7 +16076,7 @@
   {
     "Nat": 847,
     "Pokemon": "Barraskewda",
-    "imageUrl": "/sprites/barraskewda.png",
+
     "HP": 61,
     "Atk": 123,
     "Def": 60,
@@ -16095,7 +16095,7 @@
   {
     "Nat": 848,
     "Pokemon": "Toxel",
-    "imageUrl": "/sprites/toxel.png",
+
     "HP": 40,
     "Atk": 38,
     "Def": 35,
@@ -16114,7 +16114,7 @@
   {
     "Nat": 849,
     "Pokemon": "Toxtricity A",
-    "imageUrl": "/sprites/toxtricity-a.png",
+
     "HP": 75,
     "Atk": 98,
     "Def": 70,
@@ -16133,7 +16133,7 @@
   {
     "Nat": 850,
     "Pokemon": "Sizzlipede",
-    "imageUrl": "/sprites/sizzlipede.png",
+
     "HP": 50,
     "Atk": 65,
     "Def": 45,
@@ -16152,7 +16152,7 @@
   {
     "Nat": 851,
     "Pokemon": "Centiskorch",
-    "imageUrl": "/sprites/centiskorch.png",
+
     "HP": 100,
     "Atk": 115,
     "Def": 65,
@@ -16171,7 +16171,7 @@
   {
     "Nat": 852,
     "Pokemon": "Clobbopus",
-    "imageUrl": "/sprites/clobbopus.png",
+
     "HP": 50,
     "Atk": 68,
     "Def": 60,
@@ -16190,7 +16190,7 @@
   {
     "Nat": 853,
     "Pokemon": "Grapploct",
-    "imageUrl": "/sprites/grapploct.png",
+
     "HP": 80,
     "Atk": 118,
     "Def": 90,
@@ -16209,7 +16209,7 @@
   {
     "Nat": 854,
     "Pokemon": "Sinistea",
-    "imageUrl": "/sprites/sinistea.png",
+
     "HP": 40,
     "Atk": 45,
     "Def": 45,
@@ -16228,7 +16228,7 @@
   {
     "Nat": 855,
     "Pokemon": "Polteageist",
-    "imageUrl": "/sprites/polteageist.png",
+
     "HP": 60,
     "Atk": 65,
     "Def": 65,
@@ -16247,7 +16247,7 @@
   {
     "Nat": 856,
     "Pokemon": "Hatenna",
-    "imageUrl": "/sprites/hatenna.png",
+
     "HP": 42,
     "Atk": 30,
     "Def": 45,
@@ -16266,7 +16266,7 @@
   {
     "Nat": 857,
     "Pokemon": "Hattrem",
-    "imageUrl": "/sprites/hattrem.png",
+
     "HP": 57,
     "Atk": 40,
     "Def": 65,
@@ -16285,7 +16285,7 @@
   {
     "Nat": 858,
     "Pokemon": "Hatterene",
-    "imageUrl": "/sprites/hatterene.png",
+
     "HP": 57,
     "Atk": 90,
     "Def": 95,
@@ -16304,7 +16304,7 @@
   {
     "Nat": 859,
     "Pokemon": "Impidimp",
-    "imageUrl": "/sprites/impidimp.png",
+
     "HP": 45,
     "Atk": 45,
     "Def": 30,
@@ -16323,7 +16323,7 @@
   {
     "Nat": 860,
     "Pokemon": "Morgrem",
-    "imageUrl": "/sprites/morgrem.png",
+
     "HP": 65,
     "Atk": 60,
     "Def": 45,
@@ -16342,7 +16342,7 @@
   {
     "Nat": 861,
     "Pokemon": "Grimmsnarl",
-    "imageUrl": "/sprites/grimmsnarl.png",
+
     "HP": 95,
     "Atk": 120,
     "Def": 65,
@@ -16361,7 +16361,7 @@
   {
     "Nat": 862,
     "Pokemon": "Obstagoon",
-    "imageUrl": "/sprites/obstagoon.png",
+
     "HP": 93,
     "Atk": 90,
     "Def": 101,
@@ -16380,7 +16380,7 @@
   {
     "Nat": 863,
     "Pokemon": "Perrserker",
-    "imageUrl": "/sprites/perrserker.png",
+
     "HP": 70,
     "Atk": 110,
     "Def": 100,
@@ -16399,7 +16399,7 @@
   {
     "Nat": 864,
     "Pokemon": "Cursola",
-    "imageUrl": "/sprites/cursola.png",
+
     "HP": 60,
     "Atk": 95,
     "Def": 50,
@@ -16418,7 +16418,7 @@
   {
     "Nat": 865,
     "Pokemon": "Sirfetch'd",
-    "imageUrl": "/sprites/sirfetch'd.png",
+
     "HP": 62,
     "Atk": 135,
     "Def": 95,
@@ -16437,7 +16437,7 @@
   {
     "Nat": 866,
     "Pokemon": "Mr. Rime",
-    "imageUrl": "/sprites/mr-rime.png",
+
     "HP": 80,
     "Atk": 85,
     "Def": 75,
@@ -16456,7 +16456,7 @@
   {
     "Nat": 867,
     "Pokemon": "Runerigus",
-    "imageUrl": "/sprites/runerigus.png",
+
     "HP": 58,
     "Atk": 95,
     "Def": 145,
@@ -16475,7 +16475,7 @@
   {
     "Nat": 868,
     "Pokemon": "Milcrey",
-    "imageUrl": "/sprites/milcrey.png",
+
     "HP": 45,
     "Atk": 40,
     "Def": 40,
@@ -16494,7 +16494,7 @@
   {
     "Nat": 869,
     "Pokemon": "Alcremie",
-    "imageUrl": "/sprites/alcremie.png",
+
     "HP": 65,
     "Atk": 60,
     "Def": 75,
@@ -16513,7 +16513,7 @@
   {
     "Nat": 870,
     "Pokemon": "Falinks",
-    "imageUrl": "/sprites/falinks.png",
+
     "HP": 65,
     "Atk": 100,
     "Def": 100,
@@ -16532,7 +16532,7 @@
   {
     "Nat": 871,
     "Pokemon": "Pinurchin",
-    "imageUrl": "/sprites/pinurchin.png",
+
     "HP": 48,
     "Atk": 101,
     "Def": 95,
@@ -16551,7 +16551,7 @@
   {
     "Nat": 872,
     "Pokemon": "Snom",
-    "imageUrl": "/sprites/snom.png",
+
     "HP": 30,
     "Atk": 25,
     "Def": 35,
@@ -16570,7 +16570,7 @@
   {
     "Nat": 873,
     "Pokemon": "Frosmoth",
-    "imageUrl": "/sprites/frosmoth.png",
+
     "HP": 70,
     "Atk": 65,
     "Def": 60,
@@ -16589,7 +16589,7 @@
   {
     "Nat": 874,
     "Pokemon": "Stonjourner",
-    "imageUrl": "/sprites/stonjourner.png",
+
     "HP": 100,
     "Atk": 125,
     "Def": 135,
@@ -16608,7 +16608,7 @@
   {
     "Nat": 875,
     "Pokemon": "Eiscue",
-    "imageUrl": "/sprites/eiscue.png",
+
     "HP": 75,
     "Atk": 80,
     "Def": 110,
@@ -16627,7 +16627,7 @@
   {
     "Nat": 876,
     "Pokemon": "M Indeedee",
-    "imageUrl": "/sprites/m-indeedee.png",
+
     "HP": 60,
     "Atk": 65,
     "Def": 55,
@@ -16646,7 +16646,7 @@
   {
     "Nat": 877,
     "Pokemon": "Morpeko",
-    "imageUrl": "/sprites/morpeko.png",
+
     "HP": 58,
     "Atk": 95,
     "Def": 58,
@@ -16665,7 +16665,7 @@
   {
     "Nat": 878,
     "Pokemon": "Cufant",
-    "imageUrl": "/sprites/cufant.png",
+
     "HP": 72,
     "Atk": 80,
     "Def": 49,
@@ -16684,7 +16684,7 @@
   {
     "Nat": 879,
     "Pokemon": "Copperajah",
-    "imageUrl": "/sprites/copperajah.png",
+
     "HP": 122,
     "Atk": 130,
     "Def": 69,
@@ -16703,7 +16703,7 @@
   {
     "Nat": 880,
     "Pokemon": "Dracozolt",
-    "imageUrl": "/sprites/dracozolt.png",
+
     "HP": 90,
     "Atk": 100,
     "Def": 90,
@@ -16722,7 +16722,7 @@
   {
     "Nat": 881,
     "Pokemon": "Arctozolt",
-    "imageUrl": "/sprites/arctozolt.png",
+
     "HP": 90,
     "Atk": 100,
     "Def": 90,
@@ -16741,7 +16741,7 @@
   {
     "Nat": 882,
     "Pokemon": "Dracovish",
-    "imageUrl": "/sprites/dracovish.png",
+
     "HP": 90,
     "Atk": 90,
     "Def": 100,
@@ -16760,7 +16760,7 @@
   {
     "Nat": 883,
     "Pokemon": "Arctovish",
-    "imageUrl": "/sprites/arctovish.png",
+
     "HP": 90,
     "Atk": 90,
     "Def": 100,
@@ -16779,7 +16779,7 @@
   {
     "Nat": 884,
     "Pokemon": "Duraludon",
-    "imageUrl": "/sprites/duraludon.png",
+
     "HP": 70,
     "Atk": 95,
     "Def": 115,
@@ -16798,7 +16798,7 @@
   {
     "Nat": 885,
     "Pokemon": "Dreepy",
-    "imageUrl": "/sprites/dreepy.png",
+
     "HP": 28,
     "Atk": 60,
     "Def": 30,
@@ -16817,7 +16817,7 @@
   {
     "Nat": 886,
     "Pokemon": "Drakloak",
-    "imageUrl": "/sprites/drakloak.png",
+
     "HP": 68,
     "Atk": 80,
     "Def": 50,
@@ -16836,7 +16836,7 @@
   {
     "Nat": 887,
     "Pokemon": "Dragapult",
-    "imageUrl": "/sprites/dragapult.png",
+
     "HP": 88,
     "Atk": 120,
     "Def": 75,
@@ -16855,7 +16855,7 @@
   {
     "Nat": 888,
     "Pokemon": "Zacian (H)",
-    "imageUrl": "/sprites/zacian-(h).png",
+
     "HP": 92,
     "Atk": 120,
     "Def": 115,
@@ -16874,7 +16874,7 @@
   {
     "Nat": 889,
     "Pokemon": "Zamazenta (H)",
-    "imageUrl": "/sprites/zamazenta-(h).png",
+
     "HP": 92,
     "Atk": 120,
     "Def": 115,
@@ -16893,7 +16893,7 @@
   {
     "Nat": 890,
     "Pokemon": "Eternatus",
-    "imageUrl": "/sprites/eternatus.png",
+
     "HP": 140,
     "Atk": 85,
     "Def": 95,
@@ -16912,7 +16912,7 @@
   {
     "Nat": 891,
     "Pokemon": "Kubfu",
-    "imageUrl": "/sprites/kubfu.png",
+
     "HP": 60,
     "Atk": 90,
     "Def": 60,
@@ -16931,7 +16931,7 @@
   {
     "Nat": 892,
     "Pokemon": "Urshifu SS",
-    "imageUrl": "/sprites/urshifu-ss.png",
+
     "HP": 100,
     "Atk": 130,
     "Def": 100,
@@ -16950,7 +16950,7 @@
   {
     "Nat": 893,
     "Pokemon": "Zarude",
-    "imageUrl": "/sprites/zarude.png",
+
     "HP": 105,
     "Atk": 120,
     "Def": 105,
@@ -16969,7 +16969,7 @@
   {
     "Nat": 894,
     "Pokemon": "Regieleki",
-    "imageUrl": "/sprites/regieleki.png",
+
     "HP": 80,
     "Atk": 100,
     "Def": 50,
@@ -16988,7 +16988,7 @@
   {
     "Nat": 895,
     "Pokemon": "Regidrago",
-    "imageUrl": "/sprites/regidrago.png",
+
     "HP": 200,
     "Atk": 100,
     "Def": 50,
@@ -17007,7 +17007,7 @@
   {
     "Nat": 896,
     "Pokemon": "Glastrier",
-    "imageUrl": "/sprites/glastrier.png",
+
     "HP": 100,
     "Atk": 145,
     "Def": 130,
@@ -17026,7 +17026,7 @@
   {
     "Nat": 897,
     "Pokemon": "Spectrier",
-    "imageUrl": "/sprites/spectrier.png",
+
     "HP": 100,
     "Atk": 65,
     "Def": 60,
@@ -17045,7 +17045,7 @@
   {
     "Nat": 898,
     "Pokemon": "Calyrex",
-    "imageUrl": "/sprites/calyrex.png",
+
     "HP": 100,
     "Atk": 80,
     "Def": 80,
@@ -17064,7 +17064,7 @@
   {
     "Nat": 899,
     "Pokemon": "Wyrdeer",
-    "imageUrl": "/sprites/wyrdeer.png",
+
     "HP": 103,
     "Atk": 105,
     "Def": 72,
@@ -17083,7 +17083,7 @@
   {
     "Nat": 900,
     "Pokemon": "Kleavor",
-    "imageUrl": "/sprites/kleavor.png",
+
     "HP": 70,
     "Atk": 130,
     "Def": 95,
@@ -17102,7 +17102,7 @@
   {
     "Nat": 901,
     "Pokemon": "Ursaluna",
-    "imageUrl": "/sprites/ursaluna.png",
+
     "HP": 130,
     "Atk": 140,
     "Def": 105,
@@ -17121,7 +17121,7 @@
   {
     "Nat": 902,
     "Pokemon": "MBasculegion",
-    "imageUrl": "/sprites/mbasculegion.png",
+
     "HP": 120,
     "Atk": 112,
     "Def": 65,
@@ -17140,7 +17140,7 @@
   {
     "Nat": 903,
     "Pokemon": "Sneasler",
-    "imageUrl": "/sprites/sneasler.png",
+
     "HP": 80,
     "Atk": 130,
     "Def": 60,
@@ -17159,7 +17159,7 @@
   {
     "Nat": 904,
     "Pokemon": "Overqwil",
-    "imageUrl": "/sprites/overqwil.png",
+
     "HP": 85,
     "Atk": 115,
     "Def": 95,
@@ -17178,7 +17178,7 @@
   {
     "Nat": 905,
     "Pokemon": "Enamorus",
-    "imageUrl": "/sprites/enamorus.png",
+
     "HP": 74,
     "Atk": 115,
     "Def": 70,
@@ -17197,7 +17197,7 @@
   {
     "Nat": 906,
     "Pokemon": "Sprigatito",
-    "imageUrl": "/sprites/sprigatito.png",
+
     "HP": 40,
     "Atk": 61,
     "Def": 54,
@@ -17216,7 +17216,7 @@
   {
     "Nat": 907,
     "Pokemon": "Floragato",
-    "imageUrl": "/sprites/floragato.png",
+
     "HP": 61,
     "Atk": 80,
     "Def": 63,
@@ -17235,7 +17235,7 @@
   {
     "Nat": 908,
     "Pokemon": "Meowscarada",
-    "imageUrl": "/sprites/meowscarada.png",
+
     "HP": 76,
     "Atk": 110,
     "Def": 70,
@@ -17254,7 +17254,7 @@
   {
     "Nat": 909,
     "Pokemon": "Fuecoco",
-    "imageUrl": "/sprites/fuecoco.png",
+
     "HP": 67,
     "Atk": 45,
     "Def": 59,
@@ -17273,7 +17273,7 @@
   {
     "Nat": 910,
     "Pokemon": "Crocalor",
-    "imageUrl": "/sprites/crocalor.png",
+
     "HP": 81,
     "Atk": 55,
     "Def": 78,
@@ -17292,7 +17292,7 @@
   {
     "Nat": 911,
     "Pokemon": "Skeledirge",
-    "imageUrl": "/sprites/skeledirge.png",
+
     "HP": 104,
     "Atk": 75,
     "Def": 100,
@@ -17311,7 +17311,7 @@
   {
     "Nat": 912,
     "Pokemon": "Quaxly",
-    "imageUrl": "/sprites/quaxly.png",
+
     "HP": 55,
     "Atk": 65,
     "Def": 45,
@@ -17330,7 +17330,7 @@
   {
     "Nat": 913,
     "Pokemon": "Quaxwell",
-    "imageUrl": "/sprites/quaxwell.png",
+
     "HP": 70,
     "Atk": 85,
     "Def": 65,
@@ -17349,7 +17349,7 @@
   {
     "Nat": 914,
     "Pokemon": "Quaquaval",
-    "imageUrl": "/sprites/quaquaval.png",
+
     "HP": 85,
     "Atk": 120,
     "Def": 80,
@@ -17368,7 +17368,7 @@
   {
     "Nat": 915,
     "Pokemon": "Lechonk",
-    "imageUrl": "/sprites/lechonk.png",
+
     "HP": 54,
     "Atk": 45,
     "Def": 40,
@@ -17387,7 +17387,7 @@
   {
     "Nat": 916,
     "Pokemon": "Oinkologne-M",
-    "imageUrl": "/sprites/oinkologne-m.png",
+
     "HP": 110,
     "Atk": 100,
     "Def": 75,
@@ -17406,7 +17406,7 @@
   {
     "Nat": 917,
     "Pokemon": "Tarountula",
-    "imageUrl": "/sprites/tarountula.png",
+
     "HP": 35,
     "Atk": 41,
     "Def": 45,
@@ -17425,7 +17425,7 @@
   {
     "Nat": 918,
     "Pokemon": "Spidops",
-    "imageUrl": "/sprites/spidops.png",
+
     "HP": 60,
     "Atk": 79,
     "Def": 92,
@@ -17444,7 +17444,7 @@
   {
     "Nat": 919,
     "Pokemon": "Nymble",
-    "imageUrl": "/sprites/nymble.png",
+
     "HP": 33,
     "Atk": 46,
     "Def": 40,
@@ -17463,7 +17463,7 @@
   {
     "Nat": 920,
     "Pokemon": "Lokix",
-    "imageUrl": "/sprites/lokix.png",
+
     "HP": 71,
     "Atk": 102,
     "Def": 78,
@@ -17482,7 +17482,7 @@
   {
     "Nat": 921,
     "Pokemon": "Pawmi",
-    "imageUrl": "/sprites/pawmi.png",
+
     "HP": 45,
     "Atk": 50,
     "Def": 20,
@@ -17501,7 +17501,7 @@
   {
     "Nat": 922,
     "Pokemon": "Pawmot",
-    "imageUrl": "/sprites/pawmot.png",
+
     "HP": 60,
     "Atk": 75,
     "Def": 40,
@@ -17520,7 +17520,7 @@
   {
     "Nat": 923,
     "Pokemon": "Pawmot",
-    "imageUrl": "/sprites/pawmot.png",
+
     "HP": 70,
     "Atk": 115,
     "Def": 70,
@@ -17539,7 +17539,7 @@
   {
     "Nat": 924,
     "Pokemon": "Tandemaus",
-    "imageUrl": "/sprites/tandemaus.png",
+
     "HP": 50,
     "Atk": 50,
     "Def": 45,
@@ -17558,7 +17558,7 @@
   {
     "Nat": 925,
     "Pokemon": "Maushold",
-    "imageUrl": "/sprites/maushold.png",
+
     "HP": 74,
     "Atk": 75,
     "Def": 70,
@@ -17577,7 +17577,7 @@
   {
     "Nat": 926,
     "Pokemon": "Fidough",
-    "imageUrl": "/sprites/fidough.png",
+
     "HP": 37,
     "Atk": 55,
     "Def": 70,
@@ -17596,7 +17596,7 @@
   {
     "Nat": 927,
     "Pokemon": "Dashbun",
-    "imageUrl": "/sprites/dashbun.png",
+
     "HP": 57,
     "Atk": 80,
     "Def": 115,
@@ -17615,7 +17615,7 @@
   {
     "Nat": 928,
     "Pokemon": "Smoliv",
-    "imageUrl": "/sprites/smoliv.png",
+
     "HP": 41,
     "Atk": 35,
     "Def": 45,
@@ -17634,7 +17634,7 @@
   {
     "Nat": 929,
     "Pokemon": "Dolliv",
-    "imageUrl": "/sprites/dolliv.png",
+
     "HP": 52,
     "Atk": 53,
     "Def": 60,
@@ -17653,7 +17653,7 @@
   {
     "Nat": 390,
     "Pokemon": "Arboliva",
-    "imageUrl": "/sprites/arboliva.png",
+
     "HP": 78,
     "Atk": 69,
     "Def": 90,
@@ -17672,7 +17672,7 @@
   {
     "Nat": 931,
     "Pokemon": "Squawkabilly",
-    "imageUrl": "/sprites/squawkabilly.png",
+
     "HP": 82,
     "Atk": 96,
     "Def": 51,
@@ -17691,7 +17691,7 @@
   {
     "Nat": 932,
     "Pokemon": "Nacli",
-    "imageUrl": "/sprites/nacli.png",
+
     "HP": 55,
     "Atk": 55,
     "Def": 75,
@@ -17710,7 +17710,7 @@
   {
     "Nat": 933,
     "Pokemon": "Naclstack",
-    "imageUrl": "/sprites/naclstack.png",
+
     "HP": 60,
     "Atk": 60,
     "Def": 100,
@@ -17729,7 +17729,7 @@
   {
     "Nat": 934,
     "Pokemon": "Gargancl",
-    "imageUrl": "/sprites/gargancl.png",
+
     "HP": 100,
     "Atk": 100,
     "Def": 130,
@@ -17748,7 +17748,7 @@
   {
     "Nat": 935,
     "Pokemon": "Charcadet",
-    "imageUrl": "/sprites/charcadet.png",
+
     "HP": 40,
     "Atk": 50,
     "Def": 40,
@@ -17767,7 +17767,7 @@
   {
     "Nat": 936,
     "Pokemon": "Armarouge",
-    "imageUrl": "/sprites/armarouge.png",
+
     "HP": 85,
     "Atk": 60,
     "Def": 100,
@@ -17786,7 +17786,7 @@
   {
     "Nat": 937,
     "Pokemon": "Ceruledge",
-    "imageUrl": "/sprites/ceruledge.png",
+
     "HP": 75,
     "Atk": 125,
     "Def": 80,
@@ -17805,7 +17805,7 @@
   {
     "Nat": 938,
     "Pokemon": "Tadbulb",
-    "imageUrl": "/sprites/tadbulb.png",
+
     "HP": 61,
     "Atk": 31,
     "Def": 41,
@@ -17824,7 +17824,7 @@
   {
     "Nat": 939,
     "Pokemon": "Bellibolt",
-    "imageUrl": "/sprites/bellibolt.png",
+
     "HP": 109,
     "Atk": 64,
     "Def": 91,
@@ -17843,7 +17843,7 @@
   {
     "Nat": 940,
     "Pokemon": "Wattrel",
-    "imageUrl": "/sprites/wattrel.png",
+
     "HP": 40,
     "Atk": 40,
     "Def": 35,
@@ -17862,7 +17862,7 @@
   {
     "Nat": 941,
     "Pokemon": "Kilowattrel",
-    "imageUrl": "/sprites/kilowattrel.png",
+
     "HP": 70,
     "Atk": 70,
     "Def": 60,
@@ -17881,7 +17881,7 @@
   {
     "Nat": 942,
     "Pokemon": "Maschiff",
-    "imageUrl": "/sprites/maschiff.png",
+
     "HP": 60,
     "Atk": 78,
     "Def": 60,
@@ -17900,7 +17900,7 @@
   {
     "Nat": 943,
     "Pokemon": "Mabosstiff",
-    "imageUrl": "/sprites/mabosstiff.png",
+
     "HP": 80,
     "Atk": 120,
     "Def": 90,
@@ -17919,7 +17919,7 @@
   {
     "Nat": 944,
     "Pokemon": "Shroodle",
-    "imageUrl": "/sprites/shroodle.png",
+
     "HP": 40,
     "Atk": 65,
     "Def": 35,
@@ -17938,7 +17938,7 @@
   {
     "Nat": 945,
     "Pokemon": "Grafaiai",
-    "imageUrl": "/sprites/grafaiai.png",
+
     "HP": 63,
     "Atk": 95,
     "Def": 65,
@@ -17957,7 +17957,7 @@
   {
     "Nat": 946,
     "Pokemon": "Bramblin",
-    "imageUrl": "/sprites/bramblin.png",
+
     "HP": 40,
     "Atk": 65,
     "Def": 30,
@@ -17976,7 +17976,7 @@
   {
     "Nat": 947,
     "Pokemon": "Brambleghast",
-    "imageUrl": "/sprites/brambleghast.png",
+
     "HP": 55,
     "Atk": 115,
     "Def": 70,
@@ -17995,7 +17995,7 @@
   {
     "Nat": 948,
     "Pokemon": "Toedscool",
-    "imageUrl": "/sprites/toedscool.png",
+
     "HP": 40,
     "Atk": 40,
     "Def": 35,
@@ -18014,7 +18014,7 @@
   {
     "Nat": 949,
     "Pokemon": "Toedscruel",
-    "imageUrl": "/sprites/toedscruel.png",
+
     "HP": 80,
     "Atk": 70,
     "Def": 65,
@@ -18033,7 +18033,7 @@
   {
     "Nat": 950,
     "Pokemon": "Klawf",
-    "imageUrl": "/sprites/klawf.png",
+
     "HP": 70,
     "Atk": 100,
     "Def": 115,
@@ -18052,7 +18052,7 @@
   {
     "Nat": 951,
     "Pokemon": "Capsakid",
-    "imageUrl": "/sprites/capsakid.png",
+
     "HP": 50,
     "Atk": 62,
     "Def": 40,
@@ -18071,7 +18071,7 @@
   {
     "Nat": 952,
     "Pokemon": "Scovillain",
-    "imageUrl": "/sprites/scovillain.png",
+
     "HP": 65,
     "Atk": 108,
     "Def": 65,
@@ -18090,7 +18090,7 @@
   {
     "Nat": 953,
     "Pokemon": "Rellor",
-    "imageUrl": "/sprites/rellor.png",
+
     "HP": 41,
     "Atk": 50,
     "Def": 60,
@@ -18109,7 +18109,7 @@
   {
     "Nat": 954,
     "Pokemon": "Rabsca",
-    "imageUrl": "/sprites/rabsca.png",
+
     "HP": 75,
     "Atk": 50,
     "Def": 85,
@@ -18128,7 +18128,7 @@
   {
     "Nat": 955,
     "Pokemon": "Flittle",
-    "imageUrl": "/sprites/flittle.png",
+
     "HP": 30,
     "Atk": 35,
     "Def": 30,
@@ -18147,7 +18147,7 @@
   {
     "Nat": 956,
     "Pokemon": "Espathra",
-    "imageUrl": "/sprites/espathra.png",
+
     "HP": 75,
     "Atk": 60,
     "Def": 60,
@@ -18166,7 +18166,7 @@
   {
     "Nat": 957,
     "Pokemon": "Tinkatink",
-    "imageUrl": "/sprites/tinkatink.png",
+
     "HP": 50,
     "Atk": 45,
     "Def": 45,
@@ -18185,7 +18185,7 @@
   {
     "Nat": 958,
     "Pokemon": "Tinkatuff",
-    "imageUrl": "/sprites/tinkatuff.png",
+
     "HP": 65,
     "Atk": 55,
     "Def": 55,
@@ -18204,7 +18204,7 @@
   {
     "Nat": 959,
     "Pokemon": "Tinkaton",
-    "imageUrl": "/sprites/tinkaton.png",
+
     "HP": 85,
     "Atk": 75,
     "Def": 77,
@@ -18223,7 +18223,7 @@
   {
     "Nat": 960,
     "Pokemon": "Wiglett",
-    "imageUrl": "/sprites/wiglett.png",
+
     "HP": 10,
     "Atk": 55,
     "Def": 25,
@@ -18242,7 +18242,7 @@
   {
     "Nat": 961,
     "Pokemon": "Wugtrio",
-    "imageUrl": "/sprites/wugtrio.png",
+
     "HP": 35,
     "Atk": 100,
     "Def": 50,
@@ -18261,7 +18261,7 @@
   {
     "Nat": 962,
     "Pokemon": "Bombirdier",
-    "imageUrl": "/sprites/bombirdier.png",
+
     "HP": 70,
     "Atk": 103,
     "Def": 85,
@@ -18280,7 +18280,7 @@
   {
     "Nat": 963,
     "Pokemon": "Finizen",
-    "imageUrl": "/sprites/finizen.png",
+
     "HP": 70,
     "Atk": 45,
     "Def": 40,
@@ -18299,7 +18299,7 @@
   {
     "Nat": 964,
     "Pokemon": "Palafin",
-    "imageUrl": "/sprites/palafin.png",
+
     "HP": 100,
     "Atk": 70,
     "Def": 72,
@@ -18318,7 +18318,7 @@
   {
     "Nat": 965,
     "Pokemon": "Varoom",
-    "imageUrl": "/sprites/varoom.png",
+
     "HP": 45,
     "Atk": 70,
     "Def": 63,
@@ -18337,7 +18337,7 @@
   {
     "Nat": 966,
     "Pokemon": "Revaroom",
-    "imageUrl": "/sprites/revaroom.png",
+
     "HP": 80,
     "Atk": 119,
     "Def": 90,
@@ -18356,7 +18356,7 @@
   {
     "Nat": 967,
     "Pokemon": "Cyclizar",
-    "imageUrl": "/sprites/cyclizar.png",
+
     "HP": 70,
     "Atk": 95,
     "Def": 65,
@@ -18375,7 +18375,7 @@
   {
     "Nat": 968,
     "Pokemon": "Orthworm",
-    "imageUrl": "/sprites/orthworm.png",
+
     "HP": 70,
     "Atk": 85,
     "Def": 145,
@@ -18394,7 +18394,7 @@
   {
     "Nat": 969,
     "Pokemon": "Glimmet",
-    "imageUrl": "/sprites/glimmet.png",
+
     "HP": 48,
     "Atk": 35,
     "Def": 42,
@@ -18413,7 +18413,7 @@
   {
     "Nat": 970,
     "Pokemon": "Glimmora",
-    "imageUrl": "/sprites/glimmora.png",
+
     "HP": 83,
     "Atk": 55,
     "Def": 90,
@@ -18432,7 +18432,7 @@
   {
     "Nat": 971,
     "Pokemon": "Greavard",
-    "imageUrl": "/sprites/greavard.png",
+
     "HP": 50,
     "Atk": 61,
     "Def": 60,
@@ -18451,7 +18451,7 @@
   {
     "Nat": 972,
     "Pokemon": "Houndstone",
-    "imageUrl": "/sprites/houndstone.png",
+
     "HP": 72,
     "Atk": 101,
     "Def": 100,
@@ -18470,7 +18470,7 @@
   {
     "Nat": 973,
     "Pokemon": "Flamigo",
-    "imageUrl": "/sprites/flamigo.png",
+
     "HP": 82,
     "Atk": 115,
     "Def": 74,
@@ -18489,7 +18489,7 @@
   {
     "Nat": 974,
     "Pokemon": "Cetoddle",
-    "imageUrl": "/sprites/cetoddle.png",
+
     "HP": 108,
     "Atk": 68,
     "Def": 45,
@@ -18508,7 +18508,7 @@
   {
     "Nat": 975,
     "Pokemon": "Cetitan",
-    "imageUrl": "/sprites/cetitan.png",
+
     "HP": 170,
     "Atk": 113,
     "Def": 65,
@@ -18527,7 +18527,7 @@
   {
     "Nat": 976,
     "Pokemon": "Veluza",
-    "imageUrl": "/sprites/veluza.png",
+
     "HP": 90,
     "Atk": 102,
     "Def": 73,
@@ -18546,7 +18546,7 @@
   {
     "Nat": 977,
     "Pokemon": "Dondozo",
-    "imageUrl": "/sprites/dondozo.png",
+
     "HP": 150,
     "Atk": 100,
     "Def": 115,
@@ -18565,7 +18565,7 @@
   {
     "Nat": 978,
     "Pokemon": "Tatsugiri",
-    "imageUrl": "/sprites/tatsugiri.png",
+
     "HP": 68,
     "Atk": 50,
     "Def": 60,
@@ -18584,7 +18584,7 @@
   {
     "Nat": 979,
     "Pokemon": "Annihilape",
-    "imageUrl": "/sprites/annihilape.png",
+
     "HP": 110,
     "Atk": 115,
     "Def": 80,
@@ -18603,7 +18603,7 @@
   {
     "Nat": 980,
     "Pokemon": "Clodsire",
-    "imageUrl": "/sprites/clodsire.png",
+
     "HP": 130,
     "Atk": 75,
     "Def": 60,
@@ -18622,7 +18622,7 @@
   {
     "Nat": 981,
     "Pokemon": "Farigaraf",
-    "imageUrl": "/sprites/farigaraf.png",
+
     "HP": 120,
     "Atk": 90,
     "Def": 70,
@@ -18641,7 +18641,7 @@
   {
     "Nat": 982,
     "Pokemon": "Dudunsparce",
-    "imageUrl": "/sprites/dudunsparce.png",
+
     "HP": 125,
     "Atk": 100,
     "Def": 80,
@@ -18660,7 +18660,7 @@
   {
     "Nat": 983,
     "Pokemon": "Kingambit",
-    "imageUrl": "/sprites/kingambit.png",
+
     "HP": 100,
     "Atk": 135,
     "Def": 120,
@@ -18679,7 +18679,7 @@
   {
     "Nat": 984,
     "Pokemon": "Great Tusk",
-    "imageUrl": "/sprites/great-tusk.png",
+
     "HP": 115,
     "Atk": 131,
     "Def": 131,
@@ -18698,7 +18698,7 @@
   {
     "Nat": 985,
     "Pokemon": "Scream Tail",
-    "imageUrl": "/sprites/scream-tail.png",
+
     "HP": 115,
     "Atk": 65,
     "Def": 99,
@@ -18717,7 +18717,7 @@
   {
     "Nat": 986,
     "Pokemon": "Brute Bonnet",
-    "imageUrl": "/sprites/brute-bonnet.png",
+
     "HP": 111,
     "Atk": 127,
     "Def": 99,
@@ -18736,7 +18736,7 @@
   {
     "Nat": 987,
     "Pokemon": "Flutter Mane",
-    "imageUrl": "/sprites/flutter-mane.png",
+
     "HP": 55,
     "Atk": 55,
     "Def": 55,
@@ -18755,7 +18755,7 @@
   {
     "Nat": 988,
     "Pokemon": "Slither Wing",
-    "imageUrl": "/sprites/slither-wing.png",
+
     "HP": 85,
     "Atk": 135,
     "Def": 79,
@@ -18774,7 +18774,7 @@
   {
     "Nat": 989,
     "Pokemon": "Sandy Shocks",
-    "imageUrl": "/sprites/sandy-shocks.png",
+
     "HP": 85,
     "Atk": 81,
     "Def": 97,
@@ -18793,7 +18793,7 @@
   {
     "Nat": 990,
     "Pokemon": "Iron Treads",
-    "imageUrl": "/sprites/iron-treads.png",
+
     "HP": 90,
     "Atk": 112,
     "Def": 120,
@@ -18812,7 +18812,7 @@
   {
     "Nat": 991,
     "Pokemon": "Iron Bundle",
-    "imageUrl": "/sprites/iron-bundle.png",
+
     "HP": 56,
     "Atk": 80,
     "Def": 114,
@@ -18831,7 +18831,7 @@
   {
     "Nat": 992,
     "Pokemon": "Iron Hands",
-    "imageUrl": "/sprites/iron-hands.png",
+
     "HP": 154,
     "Atk": 140,
     "Def": 108,
@@ -18850,7 +18850,7 @@
   {
     "Nat": 993,
     "Pokemon": "Iron Jugulis",
-    "imageUrl": "/sprites/iron-jugulis.png",
+
     "HP": 94,
     "Atk": 80,
     "Def": 86,
@@ -18869,7 +18869,7 @@
   {
     "Nat": 994,
     "Pokemon": "Iron Moth",
-    "imageUrl": "/sprites/iron-moth.png",
+
     "HP": 80,
     "Atk": 70,
     "Def": 60,
@@ -18888,7 +18888,7 @@
   {
     "Nat": 995,
     "Pokemon": "Iron Thorns",
-    "imageUrl": "/sprites/iron-thorns.png",
+
     "HP": 100,
     "Atk": 134,
     "Def": 110,
@@ -18907,7 +18907,7 @@
   {
     "Nat": 996,
     "Pokemon": "Frigibax",
-    "imageUrl": "/sprites/frigibax.png",
+
     "HP": 65,
     "Atk": 75,
     "Def": 45,
@@ -18926,7 +18926,7 @@
   {
     "Nat": 997,
     "Pokemon": "Arctibax",
-    "imageUrl": "/sprites/arctibax.png",
+
     "HP": 90,
     "Atk": 95,
     "Def": 66,
@@ -18945,7 +18945,7 @@
   {
     "Nat": 998,
     "Pokemon": "Baxcalibur",
-    "imageUrl": "/sprites/baxcalibur.png",
+
     "HP": 115,
     "Atk": 145,
     "Def": 92,
@@ -18964,7 +18964,7 @@
   {
     "Nat": 999,
     "Pokemon": "Gimmighoul (Chest)",
-    "imageUrl": "/sprites/gimmighoul-(chest).png",
+
     "HP": 45,
     "Atk": 30,
     "Def": 70,
@@ -18983,7 +18983,7 @@
   {
     "Nat": 1000,
     "Pokemon": "Gholdengo",
-    "imageUrl": "/sprites/gholdengo.png",
+
     "HP": 87,
     "Atk": 60,
     "Def": 95,
@@ -19002,7 +19002,7 @@
   {
     "Nat": 1001,
     "Pokemon": "Wo-Chien",
-    "imageUrl": "/sprites/wo-chien.png",
+
     "HP": 85,
     "Atk": 85,
     "Def": 100,
@@ -19021,7 +19021,7 @@
   {
     "Nat": 1002,
     "Pokemon": "Chien-Pao",
-    "imageUrl": "/sprites/chien-pao.png",
+
     "HP": 80,
     "Atk": 120,
     "Def": 80,
@@ -19040,7 +19040,7 @@
   {
     "Nat": 1003,
     "Pokemon": "Ting-Lu",
-    "imageUrl": "/sprites/ting-lu.png",
+
     "HP": 155,
     "Atk": 110,
     "Def": 125,
@@ -19059,7 +19059,7 @@
   {
     "Nat": 1004,
     "Pokemon": "Chi-Yu",
-    "imageUrl": "/sprites/chi-yu.png",
+
     "HP": 55,
     "Atk": 80,
     "Def": 80,
@@ -19079,7 +19079,7 @@
   {
     "Nat": 1005,
     "Pokemon": "Roaring Moon",
-    "imageUrl": "/sprites/roaring-moon.png",
+
     "HP": 105,
     "Atk": 139,
     "Def": 71,
@@ -19098,7 +19098,7 @@
   {
     "Nat": 1006,
     "Pokemon": "Iron Valiant",
-    "imageUrl": "/sprites/iron-valiant.png",
+
     "HP": 74,
     "Atk": 130,
     "Def": 90,
@@ -19117,7 +19117,7 @@
   {
     "Nat": 1007,
     "Pokemon": "Koraidon",
-    "imageUrl": "/sprites/koraidon.png",
+
     "HP": 100,
     "Atk": 135,
     "Def": 115,
@@ -19136,7 +19136,7 @@
   {
     "Nat": 1008,
     "Pokemon": "Miraidon",
-    "imageUrl": "/sprites/miraidon.png",
+
     "HP": 100,
     "Atk": 85,
     "Def": 100,
@@ -19155,7 +19155,7 @@
   {
     "Nat": 1009,
     "Pokemon": "Walking Wake",
-    "imageUrl": "/sprites/walking-wake.png",
+
     "HP": 99,
     "Atk": 83,
     "Def": 91,
@@ -19174,7 +19174,7 @@
   {
     "Nat": 1010,
     "Pokemon": "Iron Leaves",
-    "imageUrl": "/sprites/iron-leaves.png",
+
     "HP": 90,
     "Atk": 130,
     "Def": 88,
