@@ -6,7 +6,6 @@ import { type Pokemon } from "~/lib/data/dex";
 import type Category from "~/lib/categories";
 import Grid from "./Grid";
 import { signIn, signOut, useSession } from "next-auth/react";
-import Link from "next/link";
 import { getCategoryFromId } from "~/lib/categories";
 import { toast } from "react-hot-toast";
 
@@ -43,6 +42,7 @@ export default function App({
       temp[categoryIndex] = pokemonId;
     }
     setGuesses(temp);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function handleGuess(

@@ -28,11 +28,9 @@ export default function Cell({
   onGuess,
   categories,
 }: CellProps) {
-  const [guess, setGuess] = useState<string | undefined>(initialGuess);
   const pokemon = pokedex.find((p) => initialGuess === p.id);
 
   function handleGuess(p: Pokemon) {
-    setGuess(p.id);
     onGuess(p, categories, index);
   }
 
