@@ -1,8 +1,20 @@
 "use client";
 
 import { SessionProvider } from "next-auth/react";
-import { type ReactNode } from "react";
+import { useState, type ReactNode, useEffect } from "react";
+import { Toaster } from "react-hot-toast";
 
 export default function Providers({ children }: { children: ReactNode }) {
-  return <SessionProvider>{children}</SessionProvider>;
+  const [toastable, setToastable] = useState(false);
+
+  useEffect(() => {
+    setToastable(true);
+  }, [])
+
+  return (
+    <SessionProvider>
+      {children}
+      {toastable && <Toaster />}
+    </SessionProvider>
+  );
 }

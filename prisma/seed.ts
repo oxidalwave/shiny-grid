@@ -471,7 +471,7 @@ async function main() {
           gender: p.Gender,
           evolve: p.Evolve,
 
-          imageUrl: `/sprites/${("000" + p.Nat).slice(-4)}_001.png`,
+          imageUrl: `/sprites/${("000" + p.Nat).slice(-4)}_01.png`,
 
           types: {
             create: [
@@ -569,7 +569,7 @@ async function main() {
           gender: p.Gender,
           evolve: p.Evolve,
 
-          imageUrl: `/sprites/${("000" + p.Nat).slice(-4)}_001.png`,
+          imageUrl: `/sprites/${("000" + p.Nat).slice(-4)}_01.png`,
 
           types: {
             create: [

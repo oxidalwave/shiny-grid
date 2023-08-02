@@ -8,6 +8,7 @@ import Grid from "./Grid";
 import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 import { getCategoryFromId } from "~/lib/categories";
+import { toast } from "react-hot-toast";
 
 export interface GridProps {
   dex: Pokemon[];
@@ -70,17 +71,21 @@ export default function App({
     }
   }
 
+  function handleShare() {
+    const url = `/${seed}/${session.data?.user.name}`;
+    void navigator.clipboard
+      .writeText(url)
+      .then(() => toast("A sharable link has been copied to your clipboard!"));
+  }
+
   return (
     <div className="">
       <div className="p-2">
         {session.data ? (
           <div className="flex">
-            <Link
-              href={`/${seed}/${session.data.user.name}`}
-              className="w-full rounded p-2 m-2 bg-slate-700 hover:bg-slate-800"
-            >
+            <button onClick={handleShare} className="w-full rounded p-2 m-2 bg-slate-700 hover:bg-slate-800">
               Share your grid
-            </Link>
+            </button>
             <button
               className="w-full rounded p-2 m-2 bg-slate-700 hover:bg-slate-800"
               onClick={() => void signOut()}
