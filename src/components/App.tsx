@@ -8,7 +8,6 @@ import Grid from "./Grid";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { getCategoryFromId } from "~/lib/categories";
 import { toast } from "react-hot-toast";
-import { env } from "~/env.mjs";
 
 export interface GridProps {
   dex: Pokemon[];
@@ -30,7 +29,7 @@ export default function App({
   categoryIds,
   username,
   initialAnswers,
-}: GridProps) {
+}: GridProps) {  
   const categories = categoryIds.map(getCategoryFromId);
 
   const session = useSession();
@@ -43,7 +42,7 @@ export default function App({
       temp[categoryIndex] = pokemonId;
     }
     setGuesses(temp);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function handleGuess(
@@ -73,7 +72,8 @@ export default function App({
   }
 
   function handleShare() {
-    const url = `${env.URL}/${seed}/${session.data?.user.name}`;
+    const mainhost = window.location.host
+    const url = `https://${mainhost}/${seed}/${session.data?.user.name}`;
     void navigator.clipboard
       .writeText(url)
       .then(() => toast("A sharable link has been copied to your clipboard!"));
@@ -84,7 +84,10 @@ export default function App({
       <div className="p-2">
         {session.data ? (
           <div className="flex">
-            <button onClick={handleShare} className="w-full rounded p-2 m-2 bg-slate-700 hover:bg-slate-800">
+            <button
+              onClick={handleShare}
+              className="w-full rounded p-2 m-2 bg-slate-700 hover:bg-slate-800"
+            >
               Share your grid
             </button>
             <button
