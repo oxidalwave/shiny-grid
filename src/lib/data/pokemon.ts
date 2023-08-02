@@ -24,6 +24,7 @@ export const PokemonValidator = z.object({
   eggGroups: z.array(
     z.object({
       eggGroup: z.object({
+        id: z.string(),
         name: z.string(),
       }),
     })
@@ -31,6 +32,7 @@ export const PokemonValidator = z.object({
   types: z.array(
     z.object({
       type: z.object({
+        id: z.string(),
         name: z.string(),
         generationIntroduced: z.number(),
       }),
@@ -40,6 +42,7 @@ export const PokemonValidator = z.object({
     z.object({
       isHidden: z.boolean(),
       ability: z.object({
+        id: z.string(),
         name: z.string(),
       }),
     })
@@ -50,18 +53,35 @@ export async function getPokedex() {
   return await prisma.pokemon.findMany({
     include: {
       types: {
-        include: {
-          type: true,
+        select: {
+          type: {
+            select: {
+              id: true,
+              name: true,
+              generationIntroduced: true,
+            },
+          },
         },
       },
       abilities: {
-        include: {
-          ability: true,
+        select: {
+          isHidden: true,
+          ability: {
+            select: {
+              id: true,
+              name: true,
+            },
+          },
         },
       },
       eggGroups: {
-        include: {
-          eggGroup: true,
+        select: {
+          eggGroup: {
+            select: {
+              id: true,
+              name: true,
+            },
+          },
         },
       },
     },
