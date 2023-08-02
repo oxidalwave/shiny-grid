@@ -1,5 +1,4 @@
 import { z } from "zod";
-import { prisma } from "~/server/db";
 
 export const PokemonValidator = z.object({
   id: z.string(),
@@ -48,42 +47,3 @@ export const PokemonValidator = z.object({
     })
   ),
 });
-
-export async function getPokedex() {
-  return await prisma.pokemon.findMany({
-    include: {
-      types: {
-        select: {
-          type: {
-            select: {
-              id: true,
-              name: true,
-              generationIntroduced: true,
-            },
-          },
-        },
-      },
-      abilities: {
-        select: {
-          isHidden: true,
-          ability: {
-            select: {
-              id: true,
-              name: true,
-            },
-          },
-        },
-      },
-      eggGroups: {
-        select: {
-          eggGroup: {
-            select: {
-              id: true,
-              name: true,
-            },
-          },
-        },
-      },
-    },
-  });
-}

@@ -1,8 +1,16 @@
+export const revalidate = 3600;
+
 import { NextResponse } from "next/server";
 import { prisma } from "~/server/db";
 
-export const GET = async () => {
-  const pokedex = await prisma.pokemon.findMany({
+export const GET = async (
+  request: Request,
+  { params }: { params: { id: string } }
+) => {
+  const pokemon = await prisma.pokemon.findUnique({
+    where: {
+      id: params.id,
+    },
     include: {
       types: {
         select: {
@@ -39,5 +47,5 @@ export const GET = async () => {
     },
   });
 
-  return NextResponse.json(pokedex);
+  return NextResponse.json(pokemon);
 };
