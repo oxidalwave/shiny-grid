@@ -8,6 +8,7 @@ import Grid from "./Grid";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { getCategoryFromId } from "~/lib/categories";
 import { toast } from "react-hot-toast";
+import { env } from "~/env.mjs";
 
 export interface GridProps {
   dex: Pokemon[];
@@ -72,7 +73,7 @@ export default function App({
   }
 
   function handleShare() {
-    const url = `/${seed}/${session.data?.user.name}`;
+    const url = `${env.URL}/${seed}/${session.data?.user.name}`;
     void navigator.clipboard
       .writeText(url)
       .then(() => toast("A sharable link has been copied to your clipboard!"));
