@@ -40,13 +40,16 @@ function isInvalidCombo(categories: CategoryCode[]) {
     return true;
   }
 
-  // check for duplicate types
+  // check for duplicate codes
   if (codes[0] === codes[1]) {
     return true;
   }
 
   //check for invalid gen
-  if (false) {
+  if (codes.includes("SteelType") && codes.includes("Generation1")) {
+    return true;
+  }
+  if (codes.includes("DarkType") && codes.includes("Generation1")) {
     return true;
   }
 
