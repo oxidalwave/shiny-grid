@@ -3,7 +3,6 @@ import { type Pokemon } from "~/lib/data/dex";
 
 import CategoryLabel from "./CategoryLabel";
 import type Category from "~/lib/categories";
-import Spinner from "./common/Spinner";
 
 export interface GridProps {
   loading?: boolean;
@@ -27,7 +26,7 @@ export default function Grid({
   return (
     <div>
       {loading && (
-        <div className="h-screen flex items-center justify-center  z-10">
+        <div className="h-screen flex items-center justify-center z-10">
           <Spinner />
         </div>
       )}
