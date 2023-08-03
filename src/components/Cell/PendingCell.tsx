@@ -23,9 +23,7 @@ export default function PendingCell({
   const [name, setName] = useState<string>("");
 
   function handleSubmit(pokemon: Pokemon) {
-    if (!disableInput) {
-      onGuess(pokemon);
-    }
+    onGuess(pokemon);
   }
 
   const filteredPokedex =
@@ -86,10 +84,14 @@ export default function PendingCell({
           </div>
         </div>
       </dialog>
-      <button
-        className="h-full bg-slate-700 hover:bg-slate-800"
-        onClick={handleOpen}
-      />
+      {disableInput ? (
+        <div className="h-full bg-slate-700" />
+      ) : (
+        <button
+          className="h-full bg-slate-700 hover:bg-slate-800"
+          onClick={handleOpen}
+        />
+      )}
     </>
   );
 }
