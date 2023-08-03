@@ -7,12 +7,11 @@ import type Category from "~/lib/categories";
 export interface GridProps {
   disableInput?: boolean;
   seed: string;
-  guesses: Pokemon[];
+  guesses: (Pokemon | undefined)[];
   dex: Pokemon[];
   categories: Category[];
   onGuess: (
     pokemon: Pokemon,
-    categories: Category[],
     categoryIndex: number,
   ) => void;
 }

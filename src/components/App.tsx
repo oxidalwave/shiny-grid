@@ -32,11 +32,12 @@ export default function App({
   username,
   initialAnswers,
 }: GridProps) {
+
   const categories = categoryIds.map(getCategoryFromId);
 
   const session = useSession();
 
-  const [guesses, setGuesses] = useState<Pokemon[]>([]);
+  const [guesses, setGuesses] = useState<(Pokemon | undefined)[]>([]);
 
   const queryClient = useQueryClient();
 
@@ -54,7 +55,6 @@ export default function App({
 
   function handleGuess(
     pokemon: Pokemon,
-    categories: Category[],
     categoryIndex: number,
   ) {
     if (session.data && session.data.user.name === username) {
