@@ -31,6 +31,10 @@ function isInvalidCombo(categories: CategoryCode[]) {
 }
 
 function isInvalidGrid(categories: CategoryCode[]) {
+  const categoryIds = categories.map((c) => c.id);
+  if (new Set(categoryIds).size !== categoryIds.length) {
+    return true;
+  }
   const combos: CategoryCode[][] = [
     [categories[0]!, categories[3]!],
     [categories[0]!, categories[4]!],

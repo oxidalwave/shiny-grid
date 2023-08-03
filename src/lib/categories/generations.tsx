@@ -203,13 +203,13 @@ export const Generation8: Category = {
         <Image alt="shield" src="/boxart/shield.png" width={64} height={64} />
         <Image
           alt="brilliantdiamond"
-          src="/boxart/brilliantdiamond.jpg"
+          src="/boxart/brilliantdiamond.png"
           width={64}
           height={64}
         />
         <Image
           alt="shiningpearl"
-          src="/boxart/shiningpearl.jpg"
+          src="/boxart/shiningpearl.png"
           width={64}
           height={64}
         />
