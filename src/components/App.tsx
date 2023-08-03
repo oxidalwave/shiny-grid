@@ -150,7 +150,6 @@ export default function App({
       </div>
       <Grid
         disabled={loading || session.data?.user.name !== username}
-        loading={loading}
         seed={seed}
         categories={categories}
         dex={dex}
