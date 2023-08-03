@@ -39,7 +39,10 @@ export default function App({
   useEffect(() => {
     const temp = [...guesses];
     for (const { categoryIndex, pokemonId } of initialAnswers) {
-      temp[categoryIndex] = dex.find(({ id }) => id === pokemonId)!;
+      const found = dex.find(({ id }) => id === pokemonId);
+      if (found) {
+        temp[categoryIndex] = found;
+      }
     }
     setGuesses(temp);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -52,9 +55,11 @@ export default function App({
   ) {
     if (session.data && session.data.user.name === username) {
       const temp = [...guesses];
-      temp[categoryIndex] = dex.find(({ id }) => id === pokemon.id)!;
+      const found = dex.find(({ id }) => id === pokemon.id);
+      if (found) {
+        temp[categoryIndex] = found;
+      }
       setGuesses(temp);
-
       fetch(
         `/api/grids/${seed}/users/${session.data?.user.name}/categories/${categoryIndex}`,
         {
@@ -66,7 +71,10 @@ export default function App({
       });
     } else if (!session) {
       const temp = [...guesses];
-      temp[categoryIndex] = dex.find(({ id }) => id === pokemon.id)!;
+      const found = dex.find(({ id }) => id === pokemon.id);
+      if (found) {
+        temp[categoryIndex] = found;
+      }
       setGuesses(temp);
     }
   }
