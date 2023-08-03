@@ -5,7 +5,7 @@ import { prisma } from "~/server/db";
 
 export const GET = async (
   request: Request,
-  { params }: { params: { seed: string; username: string } }
+  { params }: { params: { seed: string; username: string } },
 ) => {
   const userAnswer = await prisma.userAnswer.findMany({
     where: {
@@ -16,7 +16,7 @@ export const GET = async (
     },
     select: {
       categoryIndex: true,
-      pokemonId: true
+      pokemonId: true,
     },
   });
 

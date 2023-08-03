@@ -13,7 +13,7 @@ export interface GridProps {
   onGuess: (
     pokemon: Pokemon,
     categories: Category[],
-    categoryIndex: number
+    categoryIndex: number,
   ) => void;
 }
 

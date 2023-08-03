@@ -6,7 +6,7 @@ async function main() {
   const gens = await prisma.generation.findMany();
   const types = await prisma.type.findMany();
   const genAndTypes = gens.flatMap((gen) =>
-    types.map((t) => ({ gen, type: t }))
+    types.map((t) => ({ gen, type: t })),
   );
 
   const genAndTypesAndCount = await Promise.all(
@@ -25,12 +25,12 @@ async function main() {
           },
         },
       }),
-    }))
+    })),
   );
 
   console.log("Invalid Generation/Type combinations");
   for (const { gen, type } of genAndTypesAndCount.filter(
-    ({ count }) => count === 0
+    ({ count }) => count === 0,
   )) {
     console.log(`Gen ${gen.name} with ${type.name} Type`);
   }

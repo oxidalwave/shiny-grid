@@ -14,7 +14,7 @@ export default function SeedPage({ params }: { params: { seed: string } }) {
       next: { revalidate: 21600 },
     })
       .then((r) => r.json())
-      .then((j) => z.array(PokemonValidator).parse(j))
+      .then((j) => z.array(PokemonValidator).parse(j)),
   );
 
   const session = use(getServerSession(authOptions));
@@ -23,7 +23,7 @@ export default function SeedPage({ params }: { params: { seed: string } }) {
     ? use(
         fetch(
           `${env.URL}/api/grids/${params.seed}/users/${session.user.name}`,
-          { cache: "no-cache" }
+          { cache: "no-cache" },
         )
           .then((r) => r.json())
           .then((j) =>
@@ -32,10 +32,10 @@ export default function SeedPage({ params }: { params: { seed: string } }) {
                 z.object({
                   pokemonId: z.string(),
                   categoryIndex: z.number(),
-                })
+                }),
               )
-              .parse(j)
-          )
+              .parse(j),
+          ),
       )
     : [];
 
@@ -55,10 +55,10 @@ export default function SeedPage({ params }: { params: { seed: string } }) {
                 z.literal("GEN"),
                 z.literal("STAT"),
               ]),
-            })
+            }),
           )
-          .parse(j)
-      )
+          .parse(j),
+      ),
   );
 
   return (

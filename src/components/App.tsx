@@ -9,6 +9,7 @@ import Grid from "./Grid";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { getCategoryFromId } from "~/lib/categories";
 import { toast } from "react-hot-toast";
+import { useQueryClient } from "@tanstack/react-query";
 
 export interface GridProps {
   dex: Pokemon[];
@@ -37,6 +38,8 @@ export default function App({
 
   const [guesses, setGuesses] = useState<Pokemon[]>([]);
 
+  const queryClient = useQueryClient();
+
   useEffect(() => {
     const temp = [...guesses];
     for (const { categoryIndex, pokemonId } of initialAnswers) {
@@ -52,7 +55,7 @@ export default function App({
   function handleGuess(
     pokemon: Pokemon,
     categories: Category[],
-    categoryIndex: number
+    categoryIndex: number,
   ) {
     if (session.data && session.data.user.name === username) {
       const temp = [...guesses];
@@ -66,10 +69,19 @@ export default function App({
         {
           body: JSON.stringify({ id: pokemon.id }),
           method: "POST",
-        }
-      ).catch((e) => {
-        console.log(e);
-      });
+        },
+      )
+        .then(() =>
+          queryClient.invalidateQueries([
+            "guesses",
+            seed,
+            categoryIndex,
+            pokemon.id,
+          ]),
+        )
+        .catch((e) => {
+          console.log(e);
+        });
     } else if (!session) {
       const temp = [...guesses];
       const found = dex.find(({ id }) => id === pokemon.id);

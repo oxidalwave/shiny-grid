@@ -17,7 +17,7 @@ export default function HomePage() {
       next: { revalidate: 21600 },
     })
       .then((r) => r.json())
-      .then((j) => z.array(PokemonValidator).parse(j))
+      .then((j) => z.array(PokemonValidator).parse(j)),
   );
 
   const session = use(getServerSession(authOptions));
@@ -34,10 +34,10 @@ export default function HomePage() {
                 z.object({
                   pokemonId: z.string(),
                   categoryIndex: z.number(),
-                })
+                }),
               )
-              .parse(j)
-          )
+              .parse(j),
+          ),
       )
     : [];
 
@@ -57,10 +57,10 @@ export default function HomePage() {
                 z.literal("GEN"),
                 z.literal("STAT"),
               ]),
-            })
+            }),
           )
-          .parse(j)
-      )
+          .parse(j),
+      ),
   );
 
   return (
