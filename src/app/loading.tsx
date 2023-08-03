@@ -5,6 +5,7 @@ import { authOptions } from "~/server/auth";
 import { defaultSeed } from "~/lib/defaultSeed";
 import { type Pokemon } from "~/lib/data/dex";
 import { getCategories } from "~/lib/getCategories";
+import Spinner from "~/components/common/Spinner";
 
 export default function HomePageLoading() {
   const seed = defaultSeed();
@@ -18,18 +19,23 @@ export default function HomePageLoading() {
     pokemonId: string;
   }[];
 
-  const categoryIds = getCategories(seed)
+  const categoryIds = getCategories(seed);
 
   return (
-    <div className="p-2">
-      <App
-        loading
-        categoryIds={categoryIds}
-        username={session?.user?.name ?? undefined}
-        dex={dex}
-        seed={seed}
-        initialAnswers={initialAnswers}
-      />
-    </div>
+    <>
+      <div className="h-screen flex items-center justify-center bg-slate-700 bg-opacity-50 z-10">
+        <Spinner />
+      </div>
+      <div className="p-2">
+        <App
+          loading
+          categoryIds={categoryIds}
+          username={session?.user?.name ?? undefined}
+          dex={dex}
+          seed={seed}
+          initialAnswers={initialAnswers}
+        />
+      </div>
+    </>
   );
 }
