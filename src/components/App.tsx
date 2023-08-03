@@ -78,7 +78,7 @@ export default function App({
           ]),
         )
         .catch((e) => {
-          console.log(e);
+          toast(`Something went wrong:\n${JSON.stringify(e)}`);
         });
     } else if (!session) {
       const temp = [...guesses];
