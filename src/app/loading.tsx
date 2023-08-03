@@ -4,6 +4,7 @@ import App from "~/components/App";
 import { authOptions } from "~/server/auth";
 import { defaultSeed } from "~/lib/defaultSeed";
 import { type Pokemon } from "~/lib/data/dex";
+import { getCategories } from "~/lib/getCategories";
 
 export default function HomePageLoading() {
   const seed = defaultSeed();
@@ -17,10 +18,7 @@ export default function HomePageLoading() {
     pokemonId: string;
   }[];
 
-  const categoryIds = [] as {
-    kind: "TYPE" | "GEN" | "STAT" | "EGGGROUP";
-    id: string;
-  }[];
+  const categoryIds = getCategories(seed)
 
   return (
     <div className="p-2">
