@@ -1,3 +1,5 @@
+"use client";
+
 /* eslint-disable @next/next/no-img-element */
 import { useQuery } from "@tanstack/react-query";
 import { z } from "zod";
@@ -14,9 +16,9 @@ export default function IncorrectCell({
   index,
   guess,
 }: IncorrectCellProps) {
-  const { data, isLoading } = useQuery([], () =>
+  const { data, isLoading } = useQuery(["guesses", seed, index, guess.id], () =>
     fetch(
-      `https://${window.location.host}/api/grids/${seed}/categories/${index}/guesses/${guess.id}`,
+      `${process.env.NEXT_PUBLIC_API_URL}/api/grids/${seed}/categories/${index}/guesses/${guess.id}`,
     ).then((r) =>
       r.json().then((j) => z.object({ percent: z.number() }).parse(j)),
     ),

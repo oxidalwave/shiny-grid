@@ -10,6 +10,7 @@ import { signIn, signOut, useSession } from "next-auth/react";
 import { getCategoryFromId } from "~/lib/categories";
 import { toast } from "react-hot-toast";
 import { useQueryClient } from "@tanstack/react-query";
+import { env } from "~/env.mjs";
 
 export interface GridProps {
   dex: Pokemon[];
@@ -93,8 +94,7 @@ export default function App({
   }
 
   function handleShare() {
-    const mainhost = window.location.host;
-    const url = `https://${mainhost}/${seed}/${session.data?.user.name}`;
+    const url = `${env.NEXT_PUBLIC_API_URL}/${seed}/${session.data?.user.name}`;
     void navigator.clipboard
       .writeText(url)
       .then(() => toast("A sharable link has been copied to your clipboard!"));
