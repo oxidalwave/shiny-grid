@@ -41,8 +41,6 @@ export default function PendingCell({
     modalRef.current?.close();
   }
 
-  console.log(categories);
-
   return disabled ? (
     <div className="h-full bg-slate-700" />
   ) : (
