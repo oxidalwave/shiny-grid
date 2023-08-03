@@ -12,53 +12,22 @@ interface CategoryCode {
 function isInvalidCombo(categories: CategoryCode[]) {
   const codes = categories.map(({ id }) => id);
   // Check for invalid type combos
-  if (codes.includes("NormalType") && codes.includes("IceType")) {
-    return true;
-  }
-  if (codes.includes("NormalType") && codes.includes("BugType")) {
-    return true;
-  }
-  if (codes.includes("NormalType") && codes.includes("RockType")) {
-    return true;
-  }
-  if (codes.includes("NormalType") && codes.includes("SteelType")) {
-    return true;
-  }
-  if (codes.includes("FireType") && codes.includes("FairyType")) {
-    return true;
-  }
-  if (codes.includes("IceType") && codes.includes("PoisonType")) {
-    return true;
-  }
-  if (codes.includes("GroundType") && codes.includes("FairyType")) {
-    return true;
-  }
-  if (codes.includes("BugType") && codes.includes("DragonType")) {
-    return true;
-  }
-  if (codes.includes("RockType") && codes.includes("GhostType")) {
-    return true;
-  }
-
-  // check for duplicate codes
-  if (codes[0] === codes[1]) {
-    return true;
-  }
-
-  //check for invalid gen
-  if (codes.includes("SteelType") && codes.includes("Generation1")) {
-    return true;
-  }
-  if (codes.includes("DarkType") && codes.includes("Generation1")) {
-    return true;
-  }
-
-  // check for invalid stat
-  if (false) {
-    return true;
-  }
-
-  return false;
+  return (
+    codes[0] === codes[1] ||
+    (codes.includes("NormalType") && codes.includes("IceType")) ||
+    (codes.includes("NormalType") && codes.includes("BugType")) ||
+    (codes.includes("NormalType") && codes.includes("RockType")) ||
+    (codes.includes("NormalType") && codes.includes("SteelType")) ||
+    (codes.includes("FireType") && codes.includes("FairyType")) ||
+    (codes.includes("IceType") && codes.includes("PoisonType")) ||
+    (codes.includes("GroundType") && codes.includes("FairyType")) ||
+    (codes.includes("BugType") && codes.includes("DragonType")) ||
+    (codes.includes("RockType") && codes.includes("GhostType")) ||
+    (codes.includes("DarkType") && codes.includes("Generation1")) ||
+    (codes.includes("FireType") && codes.includes("HighHp")) ||
+    (codes.includes("BugType") && codes.includes("HighHp")) ||
+    (codes.includes("ElectricType") && codes.includes("HighSpD"))
+  );
 }
 
 function isInvalidGrid(categories: CategoryCode[]) {
