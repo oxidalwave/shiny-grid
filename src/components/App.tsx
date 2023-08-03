@@ -98,7 +98,7 @@ export default function App({
   }
 
   return (
-    <div className="">
+    <div className="flex flex-col">
       <div className="p-2">
         {session.data ? (
           <div className="flex">
