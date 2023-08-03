@@ -6,12 +6,14 @@ import type Category from "~/lib/categories";
 import { type Pokemon } from "~/lib/data/dex";
 
 export interface CellProps {
+  disableInput?: boolean;
   pokedex: Pokemon[];
   onGuess: (p: Pokemon) => void;
   categories: Category[];
 }
 
 export default function PendingCell({
+  disableInput = false,
   pokedex,
   onGuess,
   categories,
@@ -21,7 +23,9 @@ export default function PendingCell({
   const [name, setName] = useState<string>("");
 
   function handleSubmit(pokemon: Pokemon) {
-    onGuess(pokemon);
+    if (!disableInput) {
+      onGuess(pokemon);
+    }
   }
 
   const filteredPokedex =

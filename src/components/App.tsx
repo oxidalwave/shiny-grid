@@ -140,6 +140,7 @@ export default function App({
         )}
       </div>
       <Grid
+        disableInput={session.data?.user.name !== username}
         seed={seed}
         categories={categories}
         dex={dex}

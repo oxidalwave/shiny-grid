@@ -5,6 +5,7 @@ import CategoryLabel from "./CategoryLabel";
 import type Category from "~/lib/categories";
 
 export interface GridProps {
+  disableInput?: boolean;
   seed: string;
   guesses: Pokemon[];
   dex: Pokemon[];
@@ -17,6 +18,7 @@ export interface GridProps {
 }
 
 export default function Grid({
+  disableInput = false,
   seed,
   dex,
   categories,
@@ -34,6 +36,7 @@ export default function Grid({
           <CategoryLabel category={categories[3]!} />
         </div>
         <Cell
+          disableInput={disableInput}
           seed={seed}
           index={0}
           initialGuess={guesses[0]}
@@ -43,6 +46,7 @@ export default function Grid({
           onGuess={onGuess}
         />
         <Cell
+          disableInput={disableInput}
           seed={seed}
           index={1}
           initialGuess={guesses[1]}
@@ -52,6 +56,7 @@ export default function Grid({
           onGuess={onGuess}
         />
         <Cell
+          disableInput={disableInput}
           seed={seed}
           index={2}
           initialGuess={guesses[2]}
@@ -64,6 +69,7 @@ export default function Grid({
           <CategoryLabel category={categories[4]!} />
         </div>
         <Cell
+          disableInput={disableInput}
           seed={seed}
           index={3}
           initialGuess={guesses[3]}
@@ -73,6 +79,7 @@ export default function Grid({
           onGuess={onGuess}
         />
         <Cell
+          disableInput={disableInput}
           seed={seed}
           index={4}
           initialGuess={guesses[4]}
@@ -82,6 +89,7 @@ export default function Grid({
           onGuess={onGuess}
         />
         <Cell
+          disableInput={disableInput}
           seed={seed}
           index={5}
           initialGuess={guesses[5]}
@@ -94,6 +102,7 @@ export default function Grid({
           <CategoryLabel category={categories[5]!} />
         </div>
         <Cell
+          disableInput={disableInput}
           seed={seed}
           index={6}
           initialGuess={guesses[6]}
@@ -103,6 +112,7 @@ export default function Grid({
           onGuess={onGuess}
         />
         <Cell
+          disableInput={disableInput}
           seed={seed}
           index={7}
           initialGuess={guesses[7]}
@@ -112,6 +122,7 @@ export default function Grid({
           onGuess={onGuess}
         />
         <Cell
+          disableInput={disableInput}
           seed={seed}
           index={8}
           initialGuess={guesses[8]}
