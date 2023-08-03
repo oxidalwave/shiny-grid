@@ -5,7 +5,6 @@ import CategoryLabel from "./CategoryLabel";
 import type Category from "~/lib/categories";
 
 export interface GridProps {
-  loading?: boolean;
   disabled?: boolean;
   seed: string;
   guesses: (Pokemon | undefined)[];
@@ -15,7 +14,6 @@ export interface GridProps {
 }
 
 export default function Grid({
-  loading = true,
   disabled = false,
   seed,
   dex,
