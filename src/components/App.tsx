@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useEffect, useState } from "react";
@@ -92,6 +93,17 @@ export default function App({
       <div className="p-2">
         {session.data ? (
           <div className="flex">
+            <a
+              className="rounded p-2 m-2 bg-slate-700 hover:bg-slate-800"
+              href="https://github.com/oxidalwave/shiny-grid"
+            >
+              <img
+                height={48}
+                width={48}
+                alt="github"
+                src="/icons/github.png"
+              />
+            </a>
             <button
               onClick={handleShare}
               className="w-full rounded p-2 m-2 bg-slate-700 hover:bg-slate-800"
@@ -106,12 +118,25 @@ export default function App({
             </button>
           </div>
         ) : (
-          <button
-            className="w-full rounded p-2 m-2 bg-slate-700 hover:bg-slate-800"
-            onClick={() => void signIn()}
-          >
-            Log In to share your grid
-          </button>
+          <div className="flex">
+            <a
+              className="rounded p-2 m-2 bg-slate-700 hover:bg-slate-800"
+              href="https://github.com/oxidalwave/shiny-grid"
+            >
+              <img
+                height={28}
+                width={28}
+                alt="github"
+                src="/icons/github.png"
+              />
+            </a>
+            <button
+              className="w-full rounded p-2 m-2 bg-slate-700 hover:bg-slate-800"
+              onClick={() => void signIn()}
+            >
+              Log In to share your grid
+            </button>
+          </div>
         )}
       </div>
       <Grid

@@ -1,9 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useRef, useState } from "react";
 import type Category from "~/lib/categories";
 import { type Pokemon } from "~/lib/data/dex";
-import Image from "next/image";
 
 export interface CellProps {
   pokedex: Pokemon[];
@@ -69,7 +69,7 @@ export default function PendingCell({
                 key={p.name}
                 onClick={() => handleSubmit(p)}
               >
-                <Image
+                <img
                   loading="lazy"
                   alt={p.name}
                   src={p.imageUrl ?? ""}

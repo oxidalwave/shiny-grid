@@ -1,4 +1,4 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 import type Category from ".";
 import { type Pokemon } from "../data/dex";
 
@@ -10,21 +10,21 @@ export const Generation1: Category = {
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
       <div className="grid grid-cols-2">
-        <Image
+        <img
           className=""
           alt="red"
           src="/boxart/red.png"
           width={64}
           height={64}
         />
-        <Image
+        <img
           className=""
           alt="blue"
           src="/boxart/blue.png"
           width={64}
           height={64}
         />
-        <Image
+        <img
           className="col-span-2 justify-self-center"
           alt="yellow"
           src="/boxart/yellow.png"
@@ -44,9 +44,9 @@ export const Generation2: Category = {
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
       <div className="grid grid-cols-2">
-        <Image alt="gold" src="/boxart/gold.png" width={64} height={64} />
-        <Image alt="silver" src="/boxart/silver.png" width={64} height={64} />
-        <Image
+        <img alt="gold" src="/boxart/gold.png" width={64} height={64} />
+        <img alt="silver" src="/boxart/silver.png" width={64} height={64} />
+        <img
           className="col-span-2 justify-self-center"
           alt="crystal"
           src="/boxart/crystal.png"
@@ -66,14 +66,14 @@ export const Generation3: Category = {
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
       <div className="grid grid-cols-2">
-        <Image alt="ruby" src="/boxart/ruby.png" width={64} height={64} />
-        <Image
+        <img alt="ruby" src="/boxart/ruby.png" width={64} height={64} />
+        <img
           alt="sapphire"
           src="/boxart/sapphire.png"
           width={64}
           height={64}
         />
-        <Image
+        <img
           className="col-span-2 justify-self-center"
           alt="Emerald"
           src="/boxart/emerald.jpg"
@@ -94,22 +94,22 @@ export const Generation4: Category = {
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
       <div className="grid grid-cols-2">
-        <Image alt="diamond" src="/boxart/diamond.jpg" width={64} height={64} />
-        <Image alt="pearl" src="/boxart/pearl.jpg" width={64} height={64} />
-        <Image
+        <img alt="diamond" src="/boxart/diamond.jpg" width={64} height={64} />
+        <img alt="pearl" src="/boxart/pearl.jpg" width={64} height={64} />
+        <img
           className="col-span-2 justify-self-center"
           alt="platinum"
           src="/boxart/platinum.png"
           width={64}
           height={64}
         />
-        <Image
+        <img
           alt="heartgold"
           src="/boxart/heartgold.jpg"
           width={64}
           height={64}
         />
-        <Image
+        <img
           alt="soulsilver"
           src="/boxart/soulsilver.jpg"
           width={64}
@@ -128,10 +128,10 @@ export const Generation5: Category = {
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
       <div className="grid grid-cols-2">
-        <Image alt="black" src="/boxart/black.png" width={64} height={64} />
-        <Image alt="black2" src="/boxart/black2.png" width={64} height={64} />
-        <Image alt="white" src="/boxart/white.png" width={64} height={64} />
-        <Image alt="white2" src="/boxart/white2.png" width={64} height={64} />
+        <img alt="black" src="/boxart/black.png" width={64} height={64} />
+        <img alt="black2" src="/boxart/black2.png" width={64} height={64} />
+        <img alt="white" src="/boxart/white.png" width={64} height={64} />
+        <img alt="white2" src="/boxart/white2.png" width={64} height={64} />
       </div>
     </div>
   ),
@@ -145,15 +145,15 @@ export const Generation6: Category = {
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
       <div className="grid grid-cols-2">
-        <Image alt="x" src="/boxart/x.png" width={64} height={64} />
-        <Image alt="y" src="/boxart/y.png" width={64} height={64} />
-        <Image
+        <img alt="x" src="/boxart/x.png" width={64} height={64} />
+        <img alt="y" src="/boxart/y.png" width={64} height={64} />
+        <img
           alt="omegaruby"
           src="/boxart/omegaruby.png"
           width={64}
           height={64}
         />
-        <Image
+        <img
           alt="alphasapphire"
           src="/boxart/alphasapphire.png"
           width={64}
@@ -172,15 +172,15 @@ export const Generation7: Category = {
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
       <div className="grid grid-cols-2">
-        <Image alt="sun" src="/boxart/sun.png" width={64} height={64} />
-        <Image
+        <img alt="sun" src="/boxart/sun.png" width={64} height={64} />
+        <img
           alt="ultrasun"
           src="/boxart/ultrasun.png"
           width={64}
           height={64}
         />
-        <Image alt="moon" src="/boxart/moon.png" width={64} height={64} />
-        <Image
+        <img alt="moon" src="/boxart/moon.png" width={64} height={64} />
+        <img
           alt="ultramoon"
           src="/boxart/ultramoon.png"
           width={64}
@@ -199,21 +199,21 @@ export const Generation8: Category = {
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
       <div className="grid grid-cols-2">
-        <Image alt="sword" src="/boxart/sword.png" width={64} height={64} />
-        <Image alt="shield" src="/boxart/shield.png" width={64} height={64} />
-        <Image
+        <img alt="sword" src="/boxart/sword.png" width={64} height={64} />
+        <img alt="shield" src="/boxart/shield.png" width={64} height={64} />
+        <img
           alt="brilliantdiamond"
           src="/boxart/brilliantdiamond.png"
           width={64}
           height={64}
         />
-        <Image
+        <img
           alt="shiningpearl"
           src="/boxart/shiningpearl.png"
           width={64}
           height={64}
         />
-        <Image
+        <img
           className="col-span-2 justify-self-center"
           alt="legendsarceus"
           src="/boxart/legendsarceus.png"
@@ -233,8 +233,8 @@ export const Generation9: Category = {
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
       <div className="grid grid-cols-2">
-        <Image alt="scarlet" src="/boxart/scarlet.png" width={64} height={64} />
-        <Image alt="violet" src="/boxart/violet.png" width={64} height={64} />
+        <img alt="scarlet" src="/boxart/scarlet.png" width={64} height={64} />
+        <img alt="violet" src="/boxart/violet.png" width={64} height={64} />
       </div>
     </div>
   ),
