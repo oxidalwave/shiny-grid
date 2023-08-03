@@ -1,10 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { type Pokemon } from "~/lib/data/dex";
 
-import type Category from "~/lib/categories";
 import Grid from "./Grid";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { getCategoryFromId } from "~/lib/categories";
@@ -38,21 +37,19 @@ export default function App({
 
   const session = useSession();
 
-  const [guesses, setGuesses] = useState<(Pokemon | undefined)[]>([]);
-
-  const queryClient = useQueryClient();
-
-  useEffect(() => {
-    const temp = [...guesses];
+  function parseInitialAnswers() {
+    const ia = [];
     for (const { categoryIndex, pokemonId } of initialAnswers) {
       const found = dex.find(({ id }) => id === pokemonId);
       if (found) {
-        temp[categoryIndex] = found;
+        ia[categoryIndex] = found;
       }
     }
-    setGuesses(temp);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    return ia
+  }
+  const [guesses, setGuesses] = useState<(Pokemon | undefined)[]>(parseInitialAnswers());
+
+  const queryClient = useQueryClient();
 
   function handleGuess(
     pokemon: Pokemon,
