@@ -16,7 +16,7 @@ export default function IncorrectCell({
 }: IncorrectCellProps) {
   const { data, isLoading } = useQuery([], () =>
     fetch(
-      `http://${window.location.host}/api/grids/${seed}/categories/${index}/guesses/${guess.id}`
+      `https://${window.location.host}/api/grids/${seed}/categories/${index}/guesses/${guess.id}`
     ).then((r) =>
       r.json().then((j) => z.object({ percent: z.number() }).parse(j))
     )
