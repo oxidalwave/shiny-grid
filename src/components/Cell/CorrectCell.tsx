@@ -12,7 +12,7 @@ export interface CorrectCellProps {
 export default function CorrectCell({ seed, index, guess }: CorrectCellProps) {
   const { data, isLoading } = useQuery(["guesses", seed, index, guess.id], () =>
     fetch(
-      `https://${window.location.host}/api/grids/${seed}/categories/${index}/guesses/${guess.id}`,
+      `${process.env.NEXT_PUBLIC_API_URL}/api/grids/${seed}/categories/${index}/guesses/${guess.id}`,
     ).then((r) =>
       r.json().then((j) => z.object({ percent: z.number() }).parse(j)),
     ),

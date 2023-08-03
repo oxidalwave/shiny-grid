@@ -12,7 +12,7 @@ export default function SharedPage({
   params: { seed: string; username: string };
 }) {
   const dex = use(
-    fetch(`${env.URL}/api/pokemon`, {
+    fetch(`${env.NEXT_PUBLIC_API_URL}/api/pokemon`, {
       next: { revalidate: 21600 },
     })
       .then((r) => r.json())
@@ -20,7 +20,7 @@ export default function SharedPage({
   );
 
   const initialAnswers = use(
-    fetch(`${env.URL}/api/grids/${params.seed}/users/${params.username}`, {
+    fetch(`${env.NEXT_PUBLIC_API_URL}/api/grids/${params.seed}/users/${params.username}`, {
       cache: "no-cache",
     })
       .then((r) => r.json())
@@ -37,7 +37,7 @@ export default function SharedPage({
   );
 
   const categoryIds = use(
-    fetch(`${env.URL}/api/grids/${params.seed}/categories`, {
+    fetch(`${env.NEXT_PUBLIC_API_URL}/api/grids/${params.seed}/categories`, {
       next: { revalidate: 7200 },
     })
       .then((r) => r.json())
