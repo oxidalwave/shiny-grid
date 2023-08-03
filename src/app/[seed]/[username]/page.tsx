@@ -20,7 +20,7 @@ export default function SharedPage({
   );
 
   const initialAnswers = use(
-    fetch(`${env.URL}/api/seeds/${params.seed}/users/${params.username}`, {
+    fetch(`${env.URL}/api/grids/${params.seed}/users/${params.username}`, {
       cache: "no-cache",
     })
       .then((r) => r.json())
@@ -37,7 +37,7 @@ export default function SharedPage({
   );
 
   const categoryIds = use(
-    fetch(`${env.URL}/api/seeds/${params.seed}/categories`, {
+    fetch(`${env.URL}/api/grids/${params.seed}/categories`, {
       next: { revalidate: 7200 },
     })
       .then((r) => r.json())

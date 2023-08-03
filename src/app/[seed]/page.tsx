@@ -22,7 +22,7 @@ export default function SeedPage({ params }: { params: { seed: string } }) {
   const initialAnswers = session
     ? use(
         fetch(
-          `${env.URL}/api/seeds/${params.seed}/users/${session.user.name}`,
+          `${env.URL}/api/grids/${params.seed}/users/${session.user.name}`,
           { cache: "no-cache" }
         )
           .then((r) => r.json())
@@ -40,7 +40,7 @@ export default function SeedPage({ params }: { params: { seed: string } }) {
     : [];
 
   const categoryIds = use(
-    fetch(`${env.URL}/api/seeds/${params.seed}/categories`, {
+    fetch(`${env.URL}/api/grids/${params.seed}/categories`, {
       next: { revalidate: 7200 },
     })
       .then((r) => r.json())

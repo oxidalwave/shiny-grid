@@ -24,7 +24,7 @@ export default function HomePage() {
 
   const initialAnswers = session
     ? use(
-        fetch(`${env.URL}/api/seeds/${seed}/users/${session.user.name}`, {
+        fetch(`${env.URL}/api/grids/${seed}/users/${session.user.name}`, {
           cache: "no-cache",
         })
           .then((r) => r.json())
@@ -42,7 +42,7 @@ export default function HomePage() {
     : [];
 
   const categoryIds = use(
-    fetch(`${env.URL}/api/seeds/${seed}/categories`, {
+    fetch(`${env.URL}/api/grids/${seed}/categories`, {
       next: { revalidate: 7200 },
     })
       .then((r) => r.json())

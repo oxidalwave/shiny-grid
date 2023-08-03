@@ -56,7 +56,7 @@ export default function App({
       setGuesses(temp);
 
       fetch(
-        `/api/seeds/${seed}/users/${session.data?.user.name}/categories/${categoryIndex}`,
+        `/api/grids/${seed}/users/${session.data?.user.name}/categories/${categoryIndex}`,
         {
           body: JSON.stringify({ id: pokemon.id }),
           method: "POST",
