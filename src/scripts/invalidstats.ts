@@ -20,7 +20,7 @@ async function main() {
     });
 
     if (highHp === 0) {
-      console.log(`High HP with ${t.name} Type: 0`)
+      console.log(`High HP with ${t.name} Type: 0`);
     }
 
     const lowHp = await prisma.pokemon.count({
@@ -37,7 +37,7 @@ async function main() {
     });
 
     if (lowHp === 0) {
-      console.log(`Low HP with ${t.name} Type: 0`)
+      console.log(`Low HP with ${t.name} Type: 0`);
     }
 
     const highAttack = await prisma.pokemon.count({
@@ -54,7 +54,7 @@ async function main() {
     });
 
     if (highAttack === 0) {
-      console.log(`High Attack with ${t.name} Type: 0`)
+      console.log(`High Attack with ${t.name} Type: 0`);
     }
 
     const lowAttack = await prisma.pokemon.count({
@@ -71,7 +71,7 @@ async function main() {
     });
 
     if (lowAttack === 0) {
-      console.log(`Low Attack with ${t.name} Type: 0`)
+      console.log(`Low Attack with ${t.name} Type: 0`);
     }
 
     const highDefense = await prisma.pokemon.count({
@@ -88,7 +88,7 @@ async function main() {
     });
 
     if (highDefense === 0) {
-      console.log(`High Defense with ${t.name} Type: 0`)
+      console.log(`High Defense with ${t.name} Type: 0`);
     }
 
     const lowDefense = await prisma.pokemon.count({
@@ -105,7 +105,7 @@ async function main() {
     });
 
     if (lowDefense === 0) {
-      console.log(`Low Defense with ${t.name} Type: 0`)
+      console.log(`Low Defense with ${t.name} Type: 0`);
     }
     const highSpecialAttack = await prisma.pokemon.count({
       where: {
@@ -121,7 +121,7 @@ async function main() {
     });
 
     if (highSpecialAttack === 0) {
-      console.log(`High Special Attack with ${t.name} Type: 0`)
+      console.log(`High Special Attack with ${t.name} Type: 0`);
     }
 
     const lowSpecialAttack = await prisma.pokemon.count({
@@ -138,9 +138,9 @@ async function main() {
     });
 
     if (lowSpecialAttack === 0) {
-      console.log(`Low Special Attack with ${t.name} Type: 0`)
+      console.log(`Low Special Attack with ${t.name} Type: 0`);
     }
-    
+
     const highSpecialDefense = await prisma.pokemon.count({
       where: {
         specialDefense: {
@@ -155,7 +155,7 @@ async function main() {
     });
 
     if (highSpecialDefense === 0) {
-      console.log(`High Special Defense with ${t.name} Type: 0`)
+      console.log(`High Special Defense with ${t.name} Type: 0`);
     }
 
     const lowSpecialDefense = await prisma.pokemon.count({
@@ -172,9 +172,9 @@ async function main() {
     });
 
     if (lowSpecialDefense === 0) {
-      console.log(`Low Special Defense with ${t.name} Type: 0`)
+      console.log(`Low Special Defense with ${t.name} Type: 0`);
     }
-    
+
     const highSpeed = await prisma.pokemon.count({
       where: {
         speed: {
@@ -189,7 +189,7 @@ async function main() {
     });
 
     if (highSpeed === 0) {
-      console.log(`High Speed with ${t.name} Type: 0`)
+      console.log(`High Speed with ${t.name} Type: 0`);
     }
 
     const lowSpeed = await prisma.pokemon.count({
@@ -206,7 +206,7 @@ async function main() {
     });
 
     if (lowSpeed === 0) {
-      console.log(`Low Speed with ${t.name} Type: 0`)
+      console.log(`Low Speed with ${t.name} Type: 0`);
     }
   }
 }

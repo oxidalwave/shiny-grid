@@ -30,7 +30,7 @@ export const PokemonValidator = z.object({
         id: z.string(),
         name: z.string(),
       }),
-    })
+    }),
   ),
   types: z.array(
     z.object({
@@ -42,7 +42,7 @@ export const PokemonValidator = z.object({
           name: z.number().int(),
         }),
       }),
-    })
+    }),
   ),
   abilities: z.array(
     z.object({
@@ -51,6 +51,6 @@ export const PokemonValidator = z.object({
         id: z.string(),
         name: z.string(),
       }),
-    })
+    }),
   ),
 });

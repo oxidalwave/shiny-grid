@@ -7,7 +7,7 @@ export const GET = async (
   request: Request,
   {
     params,
-  }: { params: { seed: string; username: string; categoryIndex: string } }
+  }: { params: { seed: string; username: string; categoryIndex: string } },
 ) => {
   const user = await prisma.user.findFirst({
     // TODO: Consolidated Users
@@ -44,7 +44,7 @@ export const POST = async (
   request: Request,
   {
     params,
-  }: { params: { seed: string; username: string; categoryIndex: string } }
+  }: { params: { seed: string; username: string; categoryIndex: string } },
 ) => {
   const body = (await request.json()) as { id: string };
 

@@ -7,7 +7,7 @@ export const GET = async (
   request: Request,
   {
     params,
-  }: { params: { seed: string; categoryIndex: string; pokemonId: string } }
+  }: { params: { seed: string; categoryIndex: string; pokemonId: string } },
 ) => {
   const [totalGuesses, guesses] = await Promise.all([
     prisma.userAnswer.count({

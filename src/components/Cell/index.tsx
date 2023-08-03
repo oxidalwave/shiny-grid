@@ -16,7 +16,7 @@ export interface CellProps {
   onGuess: (
     pokemon: Pokemon,
     categories: Category[],
-    categoryIndex: number
+    categoryIndex: number,
   ) => void;
   categories: Category[];
 }
@@ -42,7 +42,7 @@ export default function Cell({
       <PendingCell
         disableInput={disableInput}
         pokedex={pokedex.filter(
-          (p) => !guesses.find((g) => g?.nationalDexId === p.nationalDexId)
+          (p) => !guesses.find((g) => g?.nationalDexId === p.nationalDexId),
         )}
         onGuess={handleGuess}
         categories={categories}

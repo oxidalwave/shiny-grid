@@ -5,7 +5,7 @@ import { prisma } from "~/server/db";
 
 export const GET = async (
   request: Request,
-  { params }: { params: { seed: string; categoryIndex: string } }
+  { params }: { params: { seed: string; categoryIndex: string } },
 ) => {
   const guessCount = await prisma.userAnswer.count({
     where: {

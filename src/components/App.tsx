@@ -52,7 +52,7 @@ export default function App({
   function handleGuess(
     pokemon: Pokemon,
     categories: Category[],
-    categoryIndex: number
+    categoryIndex: number,
   ) {
     if (session.data && session.data.user.name === username) {
       const temp = [...guesses];
@@ -66,7 +66,7 @@ export default function App({
         {
           body: JSON.stringify({ id: pokemon.id }),
           method: "POST",
-        }
+        },
       ).catch((e) => {
         console.log(e);
       });

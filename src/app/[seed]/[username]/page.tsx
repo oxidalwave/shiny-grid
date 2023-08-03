@@ -16,7 +16,7 @@ export default function SharedPage({
       next: { revalidate: 21600 },
     })
       .then((r) => r.json())
-      .then((j) => z.array(PokemonValidator).parse(j))
+      .then((j) => z.array(PokemonValidator).parse(j)),
   );
 
   const initialAnswers = use(
@@ -30,10 +30,10 @@ export default function SharedPage({
             z.object({
               pokemonId: z.string(),
               categoryIndex: z.number(),
-            })
+            }),
           )
-          .parse(j)
-      )
+          .parse(j),
+      ),
   );
 
   const categoryIds = use(
@@ -52,10 +52,10 @@ export default function SharedPage({
                 z.literal("GEN"),
                 z.literal("STAT"),
               ]),
-            })
+            }),
           )
-          .parse(j)
-      )
+          .parse(j),
+      ),
   );
 
   return (

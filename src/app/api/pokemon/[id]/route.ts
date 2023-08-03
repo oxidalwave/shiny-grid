@@ -5,7 +5,7 @@ import { prisma } from "~/server/db";
 
 export const GET = async (
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: { id: string } },
 ) => {
   const pokemon = await prisma.pokemon.findUnique({
     where: {

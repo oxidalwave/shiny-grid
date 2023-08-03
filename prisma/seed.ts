@@ -641,7 +641,7 @@ async function main() {
       })
       .then(({ id }) => console.log(id));
   }
-  
+
   await prisma.pokemon.updateMany({
     where: {
       name: {
