@@ -27,10 +27,9 @@ export default function Grid({
   return (
     <div>
       {loading && (
-        <div className="absolute w-screen h-screen flex">
-          <div className="justify-center align-center">
-            <Spinner />
-          </div>
+        <div className="h-screen flex items-center justify-center  z-10">
+          <div className="rounded bg-opacity-50 bg-slate-700 p-20">
+          <Spinner /></div>
         </div>
       )}
       <div className="flex justify-center">
