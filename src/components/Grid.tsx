@@ -5,7 +5,7 @@ import CategoryLabel from "./CategoryLabel";
 import type Category from "~/lib/categories";
 
 export interface GridProps {
-  guesses: string[];
+  guesses: Pokemon[];
   dex: Pokemon[];
   categories: Category[];
   onGuess: (

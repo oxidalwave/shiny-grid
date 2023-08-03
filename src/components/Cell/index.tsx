@@ -10,8 +10,8 @@ import CorrectCell from "./CorrectCell";
 export interface CellProps {
   index: number;
   pokedex: Pokemon[];
-  initialGuess?: string;
-  guesses: string[];
+  initialGuess?: Pokemon;
+  guesses: Pokemon[];
   onGuess: (
     pokemon: Pokemon,
     categories: Category[],
@@ -28,7 +28,7 @@ export default function Cell({
   onGuess,
   categories,
 }: CellProps) {
-  const pokemon = pokedex.find((p) => initialGuess === p.id);
+  const pokemon = pokedex.find((p) => initialGuess?.id === p.id);
 
   function handleGuess(p: Pokemon) {
     onGuess(p, categories, index);
@@ -37,7 +37,9 @@ export default function Cell({
   if (!pokemon) {
     return (
       <PendingCell
-        pokedex={pokedex.filter((p) => !guesses.includes(p.id))}
+        pokedex={pokedex.filter(
+          (p) => !guesses.find((g) => g.nationalDexId === p.nationalDexId)
+        )}
         onGuess={handleGuess}
         categories={categories}
       />

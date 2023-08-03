@@ -29,17 +29,17 @@ export default function App({
   categoryIds,
   username,
   initialAnswers,
-}: GridProps) {  
+}: GridProps) {
   const categories = categoryIds.map(getCategoryFromId);
 
   const session = useSession();
 
-  const [guesses, setGuesses] = useState<string[]>([]);
+  const [guesses, setGuesses] = useState<Pokemon[]>([]);
 
   useEffect(() => {
     const temp = [...guesses];
     for (const { categoryIndex, pokemonId } of initialAnswers) {
-      temp[categoryIndex] = pokemonId;
+      temp[categoryIndex] = dex.find(({ id }) => id === pokemonId)!;
     }
     setGuesses(temp);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -52,7 +52,7 @@ export default function App({
   ) {
     if (session.data && session.data.user.name === username) {
       const temp = [...guesses];
-      temp[categoryIndex] = pokemon.id;
+      temp[categoryIndex] = dex.find(({ id }) => id === pokemon.id)!;
       setGuesses(temp);
 
       fetch(
@@ -66,13 +66,13 @@ export default function App({
       });
     } else if (!session) {
       const temp = [...guesses];
-      temp[categoryIndex] = pokemon.id;
+      temp[categoryIndex] = dex.find(({ id }) => id === pokemon.id)!;
       setGuesses(temp);
     }
   }
 
   function handleShare() {
-    const mainhost = window.location.host
+    const mainhost = window.location.host;
     const url = `https://${mainhost}/${seed}/${session.data?.user.name}`;
     void navigator.clipboard
       .writeText(url)
