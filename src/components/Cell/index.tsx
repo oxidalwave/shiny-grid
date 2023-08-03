@@ -7,7 +7,7 @@ import IncorrectCell from "./IncorrectCell";
 import CorrectCell from "./CorrectCell";
 
 export interface CellProps {
-  disableInput?: boolean;
+  disabled?: boolean;
   seed: string;
   index: number;
   pokedex: Pokemon[];
@@ -21,7 +21,7 @@ export interface CellProps {
 }
 
 export default function Cell({
-  disableInput = false,
+  disabled = false,
   seed,
   index,
   pokedex,
@@ -39,7 +39,7 @@ export default function Cell({
   if (!pokemon) {
     return (
       <PendingCell
-        disableInput={disableInput}
+        disabled={disabled}
         pokedex={pokedex.filter(
           (p) => !guesses.find((g) => g?.nationalDexId === p.nationalDexId),
         )}

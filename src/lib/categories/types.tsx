@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import { type Pokemon } from "../data/dex";
 import type Category from ".";
+import Image from "next/image";
 
 const isOfType = (p: Pokemon, t: string) =>
   p?.types?.map((t) => t.type.name)?.includes(t);
@@ -10,7 +10,7 @@ export const WaterType: Category = {
   label: "Water Type",
   icon: (
     <div className="flex flex-col">
-      <img alt="Water Type" src="/types/water.png" width={64} height={64} />
+      <Image alt="Water Type" src="/types/water.png" width={64} height={64} />
       <div>Water Type</div>
     </div>
   ),
@@ -22,7 +22,7 @@ export const NormalType: Category = {
   label: "Normal Type",
   icon: (
     <div className="flex flex-col">
-      <img alt="Normal Type" src="/types/normal.png" width={64} height={64} />
+      <Image alt="Normal Type" src="/types/normal.png" width={64} height={64} />
       <div>Normal Type</div>
     </div>
   ),
@@ -34,7 +34,7 @@ export const FireType: Category = {
   label: "Fire Type",
   icon: (
     <div className="flex flex-col">
-      <img alt="Fire Type" src="/types/fire.png" width={64} height={64} />
+      <Image alt="Fire Type" src="/types/fire.png" width={64} height={64} />
       <div>Fire Type</div>
     </div>
   ),
@@ -46,7 +46,7 @@ export const FightingType: Category = {
   label: "Fighting Type",
   icon: (
     <div className="flex flex-col">
-      <img
+      <Image
         alt="Fighting Type"
         src="/types/fighting.png"
         width={64}
@@ -63,7 +63,7 @@ export const FlyingType: Category = {
   label: "Flying Type",
   icon: (
     <div className="flex flex-col">
-      <img alt="Flying Type" src="/types/flying.png" width={64} height={64} />
+      <Image alt="Flying Type" src="/types/flying.png" width={64} height={64} />
       <div>Flying Type</div>
     </div>
   ),
@@ -75,7 +75,7 @@ export const GrassType: Category = {
   label: "Grass Type",
   icon: (
     <div className="flex flex-col">
-      <img alt="Grass Type" src="/types/grass.png" width={64} height={64} />
+      <Image alt="Grass Type" src="/types/grass.png" width={64} height={64} />
       <div>Grass Type</div>
     </div>
   ),
@@ -87,7 +87,7 @@ export const PoisonType: Category = {
   label: "Poison Type",
   icon: (
     <div className="flex flex-col">
-      <img alt="Poison Type" src="/types/poison.png" width={64} height={64} />
+      <Image alt="Poison Type" src="/types/poison.png" width={64} height={64} />
       <div>Poison Type</div>
     </div>
   ),
@@ -99,7 +99,7 @@ export const ElectricType: Category = {
   label: "Electric Type",
   icon: (
     <div className="flex flex-col">
-      <img
+      <Image
         alt="Electric Type"
         src="/types/electric.png"
         width={64}
@@ -116,7 +116,7 @@ export const GroundType: Category = {
   label: "Ground Type",
   icon: (
     <div className="flex flex-col">
-      <img alt="Ground Type" src="/types/ground.png" width={64} height={64} />
+      <Image alt="Ground Type" src="/types/ground.png" width={64} height={64} />
       <div>Ground Type</div>
     </div>
   ),
@@ -128,7 +128,7 @@ export const PsychicType: Category = {
   label: "Psychic Type",
   icon: (
     <div className="flex flex-col">
-      <img alt="Psychic Type" src="/types/psychic.png" width={64} height={64} />
+      <Image alt="Psychic Type" src="/types/psychic.png" width={64} height={64} />
       <div>Psychic Type</div>
     </div>
   ),
@@ -140,7 +140,7 @@ export const RockType: Category = {
   label: "Rock Type",
   icon: (
     <div className="flex flex-col">
-      <img alt="Rock Type" src="/types/rock.png" width={64} height={64} />
+      <Image alt="Rock Type" src="/types/rock.png" width={64} height={64} />
       <div>Rock Type</div>
     </div>
   ),
@@ -152,7 +152,7 @@ export const IceType: Category = {
   label: "Ice Type",
   icon: (
     <div className="flex flex-col">
-      <img alt="Ice Type" src="/types/ice.png" width={64} height={64} />
+      <Image alt="Ice Type" src="/types/ice.png" width={64} height={64} />
       <div>Ice Type</div>
     </div>
   ),
@@ -164,7 +164,7 @@ export const BugType: Category = {
   label: "Bug Type",
   icon: (
     <div className="flex flex-col">
-      <img alt="Bug Type" src="/types/bug.png" width={64} height={64} />
+      <Image alt="Bug Type" src="/types/bug.png" width={64} height={64} />
       <div>Bug Type</div>
     </div>
   ),
@@ -176,7 +176,7 @@ export const DragonType: Category = {
   label: "Dragon Type",
   icon: (
     <div className="flex flex-col">
-      <img alt="Dragon Type" src="/types/dragon.png" width={64} height={64} />
+      <Image alt="Dragon Type" src="/types/dragon.png" width={64} height={64} />
       <div>Dragon Type</div>
     </div>
   ),
@@ -188,7 +188,7 @@ export const GhostType: Category = {
   label: "Ghost Type",
   icon: (
     <div className="flex flex-col">
-      <img alt="Ghost Type" src="/types/ghost.png" width={64} height={64} />
+      <Image alt="Ghost Type" src="/types/ghost.png" width={64} height={64} />
       <div>Ghost Type</div>
     </div>
   ),
@@ -200,7 +200,7 @@ export const DarkType: Category = {
   label: "Dark Type",
   icon: (
     <div className="flex flex-col">
-      <img alt="Dark Type" src="/types/dark.png" width={64} height={64} />
+      <Image alt="Dark Type" src="/types/dark.png" width={64} height={64} />
       <div>Dark Type</div>
     </div>
   ),
@@ -212,7 +212,7 @@ export const SteelType: Category = {
   label: "Steel Type",
   icon: (
     <div className="flex flex-col">
-      <img alt="Steel Type" src="/types/steel.png" width={64} height={64} />
+      <Image alt="Steel Type" src="/types/steel.png" width={64} height={64} />
       <div>Steel Type</div>
     </div>
   ),
@@ -224,7 +224,7 @@ export const FairyType: Category = {
   label: "Fairy Type",
   icon: (
     <div className="flex flex-col">
-      <img alt="Fairy Type" src="/types/fairy.png" width={64} height={64} />
+      <Image alt="Fairy Type" src="/types/fairy.png" width={64} height={64} />
       <div>Fairy Type</div>
     </div>
   ),

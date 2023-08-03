@@ -12,6 +12,7 @@ import { useQueryClient } from "@tanstack/react-query";
 import { env } from "~/env.mjs";
 
 export interface GridProps {
+  loading?: boolean;
   dex: Pokemon[];
   seed: string;
   categoryIds: {
@@ -26,13 +27,13 @@ export interface GridProps {
 }
 
 export default function App({
+  loading = false,
   dex,
   seed,
   categoryIds,
   username,
   initialAnswers,
 }: GridProps) {
-
   const categories = categoryIds.map(getCategoryFromId);
 
   const session = useSession();
@@ -45,16 +46,15 @@ export default function App({
         ia[categoryIndex] = found;
       }
     }
-    return ia
+    return ia;
   }
-  const [guesses, setGuesses] = useState<(Pokemon | undefined)[]>(parseInitialAnswers());
+  const [guesses, setGuesses] = useState<(Pokemon | undefined)[]>(
+    parseInitialAnswers(),
+  );
 
   const queryClient = useQueryClient();
 
-  function handleGuess(
-    pokemon: Pokemon,
-    categoryIndex: number,
-  ) {
+  function handleGuess(pokemon: Pokemon, categoryIndex: number) {
     if (session.data && session.data.user.name === username) {
       const temp = [...guesses];
       const found = dex.find(({ id }) => id === pokemon.id);
@@ -149,7 +149,8 @@ export default function App({
         )}
       </div>
       <Grid
-        disableInput={session.data?.user.name !== username}
+        disabled={loading || session.data?.user.name !== username}
+        loading={loading}
         seed={seed}
         categories={categories}
         dex={dex}

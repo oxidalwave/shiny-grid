@@ -6,14 +6,14 @@ import type Category from "~/lib/categories";
 import { type Pokemon } from "~/lib/data/dex";
 
 export interface CellProps {
-  disableInput?: boolean;
+  disabled?: boolean;
   pokedex: Pokemon[];
   onGuess: (p: Pokemon) => void;
   categories: Category[];
 }
 
 export default function PendingCell({
-  disableInput = false,
+  disabled = false,
   pokedex,
   onGuess,
   categories,
@@ -41,7 +41,11 @@ export default function PendingCell({
     modalRef.current?.close();
   }
 
-  return (
+  console.log(categories);
+
+  return disabled ? (
+    <div className="h-full bg-slate-700" />
+  ) : (
     <>
       <dialog
         className="z-50 bg-slate-700 text-white p-2 w-80 rounded"
@@ -55,7 +59,7 @@ export default function PendingCell({
         </button>
         <div>
           <div className="w-full py-4 flex justify-center text-xl">
-            {categories.map((c) => c.label).join(" and ")}
+            {categories.map((c) => c?.label).join(" and ")}
           </div>
           <input
             autoFocus
@@ -84,14 +88,10 @@ export default function PendingCell({
           </div>
         </div>
       </dialog>
-      {disableInput ? (
-        <div className="h-full bg-slate-700" />
-      ) : (
-        <button
-          className="h-full bg-slate-700 hover:bg-slate-800"
-          onClick={handleOpen}
-        />
-      )}
+      <button
+        className="h-full bg-slate-700 hover:bg-slate-800"
+        onClick={handleOpen}
+      />
     </>
   );
 }
