@@ -107,6 +107,7 @@ export default function App({
         )}
       </div>
       <Grid
+        seed={seed}
         categories={categories}
         dex={dex}
         guesses={guesses}

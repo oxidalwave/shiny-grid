@@ -8,6 +8,7 @@ import IncorrectCell from "./IncorrectCell";
 import CorrectCell from "./CorrectCell";
 
 export interface CellProps {
+  seed: string;
   index: number;
   pokedex: Pokemon[];
   initialGuess?: Pokemon;
@@ -21,6 +22,7 @@ export interface CellProps {
 }
 
 export default function Cell({
+  seed,
   index,
   pokedex,
   initialGuess,
@@ -49,13 +51,13 @@ export default function Cell({
   if (categories.every((c) => c.test(pokemon))) {
     return (
       <div className="w-full">
-        <CorrectCell guess={pokemon} />
+        <CorrectCell index={index} seed={seed} guess={pokemon} />
       </div>
     );
   }
   return (
     <div className="w-full">
-      <IncorrectCell guess={pokemon} />
+      <IncorrectCell index={index} seed={seed} guess={pokemon} />
     </div>
   );
 }

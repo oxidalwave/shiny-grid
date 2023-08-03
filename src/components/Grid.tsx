@@ -5,6 +5,7 @@ import CategoryLabel from "./CategoryLabel";
 import type Category from "~/lib/categories";
 
 export interface GridProps {
+  seed: string;
   guesses: Pokemon[];
   dex: Pokemon[];
   categories: Category[];
@@ -15,7 +16,13 @@ export interface GridProps {
   ) => void;
 }
 
-export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
+export default function Grid({
+  seed,
+  dex,
+  categories,
+  guesses,
+  onGuess,
+}: GridProps) {
   return (
     <div className="grid grid-cols-4 divide-y divide-x divide-slate-700 border-b border-b-slate-700 border-r border-r-slate-700">
       <div className="h-32" />
@@ -26,6 +33,7 @@ export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
         <CategoryLabel category={categories[3]!} />
       </div>
       <Cell
+        seed={seed}
         index={0}
         initialGuess={guesses[0]}
         categories={[categories[0]!, categories[3]!]}
@@ -34,6 +42,7 @@ export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
         onGuess={onGuess}
       />
       <Cell
+        seed={seed}
         index={1}
         initialGuess={guesses[1]}
         categories={[categories[1]!, categories[3]!]}
@@ -42,6 +51,7 @@ export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
         onGuess={onGuess}
       />
       <Cell
+        seed={seed}
         index={2}
         initialGuess={guesses[2]}
         categories={[categories[2]!, categories[3]!]}
@@ -53,6 +63,7 @@ export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
         <CategoryLabel category={categories[4]!} />
       </div>
       <Cell
+        seed={seed}
         index={3}
         initialGuess={guesses[3]}
         categories={[categories[0]!, categories[4]!]}
@@ -61,6 +72,7 @@ export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
         onGuess={onGuess}
       />
       <Cell
+        seed={seed}
         index={4}
         initialGuess={guesses[4]}
         categories={[categories[1]!, categories[4]!]}
@@ -69,6 +81,7 @@ export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
         onGuess={onGuess}
       />
       <Cell
+        seed={seed}
         index={5}
         initialGuess={guesses[5]}
         categories={[categories[2]!, categories[4]!]}
@@ -80,6 +93,7 @@ export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
         <CategoryLabel category={categories[5]!} />
       </div>
       <Cell
+        seed={seed}
         index={6}
         initialGuess={guesses[6]}
         categories={[categories[0]!, categories[5]!]}
@@ -88,6 +102,7 @@ export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
         onGuess={onGuess}
       />
       <Cell
+        seed={seed}
         index={7}
         initialGuess={guesses[7]}
         categories={[categories[1]!, categories[5]!]}
@@ -96,6 +111,7 @@ export default function Grid({ dex, categories, guesses, onGuess }: GridProps) {
         onGuess={onGuess}
       />
       <Cell
+        seed={seed}
         index={8}
         initialGuess={guesses[8]}
         categories={[categories[2]!, categories[5]!]}
