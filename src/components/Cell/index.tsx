@@ -12,10 +12,9 @@ export interface CellProps {
   index: number;
   pokedex: Pokemon[];
   initialGuess?: Pokemon;
-  guesses: Pokemon[];
+  guesses: (undefined | Pokemon)[];
   onGuess: (
     pokemon: Pokemon,
-    categories: Category[],
     categoryIndex: number,
   ) => void;
   categories: Category[];
@@ -34,7 +33,7 @@ export default function Cell({
   const pokemon = pokedex.find((p) => initialGuess?.id === p.id);
 
   function handleGuess(p: Pokemon) {
-    onGuess(p, categories, index);
+    onGuess(p, index);
   }
 
   if (!pokemon) {
