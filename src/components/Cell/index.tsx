@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import type Category from "~/lib/categories";
 import { type Pokemon } from "~/lib/data/dex";
 import PendingCell from "./PendingCell";
