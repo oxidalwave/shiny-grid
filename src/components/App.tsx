@@ -58,13 +58,13 @@ export default function App({
   const queryClient = useQueryClient();
 
   function handleGuess(pokemon: Pokemon, categoryIndex: number) {
+    const temp = [...guesses];
+    const found = dex.find(({ id }) => id === pokemon.id);
+    if (found) {
+      temp[categoryIndex] = found;
+    }
+    setGuesses(temp);
     if (session.data && session.data.user.name === username) {
-      const temp = [...guesses];
-      const found = dex.find(({ id }) => id === pokemon.id);
-      if (found) {
-        temp[categoryIndex] = found;
-      }
-      setGuesses(temp);
       fetch(
         `/api/grids/${seed}/users/${session.data?.user.name}/categories/${categoryIndex}`,
         {
@@ -83,13 +83,6 @@ export default function App({
         .catch((e) => {
           toast(`Something went wrong:\n${JSON.stringify(e)}`);
         });
-    } else if (!session) {
-      const temp = [...guesses];
-      const found = dex.find(({ id }) => id === pokemon.id);
-      if (found) {
-        temp[categoryIndex] = found;
-      }
-      setGuesses(temp);
     }
   }
 
