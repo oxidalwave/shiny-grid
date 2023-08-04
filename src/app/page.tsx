@@ -1,4 +1,4 @@
-export const revalidate = 21600;
+export const revalidate = 3600;
 
 import { use } from "react";
 import { getServerSession } from "next-auth";
@@ -16,9 +16,7 @@ export default function HomePage() {
   const seed = defaultSeed();
 
   const dex = use(
-    fetch(`${env.NEXT_PUBLIC_API_URL}/api/pokemon`, {
-      next: { revalidate: 21600 },
-    })
+    fetch(`${env.NEXT_PUBLIC_API_URL}/api/pokemon`)
       .then((r) => r.json())
       .then((j) => z.array(PokemonValidator).parse(j)),
   );
@@ -48,9 +46,7 @@ export default function HomePage() {
     : [];
 
   const categoryIds = use(
-    fetch(`${env.NEXT_PUBLIC_API_URL}/api/grids/${seed}/categories`, {
-      next: { revalidate: 7200 },
-    })
+    fetch(`${env.NEXT_PUBLIC_API_URL}/api/grids/${seed}/categories`)
       .then((r) => r.json())
       .then((j) =>
         z

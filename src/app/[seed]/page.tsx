@@ -1,5 +1,3 @@
-export const revalidate = 86400;
-
 import { use } from "react";
 import { getServerSession } from "next-auth";
 import App from "~/components/App";
@@ -13,9 +11,7 @@ import CategoryLabel from "~/components/CategoryLabel";
 
 export default function SeedPage({ params }: { params: { seed: string } }) {
   const dex = use(
-    fetch(`${env.NEXT_PUBLIC_API_URL}/api/pokemon`, {
-      next: { revalidate: 21600 },
-    })
+    fetch(`${env.NEXT_PUBLIC_API_URL}/api/pokemon`)
       .then((r) => r.json())
       .then((j) => z.array(PokemonValidator).parse(j)),
   );
@@ -43,9 +39,7 @@ export default function SeedPage({ params }: { params: { seed: string } }) {
     : [];
 
   const categoryIds = use(
-    fetch(`${env.NEXT_PUBLIC_API_URL}/api/grids/${params.seed}/categories`, {
-      next: { revalidate: 7200 },
-    })
+    fetch(`${env.NEXT_PUBLIC_API_URL}/api/grids/${params.seed}/categories`)
       .then((r) => r.json())
       .then((j) =>
         z

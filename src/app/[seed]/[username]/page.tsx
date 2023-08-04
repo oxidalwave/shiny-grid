@@ -1,5 +1,3 @@
-export const dynamic = "force-dynamic";
-
 import { use } from "react";
 import { PokemonValidator } from "~/lib/data/pokemon";
 import App from "~/components/App";
@@ -15,9 +13,7 @@ export default function SharedPage({
   params: { seed: string; username: string };
 }) {
   const dex = use(
-    fetch(`${env.NEXT_PUBLIC_API_URL}/api/pokemon`, {
-      next: { revalidate: 21600 },
-    })
+    fetch(`${env.NEXT_PUBLIC_API_URL}/api/pokemon`)
       .then((r) => r.json())
       .then((j) => z.array(PokemonValidator).parse(j)),
   );
@@ -43,9 +39,7 @@ export default function SharedPage({
   );
 
   const categoryIds = use(
-    fetch(`${env.NEXT_PUBLIC_API_URL}/api/grids/${params.seed}/categories`, {
-      next: { revalidate: 7200 },
-    })
+    fetch(`${env.NEXT_PUBLIC_API_URL}/api/grids/${params.seed}/categories`)
       .then((r) => r.json())
       .then((j) =>
         z
