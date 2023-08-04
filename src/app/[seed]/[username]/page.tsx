@@ -5,6 +5,9 @@ import { PokemonValidator } from "~/lib/data/pokemon";
 import App from "~/components/App";
 import { z } from "zod";
 import { env } from "~/env.mjs";
+import Header from "~/components/Header";
+import CategoryLabel from "~/components/CategoryLabel";
+import { getCategoryFromId } from "~/lib/categories";
 
 export default function SharedPage({
   params,
@@ -20,9 +23,12 @@ export default function SharedPage({
   );
 
   const initialAnswers = use(
-    fetch(`${env.NEXT_PUBLIC_API_URL}/api/grids/${params.seed}/users/${params.username}`, {
-      cache: "no-cache",
-    })
+    fetch(
+      `${env.NEXT_PUBLIC_API_URL}/api/grids/${params.seed}/users/${params.username}`,
+      {
+        cache: "no-cache",
+      },
+    )
       .then((r) => r.json())
       .then((j) =>
         z
@@ -58,9 +64,15 @@ export default function SharedPage({
       ),
   );
 
+  const categoryLabels = categoryIds
+    .map(getCategoryFromId)
+    .map((c) => <CategoryLabel key={c.id} category={c} />);
+
   return (
     <div className="p-2">
       <App
+        categoryLabels={categoryLabels}
+        header={<Header seed={params.seed} />}
         categoryIds={categoryIds}
         username={params.username}
         dex={dex}

@@ -6,6 +6,9 @@ import { defaultSeed } from "~/lib/defaultSeed";
 import { type Pokemon } from "~/lib/data/dex";
 import { getCategories } from "~/lib/getCategories";
 import Spinner from "~/components/common/Spinner";
+import { getCategoryFromId } from "~/lib/categories";
+import CategoryLabel from "~/components/CategoryLabel";
+import Header from "~/components/Header";
 
 export default function HomePageLoading() {
   const seed = defaultSeed();
@@ -20,6 +23,9 @@ export default function HomePageLoading() {
   }[];
 
   const categoryIds = getCategories(seed);
+  const categoryLabels = categoryIds
+    .map(getCategoryFromId)
+    .map((c) => <CategoryLabel key={c.id} category={c} />);
 
   return (
     <>
@@ -28,6 +34,8 @@ export default function HomePageLoading() {
       </div>
       <div className="p-2">
         <App
+          categoryLabels={categoryLabels}
+          header={<Header seed={seed} />}
           loading
           categoryIds={categoryIds}
           username={session?.user?.name ?? undefined}

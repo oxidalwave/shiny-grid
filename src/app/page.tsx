@@ -8,6 +8,9 @@ import { authOptions } from "~/server/auth";
 import { env } from "~/env.mjs";
 import { PokemonValidator } from "~/lib/data/pokemon";
 import { defaultSeed } from "~/lib/defaultSeed";
+import Header from "~/components/Header";
+import { getCategoryFromId } from "~/lib/categories";
+import CategoryLabel from "~/components/CategoryLabel";
 
 export default function HomePage() {
   const seed = defaultSeed();
@@ -24,9 +27,12 @@ export default function HomePage() {
 
   const initialAnswers = session
     ? use(
-        fetch(`${env.NEXT_PUBLIC_API_URL}/api/grids/${seed}/users/${session.user.name}`, {
-          cache: "no-cache",
-        })
+        fetch(
+          `${env.NEXT_PUBLIC_API_URL}/api/grids/${seed}/users/${session.user.name}`,
+          {
+            cache: "no-cache",
+          },
+        )
           .then((r) => r.json())
           .then((j) =>
             z
@@ -63,9 +69,15 @@ export default function HomePage() {
       ),
   );
 
+  const categoryLabels = categoryIds
+    .map(getCategoryFromId)
+    .map((c) => <CategoryLabel key={c.id} category={c} />);
+
   return (
     <div className="p-2">
       <App
+        categoryLabels={categoryLabels}
+        header={<Header seed={seed} />}
         categoryIds={categoryIds}
         username={session?.user?.name ?? undefined}
         dex={dex}

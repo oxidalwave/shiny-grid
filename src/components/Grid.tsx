@@ -3,9 +3,11 @@ import { type Pokemon } from "~/lib/data/dex";
 
 import CategoryLabel from "./CategoryLabel";
 import type Category from "~/lib/categories";
+import { type ReactNode } from "react";
 
 export interface GridProps {
   disabled?: boolean;
+  categoryLabels: ReactNode[];
   seed: string;
   guesses: (Pokemon | undefined)[];
   dex: Pokemon[];
@@ -15,6 +17,7 @@ export interface GridProps {
 
 export default function Grid({
   disabled = false,
+  categoryLabels,
   seed,
   dex,
   categories,
@@ -25,12 +28,10 @@ export default function Grid({
     <div className="flex justify-center">
       <div className="grid grid-cols-4">
         <div className="h-32" />
-        <CategoryLabel category={categories[0]!} />
-        <CategoryLabel category={categories[1]!} />
-        <CategoryLabel category={categories[2]!} />
-        <div className="h-32">
-          <CategoryLabel category={categories[3]!} />
-        </div>
+        {categoryLabels[0]}
+        {categoryLabels[1]}
+        {categoryLabels[2]}
+        <div className="h-32">{categoryLabels[3]}</div>
         <Cell
           disabled={disabled}
           seed={seed}
@@ -61,9 +62,7 @@ export default function Grid({
           guesses={guesses}
           onGuess={onGuess}
         />
-        <div className="h-32">
-          <CategoryLabel category={categories[4]!} />
-        </div>
+        <div className="h-32">{categoryLabels[4]}</div>
         <Cell
           disabled={disabled}
           seed={seed}
@@ -94,9 +93,7 @@ export default function Grid({
           guesses={guesses}
           onGuess={onGuess}
         />
-        <div className="h-32">
-          <CategoryLabel category={categories[5]!} />
-        </div>
+        <div className="h-32">{categoryLabels[5]}</div>
         <Cell
           disabled={disabled}
           seed={seed}
