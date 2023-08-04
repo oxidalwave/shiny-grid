@@ -7,6 +7,9 @@ import { z } from "zod";
 import { authOptions } from "~/server/auth";
 import { env } from "~/env.mjs";
 import { PokemonValidator } from "~/lib/data/pokemon";
+import Header from "~/components/Header";
+import { getCategoryFromId } from "~/lib/categories";
+import CategoryLabel from "~/components/CategoryLabel";
 
 export default function SeedPage({ params }: { params: { seed: string } }) {
   const dex = use(
@@ -60,10 +63,15 @@ export default function SeedPage({ params }: { params: { seed: string } }) {
           .parse(j),
       ),
   );
+  const categoryLabels = categoryIds
+    .map(getCategoryFromId)
+    .map((c) => <CategoryLabel key={c.id} category={c} />);
 
   return (
     <div className="p-2">
       <App
+        categoryLabels={categoryLabels}
+        header={<Header seed={params.seed} />}
         categoryIds={categoryIds}
         username={session?.user?.name ?? undefined}
         dex={dex}
