@@ -1,7 +1,6 @@
 import Cell from "~/components/Cell";
 import { type Pokemon } from "~/lib/data/dex";
 
-import CategoryLabel from "./CategoryLabel";
 import type Category from "~/lib/categories";
 import { type ReactNode } from "react";
 
