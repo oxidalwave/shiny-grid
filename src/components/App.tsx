@@ -4,7 +4,6 @@
 import { type ReactNode, useState } from "react";
 import { type Pokemon } from "~/lib/data/dex";
 
-import Grid from "./Grid";
 import { useSession } from "next-auth/react";
 import { getCategoryFromId } from "~/lib/categories";
 import { toast } from "react-hot-toast";
