@@ -9,6 +9,7 @@ import { useSession } from "next-auth/react";
 import { getCategoryFromId } from "~/lib/categories";
 import { toast } from "react-hot-toast";
 import { useQueryClient } from "@tanstack/react-query";
+import Cell from "./Cell";
 
 export interface GridProps {
   header: ReactNode;
@@ -86,18 +87,112 @@ export default function App({
     }
   }
 
+  const disabled = loading || session.data?.user.name !== username;
+
   return (
     <div className="flex flex-col">
       {header}
-      <Grid
-        categoryLabels={categoryLabels}
-        disabled={loading || session.data?.user.name !== username}
-        seed={seed}
-        categories={categories}
-        dex={dex}
-        guesses={guesses}
-        onGuess={handleGuess}
-      />
+      <div className="flex justify-center">
+        <div className="grid grid-cols-4">
+          <div className="h-32" />
+          {categoryLabels[0]}
+          {categoryLabels[1]}
+          {categoryLabels[2]}
+          <div className="h-32">{categoryLabels[3]}</div>
+          <Cell
+            disabled={disabled}
+            seed={seed}
+            index={0}
+            initialGuess={guesses[0]}
+            categories={[categories[0]!, categories[3]!]}
+            pokedex={dex}
+            guesses={guesses}
+            onGuess={handleGuess}
+          />
+          <Cell
+            disabled={disabled}
+            seed={seed}
+            index={1}
+            initialGuess={guesses[1]}
+            categories={[categories[1]!, categories[3]!]}
+            pokedex={dex}
+            guesses={guesses}
+            onGuess={handleGuess}
+          />
+          <Cell
+            disabled={disabled}
+            seed={seed}
+            index={2}
+            initialGuess={guesses[2]}
+            categories={[categories[2]!, categories[3]!]}
+            pokedex={dex}
+            guesses={guesses}
+            onGuess={handleGuess}
+          />
+          <div className="h-32">{categoryLabels[4]}</div>
+          <Cell
+            disabled={disabled}
+            seed={seed}
+            index={3}
+            initialGuess={guesses[3]}
+            categories={[categories[0]!, categories[4]!]}
+            pokedex={dex}
+            guesses={guesses}
+            onGuess={handleGuess}
+          />
+          <Cell
+            disabled={disabled}
+            seed={seed}
+            index={4}
+            initialGuess={guesses[4]}
+            categories={[categories[1]!, categories[4]!]}
+            pokedex={dex}
+            guesses={guesses}
+            onGuess={handleGuess}
+          />
+          <Cell
+            disabled={disabled}
+            seed={seed}
+            index={5}
+            initialGuess={guesses[5]}
+            categories={[categories[2]!, categories[4]!]}
+            pokedex={dex}
+            guesses={guesses}
+            onGuess={handleGuess}
+          />
+          <div className="h-32">{categoryLabels[5]}</div>
+          <Cell
+            disabled={disabled}
+            seed={seed}
+            index={6}
+            initialGuess={guesses[6]}
+            categories={[categories[0]!, categories[5]!]}
+            pokedex={dex}
+            guesses={guesses}
+            onGuess={handleGuess}
+          />
+          <Cell
+            disabled={disabled}
+            seed={seed}
+            index={7}
+            initialGuess={guesses[7]}
+            categories={[categories[1]!, categories[5]!]}
+            pokedex={dex}
+            guesses={guesses}
+            onGuess={handleGuess}
+          />
+          <Cell
+            disabled={disabled}
+            seed={seed}
+            index={8}
+            initialGuess={guesses[8]}
+            categories={[categories[2]!, categories[5]!]}
+            pokedex={dex}
+            guesses={guesses}
+            onGuess={handleGuess}
+          />
+        </div>
+      </div>
     </div>
   );
 }
