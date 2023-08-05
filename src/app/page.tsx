@@ -3,67 +3,27 @@ export const revalidate = 3600;
 import { use } from "react";
 import { getServerSession } from "next-auth";
 import App from "~/components/App";
-import { z } from "zod";
 import { authOptions } from "~/server/auth";
-import { env } from "~/env.mjs";
-import { PokemonValidator } from "~/lib/data/pokemon";
 import { defaultSeed } from "~/lib/defaultSeed";
 import Header from "~/components/Header";
 import { getCategoryFromId } from "~/lib/categories";
 import CategoryLabel from "~/components/CategoryLabel";
+import getDex from "~/lib/getDex";
+import { getCategories } from "~/lib/getCategories";
+import { getInitialAnswers } from "~/lib/getInitialAnswers";
 
 export default function HomePage() {
   const seed = defaultSeed();
 
-  const dex = use(
-    fetch(`${env.NEXT_PUBLIC_API_URL}/api/pokemon`)
-      .then((r) => r.json())
-      .then((j) => z.array(PokemonValidator).parse(j)),
-  );
+  const dex = use(getDex());
 
   const session = use(getServerSession(authOptions));
 
   const initialAnswers = session
-    ? use(
-        fetch(
-          `${env.NEXT_PUBLIC_API_URL}/api/grids/${seed}/users/${session.user.name}`,
-          {
-            cache: "no-cache",
-          },
-        )
-          .then((r) => r.json())
-          .then((j) =>
-            z
-              .array(
-                z.object({
-                  pokemonId: z.string(),
-                  categoryIndex: z.number(),
-                }),
-              )
-              .parse(j),
-          ),
-      )
+    ? use(getInitialAnswers(seed, session.user.name ?? ""))
     : [];
 
-  const categoryIds = use(
-    fetch(`${env.NEXT_PUBLIC_API_URL}/api/grids/${seed}/categories`)
-      .then((r) => r.json())
-      .then((j) =>
-        z
-          .array(
-            z.object({
-              id: z.string(),
-              kind: z.union([
-                z.literal("EGGGROUP"),
-                z.literal("TYPE"),
-                z.literal("GEN"),
-                z.literal("STAT"),
-              ]),
-            }),
-          )
-          .parse(j),
-      ),
-  );
+  const categoryIds = getCategories(seed);
 
   const categoryLabels = categoryIds
     .map(getCategoryFromId)

@@ -1,62 +1,22 @@
 import { use } from "react";
-import { PokemonValidator } from "~/lib/data/pokemon";
 import App from "~/components/App";
-import { z } from "zod";
-import { env } from "~/env.mjs";
 import Header from "~/components/Header";
 import CategoryLabel from "~/components/CategoryLabel";
 import { getCategoryFromId } from "~/lib/categories";
+import getDex from "~/lib/getDex";
+import { getInitialAnswers } from "~/lib/getInitialAnswers";
+import { getCategories } from "~/lib/getCategories";
 
 export default function SharedPage({
   params,
 }: {
   params: { seed: string; username: string };
 }) {
-  const dex = use(
-    fetch(`${env.NEXT_PUBLIC_API_URL}/api/pokemon`)
-      .then((r) => r.json())
-      .then((j) => z.array(PokemonValidator).parse(j)),
-  );
+  const dex = use(getDex());
 
-  const initialAnswers = use(
-    fetch(
-      `${env.NEXT_PUBLIC_API_URL}/api/grids/${params.seed}/users/${params.username}`,
-      {
-        cache: "no-cache",
-      },
-    )
-      .then((r) => r.json())
-      .then((j) =>
-        z
-          .array(
-            z.object({
-              pokemonId: z.string(),
-              categoryIndex: z.number(),
-            }),
-          )
-          .parse(j),
-      ),
-  );
+  const initialAnswers = use(getInitialAnswers(params.seed, params.username));
 
-  const categoryIds = use(
-    fetch(`${env.NEXT_PUBLIC_API_URL}/api/grids/${params.seed}/categories`)
-      .then((r) => r.json())
-      .then((j) =>
-        z
-          .array(
-            z.object({
-              id: z.string(),
-              kind: z.union([
-                z.literal("EGGGROUP"),
-                z.literal("TYPE"),
-                z.literal("GEN"),
-                z.literal("STAT"),
-              ]),
-            }),
-          )
-          .parse(j),
-      ),
-  );
+  const categoryIds = getCategories(params.seed);
 
   const categoryLabels = categoryIds
     .map(getCategoryFromId)

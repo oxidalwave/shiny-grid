@@ -3,6 +3,7 @@ import gen from "random-seed";
 import { Generations } from "./categories/generations";
 import { Stats } from "./categories/stats";
 import { Types } from "./categories/types";
+import { cache } from "react";
 
 interface CategoryCode {
   id: string;
@@ -50,7 +51,7 @@ function isInvalidGrid(categories: CategoryCode[]) {
 }
 
 // TODO: Reroll duplicates
-export function getCategories(seed: string) {
+export const getCategories = cache((seed: string) => {
   const rand = gen.create(seed);
 
   const type1 = Types[rand(Types.length)]!;
@@ -92,4 +93,4 @@ export function getCategories(seed: string) {
   }
 
   return categories;
-}
+});
