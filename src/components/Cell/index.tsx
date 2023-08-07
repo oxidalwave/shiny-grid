@@ -59,7 +59,7 @@ export default function Cell({
   }
   return (
     <div className="w-full">
-      <Suspense fallback={<LoadingCell success={true} pokemon={pokemon} />}>
+      <Suspense fallback={<LoadingCell success={false} pokemon={pokemon} />}>
         <IncorrectCell index={index} seed={seed} guess={pokemon} />
       </Suspense>
     </div>
