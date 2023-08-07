@@ -3,74 +3,74 @@ import type Category from ".";
 
 export const LowHp: Category = {
   id: "LowHp",
-  label: "HP ≤ 80",
-  test: (p: Pokemon) => p.hp <= 80,
+  label: "HP ≤ 70",
+  test: (p: Pokemon) => p.hp <= 70,
 };
 
 export const HighHp: Category = {
   id: "HighHp",
-  label: "HP ≥ 120",
-  test: (p: Pokemon) => p.hp >= 120,
+  label: "HP ≥ 110",
+  test: (p: Pokemon) => p.hp >= 110,
 };
 
 export const LowAtk: Category = {
   id: "LowAtk",
-  label: "Attack ≤ 80",
-  test: (p: Pokemon) => p.attack <= 80,
+  label: "Attack ≤ 70",
+  test: (p: Pokemon) => p.attack <= 70,
 };
 
 export const HighAtk: Category = {
   id: "HighAtk",
-  label: "Attack ≥ 120",
-  test: (p: Pokemon) => p.attack >= 120,
+  label: "Attack ≥ 110",
+  test: (p: Pokemon) => p.attack >= 110,
 };
 
 export const LowDef: Category = {
   id: "LowDef",
-  label: "Defense ≤ 80",
-  test: (p: Pokemon) => p.defense <= 80,
+  label: "Defense ≤ 70",
+  test: (p: Pokemon) => p.defense <= 70,
 };
 
 export const HighDef: Category = {
   id: "HighDef",
-  label: "Defense ≥ 120",
-  test: (p: Pokemon) => p.defense >= 120,
+  label: "Defense ≥ 110",
+  test: (p: Pokemon) => p.defense >= 110,
 };
 
 export const LowSpA: Category = {
   id: "LowSpA",
-  label: "Special Attack ≤ 80",
-  test: (p: Pokemon) => p.specialAttack <= 80,
+  label: "Special Attack ≤ 70",
+  test: (p: Pokemon) => p.specialAttack <= 70,
 };
 
 export const HighSpA: Category = {
   id: "HighSpA",
-  label: "Special Attack ≥ 120",
-  test: (p: Pokemon) => p.specialAttack >= 120,
+  label: "Special Attack ≥ 110",
+  test: (p: Pokemon) => p.specialAttack >= 110,
 };
 
 export const LowSpD: Category = {
   id: "LowSpD",
-  label: "Special Defense ≤ 80",
-  test: (p: Pokemon) => p.specialDefense <= 80,
+  label: "Special Defense ≤ 70",
+  test: (p: Pokemon) => p.specialDefense <= 70,
 };
 
 export const HighSpD: Category = {
   id: "HighSpD",
-  label: "Special Defense ≥ 120",
-  test: (p: Pokemon) => p.specialDefense >= 120,
+  label: "Special Defense ≥ 110",
+  test: (p: Pokemon) => p.specialDefense >= 110,
 };
 
 export const LowSpe: Category = {
   id: "LowSpe",
-  label: "Speed ≤ 80",
-  test: (p: Pokemon) => p.speed <= 80,
+  label: "Speed ≤ 70",
+  test: (p: Pokemon) => p.speed <= 70,
 };
 
 export const HighSpe: Category = {
   id: "HighSpe",
-  label: "Speed ≥ 120",
-  test: (p: Pokemon) => p.speed >= 120,
+  label: "Speed ≥ 110",
+  test: (p: Pokemon) => p.speed >= 110,
 };
 
 const totalStat = (p: Pokemon) =>
