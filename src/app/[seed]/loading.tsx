@@ -1,10 +1,9 @@
-export const revalidate = 21600;
+export const revalidate = 43200;
 
 import { use } from "react";
 import { getServerSession } from "next-auth";
 import App from "~/components/App";
 import { authOptions } from "~/server/auth";
-import { defaultSeed } from "~/lib/defaultSeed";
 import { type Pokemon } from "~/lib/data/dex";
 import { getCategories } from "~/lib/getCategories";
 import Spinner from "~/components/common/Spinner";
@@ -12,8 +11,8 @@ import { getCategoryFromId } from "~/lib/categories";
 import CategoryLabel from "~/components/CategoryLabel";
 import Header from "~/components/Header";
 
-export default function HomePageLoading() {
-  const seed = defaultSeed();
+export default function SeedPageLoading({ params }: { params: { seed: string } }) {
+  const seed = params.seed;
 
   const dex = [] as Pokemon[];
 

@@ -1,10 +1,4 @@
-export const revalidate = 21600;
-
-import { use } from "react";
-import { getServerSession } from "next-auth";
 import App from "~/components/App";
-import { authOptions } from "~/server/auth";
-import { defaultSeed } from "~/lib/defaultSeed";
 import { type Pokemon } from "~/lib/data/dex";
 import { getCategories } from "~/lib/getCategories";
 import Spinner from "~/components/common/Spinner";
@@ -12,12 +6,14 @@ import { getCategoryFromId } from "~/lib/categories";
 import CategoryLabel from "~/components/CategoryLabel";
 import Header from "~/components/Header";
 
-export default function HomePageLoading() {
-  const seed = defaultSeed();
+export default function SeedPageLoading({
+  params,
+}: {
+  params: { seed: string; username: string };
+}) {
+  const seed = params.seed;
 
   const dex = [] as Pokemon[];
-
-  const session = use(getServerSession(authOptions));
 
   const initialAnswers = [] as {
     categoryIndex: number;
@@ -25,6 +21,7 @@ export default function HomePageLoading() {
   }[];
 
   const categoryIds = getCategories(seed);
+  
   const categoryLabels = categoryIds
     .map(getCategoryFromId)
     .map((c) => <CategoryLabel key={c.id} category={c} />);
@@ -40,7 +37,7 @@ export default function HomePageLoading() {
           header={<Header seed={seed} />}
           loading
           categoryIds={categoryIds}
-          username={session?.user?.name ?? undefined}
+          username={params.username}
           dex={dex}
           seed={seed}
           initialAnswers={initialAnswers}
