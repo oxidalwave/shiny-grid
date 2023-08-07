@@ -5,6 +5,8 @@ import { type Pokemon } from "~/lib/data/dex";
 import PendingCell from "./PendingCell";
 import IncorrectCell from "./IncorrectCell";
 import CorrectCell from "./CorrectCell";
+import { Suspense } from "react";
+import LoadingCell from "./LoadingCell";
 
 export interface CellProps {
   disabled?: boolean;
@@ -13,10 +15,7 @@ export interface CellProps {
   pokedex: Pokemon[];
   initialGuess?: Pokemon;
   guesses: (undefined | Pokemon)[];
-  onGuess: (
-    pokemon: Pokemon,
-    categoryIndex: number,
-  ) => void;
+  onGuess: (pokemon: Pokemon, categoryIndex: number) => void;
   categories: Category[];
 }
 
@@ -52,13 +51,17 @@ export default function Cell({
   if (categories.every((c) => c.test(pokemon))) {
     return (
       <div className="w-full">
-        <CorrectCell index={index} seed={seed} guess={pokemon} />
+        <Suspense fallback={<LoadingCell success={true} pokemon={pokemon} />}>
+          <CorrectCell index={index} seed={seed} guess={pokemon} />
+        </Suspense>
       </div>
     );
   }
   return (
     <div className="w-full">
-      <IncorrectCell index={index} seed={seed} guess={pokemon} />
+      <Suspense fallback={<LoadingCell success={true} pokemon={pokemon} />}>
+        <IncorrectCell index={index} seed={seed} guess={pokemon} />
+      </Suspense>
     </div>
   );
 }

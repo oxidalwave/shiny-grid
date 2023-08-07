@@ -10,29 +10,16 @@ export interface CorrectCellProps {
 }
 
 export default function CorrectCell({ seed, index, guess }: CorrectCellProps) {
-  const { data, isLoading } = useQuery(["guesses", seed, index, guess.id], () =>
-    fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/api/grids/${seed}/categories/${index}/guesses/${guess.id}`,
-    ).then((r) =>
-      r.json().then((j) => z.object({ percent: z.number() }).parse(j)),
-    ),
+  const { data } = useQuery(
+    ["guesses", seed, index, guess.id],
+    () =>
+      fetch(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/grids/${seed}/categories/${index}/guesses/${guess.id}`,
+      ).then((r) =>
+        r.json().then((j) => z.object({ percent: z.number() }).parse(j)),
+      ),
+    { suspense: true },
   );
-
-  if (isLoading) {
-    return (
-      <div className="h-full flex flex-col justify-center items-center bg-green-500">
-        <img
-          alt={guess.name}
-          src={guess.imageUrl ?? ""}
-          width={128}
-          height={128}
-        />
-        <div className="bg-slate-800 bg-opacity-60 px-2 rounded">
-          {guess.name}
-        </div>
-      </div>
-    );
-  }
 
   const percent = data ? Math.floor(data?.percent * 100) : 0;
 
