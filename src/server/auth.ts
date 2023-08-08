@@ -5,8 +5,12 @@ import {
   type NextAuthOptions,
   type DefaultSession,
 } from "next-auth";
+import AppleProvider from "next-auth/providers/apple";
 import DiscordProvider from "next-auth/providers/discord";
+import FacebookProvider from "next-auth/providers/facebook";
 import GitHubProvider from "next-auth/providers/github";
+import GoogleProvider from "next-auth/providers/google";
+import TwitchProvider from "next-auth/providers/twitch";
 import { env } from "~/env.mjs";
 import { prisma } from "~/server/db";
 
@@ -31,6 +35,51 @@ declare module "next-auth" {
   // }
 }
 
+const providers = {
+  apple:
+    env.APPLE_ID && env.APPLE_SECRET
+      ? AppleProvider({
+          clientId: env.APPLE_ID,
+          clientSecret: env.APPLE_SECRET,
+        })
+      : undefined,
+  discord:
+    env.DISCORD_CLIENT_ID && env.DISCORD_CLIENT_SECRET
+      ? DiscordProvider({
+          clientId: env.DISCORD_CLIENT_ID,
+          clientSecret: env.DISCORD_CLIENT_SECRET,
+        })
+      : undefined,
+  facebook:
+    env.FACEBOOK_CLIENT_ID && env.FACEBOOK_CLIENT_SECRET
+      ? FacebookProvider({
+          clientId: env.FACEBOOK_CLIENT_ID,
+          clientSecret: env.FACEBOOK_CLIENT_SECRET,
+        })
+      : undefined,
+  github:
+    env.GITHUB_CLIENT_ID && env.GITHUB_CLIENT_SECRET
+      ? GitHubProvider({
+          clientId: env.GITHUB_CLIENT_ID,
+          clientSecret: env.GITHUB_CLIENT_SECRET,
+        })
+      : undefined,
+  google:
+    env.GOOGLE_CLIENT_ID && env.GOOGLE_CLIENT_SECRET
+      ? GoogleProvider({
+          clientId: env.GOOGLE_CLIENT_ID,
+          clientSecret: env.GOOGLE_CLIENT_SECRET,
+        })
+      : undefined,
+  twitch:
+    env.TWITCH_CLIENT_ID && env.TWITCH_CLIENT_SECRET
+      ? TwitchProvider({
+          clientId: env.TWITCH_CLIENT_ID,
+          clientSecret: env.TWITCH_CLIENT_SECRET,
+        })
+      : undefined,
+};
+
 /**
  * Options for NextAuth.js used to configure adapters, providers, callbacks, etc.
  *
@@ -48,14 +97,13 @@ export const authOptions: NextAuthOptions = {
   },
   adapter: PrismaAdapter(prisma),
   providers: [
-    DiscordProvider({
-      clientId: env.DISCORD_CLIENT_ID,
-      clientSecret: env.DISCORD_CLIENT_SECRET,
-    }),
-    GitHubProvider({
-      clientId: env.GITHUB_CLIENT_ID,
-      clientSecret: env.GITHUB_CLIENT_SECRET,
-    }),
+    ...(providers.apple ? [providers.apple] : []),
+    ...(providers.discord ? [providers.discord] : []),
+    ...(providers.facebook ? [providers.facebook] : []),
+    ...(providers.github ? [providers.github] : []),
+    ...(providers.google ? [providers.google] : []),
+    ...(providers.twitch ? [providers.twitch] : []),
+
     /**
      * ...add more providers here.
      *
