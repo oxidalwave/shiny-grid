@@ -82,20 +82,8 @@ export const Generation4: Category = {
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
       <div className="grid grid-cols-2">
-        <Image
-          className="col-span-1"
-          alt="diamond"
-          src="/boxart/diamond.jpg"
-          width={64}
-          height={64}
-        />
-        <Image
-          className="col-span-1"
-          alt="pearl"
-          src="/boxart/pearl.jpg"
-          width={64}
-          height={64}
-        />
+        <Image alt="diamond" src="/boxart/diamond.jpg" width={64} height={64} />
+        <Image alt="pearl" src="/boxart/pearl.jpg" width={64} height={64} />
         <Image
           className="col-span-2 justify-self-center"
           alt="platinum"
@@ -199,23 +187,11 @@ export const Generation8: Category = {
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
-      <div className="grid grid-cols-6">
+      <div className="grid grid-cols-2">
+        <Image alt="sword" src="/boxart/sword.png" width={64} height={64} />
+        <Image alt="shield" src="/boxart/shield.png" width={64} height={64} />
         <Image
-          className="col-span-2"
-          alt="sword"
-          src="/boxart/sword.png"
-          width={64}
-          height={64}
-        />
-        <Image
-          className="col-span-2"
-          alt="shield"
-          src="/boxart/shield.png"
-          width={64}
-          height={64}
-        />
-        <Image
-          className="col-span-2"
+          className="col-span-2 justify-self-center"
           alt="legendsarceus"
           src="/boxart/legendsarceus.png"
           width={64}

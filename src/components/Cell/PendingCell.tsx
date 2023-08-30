@@ -1,6 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
+import Image from "next/image";
 import { useRef, useState } from "react";
 import type Category from "~/lib/categories";
 import { type Pokemon } from "~/lib/data/dex";
@@ -73,7 +73,8 @@ export default function PendingCell({
                 key={p.name}
                 onClick={() => handleSubmit(p)}
               >
-                <img
+                <Image
+                  unoptimized
                   loading="lazy"
                   alt={p.name}
                   src={p.imageUrl ?? ""}

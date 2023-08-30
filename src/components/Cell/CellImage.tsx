@@ -1,10 +1,11 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import { type Pokemon } from "~/lib/data/dex";
 
 export default function CellImage({ pokemon }: { pokemon: Pokemon }) {
   return (
     <>
-      <img
+      <Image
+        unoptimized
         alt={pokemon.name}
         src={pokemon.imageUrl ?? ""}
         width={128}

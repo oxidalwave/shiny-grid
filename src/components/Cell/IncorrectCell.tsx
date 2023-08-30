@@ -1,7 +1,7 @@
 "use client";
 
-/* eslint-disable @next/next/no-img-element */
 import { useQuery } from "@tanstack/react-query";
+import Image from "next/image";
 import { z } from "zod";
 import { type Pokemon } from "~/lib/data/dex";
 
@@ -34,7 +34,8 @@ export default function IncorrectCell({
       <div className="absolute bg-slate-800 bg-opacity-60 rounded py-2 px-8 justify-top">
         {percent}%
       </div>
-      <img
+      <Image
+        unoptimized
         alt={guess.name}
         src={guess.imageUrl ?? ""}
         width={128}
