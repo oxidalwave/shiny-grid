@@ -81,29 +81,29 @@ export const Generation4: Category = {
   icon: (
     <div className="flex flex-col">
       <div className="text-center">Introduced in...</div>
-      <div className="grid grid-cols-6">
+      <div className="grid grid-cols-2">
         <Image
-          className="col-span-2"
+          className="col-span-1"
           alt="diamond"
           src="/boxart/diamond.jpg"
           width={64}
           height={64}
         />
         <Image
-          className="col-span-2"
+          className="col-span-1"
           alt="pearl"
           src="/boxart/pearl.jpg"
           width={64}
           height={64}
         />
         <Image
-          className="col-span-2"
+          className="col-span-2 justify-self-center"
           alt="platinum"
           src="/boxart/platinum.png"
           width={64}
           height={64}
         />
-        <Image
+        {/*<Image
           className="col-span-3 justify-self-center"
           alt="heartgold"
           src="/boxart/heartgold.jpg"
@@ -116,7 +116,7 @@ export const Generation4: Category = {
           src="/boxart/soulsilver.jpg"
           width={64}
           height={64}
-        />
+        />*/}
       </div>
     </div>
   ),
@@ -149,7 +149,7 @@ export const Generation6: Category = {
       <div className="grid grid-cols-2">
         <Image alt="x" src="/boxart/x.png" width={64} height={64} />
         <Image alt="y" src="/boxart/y.png" width={64} height={64} />
-        <Image
+        {/*<Image
           alt="omegaruby"
           src="/boxart/omegaruby.png"
           width={64}
@@ -159,8 +159,7 @@ export const Generation6: Category = {
           alt="alphasapphire"
           src="/boxart/alphasapphire.png"
           width={64}
-          height={64}
-        />
+          height={64} />*/}
       </div>
     </div>
   ),
@@ -222,7 +221,7 @@ export const Generation8: Category = {
           width={64}
           height={64}
         />
-        <Image
+        {/*<Image
           className="col-span-3 justify-self-center"
           alt="brilliantdiamond"
           src="/boxart/brilliantdiamond.png"
@@ -234,8 +233,7 @@ export const Generation8: Category = {
           alt="shiningpearl"
           src="/boxart/shiningpearl.png"
           width={64}
-          height={64}
-        />
+          height={64} />*/}
       </div>
     </div>
   ),
