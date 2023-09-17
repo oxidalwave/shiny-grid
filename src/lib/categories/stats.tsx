@@ -78,8 +78,8 @@ const totalStat = (p: Pokemon) =>
 
 export const LowTotal: Category = {
   id: "LowTotal",
-  label: "Total ≤ 200",
-  test: (p: Pokemon) => totalStat(p) <= 200,
+  label: "Total ≤ 240",
+  test: (p: Pokemon) => totalStat(p) <= 240,
 };
 
 export const HighTotal: Category = {
