@@ -27,7 +27,8 @@ function isInvalidCombo(categories: CategoryCode[]) {
     (codes.includes("DarkType") && codes.includes("Generation1")) ||
     (codes.includes("FireType") && codes.includes("HighHp")) ||
     (codes.includes("BugType") && codes.includes("HighHp")) ||
-    (codes.includes("ElectricType") && codes.includes("HighSpD"))
+    (codes.includes("ElectricType") && codes.includes("HighSpD")) ||
+    (codes.includes("GroundType") && codes.includes("FightingType")) 
   );
 }
 
