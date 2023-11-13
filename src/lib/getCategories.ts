@@ -28,7 +28,7 @@ function isInvalidCombo(categories: CategoryCode[]) {
     (codes.includes("FireType") && codes.includes("HighHp")) ||
     (codes.includes("BugType") && codes.includes("HighHp")) ||
     (codes.includes("ElectricType") && codes.includes("HighSpD")) ||
-    (codes.includes("GroundType") && codes.includes("FightingType"))
+    (codes.includes("GroundType") && codes.includes("FightingType")) 
   );
 }
 
@@ -52,7 +52,7 @@ function isInvalidGrid(categories: CategoryCode[]) {
 }
 
 // TODO: Reroll duplicates
-export function getCategories(seed: string) {
+export const getCategories = cache((seed: string) => {
   const rand = gen.create(seed);
 
   const type1 = Types[rand(Types.length)]!;
@@ -94,4 +94,4 @@ export function getCategories(seed: string) {
   }
 
   return categories;
-}
+});
