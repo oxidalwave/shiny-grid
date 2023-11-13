@@ -5,10 +5,13 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { SessionProvider } from "next-auth/react";
 import { useState, type ReactNode, useEffect } from "react";
 import { Toaster } from "react-hot-toast";
+import { api } from "~/utils/api";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: { queries: { staleTime: 5000 } },
+});
 
-export default function Providers({ children }: { children: ReactNode }) {
+function Providers({ children }: { children: ReactNode }) {
   const [toastable, setToastable] = useState(false);
 
   useEffect(() => {
@@ -25,3 +28,5 @@ export default function Providers({ children }: { children: ReactNode }) {
     </SessionProvider>
   );
 }
+
+export default api.withTRPC(Providers);
