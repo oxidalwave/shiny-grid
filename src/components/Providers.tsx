@@ -1,17 +1,11 @@
 "use client";
 
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { SessionProvider } from "next-auth/react";
 import { useState, type ReactNode, useEffect } from "react";
 import { Toaster } from "react-hot-toast";
-import { api } from "~/utils/api";
+import TrpcProvider from "./util/TrpcProvider";
 
-const queryClient = new QueryClient({
-  defaultOptions: { queries: { staleTime: 5000 } },
-});
-
-function Providers({ children }: { children: ReactNode }) {
+export default function Providers({ children }: { children: ReactNode }) {
   const [toastable, setToastable] = useState(false);
 
   useEffect(() => {
@@ -20,13 +14,10 @@ function Providers({ children }: { children: ReactNode }) {
 
   return (
     <SessionProvider>
-      <QueryClientProvider client={queryClient}>
+      <TrpcProvider>
         {children}
         {toastable && <Toaster />}
-        <ReactQueryDevtools />
-      </QueryClientProvider>
+      </TrpcProvider>
     </SessionProvider>
   );
 }
-
-export default api.withTRPC(Providers);
