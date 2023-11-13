@@ -1,16 +1,19 @@
-import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
+import {
+  type FetchCreateContextFnOptions,
+  fetchRequestHandler,
+} from "@trpc/server/adapters/fetch";
 import { appRouter } from "~/server/api/root";
-import { prisma } from "~/server/db";
 
 const handler = (request: Request) => {
   return fetchRequestHandler({
     endpoint: "/api/trpc",
     req: request,
     router: appRouter,
-    createContext: () => ({
-      session: null,
-      prisma,
-    }),
+    createContext: function (
+      opts: FetchCreateContextFnOptions,
+    ): object | Promise<object> {
+      return {};
+    },
   });
 };
 

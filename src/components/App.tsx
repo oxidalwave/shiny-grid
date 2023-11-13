@@ -74,11 +74,10 @@ export default function App({
       )
         .then(() =>
           queryClient.invalidateQueries([
-            ["guess"],
-            {
-              input: { seed, categoryIndex, pokemonId: pokemon.id },
-              type: "query",
-            },
+            "guesses",
+            seed,
+            categoryIndex,
+            pokemon.id,
           ]),
         )
         .catch((e) => {
