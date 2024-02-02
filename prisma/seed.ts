@@ -645,7 +645,7 @@ async function main() {
   await prisma.pokemon.updateMany({
     where: {
       name: {
-        startsWith: "Mega",
+        startsWith: "Mega ",
       },
     },
     data: {
@@ -658,7 +658,7 @@ async function main() {
   await prisma.pokemon.updateMany({
     where: {
       name: {
-        startsWith: "Alolan",
+        startsWith: "Alolan ",
       },
     },
     data: {
@@ -671,7 +671,7 @@ async function main() {
   await prisma.pokemon.updateMany({
     where: {
       name: {
-        startsWith: "Galarian",
+        startsWith: "Galarian ",
       },
     },
     data: {
@@ -684,7 +684,7 @@ async function main() {
   await prisma.pokemon.updateMany({
     where: {
       name: {
-        startsWith: "Hisuian",
+        startsWith: "Hisuian ",
       },
     },
     data: {
@@ -697,7 +697,7 @@ async function main() {
   await prisma.pokemon.updateMany({
     where: {
       name: {
-        startsWith: "Paldean",
+        startsWith: "Paldean ",
       },
     },
     data: {
