@@ -7,7 +7,7 @@ import { type Pokemon } from "~/lib/data/dex";
 import { useSession } from "next-auth/react";
 import { getCategoryFromId } from "~/lib/categories";
 import { toast } from "react-hot-toast";
-import { useQueryClient } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 import Cell from "./Cell";
 
 export interface GridProps {
@@ -57,6 +57,28 @@ export default function App({
 
   const queryClient = useQueryClient();
 
+  const { mutate } = useMutation({
+    mutationFn: ({
+      categoryIndex,
+      id,
+    }: {
+      categoryIndex: number;
+      id: string;
+    }) =>
+      fetch(
+        `/api/grids/${seed}/users/${session.data?.user.name}/categories/${categoryIndex}`,
+        {
+          body: JSON.stringify({ id }),
+          method: "POST",
+        },
+      ),
+    onSettled: async (_data, _error, vars) => {
+      await queryClient.invalidateQueries({
+        queryKey: ["guesses", seed, vars.categoryIndex],
+      });
+    },
+  });
+
   function handleGuess(pokemon: Pokemon, categoryIndex: number) {
     const temp = [...guesses];
     const found = dex.find(({ id }) => id === pokemon.id);
@@ -65,24 +87,7 @@ export default function App({
     }
     setGuesses(temp);
     if (session.data && session.data.user.name === username) {
-      fetch(
-        `/api/grids/${seed}/users/${session.data?.user.name}/categories/${categoryIndex}`,
-        {
-          body: JSON.stringify({ id: pokemon.id }),
-          method: "POST",
-        },
-      )
-        .then(() =>
-          queryClient.invalidateQueries([
-            "guesses",
-            seed,
-            categoryIndex,
-            pokemon.id,
-          ]),
-        )
-        .catch((e) => {
-          toast(`Something went wrong:\n${JSON.stringify(e)}`);
-        });
+      mutate({ categoryIndex, id: pokemon.id });
     }
   }
 
