@@ -6,9 +6,8 @@ import { type Pokemon } from "~/lib/data/dex";
 
 import { useSession } from "next-auth/react";
 import { getCategoryFromId } from "~/lib/categories";
-import { toast } from "react-hot-toast";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
 import Cell from "./Cell";
+import { api } from "~/utils/api";
 
 export interface GridProps {
   header: ReactNode;
@@ -55,27 +54,18 @@ export default function App({
     parseInitialAnswers(),
   );
 
-  const queryClient = useQueryClient();
+  const trpc = api.useUtils();
 
-  const { mutate } = useMutation({
-    mutationFn: ({
-      categoryIndex,
-      id,
-    }: {
-      categoryIndex: number;
-      id: string;
-    }) =>
-      fetch(
-        `/api/grids/${seed}/users/${session.data?.user.name}/categories/${categoryIndex}`,
-        {
-          body: JSON.stringify({ id }),
-          method: "POST",
-        },
-      ),
+  const { mutate } = api.makeGuess.useMutation({
     onSettled: async (_data, _error, vars) => {
-      await queryClient.invalidateQueries({
-        queryKey: ["guesses", seed, vars.categoryIndex],
-      });
+      await Promise.allSettled([
+        trpc.guesses.invalidate({ seed, categoryIndex: vars.categoryIndex }),
+        trpc.guess.invalidate({
+          seed,
+          categoryIndex: vars.categoryIndex,
+          pokemonId: vars.pokemonId,
+        }),
+      ]);
     },
   });
 
@@ -87,7 +77,12 @@ export default function App({
     }
     setGuesses(temp);
     if (session.data && session.data.user.name === username) {
-      mutate({ categoryIndex, id: pokemon.id });
+      mutate({
+        seed,
+        username: session.data?.user.name ?? "",
+        categoryIndex,
+        pokemonId: pokemon.id,
+      });
     }
   }
 
