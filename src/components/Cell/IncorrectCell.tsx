@@ -1,8 +1,6 @@
 "use client";
 
-import { useSuspenseQuery } from "@tanstack/react-query";
 import Image from "next/image";
-import { z } from "zod";
 import { type Pokemon } from "~/lib/data/dex";
 import { api } from "~/utils/api";
 
@@ -17,12 +15,10 @@ export default function IncorrectCell({
   index,
   guess,
 }: IncorrectCellProps) {
-  const { data } = useSuspenseQuery({
-    queryKey: ["guesses", seed, index, guess.id],
-    queryFn: () =>
-      fetch(`/api/grids/${seed}/categories/${index}/guesses/${guess.id}`)
-        .then((r) => r.json())
-        .then((j) => z.object({ percent: z.number() }).parse(j)),
+  const [data] = api.guess.useSuspenseQuery({
+    seed,
+    categoryIndex: index,
+    pokemonId: guess.id,
   });
 
   const percent = Math.floor(data.percent * 100);
