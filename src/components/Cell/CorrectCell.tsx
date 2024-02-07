@@ -21,9 +21,11 @@ export default function CorrectCell({ seed, index, guess }: CorrectCellProps) {
 
   return (
     <div className="h-full flex flex-col justify-center items-center bg-green-500">
-      <div className="absolute bg-slate-800 bg-opacity-60 rounded py-2 px-8 justify-top">
-        {percent}%
-      </div>
+      {!isNaN(percent) && (
+        <div className="absolute bg-slate-800 bg-opacity-60 rounded py-2 px-8 justify-top">
+          {percent}%
+        </div>
+      )}
       <Image
         unoptimized
         alt={guess.name}
