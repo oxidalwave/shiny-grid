@@ -36,9 +36,9 @@ export const TrpcProvider: React.FC<{ children: React.ReactNode }> = ({
               credentials: "include",
             });
           },
+          transformer: superjson,
         }),
       ],
-      transformer: superjson,
     }),
   );
   return (
