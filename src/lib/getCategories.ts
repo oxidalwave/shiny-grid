@@ -5,10 +5,14 @@ import { Stats } from "./categories/stats";
 import { Types } from "./categories/types";
 import { cache } from "react";
 
+export type Seed = string;
+
 interface CategoryCode {
   id: string;
   kind: "TYPE" | "GEN" | "STAT" | "EGGGROUPS";
 }
+
+export type Grid = { id: string; kind: "TYPE" | "GEN" | "STAT" }[];
 
 function isInvalidCombo(categories: CategoryCode[]) {
   const codes = categories.map(({ id }) => id);
@@ -28,7 +32,7 @@ function isInvalidCombo(categories: CategoryCode[]) {
     (codes.includes("FireType") && codes.includes("HighHp")) ||
     (codes.includes("BugType") && codes.includes("HighHp")) ||
     (codes.includes("ElectricType") && codes.includes("HighSpD")) ||
-    (codes.includes("GroundType") && codes.includes("FightingType")) 
+    (codes.includes("GroundType") && codes.includes("FightingType"))
   );
 }
 
@@ -52,7 +56,12 @@ function isInvalidGrid(categories: CategoryCode[]) {
 }
 
 // TODO: Reroll duplicates
-export const getCategories = cache((seed: string) => {
+export const getCategories: (seed: Seed) => Grid = cache((seed) => {
+  const hardcoded = hardcodedGrids[seed];
+  if (hardcoded !== undefined) {
+    return hardcoded;
+  }
+
   const rand = gen.create(seed);
 
   const type1 = Types[rand(Types.length)]!;
@@ -95,3 +104,32 @@ export const getCategories = cache((seed: string) => {
 
   return categories;
 });
+
+const hardcodedGrids: Record<Seed, Grid> = {
+  "2024-03-30": [
+    {
+      id: "WaterType",
+      kind: "TYPE" as const,
+    },
+    {
+      id: "LowAtk",
+      kind: "STAT" as const,
+    },
+    {
+      id: "Generation2",
+      kind: "GEN" as const,
+    },
+    {
+      id: "ElectricType",
+      kind: "TYPE" as const,
+    },
+    {
+      id: "LowDef",
+      kind: "STAT" as const,
+    },
+    {
+      id: "HighHp",
+      kind: "STAT" as const,
+    },
+  ],
+};
