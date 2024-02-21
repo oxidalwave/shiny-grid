@@ -9,12 +9,12 @@ import { getCategoryFromId } from "~/lib/categories";
 import { api } from "~/utils/api";
 import Cell from "./Cell";
 
-type Answer = {
+interface Answer {
   categoryIndex: number;
   pokemonId: string;
 }
 
-export type GridProps = {
+export interface GridProps {
   header: ReactNode;
   categoryLabels: ReactNode[];
   loading?: boolean;

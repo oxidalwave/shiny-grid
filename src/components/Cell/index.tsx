@@ -7,7 +7,7 @@ import { Suspense } from "react";
 import LoadingCell from "./LoadingCell";
 import LoadedCell from "./LoadedCell";
 
-export type CellProps = {
+export interface CellProps {
   disabled?: boolean;
   seed: string;
   index: number;
