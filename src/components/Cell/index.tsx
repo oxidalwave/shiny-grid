@@ -3,10 +3,9 @@
 import type Category from "~/lib/categories";
 import { type Pokemon } from "~/lib/data/dex";
 import PendingCell from "./PendingCell";
-import IncorrectCell from "./IncorrectCell";
-import CorrectCell from "./CorrectCell";
 import { Suspense } from "react";
 import LoadingCell from "./LoadingCell";
+import LoadedCell from "./LoadedCell";
 
 export interface CellProps {
   disabled?: boolean;
@@ -48,19 +47,19 @@ export default function Cell({
     );
   }
 
-  if (categories.every((c) => c.test(pokemon))) {
-    return (
-      <div className="w-full">
-        <Suspense fallback={<LoadingCell success={true} pokemon={pokemon} />}>
-          <CorrectCell index={index} seed={seed} guess={pokemon} />
-        </Suspense>
-      </div>
-    );
-  }
+  const isSuccess = categories.every((c) => c.test(pokemon));
+
   return (
     <div className="w-full">
-      <Suspense fallback={<LoadingCell success={false} pokemon={pokemon} />}>
-        <IncorrectCell index={index} seed={seed} guess={pokemon} />
+      <Suspense
+        fallback={<LoadingCell success={isSuccess} pokemon={pokemon} />}
+      >
+        <LoadedCell
+          index={index}
+          seed={seed}
+          guess={pokemon}
+          isSuccess={isSuccess}
+        />
       </Suspense>
     </div>
   );

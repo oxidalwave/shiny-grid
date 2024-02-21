@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { type ReactNode, useState } from "react";
+import { useCallback, useState, type ReactNode } from "react";
 import { type Pokemon } from "~/lib/data/dex";
 
 import { useSession } from "next-auth/react";
 import { getCategoryFromId } from "~/lib/categories";
-import Cell from "./Cell";
 import { api } from "~/utils/api";
+import Cell from "./Cell";
 
 export interface GridProps {
   header: ReactNode;
@@ -25,6 +25,16 @@ export interface GridProps {
     pokemonId: string;
   }[];
 }
+
+const rows = [...Array(3).keys()]
+  .map((i) => ({ index: i * 3, cat2: i + 3 }))
+  .map((r) =>
+    [...Array(3).keys()].map((i) => ({
+      index: i + r.index,
+      cat1: i,
+      cat2: r.cat2,
+    })),
+  );
 
 export default function App({
   header,
@@ -69,24 +79,43 @@ export default function App({
     },
   });
 
-  function handleGuess(pokemon: Pokemon, categoryIndex: number) {
-    const temp = [...guesses];
-    const found = dex.find(({ id }) => id === pokemon.id);
-    if (found) {
-      temp[categoryIndex] = found;
-    }
-    setGuesses(temp);
-    if (session.data && session.data.user.name === username) {
-      mutate({
-        seed,
-        username: session.data?.user.name ?? "",
-        categoryIndex,
-        pokemonId: pokemon.id,
-      });
-    }
-  }
+  const handleGuess = useCallback(
+    (pokemon: Pokemon, categoryIndex: number) => {
+      const temp = [...guesses];
+      const found = dex.find(({ id }) => id === pokemon.id);
+      if (found) {
+        temp[categoryIndex] = found;
+      }
+      setGuesses(temp);
+      if (session.data && session.data?.user?.name === username) {
+        mutate({
+          seed,
+          username: session.data?.user?.name ?? "",
+          categoryIndex,
+          pokemonId: pokemon.id,
+        });
+      }
+    },
+    [dex, guesses, mutate, seed, session.data, username],
+  );
 
-  const disabled = loading || session.data?.user.name !== username;
+  const disabled = loading || session.data?.user?.name !== username;
+
+  const cell = useCallback(
+    (c: { index: number; cat1: number; cat2: number }) => (
+      <Cell
+        disabled={disabled}
+        seed={seed}
+        index={c.index}
+        initialGuess={guesses[c.index]}
+        categories={[categories[c.cat1]!, categories[c.cat2]!]}
+        pokedex={dex}
+        guesses={guesses}
+        onGuess={handleGuess}
+      />
+    ),
+    [disabled, seed, guesses, categories, dex, handleGuess],
+  );
 
   return (
     <div className="flex flex-col">
@@ -98,98 +127,11 @@ export default function App({
           {categoryLabels[1]}
           {categoryLabels[2]}
           <div className="h-32">{categoryLabels[3]}</div>
-          <Cell
-            disabled={disabled}
-            seed={seed}
-            index={0}
-            initialGuess={guesses[0]}
-            categories={[categories[0]!, categories[3]!]}
-            pokedex={dex}
-            guesses={guesses}
-            onGuess={handleGuess}
-          />
-          <Cell
-            disabled={disabled}
-            seed={seed}
-            index={1}
-            initialGuess={guesses[1]}
-            categories={[categories[1]!, categories[3]!]}
-            pokedex={dex}
-            guesses={guesses}
-            onGuess={handleGuess}
-          />
-          <Cell
-            disabled={disabled}
-            seed={seed}
-            index={2}
-            initialGuess={guesses[2]}
-            categories={[categories[2]!, categories[3]!]}
-            pokedex={dex}
-            guesses={guesses}
-            onGuess={handleGuess}
-          />
+          {rows[0]?.map(cell)}
           <div className="h-32">{categoryLabels[4]}</div>
-          <Cell
-            disabled={disabled}
-            seed={seed}
-            index={3}
-            initialGuess={guesses[3]}
-            categories={[categories[0]!, categories[4]!]}
-            pokedex={dex}
-            guesses={guesses}
-            onGuess={handleGuess}
-          />
-          <Cell
-            disabled={disabled}
-            seed={seed}
-            index={4}
-            initialGuess={guesses[4]}
-            categories={[categories[1]!, categories[4]!]}
-            pokedex={dex}
-            guesses={guesses}
-            onGuess={handleGuess}
-          />
-          <Cell
-            disabled={disabled}
-            seed={seed}
-            index={5}
-            initialGuess={guesses[5]}
-            categories={[categories[2]!, categories[4]!]}
-            pokedex={dex}
-            guesses={guesses}
-            onGuess={handleGuess}
-          />
+          {rows[1]?.map(cell)}
           <div className="h-32">{categoryLabels[5]}</div>
-          <Cell
-            disabled={disabled}
-            seed={seed}
-            index={6}
-            initialGuess={guesses[6]}
-            categories={[categories[0]!, categories[5]!]}
-            pokedex={dex}
-            guesses={guesses}
-            onGuess={handleGuess}
-          />
-          <Cell
-            disabled={disabled}
-            seed={seed}
-            index={7}
-            initialGuess={guesses[7]}
-            categories={[categories[1]!, categories[5]!]}
-            pokedex={dex}
-            guesses={guesses}
-            onGuess={handleGuess}
-          />
-          <Cell
-            disabled={disabled}
-            seed={seed}
-            index={8}
-            initialGuess={guesses[8]}
-            categories={[categories[2]!, categories[5]!]}
-            pokedex={dex}
-            guesses={guesses}
-            onGuess={handleGuess}
-          />
+          {rows[2]?.map(cell)}
         </div>
       </div>
     </div>

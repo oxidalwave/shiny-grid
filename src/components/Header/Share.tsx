@@ -11,16 +11,17 @@ export default function Share({ seed }: ShareProps) {
   const session = useSession();
 
   function handleShare() {
-    const url = `${process.env.NEXT_PUBLIC_API_URL}/${seed}/${session.data?.user.name}`;
     void navigator.clipboard
-      .writeText(url)
+      .writeText(
+        `${process.env.NEXT_PUBLIC_API_URL}/${seed}/${session.data?.user.name}`,
+      )
       .then(() => toast("A sharable link has been copied to your clipboard!"));
   }
 
   return (
     <button
       onClick={handleShare}
-      className="w-full rounded p-2 m-2 bg-slate-700 hover:bg-slate-800"
+      className="m-2 w-full rounded bg-slate-700 p-2 hover:bg-slate-800"
     >
       Share your grid
     </button>

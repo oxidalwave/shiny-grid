@@ -3,8 +3,8 @@ import Providers from "~/components/providers/Providers";
 
 export default function Shell({ children }: { children: ReactNode }) {
   return (
-    <Providers>
-      <main className="">{children}</main>
-    </Providers>
+    <main className="">
+      <Providers>{children}</Providers>
+    </main>
   );
 }

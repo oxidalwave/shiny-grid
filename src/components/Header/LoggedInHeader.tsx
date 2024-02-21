@@ -11,7 +11,7 @@ export default function LoggedInHeader({ seed }: LoggedInHeaderProps) {
     <div className="p-2">
       <div className="flex">
         <a
-          className="rounded p-2 m-2 bg-slate-700 hover:bg-slate-800"
+          className="m-2 rounded bg-slate-700 p-2 hover:bg-slate-800"
           href="https://github.com/oxidalwave/shiny-grid"
         >
           <Image height={48} width={48} alt="github" src="/icons/github.png" />
