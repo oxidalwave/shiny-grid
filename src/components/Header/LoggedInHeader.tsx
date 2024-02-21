@@ -2,7 +2,7 @@ import Image from "next/image";
 import Logout from "./Logout";
 import Share from "./Share";
 
-export interface LoggedInHeaderProps {
+export type LoggedInHeaderProps = {
   seed: string;
 }
 

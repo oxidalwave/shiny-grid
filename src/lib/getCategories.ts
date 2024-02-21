@@ -7,7 +7,7 @@ import { cache } from "react";
 
 export type Seed = string;
 
-interface CategoryCode {
+type CategoryCode = {
   id: string;
   kind: "TYPE" | "GEN" | "STAT" | "EGGGROUPS";
 }

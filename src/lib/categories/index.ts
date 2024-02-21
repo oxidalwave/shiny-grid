@@ -5,14 +5,15 @@ import { Types } from "./types";
 import { Generations } from "./generations";
 import { EggGroups } from "./eggGroups";
 
-export default interface Category {
+type Category = {
   id: string;
   label: string;
   icon?: ReactNode;
   test: (pokemon: Pokemon) => boolean;
 }
+export default Category
 
-interface CategoryId {
+type CategoryId = {
   kind: "TYPE" | "GEN" | "STAT" | "EGGGROUP";
   id: string;
 }

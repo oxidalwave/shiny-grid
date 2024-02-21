@@ -9,7 +9,12 @@ import { getCategoryFromId } from "~/lib/categories";
 import { api } from "~/utils/api";
 import Cell from "./Cell";
 
-export interface GridProps {
+type Answer = {
+  categoryIndex: number;
+  pokemonId: string;
+}
+
+export type GridProps = {
   header: ReactNode;
   categoryLabels: ReactNode[];
   loading?: boolean;
@@ -20,10 +25,7 @@ export interface GridProps {
     id: string;
   }[];
   username?: string;
-  initialAnswers: {
-    categoryIndex: number;
-    pokemonId: string;
-  }[];
+  initialAnswers: Answer[];
 }
 
 const rows = [...Array(3).keys()]
@@ -35,6 +37,17 @@ const rows = [...Array(3).keys()]
       cat2: r.cat2,
     })),
   );
+
+function parseInitialAnswers(initialAnswers: Answer[], dex: Pokemon[]) {
+  const ia = [];
+  for (const { categoryIndex, pokemonId } of initialAnswers) {
+    const found = dex.find(({ id }) => id === pokemonId);
+    if (found) {
+      ia[categoryIndex] = found;
+    }
+  }
+  return ia;
+}
 
 export default function App({
   header,
@@ -50,18 +63,8 @@ export default function App({
 
   const session = useSession();
 
-  function parseInitialAnswers() {
-    const ia = [];
-    for (const { categoryIndex, pokemonId } of initialAnswers) {
-      const found = dex.find(({ id }) => id === pokemonId);
-      if (found) {
-        ia[categoryIndex] = found;
-      }
-    }
-    return ia;
-  }
   const [guesses, setGuesses] = useState<(Pokemon | undefined)[]>(
-    parseInitialAnswers(),
+    parseInitialAnswers(initialAnswers, dex),
   );
 
   const trpc = api.useUtils();
@@ -101,7 +104,7 @@ export default function App({
 
   const disabled = loading || session.data?.user?.name !== username;
 
-  const cell = useCallback(
+  const DefinedCell = useCallback(
     (c: { index: number; cat1: number; cat2: number }) => (
       <Cell
         disabled={disabled}
@@ -127,11 +130,11 @@ export default function App({
           {categoryLabels[1]}
           {categoryLabels[2]}
           <div className="h-32">{categoryLabels[3]}</div>
-          {rows[0]?.map(cell)}
+          {rows[0]?.map((c) => <DefinedCell key={c.index} {...c} />)}
           <div className="h-32">{categoryLabels[4]}</div>
-          {rows[1]?.map(cell)}
+          {rows[1]?.map((c) => <DefinedCell key={c.index} {...c} />)}
           <div className="h-32">{categoryLabels[5]}</div>
-          {rows[2]?.map(cell)}
+          {rows[2]?.map((c) => <DefinedCell key={c.index} {...c} />)}
         </div>
       </div>
     </div>

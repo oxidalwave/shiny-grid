@@ -4,7 +4,7 @@ import LoggedInHeader from "./LoggedInHeader";
 import LoggedOutHeader from "./LoggedOutHeader";
 import { authOptions } from "~/server/auth";
 
-export interface HeaderProps {
+export type HeaderProps = {
   seed: string;
 }
 

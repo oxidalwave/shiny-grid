@@ -5,7 +5,7 @@ import { useRef, useState } from "react";
 import type Category from "~/lib/categories";
 import { type Pokemon } from "~/lib/data/dex";
 
-export interface CellProps {
+export type CellProps = {
   disabled?: boolean;
   pokedex: Pokemon[];
   onGuess: (p: Pokemon) => void;

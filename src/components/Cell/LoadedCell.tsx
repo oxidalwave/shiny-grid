@@ -4,7 +4,7 @@ import Image from "next/image";
 import { type Pokemon } from "~/lib/data/dex";
 import { api } from "~/utils/api";
 
-export interface LoadedCellProps {
+export type LoadedCellProps = {
   seed: string;
   index: number;
   guess: Pokemon;
