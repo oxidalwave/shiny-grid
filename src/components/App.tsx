@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { useCallback, useState, type ReactNode } from "react";
+import { useCallback, useState, type ReactNode, createContext } from "react";
 import { type Pokemon } from "~/lib/data/dex";
 
 import { useSession } from "next-auth/react";
@@ -9,16 +9,22 @@ import { getCategoryFromId } from "~/lib/categories";
 import { api } from "~/utils/api";
 import Cell from "./Cell";
 
+type AppContextShape = { pokedex: Pokemon[]; seed: string };
+export const AppContext = createContext<AppContextShape>({
+  pokedex: [],
+  seed: "",
+});
+
 type Answer = {
   categoryIndex: number;
   pokemonId: string;
-}
+};
 
 export type GridProps = {
   header: ReactNode;
   categoryLabels: ReactNode[];
   loading?: boolean;
-  dex: Pokemon[];
+  pokedex: Pokemon[];
   seed: string;
   categoryIds: {
     kind: "TYPE" | "GEN" | "STAT" | "EGGGROUP";
@@ -26,7 +32,7 @@ export type GridProps = {
   }[];
   username?: string;
   initialAnswers: Answer[];
-}
+};
 
 const rows = [...Array(3).keys()]
   .map((i) => ({ index: i * 3, cat2: i + 3 }))
@@ -53,7 +59,7 @@ export default function App({
   header,
   categoryLabels,
   loading = false,
-  dex,
+  pokedex,
   seed,
   categoryIds,
   username,
@@ -64,7 +70,7 @@ export default function App({
   const session = useSession();
 
   const [guesses, setGuesses] = useState<(Pokemon | undefined)[]>(
-    parseInitialAnswers(initialAnswers, dex),
+    parseInitialAnswers(initialAnswers, pokedex),
   );
 
   const trpc = api.useUtils();
@@ -85,12 +91,12 @@ export default function App({
   const handleGuess = useCallback(
     (pokemon: Pokemon, categoryIndex: number) => {
       const temp = [...guesses];
-      const found = dex.find(({ id }) => id === pokemon.id);
+      const found = pokedex.find(({ id }) => id === pokemon.id);
       if (found) {
         temp[categoryIndex] = found;
       }
       setGuesses(temp);
-      if (session.data && session.data?.user?.name === username) {
+      if (session.data?.user?.name === username) {
         mutate({
           seed,
           username: session.data?.user?.name ?? "",
@@ -99,7 +105,7 @@ export default function App({
         });
       }
     },
-    [dex, guesses, mutate, seed, session.data, username],
+    [pokedex, guesses, mutate, seed, session.data, username],
   );
 
   const disabled = loading || session.data?.user?.name !== username;
@@ -108,34 +114,34 @@ export default function App({
     (c: { index: number; cat1: number; cat2: number }) => (
       <Cell
         disabled={disabled}
-        seed={seed}
         index={c.index}
         initialGuess={guesses[c.index]}
         categories={[categories[c.cat1]!, categories[c.cat2]!]}
-        pokedex={dex}
         guesses={guesses}
         onGuess={handleGuess}
       />
     ),
-    [disabled, seed, guesses, categories, dex, handleGuess],
+    [disabled, seed, guesses, categories, pokedex, handleGuess],
   );
 
   return (
     <div className="flex flex-col">
       {header}
       <div className="flex justify-center">
-        <div className="grid grid-cols-4">
-          <div className="h-32" />
-          {categoryLabels[0]}
-          {categoryLabels[1]}
-          {categoryLabels[2]}
-          <div className="h-32">{categoryLabels[3]}</div>
-          {rows[0]?.map((c) => <DefinedCell key={c.index} {...c} />)}
-          <div className="h-32">{categoryLabels[4]}</div>
-          {rows[1]?.map((c) => <DefinedCell key={c.index} {...c} />)}
-          <div className="h-32">{categoryLabels[5]}</div>
-          {rows[2]?.map((c) => <DefinedCell key={c.index} {...c} />)}
-        </div>
+        <AppContext.Provider value={{ pokedex, seed }}>
+          <div className="grid grid-cols-4">
+            <div className="h-32" />
+            {categoryLabels[0]}
+            {categoryLabels[1]}
+            {categoryLabels[2]}
+            <div className="h-32">{categoryLabels[3]}</div>
+            {rows[0]?.map((c) => <DefinedCell key={c.index} {...c} />)}
+            <div className="h-32">{categoryLabels[4]}</div>
+            {rows[1]?.map((c) => <DefinedCell key={c.index} {...c} />)}
+            <div className="h-32">{categoryLabels[5]}</div>
+            {rows[2]?.map((c) => <DefinedCell key={c.index} {...c} />)}
+          </div>
+        </AppContext.Provider>
       </div>
     </div>
   );

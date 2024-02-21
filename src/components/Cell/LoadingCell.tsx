@@ -2,22 +2,22 @@ import { type Pokemon } from "~/lib/data/dex";
 import CellImage from "./CellImage";
 
 export default function LoadingCell({
-  success,
+  isSuccess,
   pokemon,
 }: {
-  success: boolean;
+  isSuccess: boolean;
   pokemon: Pokemon;
 }) {
-  if (success) {
+  if (isSuccess) {
     return (
-      <div className="h-full flex flex-col justify-center items-center bg-green-500">
+      <div className="flex h-full flex-col items-center justify-center bg-green-500">
         <CellImage pokemon={pokemon} />
       </div>
     );
   }
 
   return (
-    <div className="h-full flex flex-col justify-center items-center bg-red-500">
+    <div className="flex h-full flex-col items-center justify-center bg-red-500">
       <CellImage pokemon={pokemon} />
     </div>
   );

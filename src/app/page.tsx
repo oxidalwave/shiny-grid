@@ -36,7 +36,7 @@ export default function HomePage() {
         header={<Header seed={seed} />}
         categoryIds={categoryIds}
         username={session?.user?.name ?? undefined}
-        dex={dex}
+        pokedex={dex}
         seed={seed}
         initialAnswers={initialAnswers}
       />

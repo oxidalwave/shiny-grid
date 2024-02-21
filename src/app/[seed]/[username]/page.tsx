@@ -29,7 +29,7 @@ export default function SharedPage({
         header={<Header seed={params.seed} />}
         categoryIds={categoryIds}
         username={params.username}
-        dex={dex}
+        pokedex={dex}
         seed={params.seed}
         initialAnswers={initialAnswers}
       />

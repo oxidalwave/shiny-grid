@@ -14,7 +14,7 @@ export default function SeedPage({ params }: { params: { seed: string } }) {
 
   const session = use(getServerSession(authOptions));
 
-    const initialAnswers = session
+  const initialAnswers = session
     ? use(getInitialAnswers(params.seed, session.user.name ?? ""))
     : [];
 
@@ -31,7 +31,7 @@ export default function SeedPage({ params }: { params: { seed: string } }) {
         header={<Header seed={params.seed} />}
         categoryIds={categoryIds}
         username={session?.user?.name ?? undefined}
-        dex={dex}
+        pokedex={dex}
         seed={params.seed}
         initialAnswers={initialAnswers}
       />
