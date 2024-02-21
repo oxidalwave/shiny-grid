@@ -3,7 +3,7 @@
 import { useSession } from "next-auth/react";
 import { toast } from "react-hot-toast";
 
-export type ShareProps = {
+export interface ShareProps {
   seed: string;
 }
 

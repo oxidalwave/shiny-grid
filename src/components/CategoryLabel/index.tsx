@@ -1,6 +1,6 @@
 import type Category from "~/lib/categories";
 
-type CategoryProps = {
+interface CategoryProps {
   category: Category;
 }
 

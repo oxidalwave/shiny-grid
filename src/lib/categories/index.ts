@@ -5,7 +5,7 @@ import { Types } from "./types";
 import { Generations } from "./generations";
 import { EggGroups } from "./eggGroups";
 
-type Category = {
+interface Category {
   id: string;
   label: string;
   icon?: ReactNode;
@@ -13,7 +13,7 @@ type Category = {
 }
 export default Category
 
-type CategoryId = {
+interface CategoryId {
   kind: "TYPE" | "GEN" | "STAT" | "EGGGROUP";
   id: string;
 }
