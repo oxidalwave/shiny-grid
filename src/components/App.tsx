@@ -5,9 +5,9 @@ import { useCallback, useState, type ReactNode } from "react";
 import { type Pokemon } from "~/lib/data/dex";
 
 import { useSession } from "next-auth/react";
-import { getCategoryFromId } from "~/lib/categories";
 import { api } from "~/utils/api";
 import Cell from "./Cell";
+import { CategoryId } from "~/lib/revisedCategories";
 
 interface Answer {
   categoryIndex: number;
@@ -20,10 +20,7 @@ export interface GridProps {
   loading?: boolean;
   dex: Pokemon[];
   seed: string;
-  categoryIds: {
-    kind: "TYPE" | "GEN" | "STAT" | "EGGGROUP";
-    id: string;
-  }[];
+  categoryIds: CategoryId[];
   username?: string;
   initialAnswers: Answer[];
 }
@@ -59,8 +56,6 @@ export default function App({
   username,
   initialAnswers,
 }: GridProps) {
-  const categories = categoryIds.map(getCategoryFromId);
-
   const session = useSession();
 
   const [guesses, setGuesses] = useState<(Pokemon | undefined)[]>(
@@ -111,13 +106,13 @@ export default function App({
         seed={seed}
         index={c.index}
         initialGuess={guesses[c.index]}
-        categories={[categories[c.cat1]!, categories[c.cat2]!]}
+        categoryIds={[categoryIds[c.cat1]!, categoryIds[c.cat2]!]}
         pokedex={dex}
         guesses={guesses}
         onGuess={handleGuess}
       />
     ),
-    [disabled, seed, guesses, categories, dex, handleGuess],
+    [disabled, seed, guesses, dex, handleGuess],
   );
 
   return (
