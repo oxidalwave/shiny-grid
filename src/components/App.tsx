@@ -7,7 +7,7 @@ import { type Pokemon } from "~/lib/data/dex";
 import { useSession } from "next-auth/react";
 import { api } from "~/utils/api";
 import Cell from "./Cell";
-import { CategoryId } from "~/lib/revisedCategories";
+import { type CategoryId } from "~/lib/revisedCategories";
 
 interface Answer {
   categoryIndex: number;
@@ -112,7 +112,7 @@ export default function App({
         onGuess={handleGuess}
       />
     ),
-    [disabled, seed, guesses, dex, handleGuess],
+    [disabled, seed, guesses, dex, handleGuess, categoryIds],
   );
 
   return (

@@ -5,7 +5,7 @@ import PendingCell from "./PendingCell";
 import { Suspense } from "react";
 import LoadingCell from "./LoadingCell";
 import LoadedCell from "./LoadedCell";
-import { CategoryId, categories, tests } from "~/lib/revisedCategories";
+import { type CategoryId, tests } from "~/lib/revisedCategories";
 
 export interface CellProps {
   disabled?: boolean;
@@ -46,7 +46,7 @@ export default function Cell({
       />
     );
   }
-
+  console.log(categoryIds);
   const isSuccess = categoryIds.every((c) => tests[c]?.(pokemon));
 
   return (

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Pokemon } from "./data/dex";
-import { Seed } from "./getCategories";
-import { ReactNode, cache } from "react";
+import { type Pokemon } from "./data/dex";
+import { type Seed } from "./getCategories";
+import { type ReactNode, cache } from "react";
 import gen from "random-seed";
 
 const isOfType = (p: Pokemon, t: string) =>
@@ -559,7 +559,7 @@ export const getCategories: (seed: Seed) => CategoryId[] = cache((seed) => {
     return hardcoded;
   }
   const rand = gen.create(seed);
-  const catIds = Object.keys(categories) as CategoryId[];
+  const catIds = Object.keys(categories);
   const cats = [...Array(6).keys()].map(() => catIds[rand(catIds.length)]!);
 
   return isInvalidGrid(cats) ? getCategories(`${seed}X`) : cats;
