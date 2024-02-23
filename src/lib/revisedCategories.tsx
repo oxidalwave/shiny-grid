@@ -551,7 +551,16 @@ const isInvalidGrid = (categories: CategoryId[]) =>
     [categories[2]!, categories[5]!],
   ].find((c) => isInvalidCombo(c));
 
-const hardcodedGrids: Record<Seed, CategoryId[]> = {};
+const hardcodedGrids: Record<Seed, CategoryId[]> = {
+  "2024-03-30": [
+    "WaterType",
+    "LowAtk",
+    "Generation2",
+    "ElectricType",
+    "LowDef",
+    "HighHp",
+  ],
+};
 
 export const getCategories: (seed: Seed) => CategoryId[] = cache((seed) => {
   const hardcoded = hardcodedGrids[seed];

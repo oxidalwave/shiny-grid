@@ -1,11 +1,9 @@
-"use client";
-
 import { type Pokemon } from "~/lib/data/dex";
 import PendingCell from "./PendingCell";
 import { Suspense } from "react";
-import LoadingCell from "./LoadingCell";
 import LoadedCell from "./LoadedCell";
 import { type CategoryId, tests } from "~/lib/revisedCategories";
+import CellImage from "./CellImage";
 
 export interface CellProps {
   disabled?: boolean;
@@ -46,21 +44,21 @@ export default function Cell({
       />
     );
   }
-  console.log(categoryIds);
+
   const isSuccess = categoryIds.every((c) => tests[c]?.(pokemon));
+
+  const child = (
+    <div className="h-full flex flex-col justify-center items-center">
+      <Suspense fallback={<CellImage pokemon={pokemon} />}>
+        <LoadedCell index={index} seed={seed} guess={pokemon} />
+      </Suspense>
+    </div>
+  );
 
   return (
     <div className="w-full">
-      <Suspense
-        fallback={<LoadingCell success={isSuccess} pokemon={pokemon} />}
-      >
-        <LoadedCell
-          index={index}
-          seed={seed}
-          guess={pokemon}
-          isSuccess={isSuccess}
-        />
-      </Suspense>
+      {isSuccess && <div className="bg-green-500">{child}</div>}
+      {!isSuccess && <div className="bg-red-500">{child}</div>}
     </div>
   );
 }
