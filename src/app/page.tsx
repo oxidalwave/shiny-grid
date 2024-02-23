@@ -6,11 +6,10 @@ import App from "~/components/App";
 import { authOptions } from "~/server/auth";
 import { defaultSeed } from "~/lib/defaultSeed";
 import Header from "~/components/Header";
-import { getCategoryFromId } from "~/lib/categories";
 import CategoryLabel from "~/components/CategoryLabel";
 import getDex from "~/lib/getDex";
-import { getCategories } from "~/lib/getCategories";
 import { getInitialAnswers } from "~/lib/getInitialAnswers";
+import { getCategories } from "~/lib/revisedCategories";
 
 export default function HomePage() {
   const seed = defaultSeed();
@@ -25,9 +24,9 @@ export default function HomePage() {
 
   const categoryIds = getCategories(seed);
 
-  const categoryLabels = categoryIds
-    .map(getCategoryFromId)
-    .map((c) => <CategoryLabel key={c.id} category={c} />);
+  const categoryLabels = categoryIds.map((c) => (
+    <CategoryLabel key={c} category={c} />
+  ));
 
   return (
     <div className="p-2">

@@ -1,11 +1,9 @@
-"use client";
-
-import type Category from "~/lib/categories";
 import { type Pokemon } from "~/lib/data/dex";
 import PendingCell from "./PendingCell";
 import { Suspense } from "react";
-import LoadingCell from "./LoadingCell";
 import LoadedCell from "./LoadedCell";
+import { type CategoryId, tests } from "~/lib/revisedCategories";
+import CellImage from "./CellImage";
 
 export interface CellProps {
   disabled?: boolean;
@@ -15,7 +13,7 @@ export interface CellProps {
   initialGuess?: Pokemon;
   guesses: (undefined | Pokemon)[];
   onGuess: (pokemon: Pokemon, categoryIndex: number) => void;
-  categories: Category[];
+  categoryIds: CategoryId[];
 }
 
 export default function Cell({
@@ -26,7 +24,7 @@ export default function Cell({
   initialGuess,
   guesses,
   onGuess,
-  categories,
+  categoryIds,
 }: CellProps) {
   const pokemon = pokedex.find((p) => initialGuess?.id === p.id);
 
@@ -42,25 +40,25 @@ export default function Cell({
           (p) => !guesses.find((g) => g?.nationalDexId === p.nationalDexId),
         )}
         onGuess={handleGuess}
-        categories={categories}
+        categoryIds={categoryIds}
       />
     );
   }
 
-  const isSuccess = categories.every((c) => c.test(pokemon));
+  const isSuccess = categoryIds.every((c) => tests[c]?.(pokemon));
+
+  const child = (
+    <div className="h-full flex flex-col justify-center items-center">
+      <Suspense fallback={<CellImage pokemon={pokemon} />}>
+        <LoadedCell index={index} seed={seed} guess={pokemon} />
+      </Suspense>
+    </div>
+  );
 
   return (
     <div className="w-full">
-      <Suspense
-        fallback={<LoadingCell success={isSuccess} pokemon={pokemon} />}
-      >
-        <LoadedCell
-          index={index}
-          seed={seed}
-          guess={pokemon}
-          isSuccess={isSuccess}
-        />
-      </Suspense>
+      {isSuccess && <div className="bg-green-500">{child}</div>}
+      {!isSuccess && <div className="bg-red-500">{child}</div>}
     </div>
   );
 }

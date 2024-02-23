@@ -8,19 +8,9 @@ export interface LoadedCellProps {
   seed: string;
   index: number;
   guess: Pokemon;
-  isSuccess: boolean;
 }
 
-const successCn =
-  "h-full flex flex-col justify-center items-center bg-green-500";
-const errorCn = "h-full flex flex-col justify-center items-center bg-red-500";
-
-export default function LoadedCell({
-  seed,
-  index,
-  guess,
-  isSuccess,
-}: LoadedCellProps) {
+export default function LoadedCell({ seed, index, guess }: LoadedCellProps) {
   const [data] = api.guess.useSuspenseQuery({
     seed,
     categoryIndex: index,
@@ -30,7 +20,7 @@ export default function LoadedCell({
   const percent = Math.floor(data.percent * 100);
 
   return (
-    <div className={isSuccess ? successCn : errorCn}>
+    <>
       {!isNaN(percent) && (
         <div className="justify-top absolute rounded bg-slate-800 bg-opacity-60 px-8 py-2">
           {percent}%
@@ -46,6 +36,6 @@ export default function LoadedCell({
       <div className="rounded bg-slate-800 bg-opacity-60 px-2">
         {guess.name}
       </div>
-    </div>
+    </>
   );
 }

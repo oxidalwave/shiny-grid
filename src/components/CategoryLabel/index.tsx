@@ -1,13 +1,14 @@
-import type Category from "~/lib/categories";
+import { type CategoryId, categories } from "~/lib/revisedCategories";
 
 interface CategoryProps {
-  category: Category;
+  category: CategoryId;
 }
 
 export default function CategoryLabel({ category }: CategoryProps) {
+  const cat = categories[category];
   return (
-    <div className="h-full flex justify-center items-center p-2">
-      {category?.icon ?? category?.label}
+    <div className="flex h-full items-center justify-center p-2">
+      {cat?.icon ?? cat?.label}
     </div>
   );
 }

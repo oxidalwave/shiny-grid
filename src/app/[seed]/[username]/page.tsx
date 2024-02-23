@@ -2,10 +2,9 @@ import { use } from "react";
 import App from "~/components/App";
 import Header from "~/components/Header";
 import CategoryLabel from "~/components/CategoryLabel";
-import { getCategoryFromId } from "~/lib/categories";
 import getDex from "~/lib/getDex";
 import { getInitialAnswers } from "~/lib/getInitialAnswers";
-import { getCategories } from "~/lib/getCategories";
+import { getCategories } from "~/lib/revisedCategories";
 
 export default function SharedPage({
   params,
@@ -18,9 +17,9 @@ export default function SharedPage({
 
   const categoryIds = getCategories(params.seed);
 
-  const categoryLabels = categoryIds
-    .map(getCategoryFromId)
-    .map((c) => <CategoryLabel key={c.id} category={c} />);
+  const categoryLabels = categoryIds.map((c) => (
+    <CategoryLabel key={c} category={c} />
+  ));
 
   return (
     <div className="p-2">
