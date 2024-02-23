@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { type Pokemon } from "~/lib/data/dex";
-import { type CategoryId, categories } from "~/lib/revisedCategories";
+import { type CategoryId, categories } from "~/lib/categories";
 
 export interface CellProps {
   disabled?: boolean;

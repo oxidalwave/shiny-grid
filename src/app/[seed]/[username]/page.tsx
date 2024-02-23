@@ -4,7 +4,7 @@ import Header from "~/components/Header";
 import CategoryLabel from "~/components/CategoryLabel";
 import getDex from "~/lib/getDex";
 import { getInitialAnswers } from "~/lib/getInitialAnswers";
-import { getCategories } from "~/lib/revisedCategories";
+import { getCategories } from "~/lib/categories";
 
 export default function SharedPage({
   params,

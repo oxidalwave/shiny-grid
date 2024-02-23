@@ -1,4 +1,4 @@
-import { type CategoryId, categories } from "~/lib/revisedCategories";
+import { type CategoryId, categories } from "~/lib/categories";
 
 interface CategoryProps {
   category: CategoryId;

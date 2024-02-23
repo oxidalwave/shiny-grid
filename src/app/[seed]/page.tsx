@@ -6,7 +6,7 @@ import Header from "~/components/Header";
 import CategoryLabel from "~/components/CategoryLabel";
 import { getInitialAnswers } from "~/lib/getInitialAnswers";
 import getDex from "~/lib/getDex";
-import { getCategories } from "~/lib/revisedCategories";
+import { getCategories } from "~/lib/categories";
 
 export default function SeedPage({ params }: { params: { seed: string } }) {
   const dex = use(getDex());

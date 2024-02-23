@@ -2,7 +2,7 @@ import { type Pokemon } from "~/lib/data/dex";
 import PendingCell from "./PendingCell";
 import { Suspense } from "react";
 import LoadedCell from "./LoadedCell";
-import { type CategoryId, tests } from "~/lib/revisedCategories";
+import { type CategoryId, tests } from "~/lib/categories";
 import CellImage from "./CellImage";
 
 export interface CellProps {

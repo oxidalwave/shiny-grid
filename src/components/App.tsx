@@ -7,7 +7,7 @@ import { type Pokemon } from "~/lib/data/dex";
 import { useSession } from "next-auth/react";
 import { api } from "~/utils/api";
 import Cell from "./Cell";
-import { type CategoryId } from "~/lib/revisedCategories";
+import { type CategoryId } from "~/lib/categories";
 
 interface Answer {
   categoryIndex: number;
