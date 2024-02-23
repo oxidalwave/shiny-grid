@@ -1,37 +1,37 @@
-import { use } from "react";
 import App from "~/components/App";
 import Header from "~/components/Header";
-import CategoryLabel from "~/components/CategoryLabel";
 import getDex from "~/lib/getDex";
 import { getInitialAnswers } from "~/lib/getInitialAnswers";
 import { getCategories } from "~/lib/categories";
 
-export default function SharedPage({
+export default async function SharedPage({
   params,
 }: {
   params: { seed: string; username: string };
 }) {
-  const dex = use(getDex());
+  const { seed, username } = params;
 
-  const initialAnswers = use(getInitialAnswers(params.seed, params.username));
+  const [dex, initialAnswers] = await Promise.allSettled([
+    getDex(),
+    getInitialAnswers(seed, username),
+  ]);
 
-  const categoryIds = getCategories(params.seed);
+  if (dex.status === "fulfilled" && initialAnswers.status === "fulfilled") {
+    const categoryIds = getCategories(seed);
 
-  const categoryLabels = categoryIds.map((c) => (
-    <CategoryLabel key={c} category={c} />
-  ));
-
-  return (
-    <div className="p-2">
-      <App
-        categoryLabels={categoryLabels}
-        header={<Header seed={params.seed} />}
-        categoryIds={categoryIds}
-        username={params.username}
-        dex={dex}
-        seed={params.seed}
-        initialAnswers={initialAnswers}
-      />
-    </div>
-  );
+    return (
+      <div className="p-2">
+        <App
+          header={<Header seed={seed} />}
+          categoryIds={categoryIds}
+          username={params.username}
+          dex={dex.value}
+          seed={seed}
+          initialAnswers={initialAnswers.value}
+        />
+      </div>
+    );
+  } else {
+    return <div className="p-2" />;
+  }
 }
