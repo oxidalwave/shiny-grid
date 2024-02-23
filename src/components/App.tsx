@@ -3,6 +3,7 @@ import { type Pokemon } from "~/lib/data/dex";
 
 import Cell from "./Cell";
 import { type CategoryId } from "~/lib/categories";
+import CategoryLabel from "./CategoryLabel";
 
 interface Answer {
   categoryIndex: number;
@@ -11,7 +12,6 @@ interface Answer {
 
 export interface GridProps {
   header: ReactNode;
-  categoryLabels: ReactNode[];
   dex: Pokemon[];
   seed: string;
   categoryIds: CategoryId[];
@@ -42,7 +42,6 @@ function parseInitialAnswers(initialAnswers: Answer[], dex: Pokemon[]) {
 
 export default function App({
   header,
-  categoryLabels,
   dex,
   seed,
   categoryIds,
@@ -56,10 +55,12 @@ export default function App({
       <div className="flex justify-center">
         <div className="grid grid-cols-4">
           <div className="h-32" />
-          {categoryLabels[0]}
-          {categoryLabels[1]}
-          {categoryLabels[2]}
-          <div className="h-32">{categoryLabels[3]}</div>
+          <CategoryLabel category={categoryIds[0]!} />
+          <CategoryLabel category={categoryIds[1]!} />
+          <CategoryLabel category={categoryIds[2]!} />
+          <div className="h-32">
+            <CategoryLabel category={categoryIds[3]!} />
+          </div>
           {rows[0]?.map((c) => (
             <Cell
               key={c.index}
@@ -71,7 +72,9 @@ export default function App({
               guesses={guesses}
             />
           ))}
-          <div className="h-32">{categoryLabels[4]}</div>
+          <div className="h-32">
+            <CategoryLabel category={categoryIds[4]!} />
+          </div>
           {rows[1]?.map((c) => (
             <Cell
               key={c.index}
@@ -83,7 +86,9 @@ export default function App({
               guesses={guesses}
             />
           ))}
-          <div className="h-32">{categoryLabels[5]}</div>
+          <div className="h-32">
+            <CategoryLabel category={categoryIds[5]!} />
+          </div>
           {rows[2]?.map((c) => (
             <Cell
               key={c.index}
