@@ -1,13 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { Suspense, useRef, useState } from "react";
 import { type Pokemon } from "~/lib/data/dex";
 import { type CategoryId, categories } from "~/lib/categories";
 import { api } from "~/utils/api";
-import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import { type Seed } from "~/lib/getCategories";
+import ClientLoadedCell from "./ClientLoadedCell";
+import CellImage from "./CellImage";
+import { tests } from "~/lib/categories";
 
 export interface CellProps {
   pokedex: Pokemon[];
@@ -27,22 +29,49 @@ export default function PendingCell({
   const modalRef = useRef<HTMLDialogElement>(null);
 
   const [name, setName] = useState<string>("");
+  const [guess, setGuess] = useState<Pokemon | null>(null);
 
-  const router = useRouter();
+  const trpc = api.useUtils();
+  const { mutate } = api.makeGuess.useMutation();
 
-  const { mutate } = api.makeGuess.useMutation({
-    onSettled: () => {
-      router.refresh();
-    },
-  });
+  if (guess) {
+    const isSuccess = categoryIds.every((c) => tests[c]?.(guess));
+
+    const child = (
+      <div className="h-full flex flex-col justify-center items-center">
+        <Suspense fallback={<CellImage pokemon={guess} />}>
+          <ClientLoadedCell seed={seed} index={categoryIndex} guess={guess} />
+        </Suspense>
+      </div>
+    );
+
+    return (
+      <div className="w-full">
+        {isSuccess && <div className="bg-green-500">{child}</div>}
+        {!isSuccess && <div className="bg-red-500">{child}</div>}
+      </div>
+    );
+  }
 
   function handleSubmit(pokemon: Pokemon) {
-    mutate({
-      seed,
-      username: session.data?.user.name ?? "",
-      categoryIndex,
-      pokemonId: pokemon.id,
-    });
+    mutate(
+      {
+        seed,
+        username: session.data?.user.name ?? "",
+        categoryIndex,
+        pokemonId: pokemon.id,
+      },
+      {
+        onSettled: () => {
+          void trpc.guess.invalidate({
+            seed,
+            categoryIndex,
+            pokemonId: pokemon.id,
+          });
+        },
+      },
+    );
+    setGuess(pokemon);
   }
 
   const filteredPokedex =
@@ -90,7 +119,10 @@ export default function PendingCell({
               <button
                 className="flex rounded bg-slate-900 p-2"
                 key={p.name}
-                onClick={() => handleSubmit(p)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleSubmit(p);
+                }}
               >
                 <Image
                   unoptimized

@@ -1,25 +1,25 @@
 import Image from "next/image";
 import { type Pokemon } from "~/lib/data/dex";
-import getGuess from "~/lib/getGuess";
+import { api } from "~/utils/api";
 
-export interface LoadedCellProps {
+export interface ClientLoadedCellProps {
   seed: string;
   index: number;
   guess: Pokemon;
 }
 
-export default async function LoadedCell({
+export default function ClientLoadedCell({
   seed,
   index,
   guess,
-}: LoadedCellProps) {
-  const dec = await getGuess({
+}: ClientLoadedCellProps) {
+  const [data] = api.guess.useSuspenseQuery({
     seed,
     categoryIndex: index,
     pokemonId: guess.id,
   });
 
-  const percent = Math.floor(dec.percent * 100);
+  const percent = Math.floor(data.percent * 100);
 
   return (
     <>
