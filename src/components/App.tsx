@@ -17,7 +17,6 @@ interface Answer {
 export interface GridProps {
   header: ReactNode;
   categoryLabels: ReactNode[];
-  loading?: boolean;
   dex: Pokemon[];
   seed: string;
   categoryIds: CategoryId[];
@@ -49,7 +48,6 @@ function parseInitialAnswers(initialAnswers: Answer[], dex: Pokemon[]) {
 export default function App({
   header,
   categoryLabels,
-  loading = false,
   dex,
   seed,
   categoryIds,
@@ -97,12 +95,9 @@ export default function App({
     [dex, guesses, mutate, seed, session.data, username],
   );
 
-  const disabled = loading || session.data?.user?.name !== username;
-
   const DefinedCell = useCallback(
     (c: { index: number; cat1: number; cat2: number }) => (
       <Cell
-        disabled={disabled}
         seed={seed}
         index={c.index}
         initialGuess={guesses[c.index]}
@@ -112,7 +107,7 @@ export default function App({
         onGuess={handleGuess}
       />
     ),
-    [disabled, seed, guesses, dex, handleGuess, categoryIds],
+    [seed, guesses, dex, handleGuess, categoryIds],
   );
 
   return (
