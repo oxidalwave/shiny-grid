@@ -4,6 +4,7 @@ import Shell from "~/components/Shell";
 import { Analytics } from "@vercel/analytics/react";
 import Head from "next/head";
 import { type Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Shiny Grid",
@@ -23,8 +24,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </Head>
       <body className="bg-slate-900 font-pokemon text-white">
         <Shell>{children}</Shell>
-        <Analytics />
       </body>
+      <Analytics />
+      <SpeedInsights />
     </html>
   );
 }
