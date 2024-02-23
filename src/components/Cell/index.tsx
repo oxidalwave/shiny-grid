@@ -6,41 +6,33 @@ import { type CategoryId, tests } from "~/lib/categories";
 import CellImage from "./CellImage";
 
 export interface CellProps {
-  disabled?: boolean;
   seed: string;
   index: number;
   pokedex: Pokemon[];
   initialGuess?: Pokemon;
   guesses: (undefined | Pokemon)[];
-  onGuess: (pokemon: Pokemon, categoryIndex: number) => void;
   categoryIds: CategoryId[];
 }
 
 export default function Cell({
-  disabled = false,
   seed,
   index,
   pokedex,
   initialGuess,
   guesses,
-  onGuess,
   categoryIds,
 }: CellProps) {
   const pokemon = pokedex.find((p) => initialGuess?.id === p.id);
 
-  function handleGuess(p: Pokemon) {
-    onGuess(p, index);
-  }
-
   if (!pokemon) {
     return (
       <PendingCell
-        disabled={disabled}
         pokedex={pokedex.filter(
           (p) => !guesses.find((g) => g?.nationalDexId === p.nationalDexId),
         )}
-        onGuess={handleGuess}
         categoryIds={categoryIds}
+        seed={seed}
+        categoryIndex={index}
       />
     );
   }

@@ -1,8 +1,6 @@
-"use client";
-
 import Image from "next/image";
 import { type Pokemon } from "~/lib/data/dex";
-import { api } from "~/utils/api";
+import { prisma } from "~/server/db";
 
 export interface LoadedCellProps {
   seed: string;
@@ -10,14 +8,28 @@ export interface LoadedCellProps {
   guess: Pokemon;
 }
 
-export default function LoadedCell({ seed, index, guess }: LoadedCellProps) {
-  const [data] = api.guess.useSuspenseQuery({
-    seed,
-    categoryIndex: index,
-    pokemonId: guess.id,
-  });
+export default async function LoadedCell({
+  seed,
+  index,
+  guess,
+}: LoadedCellProps) {
+  const [totalGuesses, guesses] = await Promise.all([
+    prisma.userAnswer.count({
+      where: {
+        seed: seed,
+        categoryIndex: index,
+      },
+    }),
+    prisma.userAnswer.count({
+      where: {
+        seed: seed,
+        categoryIndex: index,
+        pokemonId: guess.id,
+      },
+    }),
+  ]);
 
-  const percent = Math.floor(data.percent * 100);
+  const percent = Math.floor((guesses / totalGuesses) * 100);
 
   return (
     <>

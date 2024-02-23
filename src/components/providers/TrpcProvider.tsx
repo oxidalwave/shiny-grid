@@ -4,7 +4,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { httpBatchLink, getFetch, loggerLink } from "@trpc/client";
 import { useState } from "react";
 import superjson from "superjson";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { api } from "~/utils/api";
 
 export const TrpcProvider: React.FC<{ children: React.ReactNode }> = ({
@@ -43,10 +42,7 @@ export const TrpcProvider: React.FC<{ children: React.ReactNode }> = ({
   );
   return (
     <api.Provider client={trpcClient} queryClient={queryClient}>
-      <QueryClientProvider client={queryClient}>
-        {children}
-        <ReactQueryDevtools />
-      </QueryClientProvider>
+      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
     </api.Provider>
   );
 };

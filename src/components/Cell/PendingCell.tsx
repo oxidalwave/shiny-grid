@@ -4,26 +4,45 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 import { type Pokemon } from "~/lib/data/dex";
 import { type CategoryId, categories } from "~/lib/categories";
+import { api } from "~/utils/api";
+import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
+import { type Seed } from "~/lib/getCategories";
 
 export interface CellProps {
-  disabled?: boolean;
   pokedex: Pokemon[];
-  onGuess: (p: Pokemon) => void;
   categoryIds: CategoryId[];
+  seed: Seed;
+  categoryIndex: number;
 }
 
 export default function PendingCell({
-  disabled = false,
   pokedex,
-  onGuess,
   categoryIds,
+  seed,
+  categoryIndex,
 }: CellProps) {
+  const session = useSession();
+
   const modalRef = useRef<HTMLDialogElement>(null);
 
   const [name, setName] = useState<string>("");
 
+  const router = useRouter();
+
+  const { mutate } = api.makeGuess.useMutation({
+    onSettled: () => {
+      router.refresh();
+    },
+  });
+
   function handleSubmit(pokemon: Pokemon) {
-    onGuess(pokemon);
+    mutate({
+      seed,
+      username: session.data?.user.name ?? "",
+      categoryIndex,
+      pokemonId: pokemon.id,
+    });
   }
 
   const filteredPokedex =
@@ -43,9 +62,7 @@ export default function PendingCell({
     modalRef.current?.close();
   }
 
-  return disabled ? (
-    <div className="h-full bg-slate-700" />
-  ) : (
+  return (
     <>
       <dialog
         className="z-50 w-80 rounded bg-slate-700 p-2 text-white"
