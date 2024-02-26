@@ -524,27 +524,37 @@ export const tests: Record<CategoryId, (pokemon: Pokemon) => boolean> = {
   Generation9: (p) => p.generationIntroducedIn.name === 9,
 };
 
-function isInvalidCombo(codes: CategoryId[]) {
-  // Check for invalid type combos
-  return (
-    codes[0] === codes[1] ||
-    (codes.includes("NormalType") && codes.includes("IceType")) ||
-    (codes.includes("NormalType") && codes.includes("BugType")) ||
-    (codes.includes("NormalType") && codes.includes("RockType")) ||
-    (codes.includes("NormalType") && codes.includes("SteelType")) ||
-    (codes.includes("FireType") && codes.includes("FairyType")) ||
-    (codes.includes("IceType") && codes.includes("PoisonType")) ||
-    (codes.includes("GroundType") && codes.includes("FairyType")) ||
-    (codes.includes("BugType") && codes.includes("DragonType")) ||
-    (codes.includes("RockType") && codes.includes("GhostType")) ||
-    (codes.includes("DarkType") && codes.includes("Generation1")) ||
-    (codes.includes("FireType") && codes.includes("HighHp")) ||
-    (codes.includes("BugType") && codes.includes("HighHp")) ||
-    (codes.includes("ElectricType") && codes.includes("HighSpD")) ||
-    (codes.includes("GroundType") && codes.includes("FightingType")) ||
-    codes.every((c) => c.startsWith("Generation"))
-  );
-}
+const isInvalidType = (codes: CategoryId[]) =>
+  (codes.includes("NormalType") && codes.includes("IceType")) ||
+  (codes.includes("NormalType") && codes.includes("BugType")) ||
+  (codes.includes("NormalType") && codes.includes("RockType")) ||
+  (codes.includes("NormalType") && codes.includes("SteelType")) ||
+  (codes.includes("FireType") && codes.includes("FairyType")) ||
+  (codes.includes("IceType") && codes.includes("PoisonType")) ||
+  (codes.includes("GroundType") && codes.includes("FairyType")) ||
+  (codes.includes("BugType") && codes.includes("DragonType")) ||
+  (codes.includes("RockType") && codes.includes("GhostType")) ||
+  (codes.includes("DarkType") && codes.includes("Generation1")) ||
+  (codes.includes("FireType") && codes.includes("HighHp")) ||
+  (codes.includes("BugType") && codes.includes("HighHp")) ||
+  (codes.includes("ElectricType") && codes.includes("HighSpD")) ||
+  (codes.includes("GroundType") && codes.includes("FightingType"));
+
+const isInvalidStat = (codes: CategoryId[]) =>
+  (codes.includes("LowHp") && codes.includes("HighHp")) ||
+  (codes.includes("LowAtk") && codes.includes("HighAtk")) ||
+  (codes.includes("LowDef") && codes.includes("HighDef")) ||
+  (codes.includes("LowSpA") && codes.includes("HighSpA")) ||
+  (codes.includes("LowSpD") && codes.includes("HighSpD")) ||
+  (codes.includes("LowSpe") && codes.includes("HighSpe")) ||
+  (codes.includes("LowTotal") && codes.includes("HighTotal"));
+
+// Check for invalid type combos
+const isInvalidCombo = (codes: CategoryId[]) =>
+  codes[0] === codes[1] ||
+  isInvalidType(codes) ||
+  isInvalidStat(codes) ||
+  codes.every((c) => c.startsWith("Generation"));
 
 const isInvalidGrid = (categories: CategoryId[]) =>
   new Set(categories).size !== categories.length ||
