@@ -11,5 +11,9 @@ export interface HeaderProps {
 export default function Header({ seed }: HeaderProps) {
   const session = use(getServerSession(authOptions));
 
-  return session ? <LoggedInHeader seed={seed} /> : <LoggedOutHeader />;
+  return (
+    <div className="p-2">
+      {session ? <LoggedInHeader seed={seed} /> : <LoggedOutHeader />}
+    </div>
+  );
 }

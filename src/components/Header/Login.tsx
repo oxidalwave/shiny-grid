@@ -1,14 +1,10 @@
 "use client";
 
 import { signIn } from "next-auth/react";
+import { Button } from "~/components/ui/button";
 
 export default function Login() {
   return (
-    <button
-      className="w-full rounded p-2 m-2 bg-slate-700 hover:bg-slate-800"
-      onClick={() => void signIn()}
-    >
-      Log In to share your grid
-    </button>
+    <Button className="w-full" onClick={() => void signIn()}>Log In to share your grid</Button>
   );
 }

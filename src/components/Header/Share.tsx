@@ -2,6 +2,7 @@
 
 import { useSession } from "next-auth/react";
 import { toast } from "react-hot-toast";
+import { Button } from "~/components/ui/button";
 
 export interface ShareProps {
   seed: string;
@@ -19,11 +20,8 @@ export default function Share({ seed }: ShareProps) {
   }
 
   return (
-    <button
-      onClick={handleShare}
-      className="m-2 w-full rounded bg-slate-700 p-2 hover:bg-slate-800"
-    >
+    <Button className="w-full" onClick={handleShare}>
       Share your grid
-    </button>
+    </Button>
   );
 }
