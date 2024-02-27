@@ -8,7 +8,8 @@ export const env = createEnv({
    */
   server: {
     NEXT_PUBLIC_API_URL: z.string().url(),
-    DATABASE_URL: z.string().url(),
+    POSTGRES_PRISMA_URL: z.string().url(),
+    POSTGRES_URL_NON_POOLING: z.string().url(),
     NODE_ENV: z.enum(["development", "test", "production"]),
     NEXTAUTH_SECRET:
       process.env.NODE_ENV === "production"
@@ -56,7 +57,8 @@ export const env = createEnv({
    */
   runtimeEnv: {
     NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
-    DATABASE_URL: process.env.DATABASE_URL,
+    POSTGRES_PRISMA_URL: process.env.POSTGRES_PRISMA_URL,
+    POSTGRES_URL_NON_POOLING: process.env.POSTGRES_URL_NON_POOLING,
     NODE_ENV: process.env.NODE_ENV,
     NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
     NEXTAUTH_URL: process.env.NEXTAUTH_URL,
