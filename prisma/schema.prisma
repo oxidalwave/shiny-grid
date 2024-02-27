@@ -56,6 +56,9 @@ model User {
     accounts      Account[]
     sessions      Session[]
     UserAnswer    UserAnswer[]
+
+    @@index([email])
+    @@index([name])
 }
 
 model VerificationToken {
@@ -112,7 +115,14 @@ model Pokemon {
     UserAnswer             UserAnswer[]
     pokemonGame            PokemonGame[]
 
+    @@index([nationalDexId])
     @@index([generationId])
+    @@index([hp])
+    @@index([attack])
+    @@index([defense])
+    @@index([specialAttack])
+    @@index([specialDefense])
+    @@index([speed])
 }
 
 model PokemonEggGroup {
@@ -168,6 +178,7 @@ model Game {
     pokemonGames PokemonGame[]
 
     @@index([generationId])
+    @@index([name])
 }
 
 model PokemonGame {
