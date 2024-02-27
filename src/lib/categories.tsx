@@ -18,211 +18,127 @@ const isOfType = (p: Pokemon, t: string) =>
 const totalStat = (p: Pokemon) =>
   p.hp + p.attack + p.defense + p.specialAttack + p.specialDefense + p.speed;
 
+function Type({ type }: { type: string }) {
+  return (
+    <div className="flex flex-col w-full">
+      <div className="w-full flex justify-center">
+        <Image
+          alt={`${type} Type`}
+          src={`/types/${type.toLowerCase()}.png`}
+          width={64}
+          height={64}
+        />
+      </div>
+      <div className="text-center z-10 bg-slate-800 rounded">{type} Type</div>
+    </div>
+  );
+}
+
+// This is absolutely not a general solution to this problem
+function Grid({ width, children }: { width: number; children: ReactNode }) {
+  if (width % 2 === 1) {
+    return <div className="grid grid-cols-3">{children}</div>;
+  } else {
+    return <div className="grid grid-cols-2">{children}</div>;
+  }
+}
+
+function Generation({ games }: { games: { version: string }[] }) {
+  return (
+    <div className="flex flex-col">
+      <Grid width={games.length}>
+        {games.map((g) => (
+          <Image
+            key={g.version}
+            alt={g.version}
+            src={`/boxart/${g.version}.png`}
+            width={48}
+            height={48}
+          />
+        ))}
+      </Grid>
+      <div className="text-center z-10 bg-slate-800 rounded">
+        Introduced in...
+      </div>
+    </div>
+  );
+}
+
 export const categories: Record<
   string,
   { label: ReactNode; icon?: ReactNode }
 > = {
   WaterType: {
     label: "Water Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image alt="Water Type" src="/types/water.png" width={64} height={64} />
-        <div>Water Type</div>
-      </div>
-    ),
+    icon: <Type type="Water" />,
   },
   NormalType: {
     label: "Normal Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image
-          alt="Normal Type"
-          src="/types/normal.png"
-          width={64}
-          height={64}
-        />
-        <div>Normal Type</div>
-      </div>
-    ),
+    icon: <Type type="Normal" />,
   },
   FireType: {
     label: "Fire Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image alt="Fire Type" src="/types/fire.png" width={64} height={64} />
-        <div>Fire Type</div>
-      </div>
-    ),
+    icon: <Type type="Fire" />,
   },
   FightingType: {
     label: "Fighting Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image
-          alt="Fighting Type"
-          src="/types/fighting.png"
-          width={64}
-          height={64}
-        />
-        <div>Fighting Type</div>
-      </div>
-    ),
+    icon: <Type type="Fighting" />,
   },
   FlyingType: {
     label: "Flying Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image
-          alt="Flying Type"
-          src="/types/flying.png"
-          width={64}
-          height={64}
-        />
-        <div>Flying Type</div>
-      </div>
-    ),
+    icon: <Type type="Flying" />,
   },
   GrassType: {
     label: "Grass Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image alt="Grass Type" src="/types/grass.png" width={64} height={64} />
-        <div>Grass Type</div>
-      </div>
-    ),
+    icon: <Type type="Grass" />,
   },
   PoisonType: {
     label: "Poison Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image
-          alt="Poison Type"
-          src="/types/poison.png"
-          width={64}
-          height={64}
-        />
-        <div>Poison Type</div>
-      </div>
-    ),
+    icon: <Type type="Poison" />,
   },
   ElectricType: {
     label: "Electric Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image
-          alt="Electric Type"
-          src="/types/electric.png"
-          width={64}
-          height={64}
-        />
-        <div>Electric Type</div>
-      </div>
-    ),
+    icon: <Type type="Electric" />,
   },
   GroundType: {
     label: "Ground Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image
-          alt="Ground Type"
-          src="/types/ground.png"
-          width={64}
-          height={64}
-        />
-        <div>Ground Type</div>
-      </div>
-    ),
+    icon: <Type type="Ground" />,
   },
   PsychicType: {
     label: "Psychic Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image
-          alt="Psychic Type"
-          src="/types/psychic.png"
-          width={64}
-          height={64}
-        />
-        <div>Psychic Type</div>
-      </div>
-    ),
+    icon: <Type type="Psychic" />,
   },
   RockType: {
     label: "Rock Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image alt="Rock Type" src="/types/rock.png" width={64} height={64} />
-        <div>Rock Type</div>
-      </div>
-    ),
+    icon: <Type type="Rock" />,
   },
   IceType: {
     label: "Ice Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image alt="Ice Type" src="/types/ice.png" width={64} height={64} />
-        <div>Ice Type</div>
-      </div>
-    ),
+    icon: <Type type="Ice" />,
   },
   BugType: {
     label: "Bug Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image alt="Bug Type" src="/types/bug.png" width={64} height={64} />
-        <div>Bug Type</div>
-      </div>
-    ),
+    icon: <Type type="Bug" />,
   },
   DragonType: {
     label: "Dragon Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image
-          alt="Dragon Type"
-          src="/types/dragon.png"
-          width={64}
-          height={64}
-        />
-        <div>Dragon Type</div>
-      </div>
-    ),
+    icon: <Type type="Dragon" />,
   },
   GhostType: {
     label: "Ghost Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image alt="Ghost Type" src="/types/ghost.png" width={64} height={64} />
-        <div>Ghost Type</div>
-      </div>
-    ),
+    icon: <Type type="Ghost" />,
   },
   DarkType: {
     label: "Dark Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image alt="Dark Type" src="/types/dark.png" width={64} height={64} />
-        <div>Dark Type</div>
-      </div>
-    ),
+    icon: <Type type="Dark" />,
   },
   SteelType: {
     label: "Steel Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image alt="Steel Type" src="/types/steel.png" width={64} height={64} />
-        <div>Steel Type</div>
-      </div>
-    ),
+    icon: <Type type="Steel" />,
   },
   FairyType: {
     label: "Fairy Type",
-    icon: (
-      <div className="flex flex-col">
-        <Image alt="Fairy Type" src="/types/fairy.png" width={64} height={64} />
-        <div>Fairy Type</div>
-      </div>
-    ),
+    icon: <Type type="Fairy" />,
   },
   LowHp: {
     label: "HP ≤ 70",
@@ -269,211 +185,106 @@ export const categories: Record<
   Generation1: {
     label: "Generation 1",
     icon: (
-      <div className="flex flex-col">
-        <div className="text-center">Introduced in...</div>
-        <div className="grid grid-cols-2">
-          <Image alt="red" src="/boxart/red.png" width={64} height={64} />
-          <Image alt="blue" src="/boxart/blue.png" width={64} height={64} />
-          <Image
-            className="col-span-2 justify-self-center"
-            alt="yellow"
-            src="/boxart/yellow.png"
-            width={64}
-            height={64}
-          />
-        </div>
-      </div>
+      <Generation
+        games={[{ version: "red" }, { version: "blue" }, { version: "yellow" }]}
+      />
     ),
   },
   Generation2: {
     label: "Generation 2",
     icon: (
-      <div className="flex flex-col">
-        <div className="text-center">Introduced in...</div>
-        <div className="grid grid-cols-2">
-          <Image alt="gold" src="/boxart/gold.png" width={64} height={64} />
-          <Image alt="silver" src="/boxart/silver.png" width={64} height={64} />
-          <Image
-            className="col-span-2 justify-self-center"
-            alt="crystal"
-            src="/boxart/crystal.png"
-            width={64}
-            height={64}
-          />
-        </div>
-      </div>
+      <Generation
+        games={[
+          { version: "gold" },
+          { version: "gold" },
+          { version: "silver" },
+        ]}
+      />
     ),
   },
   Generation3: {
     label: "Generation 3",
     icon: (
-      <div className="flex flex-col">
-        <div className="text-center">Introduced in...</div>
-        <div className="grid grid-cols-2">
-          <Image alt="ruby" src="/boxart/ruby.png" width={64} height={64} />
-          <Image
-            alt="sapphire"
-            src="/boxart/sapphire.png"
-            width={64}
-            height={64}
-          />
-          <Image
-            className="col-span-2 justify-self-center"
-            alt="Emerald"
-            src="/boxart/emerald.jpg"
-            width={64}
-            height={64}
-          />
-        </div>
-      </div>
+      <Generation
+        games={[
+          { version: "ruby" },
+          { version: "sapphire" },
+          { version: "emerald" },
+        ]}
+      />
     ),
   },
   Generation4: {
     label: "Generation 4",
     icon: (
-      <div className="flex flex-col">
-        <div className="text-center">Introduced in...</div>
-        <div className="grid grid-cols-2">
-          <Image
-            alt="diamond"
-            src="/boxart/diamond.jpg"
-            width={64}
-            height={64}
-          />
-          <Image alt="pearl" src="/boxart/pearl.jpg" width={64} height={64} />
-          <Image
-            className="col-span-2 justify-self-center"
-            alt="platinum"
-            src="/boxart/platinum.png"
-            width={64}
-            height={64}
-          />
-          {/*<Image
-          className="col-span-3 justify-self-center"
-          alt="heartgold"
-          src="/boxart/heartgold.jpg"
-          width={64}
-          height={64}
-        />
-        <Image
-          className="col-span-3 justify-self-center"
-          alt="soulsilver"
-          src="/boxart/soulsilver.jpg"
-          width={64}
-          height={64}
-        />*/}
-        </div>
-      </div>
+      <Generation
+        games={[
+          { version: "diamond" },
+          { version: "pearl" },
+          { version: "platinum" },
+          { version: "heartgold" },
+          { version: "soulsilver" },
+        ]}
+      />
     ),
   },
   Generation5: {
     label: "Generation 5",
     icon: (
-      <div className="flex flex-col">
-        <div className="text-center">Introduced in...</div>
-        <div className="grid grid-cols-2">
-          <Image alt="black" src="/boxart/black.png" width={64} height={64} />
-          <Image alt="black2" src="/boxart/black2.png" width={64} height={64} />
-          <Image alt="white" src="/boxart/white.png" width={64} height={64} />
-          <Image alt="white2" src="/boxart/white2.png" width={64} height={64} />
-        </div>
-      </div>
+      <Generation
+        games={[
+          { version: "black" },
+          { version: "white" },
+          { version: "black2" },
+          { version: "white2" },
+        ]}
+      />
     ),
   },
   Generation6: {
     label: "Generation 6",
     icon: (
-      <div className="flex flex-col">
-        <div className="text-center">Introduced in...</div>
-        <div className="grid grid-cols-2">
-          <Image alt="x" src="/boxart/x.png" width={64} height={64} />
-          <Image alt="y" src="/boxart/y.png" width={64} height={64} />
-          {/*<Image
-          alt="omegaruby"
-          src="/boxart/omegaruby.png"
-          width={64}
-          height={64}
-        />
-        <Image
-          alt="alphasapphire"
-          src="/boxart/alphasapphire.png"
-          width={64}
-          height={64} />*/}
-        </div>
-      </div>
+      <Generation
+        games={[
+          { version: "x" },
+          { version: "y" },
+          { version: "omegaruby" },
+          { version: "alphasapphire" },
+        ]}
+      />
     ),
   },
   Generation7: {
     label: "Generation 7",
     icon: (
-      <div className="flex flex-col">
-        <div className="text-center">Introduced in...</div>
-        <div className="grid grid-cols-2">
-          <Image alt="sun" src="/boxart/sun.png" width={64} height={64} />
-          <Image
-            alt="ultrasun"
-            src="/boxart/ultrasun.png"
-            width={64}
-            height={64}
-          />
-          <Image alt="moon" src="/boxart/moon.png" width={64} height={64} />
-          <Image
-            alt="ultramoon"
-            src="/boxart/ultramoon.png"
-            width={64}
-            height={64}
-          />
-        </div>
-      </div>
+      <Generation
+        games={[
+          { version: "sun" },
+          { version: "moon" },
+          { version: "ultrasun" },
+          { version: "ultramoon" },
+        ]}
+      />
     ),
   },
   Generation8: {
     label: "Generation 8",
     icon: (
-      <div className="flex flex-col">
-        <div className="text-center">Introduced in...</div>
-        <div className="grid grid-cols-2">
-          <Image alt="sword" src="/boxart/sword.png" width={64} height={64} />
-          <Image alt="shield" src="/boxart/shield.png" width={64} height={64} />
-          <Image
-            className="col-span-2 justify-self-center"
-            alt="legendsarceus"
-            src="/boxart/legendsarceus.png"
-            width={64}
-            height={64}
-          />
-          {/*<Image
-          className="col-span-3 justify-self-center"
-          alt="brilliantdiamond"
-          src="/boxart/brilliantdiamond.png"
-          width={64}
-          height={64}
-        />
-        <Image
-          className="col-span-3 justify-self-center"
-          alt="shiningpearl"
-          src="/boxart/shiningpearl.png"
-          width={64}
-          height={64} />*/}
-        </div>
-      </div>
+      <Generation
+        games={[
+          { version: "sword" },
+          { version: "shield" },
+          { version: "legendsarceus" },
+          { version: "brilliantdiamond" },
+          { version: "shiningpearl" },
+        ]}
+      />
     ),
   },
   Generation9: {
     label: "Generation 9",
     icon: (
-      <div className="flex flex-col">
-        <div className="text-center">Introduced in...</div>
-        <div className="grid grid-cols-2">
-          <Image
-            alt="scarlet"
-            src="/boxart/scarlet.png"
-            width={64}
-            height={64}
-          />
-          <Image alt="violet" src="/boxart/violet.png" width={64} height={64} />
-        </div>
-      </div>
+      <Generation games={[{ version: "scarlet" }, { version: "violet" }]} />
     ),
   },
 } as const;
