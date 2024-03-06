@@ -358,7 +358,8 @@ const isInvalidStat = (codes: CategoryId[]) =>
   (codes.includes("LowSpA") && codes.includes("HighSpA")) ||
   (codes.includes("LowSpD") && codes.includes("HighSpD")) ||
   (codes.includes("LowSpe") && codes.includes("HighSpe")) ||
-  (codes.includes("LowTotal") && codes.includes("HighTotal"));
+  (codes.includes("LowTotal") && codes.includes("HighTotal")) ||
+  (codes.includes("LowTotal") && codes.some((c) => c.startsWith("High")));
 
 // Check for invalid type combos
 const isInvalidCombo = (codes: CategoryId[]) =>
