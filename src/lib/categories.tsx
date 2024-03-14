@@ -43,15 +43,19 @@ function Grid({ width, children }: { width: number; children: ReactNode }) {
   }
 }
 
-function Generation({ games }: { games: { version: string }[] }) {
+function Generation({
+  games,
+}: {
+  games: { version: string; extension?: string }[];
+}) {
   return (
     <div className="flex flex-col">
       <Grid width={games.length}>
-        {games.map((g) => (
+        {games.map(({ version, extension = "png" }) => (
           <Image
-            key={g.version}
-            alt={g.version}
-            src={`/boxart/${g.version}.png`}
+            key={version}
+            alt={version}
+            src={`/boxart/${version}.${extension}`}
             width={48}
             height={48}
           />
@@ -196,8 +200,8 @@ export const categories: Record<
       <Generation
         games={[
           { version: "gold" },
-          { version: "gold" },
           { version: "silver" },
+          { version: "crystal" },
         ]}
       />
     ),
@@ -209,7 +213,7 @@ export const categories: Record<
         games={[
           { version: "ruby" },
           { version: "sapphire" },
-          { version: "emerald" },
+          { version: "emerald", extension: "jpg" },
         ]}
       />
     ),
@@ -219,11 +223,11 @@ export const categories: Record<
     icon: (
       <Generation
         games={[
-          { version: "diamond" },
-          { version: "pearl" },
+          { version: "diamond", extension: "jpg" },
+          { version: "pearl", extension: "jpg" },
           { version: "platinum" },
-          { version: "heartgold" },
-          { version: "soulsilver" },
+          { version: "heartgold", extension: "jpg" },
+          { version: "soulsilver", extension: "jpg" },
         ]}
       />
     ),

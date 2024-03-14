@@ -35,7 +35,7 @@ async function main() {
         },
         {
           name: "Blue",
-          boxartUrl: "/boxart/Blue.png",
+          boxartUrl: "/boxart/blue.png",
         },
         {
           name: "Yellow",
@@ -73,7 +73,7 @@ async function main() {
         },
         {
           name: "Emerald",
-          boxartUrl: "/boxart/emerald.png",
+          boxartUrl: "/boxart/emerald.jpg",
         },
         {
           name: "FireRed",
@@ -90,11 +90,11 @@ async function main() {
       pokemonGames: [
         {
           name: "Diamond",
-          boxartUrl: "/boxart/diamond.png",
+          boxartUrl: "/boxart/diamond.jpg",
         },
         {
           name: "Pearl",
-          boxartUrl: "/boxart/pearl.png",
+          boxartUrl: "/boxart/pearl.jpg",
         },
         {
           name: "Platinum",
@@ -102,11 +102,11 @@ async function main() {
         },
         {
           name: "HeartGold",
-          boxartUrl: "/boxart/heartgold.png",
+          boxartUrl: "/boxart/heartgold.jpg",
         },
         {
           name: "SoulSilver",
-          boxartUrl: "/boxart/soulsilver.png",
+          boxartUrl: "/boxart/soulsilver.jpg",
         },
       ],
     },
