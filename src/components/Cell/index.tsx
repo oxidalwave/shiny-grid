@@ -50,8 +50,8 @@ export default function Cell({
 
   return (
     <div className="w-full">
-      {isSuccess && <div className="bg-green-500">{child}</div>}
-      {!isSuccess && <div className="bg-red-500">{child}</div>}
+      {isSuccess && <div className="bg-green-500 h-full">{child}</div>}
+      {!isSuccess && <div className="bg-red-500 h-full">{child}</div>}
     </div>
   );
 }
