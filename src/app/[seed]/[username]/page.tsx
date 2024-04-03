@@ -1,7 +1,7 @@
 import App from "~/components/App";
 import Header from "~/components/Header";
 import getDex from "~/lib/getDex";
-import { getInitialAnswers } from "~/lib/getInitialAnswers";
+import { getAnswers } from "~/lib/getAnswers";
 import { getCategories } from "~/lib/categories";
 
 export default async function SharedPage({
@@ -13,7 +13,7 @@ export default async function SharedPage({
 
   const [dex, initialAnswers] = await Promise.allSettled([
     getDex(),
-    getInitialAnswers(seed, username),
+    getAnswers(seed, username),
   ]);
 
   if (dex.status === "fulfilled" && initialAnswers.status === "fulfilled") {

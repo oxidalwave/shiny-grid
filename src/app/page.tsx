@@ -6,7 +6,7 @@ import { authOptions } from "~/server/auth";
 import { defaultSeed } from "~/lib/defaultSeed";
 import Header from "~/components/Header";
 import getDex from "~/lib/getDex";
-import { getInitialAnswers } from "~/lib/getInitialAnswers";
+import { getAnswers } from "~/lib/getAnswers";
 import { getCategories } from "~/lib/categories";
 
 export default async function HomePage() {
@@ -20,7 +20,7 @@ export default async function HomePage() {
 
     const initialAnswers =
       session.status === "fulfilled"
-        ? await getInitialAnswers(seed, session.value?.user.name ?? "")
+        ? await getAnswers(seed, session.value?.user.name ?? "")
         : [];
 
     const categoryIds = getCategories(seed);

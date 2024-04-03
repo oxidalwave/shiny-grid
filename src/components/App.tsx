@@ -1,9 +1,12 @@
-import { type ReactNode } from "react";
+"use client";
+
+import { useState, type ReactNode } from "react";
 import { type Pokemon } from "~/lib/data/dex";
 
 import Cell from "./Cell";
 import { type CategoryId } from "~/lib/categories";
 import CategoryLabel from "./CategoryLabel";
+import { GuessContext } from "~/lib/contexts/GuessContext";
 
 interface Answer {
   categoryIndex: number;
@@ -47,59 +50,60 @@ export default function App({
   categoryIds,
   initialAnswers,
 }: GridProps) {
-  const guesses = parseInitialAnswers(initialAnswers, dex);
+  const guessState = useState(parseInitialAnswers(initialAnswers, dex));
+
+  const [guesses] = guessState;
 
   return (
     <div className="flex flex-col">
       {header}
       <div className="flex justify-center">
         <div className="grid grid-cols-4">
-          <div className="h-32" />
-          <CategoryLabel category={categoryIds[0]!} />
-          <CategoryLabel category={categoryIds[1]!} />
-          <CategoryLabel category={categoryIds[2]!} />
-          <div className="h-32">
-            <CategoryLabel category={categoryIds[3]!} />
-          </div>
-          {rows[0]?.map((c) => (
-            <Cell
-              key={c.index}
-              seed={seed}
-              index={c.index}
-              initialGuess={guesses[c.index]}
-              categoryIds={[categoryIds[c.cat1]!, categoryIds[c.cat2]!]}
-              pokedex={dex}
-              guesses={guesses}
-            />
-          ))}
-          <div className="h-32">
-            <CategoryLabel category={categoryIds[4]!} />
-          </div>
-          {rows[1]?.map((c) => (
-            <Cell
-              key={c.index}
-              seed={seed}
-              index={c.index}
-              initialGuess={guesses[c.index]}
-              categoryIds={[categoryIds[c.cat1]!, categoryIds[c.cat2]!]}
-              pokedex={dex}
-              guesses={guesses}
-            />
-          ))}
-          <div className="h-32">
-            <CategoryLabel category={categoryIds[5]!} />
-          </div>
-          {rows[2]?.map((c) => (
-            <Cell
-              key={c.index}
-              seed={seed}
-              index={c.index}
-              initialGuess={guesses[c.index]}
-              categoryIds={[categoryIds[c.cat1]!, categoryIds[c.cat2]!]}
-              pokedex={dex}
-              guesses={guesses}
-            />
-          ))}
+          <GuessContext.Provider value={guessState}>
+            <div className="h-32" />
+            <CategoryLabel category={categoryIds[0]!} />
+            <CategoryLabel category={categoryIds[1]!} />
+            <CategoryLabel category={categoryIds[2]!} />
+            <div className="h-32">
+              <CategoryLabel category={categoryIds[3]!} />
+            </div>
+            {rows[0]?.map((c) => (
+              <Cell
+                key={c.index}
+                seed={seed}
+                index={c.index}
+                initialGuess={guesses[c.index]}
+                categoryIds={[categoryIds[c.cat1]!, categoryIds[c.cat2]!]}
+                pokedex={dex}
+              />
+            ))}
+            <div className="h-32">
+              <CategoryLabel category={categoryIds[4]!} />
+            </div>
+            {rows[1]?.map((c) => (
+              <Cell
+                key={c.index}
+                seed={seed}
+                index={c.index}
+                initialGuess={guesses[c.index]}
+                categoryIds={[categoryIds[c.cat1]!, categoryIds[c.cat2]!]}
+                pokedex={dex}
+              />
+            ))}
+            <div className="h-32">
+              <CategoryLabel category={categoryIds[5]!} />
+            </div>
+            {rows[2]?.map((c) => (
+              <Cell
+                key={c.index}
+                seed={seed}
+                index={c.index}
+                initialGuess={guesses[c.index]}
+                categoryIds={[categoryIds[c.cat1]!, categoryIds[c.cat2]!]}
+                pokedex={dex}
+              />
+            ))}
+          </GuessContext.Provider>
         </div>
       </div>
     </div>

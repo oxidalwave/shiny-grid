@@ -7,9 +7,12 @@ import { type CategoryId, categories } from "~/lib/categories";
 import { api } from "~/utils/api";
 import { useSession } from "next-auth/react";
 import { type Seed } from "~/lib/getCategories";
-import ClientLoadedCell from "./ClientLoadedCell";
+import LoadedCell from "./LoadedCell";
 import CellImage from "./CellImage";
 import { tests } from "~/lib/categories";
+import { useGuessContext } from "~/lib/contexts/GuessContext";
+import { Input } from "../ui/input";
+import { Button } from "../ui/button";
 
 export interface CellProps {
   pokedex: Pokemon[];
@@ -24,6 +27,8 @@ export default function PendingCell({
   seed,
   categoryIndex,
 }: CellProps) {
+  const [guesses, setGuesses] = useGuessContext();
+
   const session = useSession();
 
   const modalRef = useRef<HTMLDialogElement>(null);
@@ -32,7 +37,15 @@ export default function PendingCell({
   const [guess, setGuess] = useState<Pokemon | null>(null);
 
   const trpc = api.useUtils();
-  const { mutate } = api.makeGuess.useMutation();
+  const { mutate } = api.makeGuess.useMutation({
+    onSettled: (_d, _e, { pokemonId }) => {
+      void trpc.guess.invalidate({
+        seed,
+        categoryIndex,
+        pokemonId,
+      });
+    },
+  });
 
   if (guess) {
     const isSuccess = categoryIds.every((c) => tests[c]?.(guess));
@@ -40,7 +53,7 @@ export default function PendingCell({
     const child = (
       <div className="h-full flex flex-col justify-center items-center">
         <Suspense fallback={<CellImage pokemon={guess} />}>
-          <ClientLoadedCell seed={seed} index={categoryIndex} guess={guess} />
+          <LoadedCell seed={seed} index={categoryIndex} guess={guess} />
         </Suspense>
       </div>
     );
@@ -54,24 +67,16 @@ export default function PendingCell({
   }
 
   function handleSubmit(pokemon: Pokemon) {
-    mutate(
-      {
-        seed,
-        username: session.data?.user.name ?? "",
-        categoryIndex,
-        pokemonId: pokemon.id,
-      },
-      {
-        onSettled: () => {
-          void trpc.guess.invalidate({
-            seed,
-            categoryIndex,
-            pokemonId: pokemon.id,
-          });
-        },
-      },
-    );
+    mutate({
+      seed,
+      username: session.data?.user.name ?? "",
+      categoryIndex,
+      pokemonId: pokemon.id,
+    });
     setGuess(pokemon);
+    const g = [...guesses];
+    g[categoryIndex] = pokemon;
+    setGuesses(g);
   }
 
   const filteredPokedex =
@@ -97,17 +102,17 @@ export default function PendingCell({
         className="z-50 w-80 rounded bg-slate-700 p-2 text-white"
         ref={modalRef}
       >
-        <button
+        <Button
           className="flex w-full justify-center rounded bg-slate-800 p-2 hover:bg-slate-900"
           onClick={handleClose}
         >
           Close
-        </button>
+        </Button>
         <div>
           <div className="flex w-full justify-center py-4 text-xl">
             {cats.map((c) => c?.label).join(" and ")}
           </div>
-          <input
+          <Input
             autoFocus
             type="text"
             className="w-full rounded border border-slate-300 bg-slate-900 p-2"
@@ -116,7 +121,7 @@ export default function PendingCell({
           />
           <div className="flex flex-col gap-2 overflow-y-auto pt-2">
             {filteredPokedex.map((p) => (
-              <button
+              <Button
                 className="flex rounded bg-slate-900 p-2"
                 key={p.name}
                 onClick={(e) => {
@@ -133,12 +138,12 @@ export default function PendingCell({
                   height={24}
                 />
                 <div className="pl-2">{p.name}</div>
-              </button>
+              </Button>
             ))}
           </div>
         </div>
       </dialog>
-      <button
+      <Button
         className="h-full bg-slate-700 hover:bg-slate-800"
         onClick={handleOpen}
       />

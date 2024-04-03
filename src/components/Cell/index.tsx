@@ -4,13 +4,13 @@ import { Suspense } from "react";
 import LoadedCell from "./LoadedCell";
 import { type CategoryId, tests } from "~/lib/categories";
 import CellImage from "./CellImage";
+import { useGuessContext } from "~/lib/contexts/GuessContext";
 
 export interface CellProps {
   seed: string;
   index: number;
   pokedex: Pokemon[];
   initialGuess?: Pokemon;
-  guesses: (undefined | Pokemon)[];
   categoryIds: CategoryId[];
 }
 
@@ -19,9 +19,10 @@ export default function Cell({
   index,
   pokedex,
   initialGuess,
-  guesses,
   categoryIds,
 }: CellProps) {
+  const [guesses] = useGuessContext();
+
   const pokemon = pokedex.find((p) => initialGuess?.id === p.id);
 
   if (!pokemon) {

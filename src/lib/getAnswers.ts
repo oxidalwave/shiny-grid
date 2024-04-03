@@ -1,6 +1,6 @@
 import { prisma } from "~/server/db";
 
-export const getInitialAnswers = async (seed: string, username: string) => {
+export const getAnswers = async (seed: string, username: string) => {
   return await prisma.userAnswer.findMany({
     where: {
       seed: seed,

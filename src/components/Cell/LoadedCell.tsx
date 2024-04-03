@@ -1,6 +1,9 @@
-import Image from "next/image";
+"use client";
+
 import { type Pokemon } from "~/lib/data/dex";
-import getGuess from "~/lib/getGuess";
+import { api } from "~/utils/api";
+import Image from "next/image";
+import { useEffect, useMemo } from "react";
 
 export interface LoadedCellProps {
   seed: string;
@@ -8,24 +11,25 @@ export interface LoadedCellProps {
   guess: Pokemon;
 }
 
-export default async function LoadedCell({
-  seed,
-  index,
-  guess,
-}: LoadedCellProps) {
-  const dec = await getGuess({
-    seed,
-    categoryIndex: index,
-    pokemonId: guess.id,
-  });
+export default function LoadedCell({ seed, index, guess }: LoadedCellProps) {
+  const vars = useMemo(
+    () => ({
+      seed,
+      categoryIndex: index,
+      pokemonId: guess.id,
+    }),
+    [seed, index, guess.id],
+  );
 
-  const percent = Math.floor(dec.percent * 100);
+  const [data] = api.guess.useSuspenseQuery(vars);
+
+  const p = Math.floor(data.percent * 100);
 
   return (
     <>
-      {!isNaN(percent) && (
+      {!isNaN(p) && (
         <div className="justify-top absolute rounded bg-slate-800 bg-opacity-60 px-8 py-2">
-          {percent}%
+          {p}%
         </div>
       )}
       <Image
