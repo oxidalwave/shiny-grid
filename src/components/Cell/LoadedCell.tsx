@@ -3,7 +3,7 @@
 import { type Pokemon } from "~/lib/data/dex";
 import { api } from "~/utils/api";
 import Image from "next/image";
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 
 export interface LoadedCellProps {
   seed: string;
