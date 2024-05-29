@@ -658,6 +658,19 @@ async function main() {
   await prisma.pokemon.updateMany({
     where: {
       name: {
+        startsWith: "Primal ",
+      },
+    },
+    data: {
+      generationId: (await prisma.generation.findUnique({
+        where: { name: 6 },
+      }))!.id,
+    },
+  });
+
+  await prisma.pokemon.updateMany({
+    where: {
+      name: {
         startsWith: "Alolan ",
       },
     },
