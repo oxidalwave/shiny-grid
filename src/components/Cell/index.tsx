@@ -5,6 +5,7 @@ import LoadedCell from "./LoadedCell";
 import { type CategoryId, tests } from "~/lib/categories";
 import CellImage from "./CellImage";
 import { useGuessContext } from "~/lib/contexts/GuessContext";
+import clsx from "clsx";
 
 export interface CellProps {
   seed: string;
@@ -40,18 +41,18 @@ export default function Cell({
 
   const isSuccess = categoryIds.every((c) => tests[c]?.(pokemon));
 
-  const child = (
-    <div className="h-full flex flex-col justify-center items-center">
-      <Suspense fallback={<CellImage pokemon={pokemon} />}>
-        <LoadedCell index={index} seed={seed} guess={pokemon} />
-      </Suspense>
-    </div>
-  );
-
   return (
     <div className="w-full">
-      {isSuccess && <div className="bg-green-500 h-full">{child}</div>}
-      {!isSuccess && <div className="bg-red-500 h-full">{child}</div>}
+      <div
+        className={clsx(
+          "h-full flex flex-col justify-center items-center",
+          isSuccess ? "bg-green-500" : "bg-red-500",
+        )}
+      >
+        <Suspense fallback={<CellImage pokemon={pokemon} />}>
+          <LoadedCell index={index} seed={seed} guess={pokemon} />
+        </Suspense>
+      </div>
     </div>
   );
 }

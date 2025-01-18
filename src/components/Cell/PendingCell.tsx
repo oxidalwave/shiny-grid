@@ -133,7 +133,6 @@ export default function PendingCell({
                 }}
               >
                 <Image
-                  unoptimized
                   loading="lazy"
                   alt={p.name}
                   src={p.imageUrl ?? ""}

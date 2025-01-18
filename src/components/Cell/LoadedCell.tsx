@@ -33,7 +33,6 @@ export default function LoadedCell({ seed, index, guess }: LoadedCellProps) {
         </div>
       )}
       <Image
-        unoptimized
         alt={guess.name}
         src={guess.imageUrl ?? ""}
         width={128}

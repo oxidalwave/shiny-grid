@@ -5,7 +5,6 @@ export default function CellImage({ pokemon }: { pokemon: Pokemon }) {
   return (
     <>
       <Image
-        unoptimized
         alt={pokemon.name}
         src={pokemon.imageUrl ?? ""}
         width={128}
