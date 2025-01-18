@@ -24,6 +24,14 @@ ENV NEXT_TELEMETRY_DISABLED=1
 
 RUN corepack enable pnpm && pnpm run build
 
+FROM base AS seeder
+WORKDIR /app
+
+COPY ./prisma ./prisma
+COPY --from=deps /app/node_modules ./node_modules
+
+RUN pnpm run prisma db seed
+
 # Production image, copy all the files and run next
 FROM base AS runner
 WORKDIR /app
