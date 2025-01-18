@@ -5,6 +5,7 @@ import Header from "~/components/Header";
 import getDex from "~/lib/getDex";
 import { getAnswers } from "~/lib/getAnswers";
 import { getCategories } from "~/lib/categories";
+import { redirect } from "next/navigation";
 
 export default async function SeedPage({
   params,
@@ -12,32 +13,29 @@ export default async function SeedPage({
   params: Promise<{ seed: string }>;
 }) {
   const { seed } = await params;
-  const [dex, session] = await Promise.allSettled([
-    getDex(),
-    getServerSession(authOptions),
-  ]);
 
-  if (dex.status === "fulfilled" && session.status === "fulfilled") {
-    const initialAnswers =
-      session.status === "fulfilled"
-        ? await getAnswers(seed, session.value?.user.name ?? "")
-        : [];
+  const session = await getServerSession(authOptions);
 
-    const categoryIds = getCategories(seed);
-
-    return (
-      <div className="p-2">
-        <App
-          header={<Header seed={seed} />}
-          categoryIds={categoryIds}
-          username={session.value?.user?.name ?? undefined}
-          dex={dex.value}
-          seed={seed}
-          initialAnswers={initialAnswers}
-        />
-      </div>
-    );
-  } else {
-    return <div className="p-2" />;
+  if (session !== null) {
+    redirect(`/${seed}/${session.user.name}`);
   }
+
+  const dex = await getDex();
+
+  const initialAnswers = await getAnswers(seed, "");
+
+  const categoryIds = getCategories(seed);
+
+  return (
+    <div className="p-2">
+      <App
+        header={<Header seed={seed} />}
+        categoryIds={categoryIds}
+        username={undefined}
+        dex={dex}
+        seed={seed}
+        initialAnswers={initialAnswers}
+      />
+    </div>
+  );
 }
