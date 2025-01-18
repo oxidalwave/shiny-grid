@@ -110,7 +110,10 @@ export default function PendingCell({
         </Button>
         <div>
           <div className="flex w-full justify-center py-4 text-xl">
-            {cats.map((c) => c?.label).join(" and ")}
+            {cats
+              .map((c) => c?.label)
+              .filter((l) => l !== undefined)
+              .reduce((p, c) => [p, " and ", c])}
           </div>
           <Input
             autoFocus

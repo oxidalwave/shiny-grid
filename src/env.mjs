@@ -7,7 +7,6 @@ export const env = createEnv({
    * isn't built with invalid env vars.
    */
   server: {
-    NEXT_PUBLIC_API_URL: z.string().url(),
     POSTGRES_PRISMA_URL: z.string().url(),
     NODE_ENV: z.enum(["development", "test", "production"]),
     NEXTAUTH_SECRET:

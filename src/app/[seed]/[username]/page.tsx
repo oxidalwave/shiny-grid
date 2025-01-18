@@ -7,9 +7,9 @@ import { getCategories } from "~/lib/categories";
 export default async function SharedPage({
   params,
 }: {
-  params: { seed: string; username: string };
+  params: Promise<{ seed: string; username: string }>;
 }) {
-  const { seed, username } = params;
+  const { seed, username } = await params;
 
   const [dex, initialAnswers] = await Promise.allSettled([
     getDex(),
@@ -24,7 +24,7 @@ export default async function SharedPage({
         <App
           header={<Header seed={seed} />}
           categoryIds={categoryIds}
-          username={params.username}
+          username={username}
           dex={dex.value}
           seed={seed}
           initialAnswers={initialAnswers.value}

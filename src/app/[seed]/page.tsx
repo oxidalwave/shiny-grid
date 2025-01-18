@@ -9,16 +9,15 @@ import { getCategories } from "~/lib/categories";
 export default async function SeedPage({
   params,
 }: {
-  params: { seed: string };
+  params: Promise<{ seed: string }>;
 }) {
+  const { seed } = await params;
   const [dex, session] = await Promise.allSettled([
     getDex(),
     getServerSession(authOptions),
   ]);
 
   if (dex.status === "fulfilled" && session.status === "fulfilled") {
-    const seed = params.seed;
-
     const initialAnswers =
       session.status === "fulfilled"
         ? await getAnswers(seed, session.value?.user.name ?? "")
