@@ -15,11 +15,30 @@ RUN \
   else echo "Lockfile not found." && exit 1; \
   fi
 
+# Rebuild the source code only when needed
+FROM base AS prisma
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
+
+RUN \
+  if [ -f yarn.lock ]; then yarn run prisma:generate; \
+  elif [ -f package-lock.json ]; then npm run prisma:generate; \
+  elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm run prisma:generate; \
+  else echo "Lockfile not found." && exit 1; \
+  fi
+
+RUN \
+  if [ -f yarn.lock ]; then yarn run prisma:migrate; \
+  elif [ -f package-lock.json ]; then npm run prisma:migrate; \
+  elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm run prisma:migrate; \
+  else echo "Lockfile not found." && exit 1; \
+  fi
 
 # Rebuild the source code only when needed
 FROM base AS builder
 WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
+COPY --from=prisma /app/node_modules ./node_modules
 COPY . .
 
 # Next.js collects completely anonymous telemetry data about general usage.
